@@ -1,0 +1,82 @@
+[
+    {
+        "SeqNo": 459,
+        "time": 1540997928000,
+        "Latitude": 34.051,
+        "Longitude": -86.045,
+        "timestr": "[2018-10-31 14:58:48 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 458,
+        "time": 1540997842000,
+        "Latitude": 34.051,
+        "Longitude": -86.045,
+        "timestr": "[2018-10-31 14:57:22 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 457,
+        "time": 1540997432000,
+        "Latitude": 34.025,
+        "Longitude": -86.034,
+        "timestr": "[2018-10-31 14:50:32 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 456,
+        "time": 1540996884000,
+        "Latitude": 33.996,
+        "Longitude": -85.968,
+        "timestr": "[2018-10-31 14:41:24 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 455,
+        "time": 1540996587000,
+        "Latitude": 33.947,
+        "Longitude": -85.927,
+        "timestr": "[2018-10-31 14:36:27 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 454,
+        "time": 1540996045000,
+        "Latitude": 33.81,
+        "Longitude": -85.904,
+        "timestr": "[2018-10-31 14:27:25 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 453,
+        "time": 1540995655000,
+        "Latitude": 33.719,
+        "Longitude": -85.872,
+        "timestr": "[2018-10-31 14:20:55 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 452,
+        "time": 1540994320000,
+        "Latitude": 33.602,
+        "Longitude": -85.833,
+        "timestr": "[2018-10-31 13:58:40 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 451,
+        "time": 1540993474000,
+        "Latitude": 33.6,
+        "Longitude": -85.715,
+        "timestr": "[2018-10-31 13:44:34 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 450,
+        "time": 1540993394000,
+        "Latitude": 33.593,
+        "Longitude": -85.696,
+        "timestr": "[2018-10-31 13:43:14 +0000]",
+        "unit_number": 464
+    }
+]

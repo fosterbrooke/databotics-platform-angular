@@ -1,0 +1,392 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid">
+  <div class="col-md-12 padding0">
+
+    <!---row--->
+    <div class="row m-0 border_box">
+      <div class="col-md-12 padding0">
+        <div class="a-r-1 ">
+          <div class="row m-0">
+            <div class="col-md-12 inline pd-10 a-r-1">
+              <span class="m-l-10 pd-10 fs-20">RATING</span>
+              <!-- <span class="fl"><i class="fa fa-file-excel-o" (click)="exportCSVFile()" title="Click To Download" aria-hidden="true"></i><span class="fr m-l-10" (click)="seeAllInfo()" title="Click To See All Suppliers">All</span></span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 padding0 " style=" background: #f7f7f7;padding: 0px;">
+        <table class="tb padding0 w-100 table table-bordered" style="margin-bottom: 0px !important;">
+          <thead>
+            <tr class="bg-table text-white">
+              <th class="pd-5 ">Project Id</th>
+              <th class="pd-5 ">Invoice</th>
+              <th class="pd-5 ">Weightage</th>
+              <th class="pd-5 ">Date</th>
+              <th class="pd-5 ">Rating</th>
+            </tr>
+          </thead>
+          <tbody class="bg-tr">
+            <tr (click)="timeStamps(obj)" class="odd" *ngFor="let obj of tsetDataArray" style="cursor: pointer;">
+              <td class="pd-8 ">{{obj['Project Id']}}</td>
+              <td class="pd-8 ">{{obj['Invoice']}}</td>
+              <td class="pd-8 ">{{obj['Weightage']}}</td>
+              <td class="pd-8 ">{{obj['Date']}}</td>
+              <td class="pd-8 ">
+                <app-rating [rating]='obj.Rating'></app-rating>
+
+                <!-- <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i> -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 m-t-10" *ngIf="addtimestampform" style="margin-top: 10px; padding: 0px;">
+    <form [formGroup]="commentForm">
+      <div *ngFor="let item of Addcomments; let i =index;">
+        <div class="col-md-4">
+          <h5>Date/Time:{{myDate}}</h5>
+        </div>
+        <div class="col-md-3" style="display: flex;">
+          <span>
+            <label style="padding: 10px;">Input By: </label>
+          </span>
+          <input type="text" style="width: 50%;" value="inputby" formControlName="inputby" class="form-control">
+        </div>
+        <div class="col-md-3" style="display: flex;">
+          <span>
+            <label style="padding: 10px;">Input For: </label>
+
+          </span>
+          <input type="text" style="width: 50%;" value="inputfor" formControlName="inputfor" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <span class="float-right m-t-10" style="padding: 0px 10px;" (click)="submit()"><i class="fa fa-check"
+              aria-hidden="true" style="cursor: pointer;"></i></span>
+          <span class="float-right m-t-10" (click)="removeItem()"><i class="fa fa-times" aria-hidden="true"
+              style="cursor: pointer;"></i></span>
+
+          <!-- <button class="float-right bg" (click) = "removeItem()">close</button> -->
+
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr class="bg-table">
+              <th></th>
+              <th>Weightage</th>
+              <th>Rating</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>People</td>
+              <td><input type="number" value="Weightage1" formControlName="Weightage1" class="form-control"></td>
+              <td class="pd-8 ">
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              </td>
+              <td><input type="text" value="Comment1" formControlName="Comment1" class="form-control"></td>
+            </tr>
+            <tr class="even">
+              <td>Quality</td>
+              <td><input type="number" value="Weightage2" formControlName="Weightage2" class="form-control"></td>
+              <td class="pd-8 ">
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              </td>
+              <td><input type="text" value="Comment2" formControlName="Comment2" class="form-control"></td>
+            </tr>
+            <tr class="odd">
+              <td>Velocity</td>
+              <td><input type="number" formControlName="Weightage3" class="form-control"></td>
+              <td class="pd-8 ">
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              </td>
+              <td><input type="text" value="Comment3" formControlName="Comment3" class="form-control"></td>
+            </tr>
+            <tr class="even">
+              <td>Cost</td>
+              <td><input type="number" value="Weightage4" formControlName="Weightage4" class="form-control"></td>
+              <td class="pd-8 ">
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+                <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              </td>
+              <td><input type="text" value="Comment4" formControlName="Comment4" class="form-control"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </form>
+  </div>
+
+  <div class="col-md-12" *ngIf="commentedData">
+    <div class="col-md-3">
+      <h5>Date/Time:&nbsp;12-04-2020</h5>
+    </div>
+    <div class="col-md-3" style="display: flex;">
+      <span> <label>Input By: {{commentDataArray1[0].inputby}}</label></span>
+      <!-- <span><p>{{newArray['inputby']}}</p></span> -->
+    </div>
+    <div class="col-md-3" style="display: flex;">
+      <span><label>Input For: {{commentDataArray1[0].inputfor}}</label></span>
+      <!-- <span><p>{{newArray['inputfor']}}</p></span> -->
+    </div>
+    <div class="col-md-3">
+      <!-- <button class="float-right bg_temp" (click)= "addtimestamp()"><i class="fa fa-plus" aria-hidden="true" style="font-size: 12px; color: white;padding: 5px;"></i></button> -->
+      <!-- <button class="float-right bg" (click)= "addtimestamp()">Add </button> -->
+    </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr class="bg-table">
+          <th></th>
+          <th>Weightage</th>
+          <th>Rating</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd" *ngFor="let obj of commentDataArray1">
+          <td>People</td>
+          <td>{{obj['Weightage1']}}</td>
+          <td class="pd-8 ">
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+          </td>
+          <td>{{obj['Comment1']}}</td>
+        </tr>
+        <tr class="odd" *ngFor="let obj of commentDataArray1">
+          <td>Queantity</td>
+          <td>{{obj['Weightage2']}}</td>
+          <td class="pd-8 ">
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+          </td>
+          <td>{{obj['Comment2']}}</td>
+        </tr>
+        <tr class="odd" *ngFor="let obj of commentDataArray1">
+          <td>Velocity</td>
+          <td>{{obj['Weightage3']}}</td>
+          <td class="pd-8 ">
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+          </td>
+          <td>{{obj['Comment3']}}</td>
+        </tr>
+        <tr class="odd" *ngFor="let obj of commentDataArray1">
+          <td>Cost</td>
+          <td>{{obj['Weightage4']}}</td>
+          <td class="pd-8 ">
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+          </td>
+          <td>{{obj['Comment4']}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row " *ngIf="showassignedData">
+    <div class="col-md-12 m-t-10" style="margin-top: 10px;">
+      <div class="col-md-6 float-left">
+        <span>Project Id:</span>&nbsp;
+        <span>C2151263</span>
+      </div>
+      <div class="col-md-6 ">
+        <div class="float-right">
+          <span>Invoice:</span>&nbsp;
+          <span>INC14856123</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-3">
+        <h5>Date/Time:&nbsp;10-03-2020</h5>
+      </div>
+      <div class="col-md-3" style="display: flex;">
+        <span> <label>Input By: </label></span>
+        <span>
+          <p>Satheesh</p>
+        </span>
+      </div>
+      <div class="col-md-3" style="display: flex;">
+        <span><label>Input For: </label></span>
+        <span>
+          <p>Hanu</p>
+        </span>
+      </div>
+      <div class="col-md-3">
+        <button class="float-right bg_temp" (click)="addtimestamp()"><i class="fa fa-plus" aria-hidden="true"
+            style="font-size: 12px; color: white;padding: 5px;"></i></button>
+        <!-- <button class="float-right bg" (click)= "addtimestamp()">Add </button> -->
+      </div>
+      <table class="table table-bordered">
+        <thead >
+          <tr class="bg-table">
+            <th></th>
+            <th>Weightage</th>
+            <th>Rating</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>People</td>
+            <td>{{obj['Weightage1']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment1']}}</td>
+          </tr>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>Queantity</td>
+            <td>{{obj['Weightage2']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment2']}}</td>
+          </tr>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>Velocity</td>
+            <td>{{obj['Weightage3']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment3']}}</td>
+          </tr>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>Cost</td>
+            <td>{{obj['Weightage4']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment4']}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="col-md-3">
+        <h5>Date/Time:&nbsp;10-03-2020</h5>
+      </div>
+      <div class="col-md-3" style="display: flex;">
+        <span> <label>Input By: </label></span>
+        <span>
+          <p>Satheesh</p>
+        </span>
+      </div>
+      <div class="col-md-3" style="display: flex;">
+        <span><label>Input For: </label></span>
+        <span>
+          <p>Hanu</p>
+        </span>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr class="bg-table">
+            <th></th>
+            <th>Weightage</th>
+            <th>Rating</th>
+            <th>Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>People</td>
+            <td>{{obj['Weightage1']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment1']}}</td>
+          </tr>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>Queantity</td>
+            <td>{{obj['Weightage2']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment2']}}</td>
+          </tr>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>Velocity</td>
+            <td>{{obj['Weightage3']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment3']}}</td>
+          </tr>
+          <tr class="odd" *ngFor="let obj of commentDataArray">
+            <td>Cost</td>
+            <td>{{obj['Weightage4']}}</td>
+            <td class="pd-8 ">
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="color: #f70;padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+              <i class="fa fa-star" aria-hidden="true" style="padding: 5px;"></i>
+            </td>
+            <td>{{obj['Comment4']}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

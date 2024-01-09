@@ -1,0 +1,445 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<!-- <div class="row">
+    <div class="col-md-5">
+    <div class="col-md-4">
+    <div class="card w-14">
+            <div class="back">
+                    <span >Year</span>
+            </div>
+        <div class="card-body">
+                <select id="exampleList">
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                 </select>  
+                
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card w-14">
+            <div class="back">
+                    <span >Country</span>
+            </div>
+        <div class="card-body">
+                <select id="exampleList">
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                 </select>  
+                
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card w-14">
+        <div class="back">
+            <span >Technology</span>
+        </div>
+        <div class="card-body">
+                <select id="exampleList">
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                 </select>  
+                
+                 
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-md-7">
+<div class="col-md-3">
+    <div class="card w-14">
+        <div class="back">
+            <span >Contract Value</span>
+        </div>
+        <div class="card-body">
+        <span><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+        <span>$12K</span><br>
+        <span>Operations</span>
+        </div>
+    </div>
+</div>
+    <div class="col-md-3">
+     <div class="card w-14">
+         <div class="back">
+            <span >Vendors</span>
+        </div>
+            <div class="card-body">
+                    <span>181</span><br>
+                    <span>Selected Years</span>
+            </div>
+    </div>
+</div>
+
+    
+    <div class="col-md-3">
+     <div class="card w-14">
+          <div class="back">
+                <span >Contracts Renewed</span>
+          </div>
+         <div class="card-body">
+             <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                <span>15</span><br>
+                <span>Past 90 years</span>
+        </div>
+    </div>
+</div>
+    <div class="col-md-3">
+     <div class="card w-14">
+            <div class="back">
+                    <span >Active Contracts</span>
+            </div>
+        <div class="card-body">
+            <span><i class="fa fa-hourglass-half" aria-hidden="true"></i></span>
+                <span>169</span><br>
+                <span>Operations</span>
+        </div>
+    </div>
+</div>
+
+</div>                                                                            
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="card web1 w-14">
+            <div class="back">
+                <span>Vendors By Region</span>
+            </div>
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+            <div class="card web w-14">
+                <div class="back">
+                    <span>Average rate By Vendor</span>
+                </div>
+                <div class="card-body" style="height: 400px; padding: 0px;">
+                    <div [chart] = "vendorBarChart"></div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="col-sm-4">
+                <div class="card web w-14" >
+                    <div class="back">
+                        <span>Contract Value By ASG</span>
+                    </div>
+                    <div class="card-body" style="height: 400px; padding: 0px;">
+                            <div [chart] = "asgChart"></div>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+ 
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                <th>ContractNumber</th>
+                <th>Vendor</th>
+                <th>ASGRole</th>
+                <th>ASGrate</th>
+                <th>ContractRate</th>
+                <th>Competetor</th>
+                <th>CompetetorRate</th>
+                <th>CompetetorDetails</th>
+                <th>example</th>
+                <th>example</th>
+                <th>example</th>
+                <th>example</th>
+                <th>example</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of userList">
+                    <td>{{item.ContractNumber}}</td>
+                    <td>{{item.Vendor}}</td>
+                    <td>{{item.ASGRole}}</td>
+                    <td>{{item.ASGrate}}</td>
+                    <td>{{item.ContractRate}}</td>
+                    <td>{{item.Competetor}}</td>
+                    <td>{{item.CompetetorRate}}</td>
+                    <td>{{item.CompetetorDetails}}</td>
+                    <td>{{item.example}}</td>
+                    <td>{{item.example1}}</td>
+                    <td>{{item.example2}}</td>
+                    <td>{{item.example3}}</td>
+                    <td>{{item.example4}}</td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>  
+    </div>
+        <div class="col-md-4">
+                <div class="col-md-12">
+                        <div class="card web w-14" >
+                            <div class="back">
+                                <span>Contract Value By Competetor</span>
+                            </div>
+                            <div class="card-body" style="height: 300px; padding: 0px;">
+                                
+                                <div [chart] = "competetorChart"></div>
+                            </div>
+                
+                        </div>
+                    </div>
+
+        </div>
+
+    
+
+</div>
+
+
+<router-outlet></router-outlet> -->
+
+<div class="container-fluid padding0">
+    <div class="row m-0 m-t-7">
+        <div class="col-md-12 padding0 ta-c">
+              <span class="float-left cursor btn-d" [routerLink]="['/data-ingestion']">Data Ingestion</span>
+        </div>
+    </div>
+
+    <div class="row m-0 m-t-7">
+        <div class="col-md-5 padding0">
+            <div class="row m-0">
+                <div class="col-md-4 padding0 ta-c">
+                    <div class="a-r">
+                        <div class="row m-0 b-g txt-c">
+                            Year
+                        </div>
+                        <div class="row m-0 p-20">
+                            <select id="exampleList" class="w-95">
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 padding0 ta-c">
+                    <div class="a-r">
+                        <div class="row m-0 b-g txt-c">
+                            Country
+                        </div>
+                        <div class="row m-0 p-20">
+                            <select id="exampleList" class="w-95">
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding0 ta-c">
+                    <div class="a-r">
+                        <div class="row m-0 b-g txt-c">
+                            Technology
+                        </div>
+                        <div class="row m-0 p-20">
+                            <select id="exampleList" class="w-95">
+                                <option value="017">017</option>
+                                <option value="018">018</option>
+                                <option value="019">019</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 padding0">
+            <div class="row m-0">
+                <div class="col-md-3 padding0 ta-c">
+                    <div class="a-r">
+                        <div class="row m-0 b-g txt-c">
+                            Contract Value
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-4 padding0 p-15">
+                                 <img src="../../assets/icn-02.png" class="w-94">
+                            </div>
+                            <div class="col-md-8 padding0">
+                                 <div class="row m-0">
+                                      <span class="f-29">$20K</span>
+                                 </div>
+                                 <div class="row m-0">
+                                      <span>Operations</span>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 padding0 ta-c">
+                    <div class="a-r">
+                        <div class="row m-0 b-g txt-c">
+                            Vendors
+                        </div>
+                        <div class="row m-0">
+                                <div class="col-md-4 padding0 p-15">
+                                        <img src="../../assets/icn-04.png" class="w-94">
+                                </div>
+                                <div class="col-md-8 padding0">
+                                     <div class="row m-0">
+                                          <span class="f-29">$20K</span>
+                                     </div>
+                                     <div class="row m-0">
+                                          <span>Selected Year</span>
+                                     </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 padding0 ta-c">
+                    <div class="a-r">
+                        <div class="row m-0 b-g txt-c">
+                            Contract Renewed
+                        </div>
+                        <div class="row m-0">
+                                <div class="col-md-4 padding0 p-15">
+                                        <img src="../../assets/icn-03.png" class="w-94">
+                                </div>
+                                <div class="col-md-8 padding0">
+                                     <div class="row m-0">
+                                          <span class="f-29">$20K</span>
+                                     </div>
+                                     <div class="row m-0">
+                                          <span>Past 90 Days</span>
+                                     </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 padding0 ta-c">
+                    <div class="a-r w-100">
+                        <div class="row m-0 b-g txt-c">
+                            Active Contracts
+                        </div>
+                        <div class="row m-0">
+                                <div class="col-md-4 padding0 p-15">
+                                        <img src="../../assets/icn-01.png" class="w-94">
+                                </div>
+                                <div class="col-md-8 padding0">
+                                     <div class="row m-0">
+                                          <span class="f-29">$20K</span>
+                                     </div>
+                                     <div class="row m-0">
+                                          <span>Operations</span>
+                                     </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-0 m-t-7">
+         <div class="col-md-4 padding0 ta-c">
+              <div class="a-r">
+                   <div class="row m-0 b-g txt-c">
+                        Vendors By Region
+                   </div>
+                   <div class="row m-0">
+                        <div id="map"></div>
+                   </div>
+              </div>
+         </div>
+         <div class="col-md-4 padding0 ta-c">
+                <div class="a-r">
+                     <div class="row m-0 b-g txt-c">
+                          Average Rate By Vendor
+                     </div>
+                     <div class="row m-0">
+                            <div [chart] = "vendorBarChart"></div>
+                     </div>
+                </div>
+           </div>
+           <div class="col-md-4 padding0 ta-c">
+                <div class="a-r-2">
+                     <div class="row m-0 b-g txt-c">
+                          Contract Value By ASG
+                     </div>
+                     <div class="row m-0">
+                            <div [chart] = "asgChart"></div>
+                     </div>
+                </div>
+           </div>
+    </div>
+
+    <div class="row m-0 m-t-7">
+            <div class="col-md-8 padding0">
+                 <div class="a-r-1">
+                      <div class="row m-0 b-g txt-c ta-c">
+                           Contract Details
+                      </div>
+                      <div class="row m-0">
+                            <data-table id="persons-grid" headerTitle="" [items]="items" [itemCount]="itemCount"
+                            (reload)="reloadItems($event)" [pageLimits]="pagelimits" [limit]="10" [pagination]="false" (rowClick)="rowClick($event)"
+                            (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip">
+                            <data-table-column *ngFor="let col of Columns; let i = index" [visible]="(i<5)?true:false"
+                                [property]='col' [header]='col' [sortable]="true" [resizable]="true">
+                            </data-table-column>
+                        </data-table>
+                            <!-- <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                        <th>ContractNumber</th>
+                                        <th>Vendor</th>
+                                        <th>ASGRole</th>
+                                        <th>ASGrate</th>
+                                        <th>ContractRate</th>
+                                        <th>Competetor</th>
+                                        <th>CompetetorRate</th>
+                                        <th>CompetetorDetails</th>
+                                        <th>example</th>
+                                        <th>example</th>
+                                        <th>example</th>
+                                        <th>example</th>
+                                        <th>example</th>
+                        
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let item of userList">
+                                            <td>{{item.ContractNumber}}</td>
+                                            <td>{{item.Vendor}}</td>
+                                            <td>{{item.ASGRole}}</td>
+                                            <td>{{item.ASGrate}}</td>
+                                            <td>{{item.ContractRate}}</td>
+                                            <td>{{item.Competetor}}</td>
+                                            <td>{{item.CompetetorRate}}</td>
+                                            <td>{{item.CompetetorDetails}}</td>
+                                            <td>{{item.example}}</td>
+                                            <td>{{item.example1}}</td>
+                                            <td>{{item.example2}}</td>
+                                            <td>{{item.example3}}</td>
+                                            <td>{{item.example4}}</td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table> -->
+                      </div>
+                 </div>
+            </div>
+            <div class="col-md-4 padding0 ta-c">
+                   <div class="a-r-2">
+                        <div class="row m-0 b-g txt-c">
+                             Contract Value By Competetor
+                        </div>
+                        <div class="row m-0">
+                             <div [chart] = "competetorChart"></div>
+                        </div>
+                   </div>
+            </div>
+       </div>
+</div>

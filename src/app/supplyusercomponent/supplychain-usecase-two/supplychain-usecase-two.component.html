@@ -1,0 +1,133 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 pd-right">
+      <div class="card">
+        <div class="card-head cardhead">
+          <span><b>{{df(categoryArray)}}M</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Total Revenue</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(yearArray)}}M</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Total Budget</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(cityArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Labor Costs</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(chainArray)}}M</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Previous Year Revenue</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(buyerArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Shipping Cost</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(monthArray)}}%</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Total Profit</b></span>
+        </div>
+      </div>
+    <div class="card">
+      <div class="card-head card-he">
+          <span><b>{{df(QuarterArray)}}</b></span>
+      </div>
+      <div class="card-body">
+          <span><b>Satisfactory</b></span>
+      </div>
+    </div>
+    </div>
+  <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+   <div class="row">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="row">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <label><b>Region</b></label>
+          <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedRegion($event)">
+        <option  value="ALL">ALL</option>
+        <option *ngFor="let obj of Region" value="{{obj.Region}}">{{obj.Region}}</option>
+      </select>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <label><b>Category</b></label>
+          <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedCategory($event)">
+            <option  value="ALL">ALL</option>
+            <option *ngFor="let obj of Category" value="{{obj.Category}}">{{obj.Category}}</option>
+          </select>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <label><b>Sub Category</b></label>
+          <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedSubCategory($event)">
+        <option  value="ALL">ALL</option>
+        <option *ngFor="let obj of subcategory" value="{{obj.SubCategory}}">{{obj.SubCategory}}</option>
+      </select>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+          <label><b>Year</b></label>
+          <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedMonth($event)">
+        <option  value="ALL">ALL</option>
+        <option *ngFor="let obj of Months" value="{{obj.Year}}">{{obj.Year}}</option>
+      </select>
+        </div>
+      </div>
+      
+      <div class="row background_head margin-r-18">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div [chart]="pievalue" class=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd-right">
+      <div class="row background_head">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <p>Total Sale and Target Sales by Sub-Category</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div [chart]="bar1" class="chart"></div>
+        </div>
+      </div>
+      <div class="row background_head">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <p>Total Revenue by BU</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div [chart]="pi" class="chart"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row background_head margin-r-7">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <p>Monthly Sales CY Vs PY</p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div  [chart] = "colum" class="chart-height"></div>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+<ngx-spinner bdColor="rgba(243, 241, 241, 0.842)" size="default" color="#20283d" type="ball-spin-clockwise">  
+  <p style="color: #20283d">Please Wait... </p>  
+  </ngx-spinner> 

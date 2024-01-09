@@ -1,0 +1,41 @@
+.head_text{
+    /* height: 55px; */
+    padding: 10px;
+}
+.bg-chart{
+    background-color: white;
+    color: #20283d;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+h3{
+    font-weight: bold;
+    margin-left: 5px;
+}
+p{
+    font-weight: bold;
+}
+.bg-color{
+    background-color: #e6e7ec;
+}
+.wd-50{
+    width: 48%;
+}
+.marg-l{
+    margin-left: 10px;
+}
+.img-up{
+    height: 35px;
+}
+.img-down{
+    height: 35px;
+}
+span{
+    font-size: 25px;
+    font-weight: bold;
+    float: right;
+}
+.pd-0{
+    padding: 0px;
+}

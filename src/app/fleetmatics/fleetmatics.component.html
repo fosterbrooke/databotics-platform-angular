@@ -1,0 +1,1042 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+
+<!-- <div class="container-fluid">
+    <div class="row" *ngIf="Overview">
+      <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setfleetOverview(1);" style="color: #788786;">Vehicle Behavior </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setDriver(2);" style="color: #788786"> Vehicle Performance </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(3)}" (click)="setvehicleMetric(3);" style="color: #788786"> Route Optimization </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(4)}" (click)="setcustomerFeed(4);" style="color: #788786"> Driver Feedback  </a>
+          </li>
+      </ul>
+      <div>
+        <div>
+            <app-vehiclebehavior *ngIf="fleetOverview"> </app-vehiclebehavior>
+        </div>
+        <div>
+            <app-vehicleperformance *ngIf="driverProfile"></app-vehicleperformance>
+        </div>
+        <div>
+            <app-vehicleroute  *ngIf="trackOrder"></app-vehicleroute>
+        </div>
+        <div>
+            <app-vehiclecustomer  *ngIf="custFeed"></app-vehiclecustomer>
+        </div>
+
+      </div>
+    </div>
+    <div class="row" *ngIf="tenantOverview">
+        <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setfleetOverview(1);" style="color: #788786;">Vehicle Behavior </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setDriver(2);" style="color: #788786"> Vehicle Performance </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{activeclass: isActive(3)}" (click)="setvehicleMetric(3);" style="color: #788786"> Route Optimization </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [ngClass]="{activeclass: isActive(4)}" (click)="setcustomerFeed(4);" style="color: #788786"> Driver Feedback  </a>
+            </li>
+        </ul>
+        <div>
+          <div>
+              <app-vehiclebehaviourtenant *ngIf="fleetOverview"></app-vehiclebehaviourtenant>
+          </div>
+          <div>
+              <app-vehicleperformance *ngIf="driverProfile"></app-vehicleperformance>
+          </div>
+          <div>
+              <app-vehicleroute  *ngIf="trackOrder"></app-vehicleroute>
+          </div>
+          <div>
+              <app-vehiclecustomer  *ngIf="custFeed"></app-vehiclecustomer>
+          </div>
+  
+        </div>
+      </div>
+ </div> -->
+<!-- <div container-fluid>
+    <div class="row m-0">
+        <div class="col-md-2 text-center padding0">
+            <span class="topsectiontext">Driver</span>
+            <select class="dropdownWidth" name="Fleet" [(ngModel)]="drivername" (change)="vehicleDDChange($event)">
+                <option style="font: bold" selected disabled value="-1">Select Driver</option>
+                <option> {{drivername}} </option>
+                <option *ngFor="let option of mapdata" value="{{option.deviceNbr}}">{{option.personName}}</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="row m-0 m-t-15">
+        <div class="col-md-2 float-left top-nav">
+            <div class="a-r">
+                <div class="row m-0">
+                    <div class="col-md-4 padding0">
+                        <img src="../../assets/1icon.png">
+                    </div>
+                    <div class="col-md-5 padding0">
+                        <div class="row m-0">
+                            <span>
+                                Behavior
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="f-s">{{(behaviourcard) ? behaviourcard : '- -'}}%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 padding0">
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 float-left top-nav">
+            <div class="a-r">
+                <div class="row m-0">
+                    <div class="col-md-4 padding0">
+                        <img class="img-w" src="../../assets/icon-5.jpg">
+                    </div>
+                    <div class="col-md-5 padding0">
+                        <div class="row m-0">
+                            <span>
+                                Speeding
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="f-s">{{(speedcard) ? speedcard : '- -'}}%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 padding0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 float-left top-nav">
+            <div class="a-r">
+                <div class="row m-0">
+                    <div class="col-md-4 padding0">
+                        <img class="img-w" src="../../assets/icon-7.jpg">
+                    </div>
+                    <div class="col-md-5 padding0">
+                        <div class="row m-0">
+                            <span>
+                                Acceleration
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="f-s">{{(accelerationScore) ? accelerationScore : '- -'}}%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 padding0">
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 float-left top-nav">
+            <div class="a-r">
+                <div class="row m-0">
+                    <div class="col-md-4 padding0">
+                        <img class="img-w" src="../../assets/icon-6.jpg">
+                    </div>
+                    <div class="col-md-5 padding0">
+                        <div class="row m-0">
+                            <span>
+                                Braking
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="f-s">{{(brakingScore) ? brakingScore : '- -'}}%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 padding0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 float-left top-nav">
+            <div class="a-r">
+                <div class="row m-0">
+                    <div class="col-md-4 padding0">
+                        <img src="../../assets/icon-8.png">
+                    </div>
+                    <div class="col-md-5 padding0">
+                        <div class="row m-0">
+                            <span>
+                                Idle Time
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="f-s"> {{(idleTime) ? idleTime : '- -'}}% </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 padding0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 float-left top-nav">
+            <div class="a-r">
+                <div class="row m-0">
+                    <div class="col-md-4 padding0">
+                        <img src="../../assets/icon-9.jpg">
+                    </div>
+                    <div class="col-md-5 padding0">
+                        <div class="row m-0">
+                            <span>
+                                Stop Time
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="f-s"> {{(stopTime) ? stopTime : '- -'}}% </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 padding0">
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row r-2 m-0 m-t-15">
+        <div class="col-md-3 p-7">
+            <div class="row m-0">
+                <span class="f-s">Driver Scorecard</span>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-2 padding0">
+                    <img src="../../assets/7icon.png">
+                </div>
+                <div class="col-md-10 padding0">
+                    <span>{{(driver) ? driver : '- -'}}</span><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-t-10">
+            <div class="a-r-2">
+                <div class="row m-0 p-5">
+                    <div class="col-md-4 padding0 m-30">
+                        <span class="text-color m-l-5 f-s">57%</span>
+                    </div>
+                    <div class="col-md-8 padding0">
+                        <div class="row m-0">
+                            <span>
+                                <i class="fa fa-arrow-up a-i" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="text-color f-s-10">Increased by 1.9 points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 m-t-10">
+            <div class="a-r-3">
+                <div class="row m-0 t-a">
+                    <div class="col-md-12 padding0">
+                        <span class="text-color f-s">Rank</span>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-5">
+                        <span>July</span><br>
+                        <span>3/6</span>
+                    </div>
+                    <div class="col-md-2">
+                        <i class="fa fa-arrow-right a-r-i" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-md-5">
+                        <span>August</span><br>
+                        <span>2/6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 b-c m-t-10">
+            <span>Current Location:</span> &nbsp; <span> {{location}} </span>
+        </div>
+    </div>
+    <div class="row m-0 m-t-15">
+        <div class="col-md-3 padding0">
+            <div class="a-r-4 b-c-4 p-7">
+                <div class="row m-0">
+                    <div class="col-md-6 float-left"><span class="chart-txt">Harsh Events</span></div>
+                    <div class="col-md-6 float-left" style="cursor: pointer"><span class="f-r"><i class="fa fa-line-chart" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i></span></div>
+                </div>
+                <div class="row m-0">
+                    <div [chart]="harshevents">
+
+                    </div>
+                </div>
+                <div class="row m-0 t-a b-g">
+                    <div class="t-c p-7">Acceleration Events: &nbsp; {{(todayAcceleration) ? todayAcceleration : '- -'}}</div>
+                    <div class="t-c p-7">Braking Events: &nbsp; {{(todayBraking) ? todayBraking : '- -'}}</div>
+                    <div class="t-c p-7">Speeding Events: &nbsp; {{(highSpeed) ? highSpeed : '- -'}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 padding0">
+            <div class="a-r-4 b-c-4 p-7">
+                <div class="row m-0">
+                    <div class="col-md-6 float-left"><span class="chart-txt">Hours Per Day</span></div>
+                    <div class="col-md-6 float-left" style="cursor: pointer"><span class="f-r"><i class="fa fa-line-chart" aria-hidden="true" data-toggle="modal" data-target="#myModal1"></i></span></div>
+                </div>
+                <div class="row m-0">
+                    <div [chart]="hourschart">
+
+                    </div>
+                </div>
+                <div class="row m-0 t-a b-g">
+                    <div class="t-c p-7">Total driving time: &nbsp; {{(drivetime) ? drivetime : '- -'}} Min</div>
+                    <div class="t-c p-7">Total idling time: &nbsp; {{(idlingtime) ? idlingtime : '- -'}} Mins</div>
+                    <div class="t-c p-7">Stopped Time: &nbsp; {{(stoptime) ? stoptime : '- -'}} Mins</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 padding0">
+            <div class="a-r-4 b-c-4 p-7">
+                <div class="row m-0">
+                    <div class="col-md-6 float-left"><span class="chart-txt">Miles Per Day</span></div>
+                    <div class="col-md-6 float-left" style="cursor: pointer"><span class="f-r"><i class="fa fa-line-chart" aria-hidden="true" data-toggle="modal" data-target="#myModal2"></i></span></div>
+                </div>
+                <div class="row m-0">
+                    <div [chart]="mileschart">
+
+                    </div>
+                </div>
+                <div class="row m-0 t-a b-g">
+                    <div class="t-c p-7">Miles driven: &nbsp; {{this.miles}}</div>
+                    <div class="t-c p-7">Unauthorized Miles driven: &nbsp; {{this.unauthorizedMiles}}</div>
+                    <div class="t-c p-7">Total trips: &nbsp; {{this.totaltrips}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 padding0">
+            <div class="a-r-4 b-c-4 p-7">
+                    <div id="map">
+        
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Harsh Events Insights</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div [chart]="hoursAccChart">
+        
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="hoursBrakingChart">
+        
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="hoursSpeedChart">
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Driving Hour Insights</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div [chart]="driveChart">
+        
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="idleChart">
+        
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="stopChart">
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Miles Insights</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div [chart]="mileChart">
+        
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="unauthorizedMileChart">
+        
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="tripChart">
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div> -->
+<!--new screen---->
+<div class="container-fluid m-t-1 padding0">
+    <div class="row m-0">
+        <div class="col-md-12 padding0 pd-bg">
+            <span class="topsectiontext">Driver</span>
+            <select class="dropdownWidth" name="Fleet" [(ngModel)]="drivername" (change)="vehicleDDChange($event)">
+                <option style="font: bold" selected disabled value="-1">Select Driver</option>
+                <option> {{drivername}} </option>
+                <option *ngFor="let option of mapdata" value="{{option.imei}}">{{option.personName}}</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="row m-0 m-t-1">
+        <div class="col-md-9 padding0 w-80">
+            <div class="row m-0 t-b">
+                <div class="col-md-2 padding0 t-c">
+                    <div class="a-r pointer" data-toggle="modal" data-target="#myModal5">
+                        <div class="row m-0 p-25 p-b">
+                            <img src="../../assets/nw-icon-5.png"><br>
+                            <span class="txt-fs">Drive Time</span><br>
+                            <span class="txt-fs1">(DD HH MM)</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-12 p-10">
+                                <div class="txt">
+                                    {{(drivetimeDaysFormat) ? drivetimeDaysFormat : '- -'}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 padding0 t-c">
+                    <div class="a-r pointer" data-toggle="modal" data-target="#myModal4">
+                        <div class="row m-0 p-25 p-b">
+                            <img src="../../assets/nw-icon-2.png"><br>
+                            <span class="txt-fs">Idle Time</span><br>
+                            <span class="txt-fs1">(DD HH MM)</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-12 p-10">
+                                <div class="txt">
+                                    {{(idlingtimeDaysFormat) ? idlingtimeDaysFormat : '- -'}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 padding0 t-c">
+                    <div class="a-r pointer" data-toggle="modal" data-target="#myModal3">
+                        <div class="row m-0 p-25 p-b">
+                            <img src="../../assets/nw-icon-7.png"><br>
+                            <span class="txt-fs">Stop Time</span><br>
+                            <span class="txt-fs1">(DD HH MM)</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-12 p-10">
+                                <div class="txt">
+                                    {{(stoptimeDaysFormat) ? stoptimeDaysFormat : '- -'}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 padding0 t-c">
+                    <div class="a-r pointer" data-toggle="modal" data-target="#myModal5">
+                        <div class="row m-0 p-25 p-b">
+                            <img src="../../assets/nw-icon-1.png"><br>
+                            <span class="txt-fs">Total Miles</span><br>
+                            <span class="txt-fs1">(Miles)</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-12 p-10">
+                                <div class="txt">{{(miles) ? miles : '- -'}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 padding0 t-c">
+                    <div class="a-r pointer" data-toggle="modal" data-target="#myModal5">
+                        <div class="row m-0 p-25 p-b">
+                            <img src="../../assets/nw-icon-6.png"><br>
+                            <span class="txt-fs">Total Trips</span><br>
+                            <span class="txt-fs1">(Incidents)</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-12 p-10">
+                                <div class="txt">{{(totaltrips) ? totaltrips : '- -'}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 padding0 t-c">
+                    <div class="a-r pointer" data-toggle="modal" data-target="#myModal6">
+                        <div class="row m-0 p-25 p-b">
+                            <img src="../../assets/nw-icon-3.png"><br>
+                            <span class="txt-fs">Total Alerts</span><br>
+                            <span class="txt-fs1">(Incidents)</span>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-md-12 p-10">
+                                <div class="txt">{{(alerts) ? alerts : '- -'}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row m-0 m-t-1">
+                <div class="col-md-12 padding0 gray-bg">
+                    <div class="col-md-10 padding0">
+                        Live Tracker
+                    </div>
+                    <div class="col-md-2 p-2">
+                        <div class="col-md-12 padding0">
+                                <div class="col-md-9 padding0">
+                                        <button class="btn btn-success" (click)="loadRoute()">Route Replay</button>
+                                </div>
+                                <div class="col-md-3 padding0">
+                                        <button class="btn btn-success m-l-1" (click)="loadVehicle()"><i class="fa fa-history"
+                                            aria-hidden="true"></i></button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 padding0">
+                    <div id="map">
+
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 padding0">
+                    <div class="row m-0">
+                        <div class="col-md-6 float-left"><span class="chart-txt">Hours Per Day</span></div>
+                    </div>
+                    <div class="row m-0">
+                        <div [chart]="hourschart">
+
+                        </div>
+                        <div class="row m-0 t-a b-g">
+                            <div class="txt-c p-5">Total driving time: &nbsp; {{(drivetime) ? drivetime : '- -'}} Min
+                            </div>
+                            <div class="txt-c p-5">Total idling time: &nbsp; {{(idlingtime) ? idlingtime : '- -'}} Mins
+                            </div>
+                            <div class="txt-c p-5">Stopped Time: &nbsp; {{(stoptime) ? stoptime : '- -'}} Mins</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="row m-0 m-t-1">
+                <div class="col-md-4 padding0 gray-bg">
+                    <div class="a-r-1">
+                        <div class="row m-0">
+                            <div class="col-md-6 float-left"><span class="chart-txt">Harsh Events</span></div>
+                            <div class="col-md-6 float-left" style="cursor: pointer"><span class="f-r"><i
+                                        class="fa fa-line-chart" aria-hidden="true" data-toggle="modal"
+                                        data-target="#myModal"></i></span></div>
+                        </div>
+                        <div class="row m-0">
+                            <div [chart]="harshevents">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding0 gray-bg">
+                    <div class="a-r-1">
+                        <div class="row m-0">
+                            <div class="col-md-6 float-left"><span class="chart-txt">Drive Events (Mins)</span></div>
+                            <div class="col-md-6 float-left" style="cursor: pointer"><span class="f-r"><i
+                                        class="fa fa-line-chart" aria-hidden="true" data-toggle="modal"
+                                        data-target="#myModal1"></i></span></div>
+                        </div>
+                        <div class="row m-0">
+                            <div [chart]="hourschart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 padding0 gray-bg">
+                    <div class="a-r-1">
+                        <div class="row m-0">
+                            <div class="col-md-6 float-left"><span class="chart-txt">Miles Per Day</span></div>
+                            <div class="col-md-6 float-left" style="cursor: pointer"><span class="f-r"><i
+                                        class="fa fa-line-chart" aria-hidden="true" data-toggle="modal"
+                                        data-target="#myModal2"></i></span></div>
+                        </div>
+                        <div class="row m-0">
+                            <div [chart]="mileschart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3 padding0 w-20 m-l-2">
+            <div class="row m-0 t-b tc-ta">
+                <!-- <div class="col-md-12 padding0 p-2">
+                    <span>Will Taylor</span>
+                </div> -->
+                <div class="col-md-12 padding0 p-17">
+                    <img class="p-img" src="../../assets/userpic.png">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 padding0 p-10">
+                    <div class="col-md-4 padding0">
+                        <span>DRIVER:</span>
+                    </div>
+                    <div class="col-md-8 padding0">
+                        <span>{{(driver) ? driver : '- -'}}</span>
+                    </div>
+                </div>
+                <div class="col-md-12 padding0 p-10">
+                    <div class="col-md-4 padding0">
+                        <span>VIN:</span>
+                    </div>
+                    <div class="col-md-8 padding0">
+                        <span>{{(VIN) ? VIN : '- -'}}</span>
+                    </div>
+                </div>
+                <div class="col-md-12 padding0 p-10">
+                    <div class="col-md-4 padding0">
+                        <span>Location:</span>
+                    </div>
+                    <div class="col-md-8 padding0">
+                        <span>{{(location) ? location : '- -'}}</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="row m-0 m-t-10 t-c">
+                <div class="col-md-3 padding0">
+                    <div class="a-r-2">
+                        <div class="row m-0 pointer" data-toggle="modal" data-target="#myModal3">
+                            <img src="../../assets/nw-icon-7.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 padding0">
+                    <div class="a-r-2">
+                        <div class="row m-0 pointer" data-toggle="modal" data-target="#myModal4">
+                            <img src="../../assets/nw-icon-5.png">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 padding0">
+                    <div class="a-r-2">
+                        <div class="row m-0 pointer" data-toggle="modal" data-target="#myModal5">
+                            <img src="../../assets/nw-icon-6.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 padding0">
+                    <div class="a-r-2">
+                        <div class="row m-0 pointer" data-toggle="modal" data-target="#myModal6">
+                            <img src="../../assets/nw-icon-3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0 m-t-5 tb-tc">
+                <div class="col-md-12 padding0">
+                    <span>Driver Safety Scorecard</span>
+                </div>
+                <div class="col-md-12 padding0">
+                    <div [chart]="scoreChart">
+
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+
+            <div class="row m-0 m-t-1 t-c">
+                <div class="col-md-12 padding0">
+                    <span>Fuel Consumption</span>
+                </div>
+                <div class="col-md-12 padding0">
+                    <div class="col-md-6 padding0">
+                        <div class="row m-0">
+                            <span>Last 7 Days</span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="spn-fs">219 Gal.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 padding0">
+                        <div class="row m-0">
+                            <span>Est.Monthly</span>
+                        </div>
+                        <div class="row m-0">
+                            <span class="spn-fs">478 Gal.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+
+            <div class="row m-0 m-t-5 t-c">
+                <div class="col-md-3 padding0">
+                    <img src="../../assets/fuel_icon.png" style="width: 60%">
+                </div>
+                <div class="col-md-9 padding0">
+                    <span>On track to meet your monthly goal</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!----model content-->
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Harsh Events Insights</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div [chart]="hoursAccChart">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="hoursBrakingChart">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="hoursSpeedChart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Driving Hour Insights</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div [chart]="driveChart">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="idleChart">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="stopChart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Miles Insights</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div [chart]="mileChart">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="unauthorizedMileChart">
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div [chart]="tripChart">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Stops Info</h4>
+                </div>
+                <div class="modal-body">
+                    <data-table id="persons-grid" class="cursor" headerTitle="" [items]="stopitems" [itemCount]="stopitemCount"
+                        (reload)="stopreloadItems($event)" [pagination]="false" [pageLimits]="pagelimits" [limit]="10" (rowClick)="rowStopClick($event)"
+                        (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip">
+                        <data-table-column *ngFor="let col of stopColumns; let i = index" [visible]="(i<8)?true:false"
+                            [property]='col' [header]='col' [sortable]="true" [resizable]="true">
+                        </data-table-column>
+                    </data-table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal4" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Idle Info</h4>
+                </div>
+                <div class="modal-body">
+                    <data-table id="persons-grid" class="cursor" headerTitle="" [items]="idleitems" [itemCount]="idleitemCount"
+                        (reload)="idlereloadItems($event)" [pagination]="false" [pageLimits]="pagelimits" [limit]="10" (rowClick)="rowIdleClick($event)"
+                        (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip">
+                        <data-table-column *ngFor="let col of idleColumns; let i = index" [visible]="(i<8)?true:false"
+                            [property]='col' [header]='col' [sortable]="true" [resizable]="true">
+                        </data-table-column>
+                    </data-table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Trip Info</h4>
+                </div>
+                <div class="modal-body">
+                    <data-table id="persons-grid" class="cursor" headerTitle="" [items]="tripitems" [itemCount]="tripitemCount"
+                        (reload)="tripreloadItems($event)" [pagination]="false" [pageLimits]="pagelimits" [limit]="10" (rowClick)="rowDTClick($event)"
+                        (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip">
+                        <data-table-column *ngFor="let col of tripColumns; let i = index" [visible]="(i<8)?true:false"
+                            [property]='col' [header]='col' [sortable]="true" [resizable]="true">
+                        </data-table-column>
+                    </data-table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Alert Info</h4>
+                </div>
+                <div class="modal-body">
+                    <!-- <table class="m-l-60">
+                        <thead>
+                            <tr>
+                                <td class="tb-br">Device Serial Number</td>
+                                <td class="tb-br">Device Type</td>
+                                <td class="tb-br">Alert</td>
+                                <td class="tb-br">Alert Desc</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let data of alertArray">
+                                <td class="tb-br">{{data.DeviceSerialNumber}}</td>
+                                <td class="tb-br">{{data.DeviceType}}</td>
+                                <td class="tb-br">{{data.Alert}}</td>
+                                <td class="tb-br">{{data.AlertDescription}}</td>
+                            </tr>
+                        </tbody>
+                    </table> -->
+                    <data-table id="persons-grid" headerTitle="" [items]="items" [itemCount]="itemCount"
+                        (reload)="reloadItems($event)" [pagination]="false" [pageLimits]="pagelimits" [limit]="10" (rowClick)="rowClick($event)"
+                        (rowDoubleClick)="rowDoubleClick($event)" [rowTooltip]="rowTooltip">
+                        <data-table-column *ngFor="let col of columns; let i = index" [visible]="(i<8)?true:false"
+                            [property]='col' [header]='col' [sortable]="true" [resizable]="true">
+                        </data-table-column>
+                    </data-table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-map" *ngIf="minimapshow">
+        <div class="row">
+             <div class="col-md-6">
+                  <span></span>
+             </div>
+             <div class="col-md-6 txt-r">
+               <div (click)="close()"><i class="fa fa-times cursor m-r-10" aria-hidden="true"></i></div>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                   <div id="minimap">
+
+                   </div>
+            </div>
+        </div>
+   </div>
+   <div class="modal-map" *ngIf="idleminimapshow">
+    <div class="row">
+         <div class="col-md-6">
+              <span></span>
+         </div>
+         <div class="col-md-6 txt-r">
+           <div (click)="close()"><i class="fa fa-times cursor m-r-10" aria-hidden="true"></i></div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+               <div id="idleminimap">
+
+               </div>
+        </div>
+    </div>
+</div>
+<div class="modal-map" *ngIf="stopminimapshow">
+    <div class="row">
+         <div class="col-md-6">
+              <span></span>
+         </div>
+         <div class="col-md-6 txt-r">
+           <div (click)="close()"><i class="fa fa-times cursor m-r-10" aria-hidden="true"></i></div>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+               <div id="stopminimap">
+
+               </div>
+        </div>
+    </div>
+</div>
+
+</div>

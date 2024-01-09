@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span><b>${{df(cat1)}}M</b></span>
+                </div>
+                <div class="card-body">
+                  <span><b>Regular Sales</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span><b>${{df(saleArray)}}</b></span>
+                </div>
+                <div class="card-body">
+                  <span><b>Total Stores</b></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span><b>${{df(totalArray)}}M</b></span>
+                </div>
+                <div class="card-body">
+                  <span><b>Gross Margin</b></span>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 pd-right">
+          <div [chart]="buychart" class="pie m-t-10"></div>
+          <div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+        <div class="pd-0 head_background">This Year Sales by Postal Code and Store Type</div>
+        <div id="NewdataRetail" class="border chart"></div>
+      </div>
+    </div>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="pd-0 head_background">Total Sales Variance by FiscalMonth and District Manager </div>
+            <div [chart]="columnchart" class="chart"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="pd-0 head_background">Total Sales Variance %, Sales Per Sq Ft and This Year Sales by District and District</div>
+            <div [chart]="bobblechart" class="chart"></div>
+          </div>
+        </div>
+        </div>
+  </div>
+</div>

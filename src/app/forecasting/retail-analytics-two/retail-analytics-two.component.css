@@ -1,0 +1,25 @@
+.card-head{
+    background-color: #20283d;
+    height: 30px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.heading{
+    background-color: #20283d;
+    color: white;
+    padding: 6px;
+    margin-top: 10px;
+}
+.height{
+    height: 370px;
+}
+.icon{
+    font-size: 110px;
+    text-align: center;
+    color: #20283d;
+}
+.pd_right{
+    padding-right: 0px;
+}

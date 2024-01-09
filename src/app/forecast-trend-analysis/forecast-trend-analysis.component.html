@@ -1,0 +1,380 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <div class="col-md-12 panel-first-bg-color">
+        <span>Andhra Pradesh Legislative Assembly election,2014</span>
+    </div>
+    <!--Drop Down-->
+    <div class="col-md-12 mt-2">
+        <div class="col-md-4 padding-0">
+            <div class="form-group dropdown-wrapper">
+                <select id="districtname" class="dropdown-bg-color" name="districtname" placeholder="DistrictName"
+                    class="form-control dropdown-wrapper" (change)="changeDistrict($event)">
+                    <option> State</option>
+                    <!-- <option *ngFor="let dist of district">{{dist}}</option> -->
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4 padding-0">
+            <div class="form-group dropdown-wrapper">
+                <select id="assemblyname" class="dropdown-bg-color" name="assemblyname"
+                    placeholder="Booth Incharge Name" class="form-control dropdown-wrapper"
+                    (change)="changeAssembly($event)">
+                    <option>District Name</option>
+                    <!-- <option *ngFor="let assemblys of assembly">{{assemblys}}</option> -->
+                </select>
+            </div>
+
+
+        </div>
+        <div class="col-md-4 padding-0">
+            <div class="form-group dropdown-wrapper">
+                <select id="boothinchargename" class="dropdown-bg-color" name="boothinchargename"
+                    placeholder="Booth Incharge Name" class="form-control dropdown-wrapper">
+                    <option>Constituency</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <!--Drop Down close-->
+    <div class="col-md-12">
+        <div id="table-scroll" class="table-scroll">
+            <div class="table-wrap">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th class="fixed-side" colspan="2" scope="col">&nbsp;</th>
+
+                            <th scope="col">Anantapur</th>
+                            <th scope="col">Chittor</th>
+                            <th scope="col">East Godavari</th>
+                            <th scope="col">Guntur</th>
+                            <th scope="col">Kadapa</th>
+                            <th scope="col">Krishna</th>
+                            <th scope="col">Krishna</th>
+                            <th scope="col">Kurnool</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="fixed-side" rowspan="3">Gender</th>
+                            <th class="fixed-side">Male</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Female</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Other</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <!--Gender-->
+                        <tr>
+                            <th class="fixed-side" rowspan="3">Religion</th>
+                            <th class="fixed-side">Hindu</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Muslim</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Christian</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <!--Religion-->
+                        <tr>
+                            <th class="fixed-side" rowspan="5">Income Group</th>
+                            <th class="fixed-side">More than 1,00,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 99,999 & 50,0000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 49,999 & 25,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 49,999 & 25,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Less then 10,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <!--Income Group-->
+                        <tr>
+                            <th class="fixed-side" rowspan="5">Age Group</th>
+                            <th class="fixed-side">Above 60</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 45-60</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 30-45</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 20-30</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 18-20</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                      <!--Age Group--> 
+                      <tr>
+                            <th class="fixed-side" rowspan="5">Income Group</th>
+                            <th class="fixed-side">More than 1,00,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 99,999 & 50,0000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 49,999 & 25,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Between 49,999 & 25,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Less then 10,000</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <!--Income Group-->
+                        <tr>
+                            <th class="fixed-side" rowspan="5">Incomebency</th>
+                            <th class="fixed-side">Agriculture</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Jobs</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Infrastructure</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Laws & Order</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+
+                        </tr>
+                        <tr>
+                            <th class="fixed-side">Governmance</th>
+                            <td>46</td>
+                            <td>51</td>
+                            <td>46</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                            <td>49</td>
+                        </tr>  
+             </tbody>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</div>

@@ -1,0 +1,118 @@
+<header class="bg">
+  <div class="overlay"></div>
+  <!-- <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="../assets/videos/cb5.mp4" type="video/mp4">
+        
+    </video> -->
+  <div>
+  </div>
+
+  <div class="container h-100">
+    <div style="text-align:center;">
+      <h3 class="text-center;">
+      <img style="padding-top: 1%;" class="w-50" src="../assets/images/databotheader.png">
+      </h3>
+      <br>
+      <!-- <span style="color:#dbdfdc;padding-top:10px;font-family: Ubuntu;font-size: 11px;">Your data ingestion  platform</span> -->
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12" style="text-align: center;">
+        <div class="image_section">
+          <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+            <!-- <img src="../../assets/images/manufacturing-header-icon.png"> -->
+            <img src="../../assets/images/manulogin.png">
+            <h6> Manufacturing </h6>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+            <!-- <img src="../../assets/images/bill-2-blue-circle.png"> -->
+            <img src="../../assets/images/billlogin.png">
+            <h6> Transportation </h6>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+            <img src="../../assets/images/Finlogin.png" class="img-fin">
+            <h6> Finance </h6>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+            <!-- <img src="../../assets/images/human resources1.png"> -->
+            <img src="../../assets/images/humanLog.png">
+            <h6> Human Capital </h6>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+            <!-- <img src="../../assets/images/healthLog.png"> -->
+            <img src="../../assets/images/healthLog.png" class="img-helth">
+            <h6> Healthcare </h6>
+          </div>
+          <div class="col-xs-12 col-sm-2 col-md-2 text-center">
+            <img src="../../assets/images/Government-png.png" class="img-margin">
+            <h6> Government </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex text-center h-100">
+      <div class="my-auto w-100 text-white">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center loginFormSection"> 
+            <div class="card-header">
+              <h4 style="color:#fff; font-weight: bold; font-size: 15px; text-align: center;
+              padding-right: 50px;">Sign In</h4>
+            </div>
+            <div class="card-body">
+              <form [formGroup]="loginForm"  (ngSubmit)="onSubmit()">
+                <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 p-0 clr" style="color:white; margin-left: 5%">User Name:</label>
+                  <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                    <input type="text" class="form-control" name="user" formControlName="identifier" required autocomplete="off">
+                  </div>
+                </div>
+                <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <label class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 p-0 clr" style="color:white; margin-left: 5%">Password:</label>
+                  <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                    <div class="col-md-9"></div>
+                    <input type="password" class="form-control" name="password" formControlName="password" required autocomplete="off">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn float-right login_btn" value="ENTER">
+                </div>
+              </form>
+            </div>
+          </div>
+
+            <div>
+
+              <img src="../../assets/images/databoticsfooter.png" style="width: 560px;margin-top: 15px;">
+
+              <div class="footer_content">
+                  <h4 class="color"> Business Intelligence - IoT - Data Analytics </h4>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        <!-- <h4 class="modal-title">Modal Header</h4> -->
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center">{{modelText}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

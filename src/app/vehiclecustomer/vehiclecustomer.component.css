@@ -1,0 +1,206 @@
+.dropdown-wrapper{
+    width: 100%;
+   height: 25px;
+   padding: 0px 30px;
+   border: 0px;
+   /* border-bottom: 1px solid grey; */
+   border-radius: 2px;
+   padding-bottom: 0px;
+   }
+   .card_wrapper-drivers{
+    /* width: 18rem; */
+    background-color: #FFFFFF;
+    border-top: 2px solid #5871b2;
+    padding-left: 24px;
+    padding-bottom: 22px;
+}
+.p-0{
+    padding:0px !important;
+  }
+  .dropdown-label{
+
+    line-height: 26px;
+    font-size: 12px;
+    text-align: left;
+    padding-right: 3px !important;
+  }
+  .m-0{
+    margin:0px !important;
+  }
+h3{
+    font-size:18px !important;
+    margin-top: 10px !important;
+  }
+.customer_wrapper-drivers{
+    /* width: 18rem; */
+    background-color: #FFFFFF;
+
+}
+.p-left-5{
+    padding-left:5px;
+}
+  h3 {
+
+}
+
+
+
+.fs-40{
+    font-size: 40px;
+    color: #939292
+
+}
+.fs-17{
+    font-size: 17px;
+    color: #939292
+}
+
+.fs-18{
+    font-size: 18px
+}
+.icon-color{
+    color:#ff7675;
+    font-size: 18px
+}
+
+.default-icon-color{
+    color: #ccc
+}
+.btnActive
+{
+ background-color:#452950
+}
+/*Padding*/
+.pd-lr{
+    padding-left: 2px;
+    padding-right: 2px
+}
+
+.pd-lr-driver-details{
+    padding-left: 2px;
+    padding-right: 0px;
+    /* background-color: #FFFFFF; */
+    /* height: 296px; */
+}
+
+
+
+/*Padding*/
+
+.form-group {
+    margin-bottom: 6px;
+}
+.listgroup-wrapper{
+    padding: 8px 12px;
+     background-color: #fff;
+    border: 1px solid white;
+    list-style: none;
+    border: 1px solid white;
+
+}
+.list-back-ground-color-1{
+    background-color: #EFEFEF
+}
+.list-back-ground-color-2{
+    background-color:#C0d6d3
+}
+.list-back-ground-color-3{
+    background-color:#E0EAE9
+
+}
+
+
+
+
+input[type="text"]
+{
+    border: 0;
+    border-bottom: 1px solid #96DBD6;;
+    outline: 0;
+    width: 100%;
+    background:none;
+    /* line-height: 39px; */
+
+}
+.list-group {
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.li-drivers{
+padding: 7px 12px;
+background-color: #fff;
+ list-style: none;
+
+}
+
+.border-bottom{
+    border-bottom: 2px solid #96DBD6
+}
+.back-color{
+    background-color: #FFFFFF
+}
+
+p-0px{
+    padding: 0px;
+}
+
+.padding-details{
+    padding-top:20px;
+    text-align: center;
+}
+
+
+
+.list-group-item {
+  border:none;
+}
+
+.rating-span{
+font-size: 16px;
+}
+
+.lowRateddrivericon{
+    color:red;
+    font-size: 18px
+}
+
+.div-customer-reviews{
+    background-color:#273048;
+    color: white;
+    padding-bottom: 5px;
+    /* text-align: center; */
+    font-size: 18px;
+
+}
+
+.customer-review-name{
+    padding-left: 20px;
+    font-size:18px;
+    border: 1px solid #FFFFFF
+}
+.customer-review-consigment{
+    text-align: center;
+    font-size:18px;
+    border: 1px solid #FFFFFF
+}
+
+.driver-details-card-header{
+    background-color:#273048;
+    color: white;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.driver-details-card-body{
+    background-color: #FFFFFF; height: 289px
+}
+
+.box-icon{
+    width: 7%;
+    float: left;
+    margin-left: 21px;
+}
+/* .active,li:hover {
+    background-color: #666;
+    color: white;
+  } */

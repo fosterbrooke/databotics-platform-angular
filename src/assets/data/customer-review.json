@@ -1,0 +1,3652 @@
+[
+    {
+      "Dates": "1-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 27,
+      "3 Star Rating": 19,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "2-Jan-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 23,
+      "3 Star Rating": 22,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "3-Jan-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 29,
+      "3 Star Rating": 20,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "4-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 37,
+      "3 Star Rating": 16,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "5-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 28,
+      "3 Star Rating": 22,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "6-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 38,
+      "3 Star Rating": 22,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "7-Jan-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 20,
+      "3 Star Rating": 23,
+      "2 Star Rating": 11,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "8-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 28,
+      "3 Star Rating": 22,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "9-Jan-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 36,
+      "3 Star Rating": 17,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "10-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 22,
+      "3 Star Rating": 25,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "11-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 12,
+      "4 Star Rating": 35,
+      "3 Star Rating": 16,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "12-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 12,
+      "4 Star Rating": 37,
+      "3 Star Rating": 25,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "13-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 40,
+      "3 Star Rating": 22,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "14-Jan-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 31,
+      "3 Star Rating": 17,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "15-Jan-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 15,
+      "4 Star Rating": 22,
+      "3 Star Rating": 22,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "16-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 28,
+      "3 Star Rating": 24,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "17-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 37,
+      "3 Star Rating": 25,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "18-Jan-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 37,
+      "3 Star Rating": 16,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "19-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 25,
+      "3 Star Rating": 18,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "20-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 24,
+      "3 Star Rating": 20,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "21-Jan-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 14,
+      "4 Star Rating": 37,
+      "3 Star Rating": 18,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "22-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 21,
+      "3 Star Rating": 17,
+      "2 Star Rating": 14,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "23-Jan-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 11,
+      "4 Star Rating": 27,
+      "3 Star Rating": 20,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "24-Jan-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 38,
+      "3 Star Rating": 22,
+      "2 Star Rating": 14,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "25-Jan-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 27,
+      "3 Star Rating": 23,
+      "2 Star Rating": 20,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "26-Jan-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 23,
+      "3 Star Rating": 23,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "27-Jan-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 14,
+      "4 Star Rating": 23,
+      "3 Star Rating": 22,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "28-Jan-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 37,
+      "3 Star Rating": 19,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "29-Jan-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 10,
+      "4 Star Rating": 29,
+      "3 Star Rating": 23,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "30-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 29,
+      "3 Star Rating": 22,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "31-Jan-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 27,
+      "3 Star Rating": 18,
+      "2 Star Rating": 11,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "1-Feb-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 40,
+      "3 Star Rating": 23,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "2-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 30,
+      "3 Star Rating": 15,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "3-Feb-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 21,
+      "3 Star Rating": 17,
+      "2 Star Rating": 20,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "4-Feb-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 10,
+      "4 Star Rating": 27,
+      "3 Star Rating": 22,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "5-Feb-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 35,
+      "3 Star Rating": 15,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "6-Feb-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 36,
+      "3 Star Rating": 16,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "7-Feb-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 20,
+      "4 Star Rating": 40,
+      "3 Star Rating": 17,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "8-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 23,
+      "3 Star Rating": 15,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "9-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 27,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "10-Feb-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 24,
+      "3 Star Rating": 22,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "11-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 35,
+      "3 Star Rating": 22,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "12-Feb-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 40,
+      "3 Star Rating": 21,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "13-Feb-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 26,
+      "3 Star Rating": 19,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "14-Feb-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 35,
+      "3 Star Rating": 24,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "15-Feb-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 30,
+      "3 Star Rating": 15,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "16-Feb-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 25,
+      "3 Star Rating": 25,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "17-Feb-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 16,
+      "4 Star Rating": 30,
+      "3 Star Rating": 17,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "18-Feb-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 10,
+      "4 Star Rating": 36,
+      "3 Star Rating": 19,
+      "2 Star Rating": 15,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "19-Feb-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 10,
+      "4 Star Rating": 29,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "20-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 37,
+      "3 Star Rating": 22,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "21-Feb-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 20,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "22-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 20,
+      "3 Star Rating": 25,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "23-Feb-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 28,
+      "3 Star Rating": 18,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "24-Feb-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 26,
+      "3 Star Rating": 17,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "25-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 36,
+      "3 Star Rating": 16,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "26-Feb-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 15,
+      "4 Star Rating": 25,
+      "3 Star Rating": 21,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "27-Feb-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 14,
+      "4 Star Rating": 31,
+      "3 Star Rating": 15,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "28-Feb-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 40,
+      "3 Star Rating": 18,
+      "2 Star Rating": 14,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "1-Mar-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 28,
+      "3 Star Rating": 20,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "2-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 22,
+      "3 Star Rating": 19,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "3-Mar-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 25,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "4-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 33,
+      "3 Star Rating": 15,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "5-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 11,
+      "4 Star Rating": 24,
+      "3 Star Rating": 24,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "6-Mar-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 29,
+      "3 Star Rating": 20,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "7-Mar-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 37,
+      "3 Star Rating": 21,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "8-Mar-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 39,
+      "3 Star Rating": 15,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "9-Mar-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 31,
+      "3 Star Rating": 16,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "10-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 22,
+      "3 Star Rating": 22,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "11-Mar-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 24,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "12-Mar-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 11,
+      "4 Star Rating": 30,
+      "3 Star Rating": 16,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "13-Mar-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 21,
+      "3 Star Rating": 20,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "14-Mar-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 36,
+      "3 Star Rating": 22,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "15-Mar-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 32,
+      "3 Star Rating": 16,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "16-Mar-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 35,
+      "3 Star Rating": 25,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "17-Mar-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 25,
+      "3 Star Rating": 15,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "18-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 29,
+      "3 Star Rating": 17,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "19-Mar-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 13,
+      "4 Star Rating": 30,
+      "3 Star Rating": 17,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "20-Mar-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 18,
+      "4 Star Rating": 29,
+      "3 Star Rating": 15,
+      "2 Star Rating": 14,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "21-Mar-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 22,
+      "3 Star Rating": 15,
+      "2 Star Rating": 12,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "22-Mar-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 36,
+      "3 Star Rating": 16,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "23-Mar-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 31,
+      "3 Star Rating": 18,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "24-Mar-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 21,
+      "3 Star Rating": 21,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "25-Mar-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 28,
+      "3 Star Rating": 24,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "26-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 27,
+      "3 Star Rating": 15,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "27-Mar-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 18,
+      "4 Star Rating": 22,
+      "3 Star Rating": 19,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "28-Mar-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 33,
+      "3 Star Rating": 18,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "29-Mar-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 33,
+      "3 Star Rating": 23,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "30-Mar-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 17,
+      "4 Star Rating": 37,
+      "3 Star Rating": 20,
+      "2 Star Rating": 11,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "31-Mar-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 35,
+      "3 Star Rating": 17,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "1-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 10,
+      "4 Star Rating": 36,
+      "3 Star Rating": 15,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "2-Apr-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 14,
+      "4 Star Rating": 35,
+      "3 Star Rating": 25,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "3-Apr-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 17,
+      "4 Star Rating": 27,
+      "3 Star Rating": 19,
+      "2 Star Rating": 20,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "4-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 35,
+      "3 Star Rating": 25,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "5-Apr-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 32,
+      "3 Star Rating": 15,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "6-Apr-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 18,
+      "4 Star Rating": 22,
+      "3 Star Rating": 24,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "7-Apr-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 11,
+      "4 Star Rating": 32,
+      "3 Star Rating": 16,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "8-Apr-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 37,
+      "3 Star Rating": 25,
+      "2 Star Rating": 15,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "9-Apr-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 10,
+      "4 Star Rating": 36,
+      "3 Star Rating": 21,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "10-Apr-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 35,
+      "3 Star Rating": 25,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "11-Apr-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 36,
+      "3 Star Rating": 16,
+      "2 Star Rating": 20,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "12-Apr-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 38,
+      "3 Star Rating": 25,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "13-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 35,
+      "3 Star Rating": 22,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "14-Apr-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 31,
+      "3 Star Rating": 17,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "15-Apr-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 40,
+      "3 Star Rating": 22,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "16-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 10,
+      "4 Star Rating": 31,
+      "3 Star Rating": 20,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "17-Apr-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 17,
+      "4 Star Rating": 39,
+      "3 Star Rating": 16,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "18-Apr-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 27,
+      "3 Star Rating": 25,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "19-Apr-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 12,
+      "4 Star Rating": 36,
+      "3 Star Rating": 25,
+      "2 Star Rating": 20,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "20-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 21,
+      "3 Star Rating": 24,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "21-Apr-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 29,
+      "3 Star Rating": 20,
+      "2 Star Rating": 14,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "22-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 39,
+      "3 Star Rating": 20,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "23-Apr-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 31,
+      "3 Star Rating": 16,
+      "2 Star Rating": 14,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "24-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 22,
+      "3 Star Rating": 24,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "25-Apr-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 18,
+      "4 Star Rating": 33,
+      "3 Star Rating": 23,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "26-Apr-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 29,
+      "3 Star Rating": 23,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "27-Apr-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 19,
+      "4 Star Rating": 34,
+      "3 Star Rating": 24,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "28-Apr-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 25,
+      "3 Star Rating": 24,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "29-Apr-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 23,
+      "3 Star Rating": 22,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "30-Apr-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 25,
+      "3 Star Rating": 19,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "1-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 27,
+      "3 Star Rating": 17,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "2-May-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 15,
+      "4 Star Rating": 25,
+      "3 Star Rating": 24,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "3-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 20,
+      "3 Star Rating": 23,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "4-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 40,
+      "3 Star Rating": 18,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "5-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 31,
+      "3 Star Rating": 19,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "6-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 27,
+      "3 Star Rating": 16,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "7-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 20,
+      "3 Star Rating": 25,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "8-May-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 40,
+      "3 Star Rating": 25,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "9-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 16,
+      "4 Star Rating": 27,
+      "3 Star Rating": 17,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "10-May-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 32,
+      "3 Star Rating": 25,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "11-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 10,
+      "4 Star Rating": 23,
+      "3 Star Rating": 17,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "12-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 32,
+      "3 Star Rating": 16,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "13-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 36,
+      "3 Star Rating": 24,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "14-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 30,
+      "3 Star Rating": 21,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "15-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 16,
+      "4 Star Rating": 25,
+      "3 Star Rating": 15,
+      "2 Star Rating": 14,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "16-May-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 26,
+      "3 Star Rating": 22,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "17-May-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 13,
+      "4 Star Rating": 23,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "18-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 36,
+      "3 Star Rating": 20,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "19-May-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 26,
+      "3 Star Rating": 20,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "20-May-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 36,
+      "3 Star Rating": 20,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "21-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 30,
+      "3 Star Rating": 24,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "22-May-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 16,
+      "4 Star Rating": 33,
+      "3 Star Rating": 15,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "23-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 39,
+      "3 Star Rating": 19,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "24-May-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 39,
+      "3 Star Rating": 20,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "25-May-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 23,
+      "3 Star Rating": 21,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "26-May-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 27,
+      "3 Star Rating": 16,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "27-May-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 11,
+      "4 Star Rating": 25,
+      "3 Star Rating": 20,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "28-May-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 37,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "29-May-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 30,
+      "3 Star Rating": 24,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "30-May-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 36,
+      "3 Star Rating": 16,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "31-May-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 30,
+      "3 Star Rating": 19,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "1-Jun-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 16,
+      "4 Star Rating": 39,
+      "3 Star Rating": 19,
+      "2 Star Rating": 15,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "2-Jun-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 30,
+      "3 Star Rating": 24,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "3-Jun-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 20,
+      "3 Star Rating": 25,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "4-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 18,
+      "4 Star Rating": 34,
+      "3 Star Rating": 25,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "5-Jun-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 23,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "6-Jun-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 33,
+      "3 Star Rating": 24,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "7-Jun-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 33,
+      "3 Star Rating": 22,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "8-Jun-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 22,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "9-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 23,
+      "3 Star Rating": 17,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "10-Jun-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 26,
+      "3 Star Rating": 22,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "11-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 30,
+      "3 Star Rating": 22,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "12-Jun-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 35,
+      "3 Star Rating": 17,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "13-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 11,
+      "4 Star Rating": 37,
+      "3 Star Rating": 19,
+      "2 Star Rating": 19,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "14-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 36,
+      "3 Star Rating": 25,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "15-Jun-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 32,
+      "3 Star Rating": 24,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "16-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 11,
+      "4 Star Rating": 26,
+      "3 Star Rating": 17,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "17-Jun-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 22,
+      "3 Star Rating": 24,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "18-Jun-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 27,
+      "3 Star Rating": 22,
+      "2 Star Rating": 15,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "19-Jun-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 23,
+      "3 Star Rating": 17,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "20-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 27,
+      "3 Star Rating": 16,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "21-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 30,
+      "3 Star Rating": 15,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "22-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 20,
+      "4 Star Rating": 27,
+      "3 Star Rating": 24,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "23-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 29,
+      "3 Star Rating": 17,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "24-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 37,
+      "3 Star Rating": 19,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "25-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 22,
+      "3 Star Rating": 15,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "26-Jun-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 17,
+      "4 Star Rating": 31,
+      "3 Star Rating": 23,
+      "2 Star Rating": 12,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "27-Jun-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 13,
+      "4 Star Rating": 27,
+      "3 Star Rating": 25,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "28-Jun-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 23,
+      "3 Star Rating": 20,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "29-Jun-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 11,
+      "4 Star Rating": 21,
+      "3 Star Rating": 16,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "30-Jun-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 38,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "1-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 37,
+      "3 Star Rating": 16,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "2-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 37,
+      "3 Star Rating": 24,
+      "2 Star Rating": 12,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "3-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 39,
+      "3 Star Rating": 16,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "4-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 36,
+      "3 Star Rating": 25,
+      "2 Star Rating": 12,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "5-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 28,
+      "3 Star Rating": 15,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "6-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 24,
+      "3 Star Rating": 23,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "7-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 16,
+      "4 Star Rating": 20,
+      "3 Star Rating": 17,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "8-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 40,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "9-Jul-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 18,
+      "4 Star Rating": 25,
+      "3 Star Rating": 18,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "10-Jul-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 20,
+      "3 Star Rating": 23,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "11-Jul-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 24,
+      "3 Star Rating": 21,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "12-Jul-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 16,
+      "4 Star Rating": 29,
+      "3 Star Rating": 18,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "13-Jul-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 14,
+      "4 Star Rating": 40,
+      "3 Star Rating": 22,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "14-Jul-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 37,
+      "3 Star Rating": 21,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "15-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 11,
+      "4 Star Rating": 27,
+      "3 Star Rating": 24,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "16-Jul-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 29,
+      "3 Star Rating": 15,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "17-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 22,
+      "3 Star Rating": 20,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "18-Jul-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 24,
+      "3 Star Rating": 25,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "19-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 33,
+      "3 Star Rating": 21,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "20-Jul-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 10,
+      "4 Star Rating": 29,
+      "3 Star Rating": 24,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "21-Jul-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 14,
+      "4 Star Rating": 28,
+      "3 Star Rating": 15,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "22-Jul-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 32,
+      "3 Star Rating": 24,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "23-Jul-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 26,
+      "3 Star Rating": 16,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "24-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 38,
+      "3 Star Rating": 17,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "25-Jul-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 36,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "26-Jul-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 30,
+      "3 Star Rating": 21,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "27-Jul-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 10,
+      "4 Star Rating": 23,
+      "3 Star Rating": 25,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "28-Jul-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 38,
+      "3 Star Rating": 21,
+      "2 Star Rating": 14,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "29-Jul-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 14,
+      "4 Star Rating": 33,
+      "3 Star Rating": 17,
+      "2 Star Rating": 20,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "30-Jul-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 30,
+      "3 Star Rating": 16,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "31-Jul-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 28,
+      "3 Star Rating": 18,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "1-Aug-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 38,
+      "3 Star Rating": 23,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "2-Aug-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 27,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "3-Aug-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 35,
+      "3 Star Rating": 24,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "4-Aug-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 12,
+      "4 Star Rating": 31,
+      "3 Star Rating": 22,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "5-Aug-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 16,
+      "4 Star Rating": 34,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "6-Aug-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 10,
+      "4 Star Rating": 28,
+      "3 Star Rating": 24,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "7-Aug-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 25,
+      "3 Star Rating": 22,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "8-Aug-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 35,
+      "3 Star Rating": 25,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "9-Aug-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 10,
+      "4 Star Rating": 33,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "10-Aug-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 32,
+      "3 Star Rating": 23,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "11-Aug-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 36,
+      "3 Star Rating": 25,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "12-Aug-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 40,
+      "3 Star Rating": 17,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "13-Aug-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 26,
+      "3 Star Rating": 21,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "14-Aug-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 11,
+      "4 Star Rating": 39,
+      "3 Star Rating": 23,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "15-Aug-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 37,
+      "3 Star Rating": 25,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "16-Aug-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 34,
+      "3 Star Rating": 22,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "17-Aug-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 19,
+      "4 Star Rating": 38,
+      "3 Star Rating": 23,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "18-Aug-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 40,
+      "3 Star Rating": 21,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "19-Aug-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 31,
+      "3 Star Rating": 18,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "20-Aug-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 31,
+      "3 Star Rating": 16,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "21-Aug-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 39,
+      "3 Star Rating": 24,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "22-Aug-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 39,
+      "3 Star Rating": 16,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "23-Aug-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 22,
+      "3 Star Rating": 24,
+      "2 Star Rating": 14,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "24-Aug-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 12,
+      "4 Star Rating": 20,
+      "3 Star Rating": 24,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "25-Aug-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 12,
+      "4 Star Rating": 38,
+      "3 Star Rating": 24,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "26-Aug-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 38,
+      "3 Star Rating": 17,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "27-Aug-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 19,
+      "4 Star Rating": 39,
+      "3 Star Rating": 22,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "28-Aug-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 29,
+      "3 Star Rating": 25,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "29-Aug-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 21,
+      "3 Star Rating": 18,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "30-Aug-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 30,
+      "3 Star Rating": 21,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "31-Aug-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 25,
+      "3 Star Rating": 25,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "1-Sep-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 20,
+      "4 Star Rating": 21,
+      "3 Star Rating": 19,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "2-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 22,
+      "3 Star Rating": 16,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "3-Sep-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 39,
+      "3 Star Rating": 18,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "4-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 29,
+      "3 Star Rating": 17,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "5-Sep-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 38,
+      "3 Star Rating": 25,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "6-Sep-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 20,
+      "3 Star Rating": 22,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "7-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 28,
+      "3 Star Rating": 19,
+      "2 Star Rating": 20,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "8-Sep-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 26,
+      "3 Star Rating": 15,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "9-Sep-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 15,
+      "4 Star Rating": 37,
+      "3 Star Rating": 15,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "10-Sep-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 37,
+      "3 Star Rating": 20,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "11-Sep-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 34,
+      "3 Star Rating": 24,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "12-Sep-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 13,
+      "4 Star Rating": 27,
+      "3 Star Rating": 18,
+      "2 Star Rating": 10,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "13-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 32,
+      "3 Star Rating": 23,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "14-Sep-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 20,
+      "3 Star Rating": 22,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "15-Sep-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 38,
+      "3 Star Rating": 19,
+      "2 Star Rating": 12,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "16-Sep-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 28,
+      "3 Star Rating": 15,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "17-Sep-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 15,
+      "4 Star Rating": 21,
+      "3 Star Rating": 25,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "18-Sep-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 15,
+      "4 Star Rating": 30,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "19-Sep-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 40,
+      "3 Star Rating": 17,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "20-Sep-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 23,
+      "3 Star Rating": 22,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "21-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 31,
+      "3 Star Rating": 24,
+      "2 Star Rating": 10,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "22-Sep-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 25,
+      "3 Star Rating": 25,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "23-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 16,
+      "4 Star Rating": 38,
+      "3 Star Rating": 15,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "24-Sep-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 36,
+      "3 Star Rating": 21,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "25-Sep-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 26,
+      "3 Star Rating": 18,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "26-Sep-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 25,
+      "3 Star Rating": 18,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "27-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 33,
+      "3 Star Rating": 25,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "28-Sep-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 28,
+      "3 Star Rating": 15,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "29-Sep-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 13,
+      "4 Star Rating": 23,
+      "3 Star Rating": 17,
+      "2 Star Rating": 10,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "30-Sep-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 15,
+      "4 Star Rating": 32,
+      "3 Star Rating": 25,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "1-Oct-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 39,
+      "3 Star Rating": 15,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "2-Oct-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 24,
+      "3 Star Rating": 24,
+      "2 Star Rating": 17,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "3-Oct-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 12,
+      "4 Star Rating": 34,
+      "3 Star Rating": 18,
+      "2 Star Rating": 18,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "4-Oct-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 12,
+      "4 Star Rating": 26,
+      "3 Star Rating": 19,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "5-Oct-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 15,
+      "4 Star Rating": 34,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "6-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 14,
+      "4 Star Rating": 20,
+      "3 Star Rating": 18,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "7-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 22,
+      "3 Star Rating": 22,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "8-Oct-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 40,
+      "3 Star Rating": 21,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "9-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 11,
+      "4 Star Rating": 39,
+      "3 Star Rating": 17,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "10-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 36,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "11-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 35,
+      "3 Star Rating": 19,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "12-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 26,
+      "3 Star Rating": 24,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "13-Oct-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 28,
+      "3 Star Rating": 16,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "14-Oct-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 31,
+      "3 Star Rating": 20,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "15-Oct-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 25,
+      "3 Star Rating": 24,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "16-Oct-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 23,
+      "3 Star Rating": 17,
+      "2 Star Rating": 18,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "17-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 13,
+      "4 Star Rating": 21,
+      "3 Star Rating": 18,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "18-Oct-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 34,
+      "3 Star Rating": 23,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "19-Oct-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 40,
+      "3 Star Rating": 19,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "20-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 35,
+      "3 Star Rating": 17,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "21-Oct-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 16,
+      "4 Star Rating": 30,
+      "3 Star Rating": 15,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "22-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 35,
+      "3 Star Rating": 15,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "23-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 25,
+      "3 Star Rating": 16,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "24-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 35,
+      "3 Star Rating": 25,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "25-Oct-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 39,
+      "3 Star Rating": 15,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "26-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 24,
+      "3 Star Rating": 19,
+      "2 Star Rating": 12,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "27-Oct-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 17,
+      "4 Star Rating": 33,
+      "3 Star Rating": 24,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "28-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 13,
+      "4 Star Rating": 35,
+      "3 Star Rating": 20,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "29-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 23,
+      "3 Star Rating": 16,
+      "2 Star Rating": 13,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "30-Oct-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 27,
+      "3 Star Rating": 16,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "31-Oct-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 34,
+      "3 Star Rating": 22,
+      "2 Star Rating": 14,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "1-Nov-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 35,
+      "3 Star Rating": 15,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "2-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 19,
+      "4 Star Rating": 34,
+      "3 Star Rating": 22,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "3-Nov-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 17,
+      "4 Star Rating": 25,
+      "3 Star Rating": 25,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "4-Nov-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 22,
+      "3 Star Rating": 23,
+      "2 Star Rating": 10,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "5-Nov-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 10,
+      "4 Star Rating": 35,
+      "3 Star Rating": 18,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "6-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 10,
+      "4 Star Rating": 26,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "7-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 23,
+      "3 Star Rating": 21,
+      "2 Star Rating": 14,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "8-Nov-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 35,
+      "3 Star Rating": 24,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "9-Nov-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 20,
+      "4 Star Rating": 35,
+      "3 Star Rating": 23,
+      "2 Star Rating": 17,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "10-Nov-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 20,
+      "3 Star Rating": 20,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "11-Nov-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 11,
+      "4 Star Rating": 33,
+      "3 Star Rating": 25,
+      "2 Star Rating": 19,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "12-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 16,
+      "4 Star Rating": 28,
+      "3 Star Rating": 25,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "13-Nov-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 26,
+      "3 Star Rating": 25,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "14-Nov-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 30,
+      "3 Star Rating": 18,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "15-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 20,
+      "3 Star Rating": 16,
+      "2 Star Rating": 14,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "16-Nov-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 11,
+      "4 Star Rating": 40,
+      "3 Star Rating": 20,
+      "2 Star Rating": 20,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "17-Nov-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 37,
+      "3 Star Rating": 16,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "18-Nov-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 18,
+      "4 Star Rating": 27,
+      "3 Star Rating": 22,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "19-Nov-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 33,
+      "3 Star Rating": 19,
+      "2 Star Rating": 13,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "20-Nov-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 29,
+      "3 Star Rating": 17,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "21-Nov-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 19,
+      "4 Star Rating": 27,
+      "3 Star Rating": 15,
+      "2 Star Rating": 11,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "22-Nov-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 18,
+      "4 Star Rating": 24,
+      "3 Star Rating": 20,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "23-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 32,
+      "3 Star Rating": 19,
+      "2 Star Rating": 18,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "24-Nov-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 16,
+      "4 Star Rating": 33,
+      "3 Star Rating": 15,
+      "2 Star Rating": 11,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "25-Nov-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 17,
+      "4 Star Rating": 27,
+      "3 Star Rating": 17,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "26-Nov-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 10,
+      "4 Star Rating": 35,
+      "3 Star Rating": 19,
+      "2 Star Rating": 14,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "27-Nov-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 18,
+      "4 Star Rating": 28,
+      "3 Star Rating": 19,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "28-Nov-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 21,
+      "3 Star Rating": 19,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "29-Nov-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 11,
+      "4 Star Rating": 31,
+      "3 Star Rating": 21,
+      "2 Star Rating": 15,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "30-Nov-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 18,
+      "4 Star Rating": 37,
+      "3 Star Rating": 18,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "1-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 25,
+      "3 Star Rating": 17,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "2-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 20,
+      "3 Star Rating": 22,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "3-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 21,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "4-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 34,
+      "3 Star Rating": 19,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "5-Dec-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 23,
+      "3 Star Rating": 21,
+      "2 Star Rating": 17,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "6-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 12,
+      "4 Star Rating": 27,
+      "3 Star Rating": 22,
+      "2 Star Rating": 19,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "7-Dec-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 13,
+      "4 Star Rating": 36,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "8-Dec-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 19,
+      "4 Star Rating": 35,
+      "3 Star Rating": 16,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "9-Dec-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 20,
+      "4 Star Rating": 34,
+      "3 Star Rating": 18,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "10-Dec-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 40,
+      "3 Star Rating": 20,
+      "2 Star Rating": 16,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "11-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 33,
+      "3 Star Rating": 24,
+      "2 Star Rating": 20,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "12-Dec-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 12,
+      "4 Star Rating": 30,
+      "3 Star Rating": 24,
+      "2 Star Rating": 18,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "13-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 19,
+      "4 Star Rating": 30,
+      "3 Star Rating": 24,
+      "2 Star Rating": 12,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "14-Dec-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 14,
+      "4 Star Rating": 35,
+      "3 Star Rating": 17,
+      "2 Star Rating": 12,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "15-Dec-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 11,
+      "4 Star Rating": 24,
+      "3 Star Rating": 19,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "16-Dec-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 17,
+      "4 Star Rating": 25,
+      "3 Star Rating": 17,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "17-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 20,
+      "4 Star Rating": 38,
+      "3 Star Rating": 20,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "18-Dec-18",
+      "Region": "Midwest",
+      "State": "Ohio",
+      "5 Star Rating": 15,
+      "4 Star Rating": 23,
+      "3 Star Rating": 21,
+      "2 Star Rating": 15,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "19-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 17,
+      "4 Star Rating": 24,
+      "3 Star Rating": 17,
+      "2 Star Rating": 11,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "20-Dec-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 20,
+      "4 Star Rating": 36,
+      "3 Star Rating": 18,
+      "2 Star Rating": 11,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "21-Dec-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 13,
+      "4 Star Rating": 28,
+      "3 Star Rating": 20,
+      "2 Star Rating": 13,
+      "1 Star Rating": 5
+    },
+    {
+      "Dates": "22-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 16,
+      "4 Star Rating": 32,
+      "3 Star Rating": 17,
+      "2 Star Rating": 16,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "23-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 15,
+      "4 Star Rating": 34,
+      "3 Star Rating": 20,
+      "2 Star Rating": 19,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "24-Dec-18",
+      "Region": "Midwest",
+      "State": "Illinois",
+      "5 Star Rating": 15,
+      "4 Star Rating": 32,
+      "3 Star Rating": 22,
+      "2 Star Rating": 14,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "25-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 20,
+      "4 Star Rating": 27,
+      "3 Star Rating": 22,
+      "2 Star Rating": 13,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "26-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 12,
+      "4 Star Rating": 24,
+      "3 Star Rating": 25,
+      "2 Star Rating": 17,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "27-Dec-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 14,
+      "4 Star Rating": 31,
+      "3 Star Rating": 15,
+      "2 Star Rating": 16,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "28-Dec-18",
+      "Region": "Midwest",
+      "State": "Minnesota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 25,
+      "3 Star Rating": 23,
+      "2 Star Rating": 14,
+      "1 Star Rating": 7
+    },
+    {
+      "Dates": "29-Dec-18",
+      "Region": "Midwest",
+      "State": "Kansas",
+      "5 Star Rating": 14,
+      "4 Star Rating": 30,
+      "3 Star Rating": 22,
+      "2 Star Rating": 16,
+      "1 Star Rating": 6
+    },
+    {
+      "Dates": "30-Dec-18",
+      "Region": "Midwest",
+      "State": "Iowa",
+      "5 Star Rating": 17,
+      "4 Star Rating": 31,
+      "3 Star Rating": 19,
+      "2 Star Rating": 15,
+      "1 Star Rating": 8
+    },
+    {
+      "Dates": "31-Dec-18",
+      "Region": "Midwest",
+      "State": "South Dakota",
+      "5 Star Rating": 16,
+      "4 Star Rating": 32,
+      "3 Star Rating": 24,
+      "2 Star Rating": 15,
+      "1 Star Rating": 7
+    }
+  ]

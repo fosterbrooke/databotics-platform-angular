@@ -1,0 +1,489 @@
+<!-- <app-header></app-header> -->
+
+<div class="container-fluid container_wrapper">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+  <!--Drop downs-->
+
+  <div class="panel panel-default panel_wrapper">
+    <div class="panel-body">
+     
+      <div class="row">
+        <div class="col-md-2">
+          <div class="form-group">
+
+            <select id="category" name="category" placeholder="Category" [(ngModel)]="categoryname" class="form-control dropdown_wrapper"
+              (change)="changeValue($event)">
+              <option *ngFor="let catg of categories">{{catg?.Category_name}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <select id="vehicle" name="vehicle" [(ngModel)]="vehiclename" class="form-control dropdown_wrapper"
+              (change)="changeValue($event)">
+              <option>Select Vehicle</option>
+              <option *ngFor="let veh of vehicle">{{veh?.vehicle_name}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <select id="sparename" name="sparename" [(ngModel)]="sparename" class="form-control dropdown_wrapper"
+              (change)="changeValue($event)">
+              <option>Select Spare</option>
+              <option *ngFor="let part of spare">{{part?.spare_name}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-2">
+          <button class="btn btnpanel" (click)="openModal()" data-toggle="modal" data-target="#bootstrapModel"><span class="txtcolor">Alert</span> &nbsp;<i class="fa fa-exclamation-triangle txtcolor">
+       </i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Cards-->
+  <div class="row">
+    <div class="col-md-12">
+    <div class="col-md-4 padding_right5">
+      <div class="card col-md-12 stock_wrapper">
+        <!-- <span> <i class="fa fa-ellipsis-h menuHorizontal"></i></span> -->
+        <div class="clearfix" style="margin-bottom:7px;"></div>
+        <div class="col-md-4">
+          <div class="card-body inventory_stock_wrapper">
+            <i><img class="imgicon" src="../../assets/iconss/1.png"></i>&nbsp;<span class="fs-30"><strong>{{inventoryDatafromJson?.stock_value}}</strong></span>&nbsp;<i
+              class="fa fa-sort-up stock_wrapper_font_icongreen"></i>
+            <p class="inventorttextalign">Stock value</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body inventory_stock_wrapper">
+            <i><img class="imgicon" src="../../assets/iconss/2.png"></i>&nbsp;<span class="fs-30"><strong>{{inventoryDatafromJson?.transit_value}}</strong></span>&nbsp;<i
+              class="fa fa-sort-down stock_wrapper_font_icon"></i>
+            <p class="inventorttextalign">Transit value</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body inventory_stock_wrapper">
+
+            <i><img class="imgicon" src="../../assets/iconss/3.png"></i>&nbsp;<span class="fs-30"><strong>{{inventoryDatafromJson?.delivered_value}}</strong></span>&nbsp;<i
+              class="fa fa-sort-down stock_wrapper_font_icon"></i>
+            <p class="inventorttextalign">Delivered value</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 padding_left_right">
+      <div class="card newborder  inventory_cards_wrapper ">
+        <!-- <span> <i class="fa fa-ellipsis-h menuHorizontal"></i></span> -->
+        <div class="clearfix"></div>
+        <div class="card-body">
+          <h5 class="card-title">Days to Sell Inventory</h5>
+          <div class="col-md-12 paddinginventory">
+            <div class="col-md-6">
+              <img src="../../assets/iconss/4.png" class="img-responsive">
+            </div>
+            <div class="col-md-6">
+              <h3>{{inventoryDatafromJson?.daystosell}}</h3>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <!-- <h6 class="card-text txt_align_centre" style="margin-top: 25px;">
+                    <img class="width_sell_inventory" src="../../assets/iconss/4.png">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="fs-25 padding11">2368</span></h6> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 padding_left_right">
+      <div class="card newborder  inventory_cards_wrapper">
+        <!-- <span> <i class="fa fa-ellipsis-h menuHorizontal"></i></span> -->
+        <div class="clearfix"></div>
+        <div class="card-body">
+          <h5 class="card-title">Inventory Accuracy</h5>
+          <div class="col-md-12" style="padding:0px !important;">
+            <div class="col-md-7">
+              <circle-progress [percent]="inventoryDatafromJson?.inventory_accuracy" [radius]="31" [outerStrokeWidth]="5"
+                [showInnerStroke]="false" [outerStrokeColor]="'#FA940B'" [animation]="true" [animationDuration]="300"
+                [showTitle]="false" [subtitle]="" [imageSrc]="'../../assets/iconss/5.png'" [showImage]="true"
+                [imageHeight]="30" [imageWidth]="30"></circle-progress>
+            </div>
+            <div class="col-md-5 margin_left_text">
+              <h3>{{inventoryDatafromJson?.inventory_accuracy}}%</h3>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 inventory_col_2 padding_left_right">
+      <div class="card newborder  inventory_cards_wrapper">
+        <!-- <span> <i class="fa fa-ellipsis-h menuHorizontal"></i></span> -->
+        <div class="clearfix"></div>
+        <div class="card-body">
+          <h5 class="card-title">Perfect Order Rate</h5>
+          <div class="col-md-12" style="padding:0px !important;">
+            <div class="col-md-7">
+              <circle-progress [percent]="inventoryDatafromJson?.perfect_order_rate" [radius]="31" [outerStrokeWidth]="5"
+                [showInnerStroke]="false" [outerStrokeColor]="'#32BECE'" [animation]="true" [animationDuration]="300"
+                [showTitle]="false" [subtitle]="" [imageSrc]="'../../assets/iconss/6.png'" [showImage]="true"
+                [imageHeight]="30" [imageWidth]="30"></circle-progress>
+            </div>
+            <div class="col-md-5 margin_left_text">
+              <h3>{{inventoryDatafromJson?.perfect_order_rate}}%</h3>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 inventory_col_2 padding_left_right">
+      <div class="card  newborder inventory_cards_wrapper">
+        <!-- <span> <i class="fa fa-ellipsis-h menuHorizontal"></i></span> -->
+        <div class="clearfix"></div>
+        <div class="card-body">
+          <h5 class="card-title">Warehouse Occupancy</h5>
+          <div class="col-md-12" style="padding:0px !important;">
+            <div class="col-md-7">
+              <circle-progress [percent]="inventoryDatafromJson?.Warehouse_occupancy" [radius]="31" [outerStrokeWidth]="5"
+                [showInnerStroke]="false" [outerStrokeColor]="'#FB6C92'" [animation]="true" [animationDuration]="300"
+                [showTitle]="false" [subtitle]="" [imageSrc]="'../../assets/iconss/7.png'" [showImage]="true"
+                [imageHeight]="30" [imageWidth]="30"></circle-progress>
+            </div>
+            <div class="col-md-5 margin_left_text">
+              <h3>{{inventoryDatafromJson?.Warehouse_occupancy}}%</h3>
+
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+
+  <!--Charts live historical and donut chart-->
+  <div class="row live_charts_wrapper">
+    <div class="col-md-8 padding_right5">
+      <div class="card text-center live_chart_border chart_back_color padding_bottom">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setActiveLive(1);" style="color: #788786;">Live</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setActive(2);" style="color: #788786">Historical</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body" *ngIf="livechart">
+          <div class="chart_border">
+            <div [chart]="livechartdata" style="height:247px">
+            </div>
+            <div class="row">
+              <div class="col-md-4 tab1_padding ">
+                <div class="card historical_chart_value" [ngClass]="{cardactiveclass: isCardActive(1)}" (click)="setStockActive(1)">
+                  <div class="card-body">
+                    <p>Stock value</p>
+                    <span class="fs-20"><strong>2.84</strong></span>&nbsp;&nbsp;<i style="color:red; font-size: 20px;"
+                      class="fa fa-arrow-circle-down">&nbsp;&nbsp;9%</i>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-md-4 tab2_padding">
+                <div class="card historical_chart_value" [ngClass]="{cardactiveclass: isCardActive(2)}" (click)="setVolumeActive(2)">
+                  <div class="card-body">
+                    <p>Stock Volume</p>
+                    <span class="fs-20"><strong>1,464</strong></span>&nbsp;&nbsp;<i style="color:red; font-size: 20px;"
+                      class="fa fa-arrow-circle-down">&nbsp;&nbsp;5%</i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 tab3_padding">
+                <div class="card historical_chart_value" [ngClass]="{cardactiveclass: isCardActive(3)}" (click)="setDeliveryActive(3)">
+                  <div class="card-body">
+                    <p>Total Delivery value</p>
+                    <span class="fs-20"><strong>2.84</strong>&nbsp;&nbsp;</span><i style="color:green; font-size: 20px;"
+                      class="fa fa-arrow-circle-up">&nbsp;&nbsp;5%</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+ </div>
+
+
+ 
+        <div class="card-body" *ngIf="historicalchart">
+          <div class="chart_border">
+            <div [chart]="historicalchartdata" style="height:247px">
+
+            </div>
+            <div class="row">
+              <div class="col-md-4 tab1_padding ">
+                <div class="card historical_chart_value" [ngClass]="{historicactiveclass: isHistoricActive(1)}" (click)="setHistoricStockActive(1)">
+                  <div class="card-body">
+                    <p>Stock value</p>
+                    <span class="fs-20"><strong>2.84</strong></span>&nbsp;&nbsp;<i style="color:red; font-size: 20px;"
+                      class="fa fa-arrow-circle-down">&nbsp;&nbsp;9%</i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 tab2_padding">
+                <div class="card historical_chart_value" [ngClass]="{historicactiveclass: isHistoricActive(2)}" (click)="setHistoricVolumeActive(2)">
+                  <div class="card-body">
+                    <p>Stock Volume</p>
+                    <span class="fs-20"><strong>1,464</strong></span>&nbsp;&nbsp;<i style="color:red; font-size: 20px;"
+                      class="fa fa-arrow-circle-down">&nbsp;&nbsp;5%</i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 tab3_padding">
+                <div class="card historical_chart_value" [ngClass]="{historicactiveclass: isHistoricActive(3)}" (click)="setHistoricDeliveryActive(3)">
+                  <div class="card-body">
+                    <p>Total Delivery value</p>
+                    <span class="fs-20"><strong>2.84</strong>&nbsp;&nbsp;</span><i style="color:green; font-size: 20px;"
+                      class="fa fa-arrow-circle-up">&nbsp;&nbsp;5%</i>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 padding_left_right">
+      <div class="card stock_aging_chart_border chart_back_color">
+        <div class="card-body">
+          <div class="card-text">
+            <div [chart]="stockagingchart" style="height: 367px">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Bar charts and heat chart-->
+  <div class="row stock_charts_wrapper">
+    <div class="col-md-7 padding_right5">
+      <div class="card chart_back_color stock_categories_chart_border">
+        <div class="card-body">
+          <div class="card-text">
+            <div [chart]="stockchartcategories" class="chart_height">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5 padding_left_right">
+      <div class="card chart_back_color stock_categories_chart_border">
+        <div class="card-body ">
+          <div class="card-text">
+
+
+            <div [chart]="returnchart" class="chart_height">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- open a modal window by clicking button-->
+
+
+<!-- <button type="button" class="btn btn-info btn-lg" (click)="openModal()">click to open</button> -->
+
+
+<!-- Modal section -->
+<!-- <div class="backdrop" [ngStyle]="{'display':display}"></div> -->
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}" *ngIf="showalertmodel">
+
+
+  <div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+
+
+        <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span aria-hidden="true">&times;</span></button>
+
+
+        <h4 class="modal-title">Alerts</h4>
+
+
+      </div>
+
+
+      <div class="modal-body">
+        <div class="card" style="width: 50rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let alert of alerts">
+              <div class="row">
+                <div class="col-md-2">
+                  <span style="color:red;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-6">
+                
+                   <span style="color: black;">
+                   {{alert.name}}</span>&nbsp;&nbsp;
+                  <span style="color: black;">
+                      {{alert.Date}}</span><br>
+                  <span style="color: black;"> {{alert.Type}}</span>
+
+                </div>
+                <div class="col-md-4" style="padding:0px;">
+                  <button type="button" class="btn btn-primary btn-xs alert_button"(click)="openModalAdd(alert)"> {{alert.Button_text}}</button>
+                </div>
+              </div>
+            </li>
+        
+          </ul>
+          
+
+        </div>
+
+      
+      </div>
+ </div><!-- /.modal-content -->
+
+
+  </div><!-- /.modal-dialog -->
+
+
+</div><!-- /.modal !-->
+
+
+<!--Alert Model-->
+
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display1}" *ngIf="showactionmodel">
+
+
+  <div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+
+
+      <div class="modal-header">
+
+
+        <button type="button" class="close" aria-label="Close"data-dismiss="modal" (click)="onalertCloseHandled()"><span aria-hidden="true">&times;</span></button>
+
+
+        <h4 class="modal-title">{{actionalerttext}}</h4>
+
+
+      </div>
+
+
+      <div class="modal-body" style="height:250px;overflow: overlay;">
+        
+          <textarea rows="4" cols="50" [(ngModel)]="alertmsg">
+          
+          </textarea>
+        
+        
+          <button type="button" class="btn btn-success" style="float: right;margin-right: 20px;"(click)="actionalert()">Save</button>
+        <p *ngFor = "let aletrmodel of alertarray">{{aletrmodel}}</p>
+       </div>
+      
+
+ </div><!-- /.modal-content -->
+   
+
+  </div><!-- /.modal-dialog -->
+
+
+</div><!-- /.modal !-->
+
+<!--Alert Box-->
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displaypopup}">
+
+
+  <div class="modal-dialog" role="document">
+
+
+    <div class="modal-content">
+
+
+      <!-- <div class="modal-header">
+
+
+        <button type="button" class="close" aria-label="Close" (click)="onpopmodelclose()"><span aria-hidden="true">&times;</span></button>
+
+
+        <h4 class="modal-title">Alerts</h4>
+
+
+      </div> -->
+
+
+      <div class="modal-body">
+        <div class="card" style="width: 50rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let modelar of modelarr">
+              <div class="row">
+                <div class="col-md-2">
+                  <span style="color:red;"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-6">
+                
+                   <span style="color: black;">
+                   {{modelar.name}}</span>&nbsp;&nbsp;
+                  <span style="color: black;">
+                      {{modelar.Date}}</span><br>
+                  <span style="color: black;"> {{modelar.Type}}</span>
+
+                </div>
+                <!-- <div class="col-md-4" style="padding:0px;">
+                  <button type="button" class="btn btn-primary btn-xs alert_button"(click)="openModalAdd(alert)"> {{modelar.Button_text}}</button>
+                </div> -->
+              </div>
+            </li>
+        
+          </ul>
+          
+
+        </div>
+
+      
+      </div>
+ </div><!-- /.modal-content -->
+
+
+  </div><!-- /.modal-dialog -->
+
+
+</div><!-- /.modal !-->

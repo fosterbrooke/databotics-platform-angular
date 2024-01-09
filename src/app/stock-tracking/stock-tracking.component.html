@@ -1,0 +1,233 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+    
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row" style="padding-top: 3px;">
+
+        <div class="col-md-2 padding-left-right">
+          <div class="card card_wrapper">
+            <div class="card-body">
+                <h5 class="card-title padding-top"> Stock Category</h5>
+              
+                <div class="form-group" style="margin-left: 20px;">
+
+                    <select id="category" name="category" placeholder="Category" [(ngModel)]="categorydefaultname" class="form-control dropdown_wrapper"
+                      (change)="changecategory($event)">
+                      <option *ngFor="let catg of categories"[selected]="categorydefaultname == catg">{{catg}}</option>
+                    </select>
+                  </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-2 padding-left-right">
+          <div class="card card_wrapper">
+            <div class="card-body">
+                <h5 class="card-title padding-top">Vehicle</h5>
+                <div class="form-group" style="margin-left: 20px;">
+                    <select id="vehicle" name="vehicle" [(ngModel)]="stockItemdefaultname" class="form-control dropdown_wrapper"
+                      (change)="changeStock($event)">
+                      <option>Select Vehicle</option>
+                      <option *ngFor="let stocktitem of stockitem" [selected]="stockItemdefaultname == stocktitem">{{stocktitem}}</option>
+                    </select>
+                  </div>
+
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-2 padding-left-right">
+          <div class="card card_wrapper">
+            <div class="card-body">
+              <h5 class="card-title padding-top">Spare Part</h5>
+              <div class="form-group" style="margin-left: 20px;">
+                  <select id="sparename" name="sparename" [(ngModel)]="sparepartdefaultname" class="form-control dropdown_wrapper"
+                     (change)="changesparepart($event)">
+                    <option>Select Spare</option>
+                    <option *ngFor="let spares of sparepart" [selected]="sparepartdefaultname == spares">{{spares}}</option>
+                  </select>
+                </div>
+
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-2 padding-left-right">
+          <div class="card card_wrapper">
+            <div class="card-body">
+              <h5 class="card-title padding-top">Store ID</h5>
+              <div class="form-group" style="margin-left: 20px;">
+                  <select id="sparename" name="sparename" [(ngModel)]="stockname" class="form-control dropdown_wrapper">
+                    <!-- (change)="changeValue($event)" -->
+                    <option>1</option>
+                    <!-- <option *ngFor="let spares of stocks">{{spares}}</option> -->
+                  </select>
+                </div>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+        <div class="col-md-2 padding-left-right">
+          <div class="card card_wrapper">
+            
+            <div class="card-body">
+                <h5 class="card-title padding-top">Stock Quantity</h5>
+                <img src ="../../assets/iconss/availability.png" class="icon-image-wrapper">
+                <h4 class="icon-text-wrapper">200</h4>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-2 padding-left-right">
+          <div class="card card_wrapper">
+             
+            <div class="card-body">
+                <h5 class="card-title padding-top">Stock Value</h5>
+                <img src ="../../assets/iconss/costunit.png" class="icon-image-wrapper">
+                <h4 class="icon-text-wrapper" style="margin-left: 26px;">100 USD</h4>
+            </div>
+
+          </div>
+        </div>
+     
+
+      </div>
+
+    </div>
+    <div class="col-md-2 padding-left-right">
+        <div class="card card_wrapper" style="width:77%;margin-top:3px;">
+          
+          <div class="card-body">
+              <h5 class="card-title padding-top">ETA</h5>
+              <img src ="../../assets/iconss/ETA.png" class="icon-image-wrapper">
+              <h4 class="icon-text-wrapper" style="margin-left: 26px;">8 hrs</h4>
+          </div>
+
+        </div>
+      </div>
+
+    <div class="col-md-1 padding-left-right;" style="text-align: center">
+        <p style="color: red">Alerts</p>
+        <i class="fa alert-icon">&#xf0f3;</i>
+    </div>
+  </div>
+
+  <!--map html-->
+  <div class="row"> 
+    <div class="col-md-12">
+      <div class="card text-center">
+          <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #788786;">Order Tracking</a>
+                </li>
+               
+              </ul>
+            </div>
+
+            <div class="card-body">
+              <div id="Map"></div>
+              
+            </div>
+           
+
+
+
+      </div>
+    </div>
+
+  
+  </div>
+  
+
+</div>
+
+<!--Modal-->
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Purchase Order</h4>
+      </div>
+      <div class="modal-body" style="height:330px;">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+            <span>To:</span><br>
+             <h3>{{warehousename}}</h3>
+             <h4>{{city}}</h4>
+             <h4>{{state}}</h4>
+             <h4>{{country}}</h4>
+              </div>
+             <hr>
+            
+             </div>
+
+            <div class="col-md-6">
+              <div>
+             <span>From:</span><br>
+             <h3>Willow Avenue</h3>
+             <h4>Nashville</h4>
+             <h4>Texas</h4>
+             <h4>United States</h4>
+            </div>
+            <hr>
+              </div>
+             
+             
+          </div>
+
+        </div>
+        <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-3">
+              <label for="inputspare">Spare Part Name</label>
+              <input class="form-control input-sm" id="inputspare" type="text" [(ngModel)]="spare_part">
+          </div>
+          <div class="col-md-3">
+              <label for="inputqty">Quantity</label>
+            <input class="form-control input-sm" id="inputqty" type="number" [(ngModel)]="qty">
+    
+          </div>
+          <div class="col-md-3">
+              <label for="inputrate">Rate</label>
+            <input class="form-control input-sm" id="inputrate" type="number" [ngModel]="rate">
+          </div>
+          <div class="col-md-3">
+              <label for="inputotal">Total</label>
+              <input class="form-control input-sm" id="inputotal" type="number"[(ngModel)]="qty*rate">
+              <button type="button" class="btn btn-primary active" style="margin-top: 20px; width: 50%; float: right">Add</button>
+          </div>
+          
+           </div>
+      </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,265 @@
+<div class="container-fluid">
+    <div class="row m-t-5 ht border_box">
+        <label class="fl">Select Supplier</label>
+        <select class="select" (change)="changeSupplier($event)">
+            <option style="font: bold" selected disabled value="-1">Select Supplier</option>
+            <option *ngFor="let item of filters" [selected]="item == supplierName" value={{item}}>{{item}}</option>
+        </select>
+    </div>
+    <div class="row m-t-5">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 p-l-r-5 ">
+                    <div class=" bg-card  border_box">
+                        <div class="col-md-12 inline p-10">
+                            <div class="col-md-4 p-l-0 m-l-0">
+                                <button class="home_btn"><img style="width: 80% !important;"
+                                        src="../../../../assets/demoicon.png"></button>
+                            </div>
+                            <div class="col-md-8 p-10">
+                                <p class="fs-20"><b>{{supplierName ? supplierName : 'Supplier Name'}}</b></p>
+                                <div>
+                                    <i class="fa fa-star fa_color m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa_color m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star fa_color m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star m-l-5" aria-hidden="true"></i>
+                                    <i class="fa fa-star m-l-5" aria-hidden="true"></i>
+                                </div>
+                                <p><i style="font-size:12px" class="fa">&#xf2a0;</i>&nbsp;&nbsp;Phone number</p>
+                                <p><i style="font-size:12px" class="fa">&#xf003;</i> &nbsp;&nbsp;Email Id</p>
+                                <p> <i style="font-size:12px" class="fa">&#xf041;</i> &nbsp;&nbsp;Address</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 p-l-r-5 ">
+                    <div class=" bg-card  border_box">
+                        <div class="col-md-12">
+                            <h5 class="fs-20"><b>TYPES OF MASTERS</b></h5>
+                        </div>
+                        <div class="col-md-12 inline m-r-0">
+                            <div class="col-md-3 inline border">
+                                <button class="home_green"><img src="../../../../assets/pngs/Excel (2).png"></button>
+                                <p class="m-t fs-18"><b>SW(4)</b></p>
+                            </div>
+                            <div class="col-md-3 inline border">
+                                <button class="home_red"><img src="../../../../assets/pngs/Cloud (2).png"></button>
+                                <p class="m-t fs-18"><b>Cloud(0)</b></p>
+                            </div>
+                            <div class="col-md-3 inline border">
+                                <button class="home_green"><img src="../../../../assets/pngs/Telecom (2).png"></button>
+                                <p class="m-t fs-18"><b>Telecom/HW(23)</b></p>
+                            </div>
+                            <div class="col-md-3 inline ">
+                                <button class="home_green"><img
+                                        src="../../../../assets/pngs/Consulting (2).png"></button>
+                                <p class="m-t fs-18"><b>Consulting(43)</b></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-5">
+                <div class="col-md-3 p-l-r-5 ">
+                    <div class="bg-card  border_box ">
+                        <div class="col-md-12 padding0 m-t-10">
+                            <div class="col-md-4 inline padding0">
+                                <p class="fs-20"><b>TOTAL SPEND</b></p>
+                            </div>
+                            <div class="col-md-8 inline padding0 w-current">
+                                <div class="col-md-6 boeder_left inline text-center"
+                                    [ngClass]="{activeclass1: isActive(1)}" (click)="showDashboard('SPEND',1)">
+                                    <span class="p-sub">CURRENT YEAR</span>
+                                    <!-- <span *ngIf = "selected == 2" class="p-sub2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                </div>
+                                <div class="col-md-6 boeder_right  inline text-center"
+                                    [ngClass]="{activeclass1: isActive(2)}" (click)="showDashboard('COMMITED',2)">
+                                    <span class="p-sub">COMMITTED</span>
+                                    <!-- <span *ngIf = "selected == 1" class="p-sub2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-20">
+                            <div class=" col-md-12 inline  p-30">
+                                <div class=" col-md-6 text-center"><img class="img_width1"
+                                        src="../../../../assets/pngs/spend.png"></div>
+                                <!-- <span><img class=" m-t-10" src="../../../../../assets/arrow.png"></span> -->
+                                <div class="col-md-6 inline  m-t-20">
+                                    <p class="home_red_color m-l"
+                                        [ngStyle]="{'color': spendamount > SPEND ? 'green': 'red' }">
+                                        ${{spendamount | million : 2}}</p>&nbsp;&nbsp;
+                                    <i *ngIf="spendamount > SPEND" class="fa fa-arrow-up m-t-30 icon_green "
+                                        aria-hidden="true"></i>&nbsp;&nbsp;
+                                    <i *ngIf="spendamount < SPEND" class="fa fa-arrow-down m-t-30 icon_red "
+                                        aria-hidden="true"></i>&nbsp;&nbsp;
+                                    <p class="m-t-37">{{SPEND | million: 2}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5 ">
+                    <div class="bg-card  border_box">
+                        <div class="col-md-12 m-t-10">
+                            <p class="fs-20"><b>TOTAL CONTRACTS</b></p>
+                        </div>
+                        <div class="col-md-12 inline ">
+                            <div class="col-md-6 text-center m-t-20">
+                                <img class="  img_width" src="../../../../assets/pngs/contra.png">
+                            </div>
+                            <div class="  inline  m-t-20">
+                                <!-- <div><img class=" m-t-10" src="../../../../../assets/arrow.png"></div> -->
+                                <p class="home_red_color fs-50">
+                                    {{SupplierData?.contracts ? SupplierData?.contracts : '0'}}</p>&nbsp;&nbsp;
+                                <i *ngIf="SupplierData?.contracts > 97" class="fa fa-arrow-up m-t-30 icon_green m-t-42"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;
+                                <i *ngIf="SupplierData?.contracts < 97" class="fa fa-arrow-down m-t-30 icon_red m-t-42"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;
+                                <p class="m-t-37 fs-30">97</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5 ">
+                    <div class="bg-card  border_box">
+                        <div class="inline m-t-10">
+                            <p class="fs-20"><b>TOTAL CRs</b></p>
+                        </div>
+                        <div class="col-md-12 inline  ">
+                            <div class="col-md-6 text-center m-t-20">
+                                <img class="  img_width" src="../../../../assets/pngs/crss.png">
+                            </div>
+                            <div class="col-md-6 inline  m-t-20">
+                                <!-- <div><img class=" m-t-10" src="../../../../../assets/arrow2.png"></div> -->
+                                <p class="home_green_color fs-50">41</p>&nbsp;&nbsp;
+                                <i class="fa fa-arrow-up m-t-30 icon_green m-t-42" aria-hidden="true"></i>&nbsp;&nbsp;
+                                <p class="m-t-37 fs-30">31</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class=" bg-card  border_box ">
+                        <div class="col-md-12 padding0 m-t-10">
+                            <div class="col-md-4 p-r-0">
+                                <p class=" fs-20 p-l-0"><b>TOTAL SAVINGS</b></p>
+                            </div>
+                            <div class="col-md-8 inline padding0 w-current">
+                                <div class="col-md-6 boeder_left  inline text-center"
+                                    [ngClass]="{activeclass1: isActive1(3)}" (click)="showDashboard1('CURRENT',3)">
+                                    <span class="p-sub">CURRENT YEAR</span>
+                                    <!-- <span *ngIf = "selected1 == 4" class="p-sub2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                </div>
+                                <div class="col-md-6 boeder_right inline text-center"
+                                    [ngClass]="{activeclass1: isActive1(4)}" (click)="showDashboard1('ANNUALIZED',4)">
+                                    <span class="p-sub">ANNUALIZED</span>
+                                    <!-- <span *ngIf = "selected1 == 3" class="p-sub2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 inline">
+                            <div class="col-md-6 text-center">
+                                <img class="  img_width1" src="../../../../assets/pngs/contra.png">
+                            </div>
+                            <div class="col-md-6  inline  m-t-20 m-l">
+                                <!-- <div><img class=" m-t-10" src="../../../../../assets/arrow.png"></div> -->
+                                <p class="home_red_color" [ngStyle]="{'color': savings > ANNUALIZED ? 'green': 'red' }">
+                                    ${{savings | million : 2}}</p>&nbsp;&nbsp;
+                                <i *ngIf="savings > ANNUALIZED" class="fa fa-arrow-up m-t-30 icon_green"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;
+                                <i *ngIf="savings < ANNUALIZED" class="fa fa-arrow-down m-t-30 icon_red"
+                                    aria-hidden="true"></i>&nbsp;&nbsp;
+                                <p class="m-t-37">${{ANNUALIZED | million : 2}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-5">
+                <div class="col-md-6 p-l-r-5 ">
+                    <div class="background border_box">
+                        <div class="inline">
+                            <img class="icon" src="../../../../assets/pngs/Enterprise.png"> &nbsp;
+                            <p class="fs-20 "><b>SPEND BY ENTERPRISE</b></p>
+                        </div>
+                        <div class="fr">{{name}} &nbsp;: &nbsp;<span
+                                style="font-size: 25px;">{{value | million: 2}}</span></div>
+                        <div [chart]="scChart" class="chart" id="highcharts-sob44hm-88"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-l-r-5 border_box">
+                    <div class="background1 ">
+                        <div class="pointer">
+                            <div class="col-md-12 inline nopadding bg-sub-curr">
+                                <div class="col-md-4 inline text-center" [ngClass]="{activeclass: isActive2(5)}"
+                                    (click)="showDashboard2(5)">
+                                    <div style="margin: 0px auto; " class="inline">
+                                        <p class=" p-sub1 "><b>CONTRACTS BY VALUE</b></p><span *ngIf="selected2 == 5"
+                                            class=" p-sub1 "><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 inline text-center" [ngClass]="{activeclass: isActive2(6)}"
+                                    (click)="showDashboard2(6)">
+                                    <div style="margin: 0px auto; " class="inline">
+                                        <span>
+                                            <p class=" p-sub1 "><b>PENDING RFX</b></p>
+                                        </span><span *ngIf="selected2 == 6" class="p-sub1"><i class="fa fa-check"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 inline text-center" [ngClass]="{activeclass: isActive2(7)}"
+                                    (click)="showDashboard2(7)">
+                                    <div style="margin: 0px auto; " class="inline">
+                                        <span>
+                                            <p class=" p-sub1 "><b>BY SAVINGS</b></p>
+                                        </span><span *ngIf="selected2 == 7" class="p-sub1"><i class="fa fa-check"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12  nopadding supplier">
+                            <table class="nopadding ">
+                                <thead class="bg-table text-white">
+                                    <th class="th cursor" (click)="sort('ContractName')">Contract Name&nbsp;<i
+                                            class="fa"
+                                            [ngClass]="{'fa-sort': column != 'ContractName', 
+                                                                    'fa-sort-asc': (column == 'ContractName' && !isDesc), 
+                                                                    'fa-sort-desc': (column == 'ContractName' && isDesc) }"
+                                            aria-hidden="true"> </i></th>
+                                    <th class="th cursor" (click)="sort('commited')">Committed&nbsp;<i class="fa"
+                                            [ngClass]="{'fa-sort': column != 'commited', 
+                                                                    'fa-sort-asc': (column == 'commited' && !isDesc), 
+                                                                    'fa-sort-desc': (column == 'commited' && isDesc) }"
+                                            aria-hidden="true"> </i></th>
+                                    <th class="th cursor" (click)="sort('current')">Current&nbsp;<i class="fa"
+                                            [ngClass]="{'fa-sort': column != 'current', 
+                                                                    'fa-sort-asc': (column == 'current' && !isDesc), 
+                                                                    'fa-sort-desc': (column == 'current' && isDesc) }"
+                                            aria-hidden="true"> </i></th>
+                                    <th class="th">CR</th>
+                                    <th class="th">Rating</th>
+                                </thead>
+                                <tr class="bg-tr"
+                                    *ngFor="let item of CVtable | orderBy: {property: column, direction: direction}; let i=index; let odd=odd"
+                                    [ngClass]="{ odd: odd}">
+                                    <td class="ts">{{item.ContractName}}</td>
+                                    <td class="">${{item.commited | million: 2}}</td>
+                                    <td class="">${{item.current | million: 2}}</td>
+                                    <td class="">23</td>
+                                    <td class="">
+                                        <app-rating [rating]='item.commitedrating' [itemId]='item.ContractName'
+                                            (ratingClick)='ratingComponentClick($event)'></app-rating>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

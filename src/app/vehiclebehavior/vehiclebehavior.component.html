@@ -1,0 +1,314 @@
+<!-- <app-header (sidenavChange)='sidenavChanged()'></app-header> -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h3>{{title}}</h3>
+        </div>
+    </div>
+  <div class="col-md-10 padding-0">
+      <div class="col-md-12">
+        <div class="col-md-6 p-2">
+          <span class="fs-26 textborder ">Vehicle Availability</span>
+          </div>
+        <div class="col-md-6">
+          <span class="fs-26 textborder">Vehicle Compliance</span>
+       </div>
+      </div>
+  
+      <div class="col-md-12">
+        <div class="col-md-6 padding-0">
+          <div class=" card card_wrapper">
+            <div class="col-md-3">
+              <div class="card-body">
+                <img src ="../../assets/iconss/firstTruck.png" class="attendance-icon" style=""><br>
+                <div>
+                  <span class="padding-left-8">Total</span><br>
+                  <span class="padding-left-8">1000</span>
+                </div>
+  
+  
+              </div>
+  
+            </div>
+            <div class="col-md-3">
+              <div class="card-body padding-top-12">
+                <span class="fs-29">930</span><br>
+                <span class="fs-15">93%</span><br>
+                 <hr>
+                <span class="fs-15">Present</span>
+  
+              </div>
+  
+            </div>
+            <div class="col-md-3">
+              <div class="card-body pt-12">
+                 <span class="fs-29">60</span><br>
+                <span class="fs-15">5%</span><br>
+               <hr>
+                <span class="fs-15">Planned leave</span>
+  
+              </div>
+  
+            </div>
+            <div class="col-md-3">
+              <div class="card-body pt-12">
+                <span class="fs-29">10</span><br>
+                <span class="fs-15">2%</span><br>
+                 <hr>
+                <span class="fs-15">Unplanned leave</span>
+  
+              </div>
+  
+            </div>
+          </div>
+        
+  
+        </div>
+  
+        <div class="col-md-6 padding-left-10 pr-0">
+  
+          <div class="card card_wrapper">
+            <div class="col-md-3">
+              <div class="card-body">
+                  <img src ="../../assets/iconss/secondTruck.png" class="fleet-icon"><br>
+                  <div>
+                    <span style="padding-left: 12px;">Total</span><br>
+                    <span style="padding-left: 12px;">1000</span>
+                  </div>
+                 </div>
+  
+            </div>
+            <div class="col-md-3">
+              <div class="card-body padding-top-12">
+                <span class="fs-29">940</span><br>
+                <span class="fs-15">92%</span><br>
+               
+                <hr>
+                <span class="fs-15">In Compliance</span>
+  
+              </div>
+  
+            </div>
+            <div class="col-md-3">
+              <div class="card-body padding-top-12">
+                <span class="fs-29">40</span><br>
+                <span class="fs-15">6%</span><br>
+                <hr>
+                <span class="fs-15">Scheduled(30 Days)</span>
+  
+              </div>
+  
+            </div>
+            <div class="col-md-3">
+              <div class="card-body padding-top-12">
+                <span class="fs-29">20</span><br>
+                <span class="fs-15">2%</span><br>
+                <hr>
+                <span class="fs-15">Past Due(60 Days)</span>
+             
+              </div>
+  
+  
+            </div>
+           
+  
+          </div>
+        </div>
+  
+      </div>
+    <div class="col-md-12 driver-performace-div">
+        <div class="card card_wrapper-chart">
+          <div class="card-body" style="background-color: #ffffff">
+            <div>
+                <img src ="../../assets/iconss/performance_icon.png" width="2%" class="mt-14" style="margin-left: 33px;">
+                <!-- <h5 class="card-title fs-19">Driver Daily Performance</h5> -->
+                <span class="fs-25" style="padding-left: 0px;margin-left: 0px">Vehicle Daily Performance</span>
+            </div>
+              <div [chart]="driverperformancechart">   
+            </div>
+            
+        
+             <!-- <h5 style="float: left">Driver Daily Performance</h5> -->
+            </div>
+        </div>
+      </div> 
+  
+      <div class="col-md-12" style="margin-top: 50px;">
+        <div class="col-md-12">
+            <img src ="../../assets/iconss/Rating.png" width="2%" class="mt-14">
+         <span class="fs-25" style="padding-left: 2px">Vehicles by rating</span>
+       </div>
+        <div>
+          <div class="col-md-3 padding-0">
+            <div class="card-body card_wrapper-drivers" [ngStyle]="{'background-color':driverRating == '5' ? '#5871b2' : '' }">
+                <span class="fs-40">229 <span class="fs-17"></span></span><br>
+              <span class="fs-17">22.9%</span><br>
+                <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i><i
+                class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color"
+                aria-hidden="true"></i>
+  
+            </div>
+          </div>
+          <div class="col-md-3 padding-right-0 padding-left-10">
+            <div class="card-body card_wrapper-drivers" [ngStyle]="{'background-color':driverRating == '4' ? '#5871b2' : '' }">
+               <span class="fs-40">262 <span class="fs-17"></span></span><br>
+              <span class="fs-17">26.2%</span><br>
+                <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i><i
+                class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star iconback-color"
+                aria-hidden="true"></i>
+            </div>
+  
+          </div>
+          <div class="col-md-3 padding-right-0 padding-left-10">
+            <div class="card-body card_wrapper-drivers" [ngStyle]="{'background-color':driverRating == '3' ? '#5871b2' : '' }">
+             <span class="fs-40">254 <span class="fs-17"></span></span><br>
+             <span class="fs-17">25.4%</span><br>
+              <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i><i
+                class="fa fa-star iconback-color" aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star iconback-color"
+                aria-hidden="true"></i>
+            </div>
+  
+          </div>
+          <div class="col-md-3 padding-right-0 padding-left-10">
+            <div class="card-body card_wrapper-drivers" [ngStyle]="{'background-color':driverRating == '2' ? '#5871b2' : '' }">
+              <span class="fs-40">255 <span class="fs-17"></span></span><br>
+              <span class="fs-17">25.5%</span><br>
+              <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star iconback-color" aria-hidden="true">&nbsp;</i><i
+                class="fa fa-star iconback-color" aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star iconback-color"
+                aria-hidden="true"></i>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+  
+    </div>
+    <div class="col-md-2 secrightdiv">
+      <div class="col-md-12 padding-0">
+        <div class="card">
+          <div class="card-header cardheader-wrapper back-ground-header">Over Heating
+              <img src ='../../assets/iconss/speed.png' class="speeding-icon-wrapper">
+          </div>
+          <div class="card-body bg-color">
+              <span class="today-text">Today</span>
+            <img src="../../assets/images/Speeding_Truck_Image.jpg" class="background-image" style="opacity: 0.1;">
+            <button type="button" class="btn btn-primary event-button" ><span>{{todayevent | number:'1.0-0'}}&nbsp;&nbsp;</span>Events</button>
+            <!-- <span>20 </span> -->
+            <div style="float:left">
+              <ul class="ulleftdiv-wrapper" style="list-style-type: none">
+                <li class="lirghtdiv-wrapper">Last Day:</li>
+                <li class="lirghtdiv-wrapper">This Week</li>
+                <li class="lirghtdiv-wrapper">Last Month Avg:</li>
+                <li class="lirghtdiv-wrapper">Threshold:</li>
+              </ul>
+            </div>
+            <div style="float:right">
+              <ul class="ulrighttdiv-wrapper" style="list-style-type: none">
+                <li class="lirghtdiv-wrapper">{{lastdayevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{thisweekevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{lastmonthavgevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{threshold | number:'1.0-0'}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-12 rightsectionbox">
+        <div class="card">
+          <div class="card-header cardheader-wrapper back-ground-header">Vibrating Events
+              <img src ='../../assets/iconss/Rash.png' class="rashbreaking-icon-wrapper">
+          </div>
+          <div class="card-body bg-color">
+              <span class="today-text">Today</span>
+            <img src="../../assets/images/Speeding_Truck_Image.jpg" class="background-image"  style="opacity: 0.1;">
+            <button type="button" class="btn btn-primary event-button"><span>{{todayevent | number:'1.0-0'}}&nbsp;&nbsp;</span>Events</button>
+            <!-- <span>20 </span> -->
+            <div style="float:left">
+              <ul class="ulleftdiv-wrapper" style="list-style-type: none">
+                <li class="lirghtdiv-wrapper">Last Day:</li>
+                <li class="lirghtdiv-wrapper">This Week</li>
+                <li class="lirghtdiv-wrapper">Last Month Avg:</li>
+                <li class="lirghtdiv-wrapper">Threshold:</li>
+              </ul>
+            </div>
+            <div style="float:right">
+              <ul class="ulrighttdiv-wrapper" style="list-style-type: none">
+                <li class="lirghtdiv-wrapper">{{lastdayevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{thisweekevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{lastmonthavgevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{threshold}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 rightsectionbox">
+        <div class="card">
+          <div class="card-header cardheader-wrapper back-ground-header">Engine Idling
+          <img src ='../../assets/iconss/Idle.png' class="idletime-icon-wrapper">
+          </div>
+          <div class="card-body bg-color">
+              <span class="today-text">Today</span>
+            <img src="../../assets/images/Speeding_Truck_Image.jpg" class="background-image"  style="opacity: 0.1;">
+         <button type="button" class="btn btn-primary event-button"><span>{{todayevent| number:'1.0-0'}}&nbsp;&nbsp;</span>Events</button>
+            <!-- <span>20 </span> -->
+            <div style="float:left">
+              <ul class="ulleftdiv-wrapper" style="list-style-type: none">
+                <li class="lirghtdiv-wrapper">Last Day:</li>
+                <li class="lirghtdiv-wrapper">This Week</li>
+                <li class="lirghtdiv-wrapper">Last Month Avg:</li>
+                <li class="lirghtdiv-wrapper">Threshold:</li>
+              </ul>
+            </div>
+            <div style="float:right">
+              <ul class="ulrighttdiv-wrapper" style="list-style-type: none">
+                <li class="lirghtdiv-wrapper">{{lastdayevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{thisweekevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{lastmonthavgevent | number:'1.0-0'}}</li>
+                <li class="lirghtdiv-wrapper">{{threshold}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  <div class="row">
+  <div class="col-md-7">
+  <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+    <div class="chartPosition"> 
+    <div [chart]="chartSpeed" class="chart-height">
+    </div>
+  </div>
+    <h5 class="m-t-0"> Fuel Consumption </h5>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+      <div [chart]="chartSpeed2" class="chart-height"></div>
+      <h5 class="m-t-0"> Performance </h5>
+    </div>
+  <div class="col-xs-12 col-sm-4 col-md-4 text-center">
+    <div [chart]="chartSpeed1" class="chart-height">
+    </div>
+    <h5 class="m-t-0"> Maintenance </h5>
+  </div>
+  
+  
+  </div>
+  <div class="col-md-5">
+  <div class="col-xs-12 col-sm-12 col-md-12 p-l-40">
+    <div class="" style="font-size: 18px;color: white;background-color: #753ead;margin-top: 8px;padding-bottom: 0px;">
+      <span style="padding-left: 8px;"> Vehicle Location </span>
+    </div>
+    <div id="map"></div>
+  </div>
+  </div>
+  </div>
+  
+    
+  </div>

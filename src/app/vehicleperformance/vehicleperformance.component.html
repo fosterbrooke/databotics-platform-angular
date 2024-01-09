@@ -1,0 +1,144 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid">
+    
+  <div class="row">
+     <div class="col-xs-12 col-sm-12 col-md-12">
+         <h3>{{title}}</h3>
+     </div>
+ </div>
+     <div class="row pt-5" style="padding-top: 12px;">
+         <div class="col-md-6">
+             <div>
+                 <span class="header-txt">Title</span>
+             </div>
+         </div>
+         <div class="col-md-6">
+             <div class="pull-right">
+                 <!-- <button type="button" class="btn btn-danger-lg">Alerts</button> -->
+                 <button class="btn btnpanel"><span class="txtcolor">Alert</span> &nbsp;<i class="fa fa-exclamation-triangle txtcolor">
+                 </i></button>
+             </div>
+         </div>
+ 
+ 
+     </div>
+     <div class="row">
+        <div class="col-md-2 pr-0">
+            <div class="form-group">
+<div class="row m-0">
+    <span class="dropdown-label col-md-3 p-0"> Region</span>
+    <div class="col-md-9 p-0">
+    <select id="region" name="region" [(ngModel)]="regiondefaultname"  class="form-control dropdown-wrapper"
+                      (change)="changeRegion($event)">
+                      <option *ngFor="let regions of region" [selected]="regiondefaultname == regions">{{regions}}</option>
+                    </select>
+                    </div>
+</div>
+             
+              </div>
+        </div>
+        <div class="col-md-2 pr-0 pl-3">
+            <div class="form-group">
+                <div class="row m-0">
+<span class="dropdown-label  col-md-3 p-0"> State</span>
+<div class="col-md-9 p-0">
+                <select id="state" name="state" [(ngModel)]="statedefaultname"  class="form-control dropdown-wrapper"
+                  (change)="changeState($event)">
+                  <!-- <option  value="state">State</option> -->
+                  <option *ngFor="let states of state" [selected]="statedefaultname == states">{{states}}</option>
+                </select>
+              </div>
+              </div>
+              </div>
+        </div>
+        <div class="col-md-3 pr-0 pl-3">
+            <div class="form-group">
+                <div class="row m-0">
+                <span class="dropdown-label col-md-5 p-0"> Performance Category</span>
+                <div class="col-md-7 p-0">
+                <select id="category" name="category" [(ngModel)]="categorydefaultname" class="form-control dropdown-wrapper"
+                  (change)="changeCategory($event)">
+                  <!-- <option> Performance Category</option> -->
+                  <option *ngFor="let catg of categories" [selected]="categorydefaultname == catg">{{catg}}</option>
+                </select>
+              </div>
+              </div>
+              </div>
+        </div>
+
+        <div class="col-md-3 pl-3">
+            <div class="form-group">
+                <div class="row m-0">
+                <span class="dropdown-label col-md-4 p-0">  Customer Rating &nbsp;</span>
+                <div class="col-md-8 p-0">
+            <select id="rating" name="rating" [(ngModel)]="ratingdefaultname"  class="form-control dropdown-wrapper"
+                  (change)="changeRating($event)">
+                  <!-- <option> Customer Rating</option> -->
+                  <option *ngFor="let ratings of rating" [selected]="ratingdefaultname == ratings">{{ratings}}</option>
+                </select>
+                </div>
+                </div>
+              </div>
+        </div>
+    </div>
+     <div class="row" *ngFor = "let item of response">
+         <div class="col-md-4 pr-0">
+            <div class="card" style="height:353px; background-color: #ffffff; border-bottom: 1px solid #273048;">
+             <div class="col-md-12">
+               <div class="col-md-6">
+                     <img src="../../assets/images/Speeding_Truck_Image1.jpg" alt="Avatar" class="avatar"><br>
+                     <span class="img-text">{{item.Name}}</span>
+               </div>
+ 
+                  <!-- <img src="../../assets/images/Driver_Image.jpg" alt="Avatar" style="width:200px"> -->
+                  <div class="col-md-6" style="padding: 0px;padding-top:49px;line-height: 48px;">
+                         <span class="fs-16"><b>Vehicle No:&nbsp;</b></span><span>{{item.Licensenumber}}</span><br>
+                         <span class="fs-16"><b>Age:&nbsp;</b></span><span>{{item.Experience}}</span><br>
+                         <span class="fs-16"><b>Traffic Violations:&nbsp;</b></span><span>{{item.Trafficviolation}}</span><br>
+                        <span class="fs-16"><b>Vehicle Type:&nbsp;</b></span>:<span>{{item.vehicletype}}</span><br>
+                  </div>
+ 
+             </div>
+             <!-- <div class="col-md-6">
+ 
+             </div> -->
+            </div>
+         </div>
+         <div class="col-md-8 pl-3">
+             <div class="card" style="background-color: #ffffff; border-bottom:1px solid #273048;">
+                 <div class="card-header">
+                   <ul class="nav nav-tabs card-header-tabs tabsnew">
+                     <li class="nav-item">
+                   <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setActiveDriver(1);" style="color: #797A7A">Vehicle Analytics</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link"[ngClass]="{activeclass: isActive(2)}" (click)="setActive(2);"style="color: #797A7A" >Vehicle Attendance</a>
+                     </li>
+                     <li>
+                        
+                     </li>
+ 
+                   </ul>
+                 </div>
+                 <div class="card-body" *ngIf = driveranalytics>
+                     <div [chart]="item.chartObject"  style="height:279px"></div>
+                  
+                    <div class="row pl-27">
+                     <button type="button" class="btn btn-primary btnclass" [ngClass]="{cardactiveclass: isCardActive(1)}" (click)="setOverSpeedingActive(1)">Over Heating</button>
+                     <button type="button" class="btn btn-primary ml-2 btnclass" [ngClass]="{cardactiveclass: isCardActive(2)}" (click)="setOverRudhBreakingActive(2)">Vibration Events</button>
+                     <button type="button" class="btn btn-primary ml-2 btnclass" [ngClass]="{cardactiveclass: isCardActive(3)}" (click)="setEngineIdlingActive(3)">Engine Idling</button>
+                     
+                 </div>
+             </div>
+ 
+                 <div class="card-body" *ngIf = driverattendance> 
+                 <div [chart]="item.heatMapObject" style="height:313px"></div>
+                  </div>
+ 
+ 
+ 
+         </div>
+     </div>
+ </div>
+ </div>
+ 

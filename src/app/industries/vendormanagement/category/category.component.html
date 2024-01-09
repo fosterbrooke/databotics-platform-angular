@@ -1,0 +1,210 @@
+<div class="container-fluid">
+    <div class="row m-t-5 ht  border_box">
+        <label class="fl">Select Category</label>
+        <select class="select" (change)="changeCategory($event)">
+            <option style="font: bold" selected disabled value="-1">Select Category</option>
+            <option *ngFor="let item of filters" [selected]="item==selectedCategory" value={{item}}>{{item}}</option>
+        </select>
+    </div>
+    <div class="row m-t-5">
+        <div class="col-md-12">
+            <div class="row ">
+                <div class="col-md-3 p-l-r-5">
+                    <div class=" bg-card  border_box ">
+                        <div class="inline m-t-10">
+                            <p class="fs-20"><b>CATEGORY </b></p>
+                        </div>
+                        <div class="inline m-t-10 ">
+                            <div class="col-md-12 inline">
+                                <div class="">
+                                    <button class="home_green"><img  src="../../../../assets/pngs/Cloud (2).png"></button></div>
+                                <div class="" style="padding: 0px 20px;">
+                                    <p class="f-s m-t-10"><b> {{selectedCategory}} </b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class=" bg-card  border_box">
+                        <div class="col-md-12  m-t-10 padding0">
+                            <div class="col-md-4 inline ">
+                                <p class="fs-20"><b>TOTAL SPEND</b></p>
+                            </div>
+                            <div class="col-md-8 pointer padding0 w-current">
+                                <div class="col-md-12 inline nopadding ">
+                                    <div class="col-md-6 boeder_left  inline text-center"
+                                        [ngClass]="{activeclass1: isActive(1)}" (click)="showDashboard('SPEND',1)">
+                                        <span class="p-sub">CURRENT YEAR</span>
+                                        <!-- <span *ngIf = "selected == 2" class="p-sun2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                    </div>
+                                    <div class="col-md-6 boeder_right  inline text-center"
+                                        [ngClass]="{activeclass1: isActive(2)}" (click)="showDashboard('COMMITED',2)">
+                                        <span class="p-sub">COMMITTED</span>
+                                        <!-- <span *ngIf = "selected == 1" class="p-sun2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12  inline m-t-20 ">
+                            <div class="col-md-6 text-center inline  ">
+                                <div><img class=" icon1_img" src="../../../../assets/pngs/spend.png"></div>
+                            </div>
+                            <div class="col-md-6 inline p-l-0">
+                                <p class="home_red_color f-s f-size"
+                                    [ngStyle]="{'color': Spend > SPEND ? 'green': 'red' }">
+                                    ${{(Spend) ? (Spend | million: 2) : 0}}</p>
+                                <i *ngIf="Spend > SPEND" class="fa fa-arrow-up m-t-20 icon_green"
+                                    aria-hidden="true"></i>
+                                <i *ngIf="Savings < CURRENT" class="fa fa-arrow-down m-t-20 icon_red"
+                                    aria-hidden="true"></i>
+                                <p class="m-t-37"> {{SPEND | million: 2}} </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class=" bg-card  border_box">
+                        <div class="col-md-12  m-t-10 padding0">
+                            <div class="col-md-4 inline padding0">
+                                <!-- <div><img class="" style="width: 75% !important;" src="../../../../../assets/savings.png">&nbsp;&nbsp;</div> -->
+                                <p class="fs-20"><b>TOTAL SAVINGS</b></p>
+                            </div>
+                            <div class="col-md-8 padding0 w-current">
+                                <div class="col-md-12 inline nopadding  pointer ">
+                                    <div class="col-md-6 boeder_left inline  text-center"
+                                        [ngClass]="{activeclass1: isActive1(3)}" (click)="showDashboard1('CURRENT',3)">
+                                        <span class="p-sub">CURRENT YEAR</span>
+                                        <!-- <span *ngIf = "selected1 == 3" class="p-sun2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                    </div>
+                                    <div class="col-md-6 boeder_right inline text-center"
+                                        [ngClass]="{activeclass1: isActive1(4)}"
+                                        (click)="showDashboard1('ANNUALIZED',4)">
+                                        <span class="p-sub"> ANNUALIZED</span>
+                                        <!-- <span *ngIf = "selected1 == 4" class="p-sun2"><i class="fa fa-check" aria-hidden="true"></i></span> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 inline m-t-20 ">
+                            <div class="col-md-6 text-center inline  ">
+                                <div><img class="icon1_img " src="../../../../assets/pngs/Savings.png"></div>
+                            </div>
+                            <!-- <span><img class="" src="../../../../../assets/arrow.png"></span> -->
+                            <div class="col-md-6 inline">
+                                <p class="home_red_color f-s f-size"
+                                    [ngStyle]="{'color': Savings > CURRENT ? 'green': 'red' }">
+                                    ${{(Savings) ? (Savings | million: 2) : 0}}</p>
+                                <i *ngIf="Savings > CURRENT" class="fa fa-arrow-up m-t-20 icon_green"
+                                    aria-hidden="true"></i>
+                                <i *ngIf="Savings < CURRENT" class="fa fa-arrow-down m-t-20 icon_red"
+                                    aria-hidden="true"></i>
+                                <p class="m-t-37"> {{CURRENT | million: 2}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-l-r-5">
+                    <div class=" bg-card  border_box">
+                        <div class="inline m-t-10">
+                            &nbsp;&nbsp;
+                            <p class="fs-20"><b>TOTAL SUPPLIERS</b></p>
+                        </div>
+                        <div class=" col-md-12 inline m-t-10 ">
+                            <div class="col-md-6 text-center ">
+                                <img class="icon2_img " src="../../../../assets/pngs/crss.png">
+                            </div>
+                            <div class="col-md-6 inline ">
+                                <!-- <span><img class="" src="../../../../assets/arrow.png"></span> -->
+                                <p *ngIf="(metadata?.totalSuppliers) > 6 || (metadata?.totalSuppliers) == 6"
+                                    class="home_green_color f-s  fs-50">
+                                    {{(metadata?.totalSuppliers) ? (metadata?.totalSuppliers | million: 2) : 0}}</p>
+                                <p *ngIf="(metadata?.totalSuppliers) < 6 " class="home_red_color f-s  fs-50">
+                                    {{(metadata?.totalSuppliers) ? (metadata?.totalSuppliers | million: 2) : 0}}</p>
+                                <i *ngIf="(metadata?.totalSuppliers) > 6 || (metadata?.totalSuppliers) == 6"
+                                    class="fa fa-arrow-up m-t-20 icon_green m-t-42" aria-hidden="true"></i>
+                                <i *ngIf="(metadata?.totalSuppliers) < 6"
+                                    class="fa fa-arrow-down m-t-20 icon_red m-t-42" aria-hidden="true"></i>
+                                <p class="m-t-37 fs-30">6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-5">
+                <div class="col-md-6 p-l-r-5 ">
+                    <div class="background  border_box" style="background: #f5f5f5;">
+                        <div class="inline m-t-10">
+                            <div><img class="x" src="../../../../assets/pngs/contact.png"></div>
+                            <p class="fs-20"> <b>DEPT/BU</b></p>
+                        </div>
+                        <div class="fr">{{name}}&nbsp;:&nbsp;<span
+                                style="font-size: 25px;">{{value | million: 2}}</span></div>
+                        <div [chart]="scChart" class="chart"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-l-r-5 border_box" style="background: #f5f5f5;">
+                    <div class=" background1  ">
+                        <div class="pointer">
+                            <div class="col-md-12 inline nopadding bg-sub-curr">
+                                <div class="col-md-6 inline" [ngClass]="{activeclass: isActive2(5)}"
+                                    (click)="showDashboard2(5)">
+                                    <div style="margin: 0px auto;display: flex; " class="">
+                                        <p class="text-center p-sub1 "><b> BY SPEND</b></p><span *ngIf="selected2 == 5"
+                                            class="p-sub1"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 inline" [ngClass]="{activeclass: isActive2(6)}"
+                                    (click)="showDashboard2(6)">
+                                    <div style="margin: 0px auto;display: flex; " class="">
+                                        <p class="text-center p-sub1 "><b>BY SAVINGS</b></p><span *ngIf="selected2 == 6"
+                                            class="p-sub1"><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="col-md-12 nopadding category_table">
+                                <table class="nopadding">
+                                    <thead class="bg-table text-white">
+                                        <th class="th cursor" (click)="sort('SupplierName')">Supplier Name&nbsp;<i
+                                                class="fa" [ngClass]="{'fa-sort': column != 'SupplierName', 
+                                                                'fa-sort-asc': (column == 'SupplierName' && !isDesc), 
+                                                                'fa-sort-desc': (column == 'SupplierName' && isDesc) }"
+                                                aria-hidden="true"> </i></th>
+                                        <th class="th cursor" (click)="sort('Commited')">Committed&nbsp;<i class="fa"
+                                                [ngClass]="{'fa-sort': column != 'Commited', 
+                                                                'fa-sort-asc': (column == 'Commited' && !isDesc), 
+                                                                'fa-sort-desc': (column == 'Commited' && isDesc) }"
+                                                aria-hidden="true"> </i></th>
+                                        <th class="th cursor" (click)="sort('Current')">Current&nbsp;<i class="fa"
+                                                [ngClass]="{'fa-sort': column != 'Current', 
+                                                                'fa-sort-asc': (column == 'Current' && !isDesc), 
+                                                                'fa-sort-desc': (column == 'Current' && isDesc) }"
+                                                aria-hidden="true"> </i></th>
+                                        <th class="th cursor" (click)="sort('Rating')">Rating&nbsp;<i class="fa"
+                                                [ngClass]="{'fa-sort': column != 'Rating', 
+                                                                'fa-sort-asc': (column == 'Rating' && !isDesc), 
+                                                                'fa-sort-desc': (column == 'Rating' && isDesc) }"
+                                                aria-hidden="true"> </i></th>
+                                    </thead>
+                                    <tr *ngFor="let item of tabledata | orderBy: {property: column, direction: direction};let i=index; let odd=odd"
+                                        class="bg-tr" [ngClass]="{ odd: odd}">
+                                        <td class="pd-10 ts">{{item.SupplierName}}</td>
+                                        <td class="pd-10">{{item.Commited | million: 2}}</td>
+                                        <td class="pd-10">{{item.Current | million: 2}}</td>
+                                        <td class="pd-10">
+                                            <app-rating [rating]='item.Rating' [itemId]='item.SupplierName'
+                                                (ratingClick)='ratingComponentClick($event)'></app-rating>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

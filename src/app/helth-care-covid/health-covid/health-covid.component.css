@@ -1,0 +1,145 @@
+.activeclass{
+    background-color: #f9f9f9!important;
+    border-bottom: 3px solid palevioletred;
+    cursor:pointer;
+}
+.nav-tabs>li>a:hover{
+    cursor:pointer;
+}
+.pd-l-10{
+    padding: 10px;
+    padding-left: 0px;
+}
+.pd-10{
+    padding: 10px;
+}
+.bg-card{
+    height: 100px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.pd-t-10{
+    padding-top: 5px;
+    text-align: center;
+}
+.ft{
+    font-size: 15px;
+    margin-left: 20px;
+}
+.pd-85{
+    text-align: right;
+    padding-right: 5px;
+}
+.pd-86{
+    text-align: left;
+    padding-left: 0px;
+}
+.pd-87{
+    padding-right: 10px;
+    text-align: right;
+}
+img{
+    height: 30px;
+    margin-top: -2px;
+}
+.head_background{
+    background-color:white;
+    color: black;
+    padding: 6px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+.pd-0{
+    padding: 0px;
+}
+.st-body{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.st-card{
+    background-color: #ffffff;
+    text-align: center;
+    height: 105px;
+    padding-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+.m-t{
+    margin-top: 10px;
+}
+.st-critical{
+    background-color: #f3e4c5;
+    margin-left: -140px;
+    margin-right: 165px;
+}
+.st-death{
+    background-color: #dedede;
+    margin-left: -85px;
+    margin-right: 135px;
+}
+.st-active{
+    background-color: #bed9ee;
+    margin-left: -45px;
+    margin-right: 80px;
+}
+.st-confirm{
+    background-color: #f7d4ce;
+    margin-right: 40px;
+}
+td{
+    text-align: center;
+    cursor:pointer
+}
+th{
+    text-align: center;
+}
+.st-tab{
+    background-color: white;
+}
+.f-bold{
+    font-weight: bold;
+}
+.backg{
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: white;
+}
+.highlight td{
+    background: #666666  !important;
+    color: white !important;
+}
+.highlight th{
+    background: #20283d !important ;
+    color: white;
+}
+/* .st-img-death{
+    margin-left: -15px
+} */
+.st-map{
+    background-color: white;
+    margin-left: -3px;
+    border-radius: 10px;
+    height: 450px;
+}
+.pd-r0{
+    padding-right: 0px;
+}
+.st-pie{
+    height: 450px;
+    background-color: white;
+    margin: 0px;
+    border-radius: 10px;
+    margin-left: -5px;
+}
+.bg-chart{
+    background-color: white;
+    margin: 0px;
+    margin-left: -5px;
+    border-radius: 10px;
+}

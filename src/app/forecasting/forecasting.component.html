@@ -1,0 +1,23 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<div class="container-fluid">
+    <div class="row b-g">
+      <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setactiveProject1(1);" style="color: #788786;"> Retail Analytics </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setactiveProject2(2);" style="color: #788786;"> Retail Forecasting </a>
+          </li>
+      </ul>
+      <div>
+        <div id="home">
+            <app-retail-analytics-one *ngIf="forecastingone"></app-retail-analytics-one>
+        </div>
+        <div id="home">
+          <app-retail-analytics-two *ngIf="forecastingtwo"></app-retail-analytics-two>
+      </div>
+
+      </div>
+    </div>
+</div>
+

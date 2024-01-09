@@ -1,0 +1,371 @@
+<app-header></app-header>
+<div class="bg" style="background-size: cover">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2" style="padding-top: 23px;">
+        <div class="circle-text">
+          Add<br />
+          Client
+        </div>
+      </div>
+      <div class="col-md-9" style="padding-top:23px">
+        <form [formGroup]="clientForm" (ngSubmit)="onSubmit()" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="organizationName">Organization Name</label>
+              <input type="text" class="form-control transparent-input" formControlName="organizationName"
+                placeholder="Organization Name" />
+
+              <!-- <div *ngIf="( clientForm.get('organizationName').hasError('minlength') || clientForm.get('organizationName').hasError('required') ) && clientForm.get('organizationName').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('organizationName').hasError('required') &&
+                  clientForm.get('organizationName').touched
+                ">
+                Organization Name is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('organizationName').hasError('minlength') &&
+                  clientForm.get('organizationName').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+            <div class="form-group col-md-6">
+              <label for="contactNumber">Contact Number</label>
+              <input type="number" class="form-control" formControlName="contactNumber" placeholder="Contact Number" />
+              <!-- <div *ngIf="( clientForm.get('contactNumber').hasError('minlength') || clientForm.get('contactNumber').hasError('required') ) && clientForm.get('contactNumber').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('contactNumber').hasError('required') &&
+                  clientForm.get('contactNumber').touched
+                ">
+                Contact Number is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('contactNumber').hasError('minlength') &&
+                  clientForm.get('contactNumber').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+
+          <div class="form-row">
+            <div class="form-group col-md-6" style="background: none">
+              <label for="organizationCategory">Organization Category</label>
+              <select id="inputState" class="form-control" style="background: none;height: 44px;padding: 0px 12px;"
+                formControlName="organizationCategory">
+                <option *ngFor="
+                    let category of organizationCategories;
+                    let dataIndex = index
+                  " [value]="category">{{ category }}
+                </option>
+              </select>
+
+              <!-- <div *ngIf="( clientForm.get('organizationCategory').hasError('minlength') || clientForm.get('organizationCategory').hasError('required') ) && clientForm.get('organizationCategory').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('organizationCategory').hasError('required') &&
+                  clientForm.get('organizationCategory').touched
+                ">
+                Organization Category is required
+              </span>
+              <!-- </div> -->
+            </div>
+            <div class="form-group col-md-6">
+              <label for="officialMailId">Official Email ID</label>
+              <input type="text" class="form-control" formControlName="officialMailId" placeholder="Official Email" />
+
+              <!-- <div *ngIf="( clientForm.get('officialMailId').hasError('minlength') || clientForm.get('officialMailId').hasError('required') ) && clientForm.get('officialMailId').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('officialMailId').hasError('required') &&
+                  clientForm.get('officialMailId').touched
+                ">
+                Email is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('officialMailId').hasError('pattern') &&
+                  clientForm.get('officialMailId').touched
+                ">
+                Please check the format of mail entered
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('officialMailId').hasError('invalid_domain') &&
+                  clientForm.get('officialMailId').touched
+                ">
+                Please enter business email
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="adminName">Admin Name</label>
+              <input type="text" class="form-control" formControlName="adminName" placeholder="Admin Name" />
+
+              <!-- <div *ngIf="( clientForm.get('adminName').hasError('minlength') || clientForm.get('adminName').hasError('required') ) && clientForm.get('adminName').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('adminName').hasError('required') &&
+                  clientForm.get('adminName').touched
+                ">
+                Admin Name is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('adminName').hasError('minlength') &&
+                  clientForm.get('adminName').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+            <div class="form-group col-md-6">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" formControlName="password" placeholder="Password" />
+
+              <!-- <div *ngIf="( clientForm.get('password').hasError('minlength') || clientForm.get('password').hasError('required') ) && clientForm.get('password').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('password').hasError('required') &&
+                  clientForm.get('password').touched
+                ">
+                Password is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('password').hasError('minlength') &&
+                  clientForm.get('password').touched
+                ">
+                Must be at least 8 characters!
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('password').hasError('hasNumber') &&
+                  clientForm.get('password').touched
+                ">
+                Must contain at least 1 number!
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('password').hasError('hasCapitalCase') &&
+                  clientForm.get('password').touched
+                ">
+                Must contain at least 1 capital letter!
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('password').hasError('hasSmallCase') &&
+                  clientForm.get('password').touched
+                ">
+                Must contain at least 1 small letter!
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('password').hasError('hasSpecialCharacters') &&
+                  clientForm.get('password').touched
+                ">
+                Must contain at least 1 special character!
+              </span>
+
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">User Name</label>
+              <input type="text" class="form-control" formControlName="userName"
+                placeholder="User Name" />
+
+              <!-- <div *ngIf="( clientForm.get('userName').hasError('minlength') || clientForm.get('userName').hasError('required') ) && clientForm.get('userName').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('userName').hasError('required') &&
+                  clientForm.get('userName').touched
+                ">
+                User Name is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('userName').hasError('minlength') &&
+                  clientForm.get('userName').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+         <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="alternativeEmail">Alternative Email ID</label>
+              <input type="text" class="form-control" formControlName="alternativeEmail"
+                placeholder="Alternate Email" />
+
+              <!-- <div *ngIf="( clientForm.get('alternativeEmail').hasError('minlength') || clientForm.get('alternativeEmail').hasError('required') ) && clientForm.get('alternativeEmail').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('alternativeEmail').hasError('required') &&
+                  clientForm.get('alternativeEmail').touched
+                ">
+                Alternative Email is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('alternativeEmail').hasError('minlength') &&
+                  clientForm.get('alternativeEmail').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Confirm Password</label>
+              <input type="password" class="form-control" formControlName="confirmPassword"
+                placeholder="Confirm Password" />
+
+              <!-- <div *ngIf="( clientForm.get('confirmPassword').hasError('minlength') || clientForm.get('confirmPassword').hasError('required') ) && clientForm.get('confirmPassword').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('confirmPassword').hasError('required') &&
+                  clientForm.get('confirmPassword').touched
+                ">
+                Confirm Password is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm
+                    .get('confirmPassword')
+                    .hasError('NoPassswordMatch') &&
+                  clientForm.get('confirmPassword').touched
+                ">
+                Confirm Password is not matched
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+
+       
+
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">Security Question 1</label>
+              <input type="text" class="form-control" formControlName="secQues1" placeholder="Security Question1" />
+
+              <!-- <div *ngIf="( clientForm.get('secQues1').hasError('minlength') || clientForm.get('secQues1').hasError('required') ) && clientForm.get('secQues1').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('secQues1').hasError('required') &&
+                  clientForm.get('secQues1').touched
+                ">
+                Security Question1 is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('secQues1').hasError('minlength') &&
+                  clientForm.get('secQues1').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">Answer 1</label>
+              <input type="text" class="form-control" formControlName="answer1" placeholder="Answer1" />
+
+              <!-- <div *ngIf="( clientForm.get('answer1').hasError('minlength') || clientForm.get('answer1').hasError('required') ) && clientForm.get('answer1').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('answer1').hasError('required') &&
+                  clientForm.get('answer1').touched
+                ">
+                Answer1 is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('answer1').hasError('minlength') &&
+                  clientForm.get('answer1').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">Security Question 2</label>
+              <input type="text" class="form-control" formControlName="secQues2" placeholder="Security Question2" />
+
+              <!-- <div *ngIf="( clientForm.get('secQues2').hasError('minlength') || clientForm.get('secQues2').hasError('required') ) && clientForm.get('secQues2').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('secQues2').hasError('required') &&
+                  clientForm.get('secQues2').touched
+                ">
+                Security Question2 is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('secQues2').hasError('minlength') &&
+                  clientForm.get('secQues2').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="inputEmail4">Answer 2</label>
+              <input type="text" class="form-control" formControlName="answer2" placeholder="Answer2" />
+
+              <!-- <div *ngIf="( clientForm.get('answer2').hasError('minlength') || clientForm.get('answer2').hasError('required') ) && clientForm.get('answer2').touched"> -->
+
+              <span class="error" *ngIf="
+                  clientForm.get('answer2').hasError('required') &&
+                  clientForm.get('answer2').touched
+                ">
+                Answer 2 is required
+              </span>
+              <span class="error" *ngIf="
+                  clientForm.get('answer2').hasError('minlength') &&
+                  clientForm.get('answer2').touched
+                ">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12" style="text-align: center">
+              <!-- <button type="button" class="btn btn-primary btn-block">Button 1</button> -->
+              <button type="submit" class="btn btn-primary"
+                style="width: 15%; height: 49px;background-color: #5D474A;  border: none" [disabled]="!clientForm.valid">
+                Submit
+              </button>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.card{
+    height: 129px;
+    text-align: center;
+    background-color:#20283d;;
+    color: white;
+    margin-top: 7px;
+    border-radius: 5px;
+    padding: 40px 0px;
+    font-size: 20px;
+}
+.head_background{
+    background-color:#20283d;
+    color: white;
+    padding: 6px;
+    margin-top: 10px;
+}
+.m-t-10{
+    margin-top: 10px;
+}
+.chart{
+    height: 370px;
+    width: 100%;
+}
+.pie{
+    height: 400px;
+    width: 100%;
+}
+.pd-right{
+    padding-right: 0px;
+}

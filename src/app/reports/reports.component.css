@@ -1,0 +1,80 @@
+
+.panel-heading {
+    padding:0px;
+    border-bottom: 0px;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+}
+.panel {
+     margin-bottom: 0px;
+     border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    border: 0px solid transparent;
+}
+
+.panel-body {
+    padding: 4px;
+}
+.container-fluid {
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.vl {
+    border-left: 1px solid #6c950f;
+    height: 194px;
+    position: absolute;
+    left: 39%;
+    margin-left: 74px;
+    margin-top: 18px;
+    top: 0;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+.img-Radius{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.talkbubble  {
+    padding:15px;
+}
+
+/* .talkbubble:hover {
+    width: 120px;
+   padding:15px;
+    background: #5871b2;
+    position: relative;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+  } */
+  /* .talkbubble:hover p {
+      color:#fff !important;
+  } */
+  .talkbubble:hover:before {
+    /* content: ""; */
+    position: absolute;
+    right: -14px;
+    top: -23px;
+    left: -14px;
+    border-top: 24px solid #5871b2;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    height: 0;
+    /* width: 100%; */
+  }
+
+  .pointer-class{
+    cursor: pointer;
+  }
+
+  .padding-top{
+    padding-top: 29px
+  }

@@ -1,0 +1,24 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<div class="container-fluid">
+    <div class="row gp">
+        <div class="col-md-6 pd-left">
+            <p class="background_head">Count Of Electricity Plants by Group</p>
+             <div [chart]="electricity" class="cat border"></div>
+        </div>
+        <div class="col-md-6 pd-right">
+            <p class="background_head">Count of Plants by Sources</p>  
+              <div [chart]="barchart"class="cat border"></div>      
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 pd-left">
+            <p class="background_head">Count of Plants by Prime Mover</p>
+             <div [chart]="piechart"class="cat border"></div>
+        </div>
+        <div class="col-md-6 pd-right">
+            <p class="background_head">Count of Plants by States</p>
+          
+            <div [chart]="mapchart"class="cat border"></div>        
+        </div>
+    </div>
+</div>

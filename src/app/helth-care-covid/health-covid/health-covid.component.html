@@ -1,0 +1,292 @@
+<div class="container-fluid" style="background-color: #e6e7ec;">
+  <div class="row">
+    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+      <div class="row">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-10">
+          <div class="card bg-card st-confirm">
+            <div class="card-head">
+              <span>Confirmed Cases</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #cb4929;">
+              <div class="ft row">
+                <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-85"><p>{{cf(totConfirmed)}}</p></div>
+                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 pd-86"><img src="../../../assets/govicon/Up_Arrow.png"> </div>
+              </div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-10">
+          <div class="card bg-card st-active">
+            <div class="card-head">
+              <span>Active Cases</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #277faf;">
+              <div class="ft row">
+                <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-85"><p>{{cf(totConfirmed)}}</p></div>
+                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 pd-86"><img src="../../../assets/govicon/Up_Arrow.png"> </div>
+              </div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-10">
+          <div class="card bg-card st-death">
+            <div class="card-head">
+              <span>Deaths</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #9e9a9a;">
+              <div class="ft row">
+                <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-87"><p>{{cf(totDeaths)}}</p></div>
+                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 st-img-death pd-86"><img src="../../../assets/govicon/Up_Arrow.png"> </div>
+              </div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-10">
+          <div class="card bg-card st-critical">
+            <div class="card-head">
+              <span>Critical Cases</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #dea136;">
+              <div class="ft row">
+                <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-85"><p>{{cf(totRecovered)}}</p></div>
+                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 pd-86"><img src="../../../assets/govicon/Down_Arrow.png"> </div>
+              </div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <div class="row" style="margin-left: -175px;">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-l-10">
+          <div class="card bg-card" style="background-color:#c6e8d7;">
+            <div class="card-head">
+              <span>Recovered</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #64bb8e;">
+              <div class="ft row">
+                <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-85"><p>{{cf(totRecovered)}}</p></div>
+                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 pd-86"><img src="../../../assets/govicon/Up_Arrow.png"> </div>
+              </div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-l-10">
+          <div class="card bg-card" style="background-color: #dedede;">
+            <div class="card-head">
+              <span>Death Rate</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #9e9a9a;">
+              <div class="row" style="font-size: 15px;"><p>44.7 %</p></div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-l-10">
+          <div class="card bg-card" style="background-color: #c6e8d7;">
+            <div class="card-head">
+              <span>Recovery Rate</span>
+            </div>
+            <div class="card-body pd-t-10" style="color: #64bb8e;">
+              <div class="row" style="font-size: 15px;"><p>65.44 %</p></div>
+              <div class="row"><p>{{currentDate}}</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngIf="countryMap">
+      <div class="row st-map">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setactiveProject(1);"
+                style="color: #000000;"> Total Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setactiveProjectDepths(2);"
+                style="color: #000000;"> Total Deaths </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(3)}" (click)="setactiveProjectRecovered(3);"
+                style="color: #000000;"> Total Recovered </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border padding0" *ngIf="casesData">
+          <div [chart]="mapchart" class="mapheight"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border padding0" *ngIf="DeathsData">
+          <div [chart]="mapchart" class="mapheight"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border padding0" *ngIf="recoveredData">
+          <div [chart]="mapchart" class="mapheight"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" *ngIf="!countryMap">
+      <div class="row st-map">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isWorldActive(1)}" (click)="setCasesWorld(1, 'Confirm')" 
+              style="color: #000000;"> Confirmed Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isWorldActive(2)}" (click)="setCasesWorld(2, 'Death')"
+                style="color: #000000;"> Total Deaths </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isWorldActive(3)}" (click)="setCasesWorld(3, 'Recovered');"
+                style="color: #000000;"> Total Recovered </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border padding0">
+          <div [chart]="worldmap" class="height"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="row">
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+          <div class="row st-pie">
+            <div class="head_background">Overall Active Cases vs Recovered vs Deaths</div>
+            <div [chart]="Piechart" class="chart"></div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <div class="row">
+            <div class="card st-card">
+              <div class="card-head">
+                <span>Country With Highest Confirmed Cases</span>
+              </div>
+              <div class="card-body" style="color: #cb4929;">
+                <div class="st-body">USA</div>
+                <div>3,163,545</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-t">
+            <div class="card st-card">
+              <div class="card-head">
+                <span>Country With Highest Deaths</span>
+              </div>
+              <div class="card-body" style="color: #9e9a9a;">
+                <div class="st-body">USA</div>
+                <div>4,154,664</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-t">
+            <div class="card st-card">
+              <div class="card-head">
+                <span>Country With Highest Recovery Cases</span>
+              </div>
+              <div class="card-body" style="color: #64bb8e;">
+                <div class="st-body">USA</div>
+                <div>31,351</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-t">
+            <div class="card st-card">
+              <div class="card-head">
+                <span>Country With Highest Critical Cases</span>
+              </div>
+              <div class="card-body" style="color: #dea136;">
+                <div class="st-body">USA</div>
+                <div>3,165,161</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-t">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="backg">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Country </th>
+              <th>Confirmed Cases</th>
+              <th>New Cases</th>
+              <th>Active Cases</th>
+              <th>Deaths</th>
+              <th>Critical Cases</th>
+              <th>Recovered</th>
+              <th>Death Rate</th>
+              <th>Recovery Rate</th>
+              <th>Test Performed</th>
+              <th>Confirmed Cases/1M pop</th>
+              <th>Deaths/1M pop</th>
+              <th>Test/1M pop</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="st-tab f-bold">Total</td>
+              <td class="st-tab f-bold" style="color: orangered;">{{cf(totConfirmed)}}</td>
+              <td class="st-tab f-bold" style="color: red;">156,151</td>
+              <td class="st-tab f-bold" style="color: skyblue;">6,315,654</td>
+              <td class="st-tab f-bold" style="color: gray;">{{cf(totDeaths)}}</td>
+              <td class="st-tab f-bold" style="color: #ffac4e;">63,516</td>
+              <td class="st-tab f-bold" style="color: green;">{{cf(totRecovered)}}</td>
+              <td class="st-tab f-bold" style="color: gray;">3.28%</td>
+              <td class="st-tab f-bold" style="color: green;">63.07%</td>
+              <td class="st-tab f-bold" style="color: indigo;">316,548,545</td>
+              <td class="st-tab f-bold" style="color: orangered;">65,464,454.00</td>
+              <td class="st-tab f-bold" style="color: gray;">646,415,634.00</td>
+              <td class="st-tab f-bold" style="color: indigo;">3,541,654</td>
+            </tr>
+            <tr *ngFor="let obj of totalData" (click)="openWorldMap(obj);" 
+            [ngClass]="{'highlight' : selectedCountry == (obj.geoId).toLowerCase()}">
+              <td class="f-bold" style="background-color: #bed9ee;" >{{obj.countries}}</td>
+              <td class="st-tab f-bold" style="color: orangered;">{{cf(obj.t_cases)}}</td>
+              <td class="st-tab f-bold" style="color: red;">156,151</td>
+              <td class="st-tab f-bold" style="color: skyblue;">6,315,654</td>
+              <td class="st-tab f-bold" style="color: gray;">{{cf(obj.t_deaths)}}</td>
+              <td class="st-tab f-bold" style="color: #ffac4e;">63,516</td>
+              <td class="st-tab f-bold" style="color: green;">{{cf(obj.t_recoveries/3)}}</td>
+              <td class="st-tab f-bold" style="color: gray;">3.28%</td>
+              <td class="st-tab f-bold" style="color: green;">63.07%</td>
+              <td class="st-tab f-bold" style="color: indigo;">316,548,545</td>
+              <td class="st-tab f-bold" style="color: orangered;">65,464,454.00</td>
+              <td class="st-tab f-bold" style="color: gray;">646,415,634.00</td>
+              <td class="st-tab f-bold" style="color: indigo;">3,541,654</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row m-t">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-r0">
+      <div class="row" style="background-color: white; margin:0px; border-radius: 10px;">
+        <div class="head_background">Global Confirmed Cases Daily Trend</div>
+        <div [chart]="linechart" class="chart"></div>
+      </div>
+    </div>
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-r0">
+      <div class="row bg-chart">
+        <div class="head_background">Global Daily New Cases vs 7 Days Moving Average</div>
+        <div [chart]="areachart" class="chart"></div>
+      </div>
+    </div>
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-r0">
+      <div class="row bg-chart">
+        <div class="head_background">Global Deaths Daily Trend</div>
+        <div [chart]="columnchart" class="chart"></div>
+      </div>
+    </div>
+  </div>
+</div>

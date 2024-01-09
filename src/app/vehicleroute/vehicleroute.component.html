@@ -1,0 +1,693 @@
+<!-- <app-header></app-header> -->
+<div class="my-container">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12">
+              <h3>{{title}}</h3>
+          </div>
+      </div>
+      <div class="col-md-12">
+          <div class="row pt-0">
+             
+                <div class="col-md-2 plr-2">
+                   
+                  <div class="form-group">
+                      <div class="row m-0">
+                          <span class="dropdown-label col-md-4 p-0"> Entry Point</span>
+                      <div class="col-md-8 p-0">
+                    <select id="region" name="region" [(ngModel)]="regiondefaultname" class="form-control dropdown-wrapper"
+                      (change)="changeRegion($event)">
+                      <option>Region</option>
+                      <option *ngFor="let regions of region" [selected]="regiondefaultname == regions">{{regions}}</option>
+                    </select>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-md-2 plr-2">
+                  <div class="form-group">
+                      <div class="row m-0">
+                          <span class="dropdown-label col-md-4 p-0"> Destination</span>
+                          <div class="col-md-8 p-0">
+                    <select id="state" name="state" [(ngModel)]="statedefaultname" class="form-control dropdown-wrapper"
+                      (change)="changeState($event)">
+                      <option>State</option>
+                      <option *ngFor="let states of state" [selected]="statedefaultname == states">{{states}}</option>
+                    </select>
+                    </div>
+                  </div></div>
+      
+                </div>
+      
+                <div class="col-md-2 plr-2">
+                  <div class="form-group">
+                      <div class="row m-0">
+                          <span class="dropdown-label col-md-4 p-0"> Category</span>
+                          <div class="col-md-8 p-0">
+                    <select id="category" name="category" [(ngModel)]="categorydefaultname"
+                      class="form-control dropdown-wrapper" (change)="changeCategory($event)">
+                      <option>Category</option>
+                      <option *ngFor="let catg of categories" [selected]="categorydefaultname == catg">{{catg}}</option>
+                    </select>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-md-2 plr-2">
+    
+                  <div class="form-group">
+                      <div class="row m-0">
+                          <span class="dropdown-label col-md-3 p-0"> Rating</span>
+                          <div class="col-md-9 p-0">
+                    <select id="rating" name="Rating" [(ngModel)]="ratingdefaultvalue" class="form-control dropdown-wrapper"
+                      (change)="changeRating($event)">
+                      <option>Rating</option>
+                      <option *ngFor="let driverratings of driverrating" [selected]="ratingdefaultvalue == driverratings">
+                        {{driverratings}}</option>
+                    </select>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+      
+                <div class="col-md-2 plr-2">
+                  <div class="form-group">
+                      <div class="row m-0">
+                          <span class="dropdown-label col-md-3 p-0"> vehicle</span>
+                          <div class="col-md-9 p-0">
+                    <select id="vehicleid" name="vehicleid" [(ngModel)]="vehicledefaultname"
+                      class="form-control dropdown-wrapper" (change)="changeVehicle($event)">
+                      <option>vehicle</option>
+                      <option *ngFor="let vehicleidnos of vehicleidno" [selected]="vehicledefaultname == vehicleidnos">
+                        {{vehicleidnos}}</option>
+                    </select>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+           
+      
+            </div>
+    </div>
+    <div class="col-md-9">
+      
+      <!--DropDown-->
+
+      <div class="row">
+        <!--trip info-->
+        <div class="col-md-5 pd-0">
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4 plr-2 box">
+                <div class="box-background-color">
+                  <p class="paragraph">Trip Distance</p><br>
+                  <h5 class="header">{{trip}}</h5>
+                  <!-- <span style="font-size: 25px">5678</span> -->
+                </div>
+
+              </div>
+              <div class="col-md-4 plr-2 box">
+                <div class="box-background-color">
+                  <p class="paragraph">Deliveries</p><br>
+                  <h5 class="header">{{deliveries}}</h5>
+
+                  <!-- <span style="font-size: 25px">5678</span> -->
+                </div>
+
+              </div>
+              <div class="col-md-4 plr-2 box">
+                <div class="box-background-color">
+                  <p class="paragraph">Trip Duration</p><br>
+                  <h5 class="header">{{tripduration}} hrs</h5>
+                  <!-- <span style="font-size: 25px">5678</span> -->
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <div class="col-md-4 plr-2 box">
+                <div [ngClass]=" mpgalert ? 'box-background-alert': 'box-background-color'">
+                  <p class="paragraph">Trip Mpg</p><br>
+                  <h5 class="header">{{tripmileage}}</h5>
+                  <!-- <span style="font-size: 25px">5678</span> -->
+                </div>
+
+              </div>
+              <div class="col-md-4 plr-2 box">
+                <div class="box-background-color">
+                  <p class="paragraph">Engine Offline</p><br>
+                  <h5 class="header">{{engineoffline}} min</h5>
+                  <!-- <span style="font-size: 25px">5678</span> -->
+                </div>
+
+              </div>
+              <div class="col-md-4 plr-2 box">
+                <div class="box-background-color">
+                  <p class="paragraph">Engine IDLE</p><br>
+                  <h5 class="header">{{engineedletime}} min</h5>
+                  <!-- <span style="font-size: 25px">5678</span> -->
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!--trip info-->
+
+        <!--chart-->
+
+        <div class="col-md-7" style="background:#fff;">
+          <div>
+          <div class="row" style="padding-top:11px;text-align: center; color: white">
+            <div class="col-md-4 p-0">
+              <div class="col-md-6">
+                <span style="color:darkblue">Fuel</span><br>
+                <span class="fs-18" style="color:darkblue">
+                  {{fuel}}%
+                </span>
+              </div>
+              <div class="col-md-6 box-icon">
+                <img [src]="fuelalert ? '../../assets/iconss/lowfuel.png' : '../../assets/iconss/Fuel.png'"
+                  class="img-icon-fuel">
+              </div>
+              <span class="alert_msg_one" *ngIf="fuelalert">
+                Empty in 50 miles
+              </span>
+
+            </div>
+            <div class="col-md-4 p-0">
+              <div class="col-md-6">
+                <span style="color:darkblue">Temp</span><br>
+                <span class="fs-18" style="color:darkblue">
+                  {{temperature}} <sup>o</sup>F
+                </span>
+              </div>
+              <div class="col-md-6 box-icon">
+                <img [src]="tempalert ? '../../assets/iconss/overtemp.png' : '../../assets/iconss/Temp.png'"
+                  class="img-icon-temp">
+              </div>
+              <span class="alert_msg_one" *ngIf="tempalert">
+                Engine Overheating
+              </span>
+            </div>
+            <div class="col-md-4 p-0">
+              <div class="col-md-6">
+                <span style="color:darkblue">Battery</span><br>
+                <span class="fs-18" style="color:darkblue">
+                  55%
+                </span>
+              </div>
+              <div class="col-md-6 box-icon">
+                <img src="../../assets/iconss/Battery.png" class="img-icon-battery">
+              </div>
+              <span class="alert_msg" *ngIf="batteryalert">
+                Battery looks good
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div [chart]="chartRpm">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div [chart]="chartSpeed"></div>
+          </div>
+
+        </div>
+        <!--chart-->
+      </div>
+      </div>
+      <!-- <div class="row">
+      <div class="col-md-9 plr-2" style="margin-top: 11px" >
+        <div id="map"></div>
+
+      </div>
+      <div class="col-md-3">
+
+      </div>
+    </div> -->
+    </div>
+
+    <div class="col-md-3" style="margin-top: 2px;padding-bottom:3px;border-radius: 6px;padding-left: 17px">
+      <div class="row" style="background-color:#fff;padding-bottom: 12px;">
+        <div class="card">
+          <div class="card-body">
+
+            <div>
+              <span style="font-size:17px; color:#333;padding-left: 12px"> Vehicle Name : {{drivername}}</span><br>
+              <div *ngIf="rating ==5">
+                <span style="padding-left: 12px">
+                  <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                    aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i><i
+                    class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color"
+                    aria-hidden="true"></i>
+                </span>
+              </div>
+              <div *ngIf="rating ==4">
+                <span style="padding-left: 12px">
+                  <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                    aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i><i
+                    class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i>&nbsp;<i
+                    class="fa fa-star default-icon-color" aria-hidden="true"></i>
+                </span>
+              </div>
+              <div *ngIf="rating ==3">
+                <span style="padding-left: 12px">
+                  <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                    aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star icon-color" aria-hidden="true">&nbsp;</i><i
+                    class="fa fa-star default-icon-color" aria-hidden="true">&nbsp;</i>&nbsp;<i
+                    class="fa fa-star default-icon-color" aria-hidden="true"></i>
+                </span>
+              </div>
+
+              <div *ngIf="rating ==2">
+                <span style="padding-left: 12px">
+                  <i class="fa fa-star icon-color" aria-hidden="true"></i> &nbsp;<i class="fa fa-star icon-color"
+                    aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star default-icon-color"
+                    aria-hidden="true">&nbsp;</i><i class="fa fa-star default-icon-color"
+                    aria-hidden="true">&nbsp;</i>&nbsp;<i class="fa fa-star default-icon-color" aria-hidden="true"></i>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="margin-top: 2px">
+        <div class="card-header" style="font-size:20px;text-align:center;color: white;background-color:#fff;">
+          <!-- <h5 style="text-align:center ;background-color: #1C6561">Fleet Sheet</h5> -->
+          </div>
+        <div class="card-body" style="background-color: #fff;padding-bottom: 12px;height:216px;overflow: overlay">
+          <!-- <ul class="list-group" *ngFor="let item of address">
+            <li class="list-group-item d-flex justify-content-between align-items-center" style="padding-right: 36px;">
+              {{item.Location}}
+              <i style="font-size:24px; float:right;" class="fa"
+                [ngStyle]="{'color':item.Status === 'Yes' ? 'green' : 'red' }">&#xf05d;</i>
+            </li>
+          </ul> -->
+
+          <!-- <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Address</th>
+                <th scope="col">Status</th>
+                <th scope="col">Delivery</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Delhi</td>
+              <td><button type="button" class="btn btn-primary btn-sm">Delivered</button></td>
+              <td>Ontime</td>
+            </tr>
+            <tr>
+              <td>Delhi</td>
+              <td><button type="button" class="btn btn-primary btn-sm">Delay</button></td>
+              <td>Ontime</td>
+            </tr>
+          </table> -->
+          <div class="col-md-12 m-top">
+
+           <div class="text-center ash-color"> <i class="fa fa-tachometer" aria-hidden="true"></i>  Current Speed:</div>
+            
+           <h4 class="text-center head1"> 350 Rpm</h4>
+          </div>
+          <div class="col-md-12 m-top">
+
+              <div class="text-center ash-color"> <i class="fa fa-gas-pump"></i>  Average Fuel:</div>
+               
+              <h4 class="text-center head1"> 30 meg</h4>
+             </div>
+             <div class="col-md-12 m-top">
+
+                <div class="text-center ash-color"> <i class="fa fa-clock-o" aria-hidden="true"></i> Total Engine hours:</div>
+                 
+                <h4 class="text-center head1"> 30 hrs</h4>
+               </div>
+               <div class="col-md-12 m-top">
+
+                  <div class="text-center ash-color"> <i class="fa fa-calendar" aria-hidden="true"></i> Last Service Date:</div>
+                   
+                  <h4 class="text-center head1"> 3-10-2019</h4>
+                 </div>
+        
+          <!-- <div class="col-md-3">
+            <table>
+              <tr>
+                <th>Status</th>
+              </tr>
+            </table>
+
+          </div>
+          <div class="col-md-3">
+            <table>
+              <tr>
+                <th>Delivery</th>
+              </tr>
+            </table>
+
+          </div> -->
+
+          <!-- <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+            <Span> {{locationone}}</Span><br>
+
+          </div>
+          <div class="col-md-3">
+            <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+
+          </div>
+          <div class="col-md-3 pt-6">
+            <span>{{schtimeone}}</span>
+          </div>
+
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+            <Span> {{locationtwo}}</Span>
+
+          </div>
+          <div class="col-md-3 mt-3">
+            <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+          </div>
+          <div class="col-md-3 pt-6">
+            <span>{{schtimetwo}}</span>
+          </div>
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+              <Span> {{locationthree}}</Span>
+
+            </div>
+            <div class="col-md-3 mt-3">
+              <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+            </div>
+            <div class="col-md-3 pt-6">
+              <span>{{schtimethree}}</span>
+            </div>
+
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+            <Span> {{locationfour}}</Span>
+
+          </div>
+          <div class="col-md-3 mt-3">
+            <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+          </div>
+          <div class="col-md-3 pt-6">
+            <span>{{schtimefour}}</span>
+          </div>
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+            <Span> {{locationfive}}</Span>
+
+          </div>
+          <div class="col-md-3 mt-3">
+            <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+          </div>
+          <div class="col-md-3 pt-6">
+            <span>{{schtimefive}}</span>
+          </div>
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+            <Span> {{locationsix}}</Span>
+         </div>
+          <div class="col-md-3 mt-3">
+            <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+          </div>
+          <div class="col-md-3 pt-6">
+            <span>{{schtimesix}}</span>
+          </div>
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+            <Span> {{locationseven}}</Span>
+
+          </div>
+          <div class="col-md-3 mt-3">
+            <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+          </div>
+          <div class="col-md-3 pt-6">
+            <span>{{schtimeseven}}</span>
+          </div>
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+              <Span> {{locationeight}}</Span>
+
+            </div>
+            <div class="col-md-3 mt-3">
+              <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+            </div>
+            <div class="col-md-3 pt-6">
+              <span>{{schtimeeight}}</span>
+            </div>
+
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+              <Span> {{locationnine}}</Span>
+
+            </div>
+            <div class="col-md-3 mt-3">
+              <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+            </div>
+            <div class="col-md-3 pt-6">
+              <span>{{schtimenine}}</span>
+            </div>
+
+            <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+                <Span> {{locationten}}</Span>
+
+              </div>
+              <div class="col-md-3 mt-3">
+                <button type="button" class="btn btn-primary btn-sm">Delivered</button>
+
+              </div>
+              <div class="col-md-3 pt-6">
+                <span>{{schtimeten}}</span>
+              </div>
+
+
+
+          <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+                <Span> New York</Span>
+              </div>
+              <div class="col-md-3" style="padding-top: 3px">
+                <button type="button" class="btn btn-primary btn-sm" style="width:100%">Delayed</button>
+
+              </div>
+              <div class="col-md-3 pt-10">
+                <span>10 Min</span>
+              </div>
+
+
+             <div class="col-md-6" style="padding-top: 4px;font-size: 12px">
+                <Span> New York</Span>
+              </div>
+              <div class="col-md-3" style="padding-top: 3px">
+                <button type="button" class="btn btn-primary btn-sm" style="width:100%">Missed</button>
+
+              </div>
+              <div class="col-md-3">
+                <button type="button" class="btn btn-primary btn-sm"
+                    (click)="deliveryReschedule($event)" data-toggle="tooltip"  data-placement="top" title="{{result | date:'medium' }}">{{result}}</button>
+              </div>
+ -->
+            </div>
+      </div>
+
+      <!--Preventive Maintenance-->
+      <div class="row mt-3 bg-color" style="margin-top:10px;border-radius: 23px;">
+        <div class="col-md-6">
+          <span class="fs-19" style="color: white;line-height:34px;">Preventive Maintenance</span><br>
+          
+        </div>
+        <div class="col-md-4">
+          <span  style="color: white;font-size: 12px;text-align: center">{{prementiveMaintenancearrsort[0]?.part}}</span><br>
+          <span  style="color: white;font-size: 12px;text-align: center">{{prementiveMaintenancearrsort[0]?.date_main}} </span>
+         </div>
+         <div class="col-md-2">
+
+            <button type="button" class="btn btn-primary btn-sm mlt-37" (click) ="prementiveMaintenance()" style="border-radius: 17px;background-color:#EEF1EF;margin-bottom:5px !important;"><span style="color:black">more</span></button>
+
+         </div>
+      </div>
+
+
+  <!--close Preventive Maintenance-->
+
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-7 pr pt-15" style="padding-right: 2px;">
+        <!-- <div id="map"></div> -->
+        <div class="card-header" style="font-size:18px; color:  white;background-color: #273048;">
+          <!-- <h5 style="text-align:center ;background-color: #1C6561">Route Map</h5> -->
+          <span class="pl-54">Route Map</span>
+        </div>
+        <div class="card-body">
+          <div id="map"></div>
+        </div>
+
+      </div>
+      <div class="col-md-5">
+          <div class="card-header" style="font-size:18px;color: white;background-color:#273048;padding-left: 18px;margin-left: 13px;margin-right: 13px;margin-top: 6px;">
+              <span>Vehicle Behaviour</span>
+            </div>
+        <div class="col-md-6">
+          <div class="card-body" style="background-color:#fff;padding-bottom:22px;">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Vehicle Attendance
+                <span style="color: #333; float: right;">95%</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Over heating Events
+                <span style="color:#333; float: right;">6</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Vibration Braking Events
+                <span style="color:#333; float: right;">2</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Misrouting
+                <span style="color:#333; float: right;">1</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total Engine offline
+                <span style="color:#333; float: right;">.52 Hours</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Harsh Acceleration
+                <span style="color:#333; float: right;">{{rapidacceleration}}</span>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
+        <div class="col-md-6">
+          <div class="card-body" style="background-color:#fff; padding-bottom: 43px">
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Total Miles Completed
+                <span style="color:#333; float: right;">{{totalmilesrun}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                No of Breakdowns
+                <span style="color:#333; float: right;">2</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Flat Tire Events
+                <span style="color:#333; float: right;">{{flattireevents}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Last Services
+                <span style="color:#333; float: right;">{{lastservicedate | date}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Last Breakdown <br>at 123456.25 miles
+                <span style="color:#333; float: right;margin-top: -16px;">{{lastbreakdown | date}}</span>
+              </li>
+            </ul>
+          </div>
+  
+  
+        </div>
+  
+        
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<!--Modal-->
+<div class="modal fade" id="calendarModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Schedule Calendar</h4>
+      </div>
+      <div class="modal-body" style="height: 200px">
+        <div class="form-group">
+          <angular2-date-picker class="form-control" id="datetimepicker" [(ngModel)]="date" [settings]="settings"
+            style="padding: 0.2rem 0.1rem"></angular2-date-picker>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" (click)="setDate()">Set</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Message Delivery-->
+<div class="modal fade" id="messageeModel" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Prementive Maintenance</h4>
+      </div>
+      <div class="modal-body">
+        <span>Your Order Successfully Reschedule For Delivery":{{result | date:'medium' }}</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Message Delivery-->
+
+<!--Prementive Maintenance-->
+<div class="modal fade" id="maintenanceModel" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="width:74%">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Preventive Maintenance</h4>
+      </div>
+      <div class="modal-body" style="height: 250px">
+        <div class="form-group">
+          <div class="row" *ngFor="let item of prementiveMaintenancearrsort; let i= index" style="padding: 2px">
+              <div class="col-md-4">
+                  <span>{{item?.part}}</span>
+                 </div>
+                 <div class="col-md-4">
+                    <span>{{item?.date_main}}</span>
+                </div>
+
+                 <div class="col-md-4">
+                  <button type="button" class="btn btn-primary active" (click) ="scheduleActivity(i,item)" > {{selectedButton[i] ? 'Scheduled' : 'Schedule Activity'}}</button>
+                </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default">Set</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--Prementive Maintenance-->

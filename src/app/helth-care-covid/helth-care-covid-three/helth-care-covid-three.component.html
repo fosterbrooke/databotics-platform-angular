@@ -1,0 +1,52 @@
+<div class="container-fluid">
+  <div class="row">
+        <div class="col-md-12">
+          <p class="fs-30">Prince George's County Covid-19 Expenditures</p>
+        </div>
+        <div class="col-md-12 pd-right">
+          <div class="col-md-2 padding0">
+            <label class="fs-18">Agency Name:</label>
+            <select placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedState($event)">
+              <option value="ALL">ALL</option>
+              <option *ngFor="let obj of covidData" value="{{obj.agency}}">{{obj?.agency}}</option>
+            </select>
+          </div>
+          <div class="col-md-2" style="padding-right: 0px;">
+            <label class="fs-18">From Date:</label>
+            <input type="date" id="from date" name="trip-end" style="padding-right: 10px;" value="date"
+              (change)="fromdate($event)" class="form-control dropdown_wrapper">
+          </div>
+          <div class="col-md-2">
+            <label class="fs-18">To Date:</label>
+            <input type="date" id="to date" name="trip-start" (change)="endDate($event)" class="form-control dropdown_wrapper">
+          </div>
+        </div>
+    <!-- <div class="col-md-2 text-right">
+      <img src="../../../assets/images/logo2.png" style="width: 40%;">
+    </div> -->
+  </div>
+  <div class="row" style="margin-top: 5px;">
+    <div class="col-md-5">
+      <p class="fs-18 background">Amount Spent by Agency Name and Functional Area Description</p>
+      <div [chart]="agency" class="border"></div>
+      <div class="col-md-12 padding0" style="padding-top: 10px;">
+        <p class="fs-18 background">Amount Spent</p>
+        <div [chart]="spent" class="border"></div>
+      </div>
+    </div>
+    <div class="col-md-7 pd-right pd-left">
+      <div class="col-md-12 padding0">
+        <p class="fs-18 background">Amount Spent by Posting Date</p>
+        <div [chart]="posting" class="border"></div>
+      </div>
+      <div class="col-md-12 padding0" style="padding-top: 10px;">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="fs-18 background">Amount Spent by Expence Type and Fund Description</p>
+            <div [chart]="expence" class="border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

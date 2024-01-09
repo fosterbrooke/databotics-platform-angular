@@ -1,0 +1,555 @@
+[
+    {
+        "SeqNo": 459,
+        "time": 1540997928000,
+        "Latitude": 34.051,
+        "Longitude": -86.045,
+        "timestr": "[2018-10-31 14:58:48 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 458,
+        "time": 1540997842000,
+        "Latitude": 34.051,
+        "Longitude": -86.045,
+        "timestr": "[2018-10-31 14:57:22 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 457,
+        "time": 1540997432000,
+        "Latitude": 34.025,
+        "Longitude": -86.034,
+        "timestr": "[2018-10-31 14:50:32 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 456,
+        "time": 1540996884000,
+        "Latitude": 33.996,
+        "Longitude": -85.968,
+        "timestr": "[2018-10-31 14:41:24 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 455,
+        "time": 1540996587000,
+        "Latitude": 33.947,
+        "Longitude": -85.927,
+        "timestr": "[2018-10-31 14:36:27 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 454,
+        "time": 1540996045000,
+        "Latitude": 33.81,
+        "Longitude": -85.904,
+        "timestr": "[2018-10-31 14:27:25 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 453,
+        "time": 1540995655000,
+        "Latitude": 33.719,
+        "Longitude": -85.872,
+        "timestr": "[2018-10-31 14:20:55 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 452,
+        "time": 1540994320000,
+        "Latitude": 33.602,
+        "Longitude": -85.833,
+        "timestr": "[2018-10-31 13:58:40 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 451,
+        "time": 1540993474000,
+        "Latitude": 33.6,
+        "Longitude": -85.715,
+        "timestr": "[2018-10-31 13:44:34 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 450,
+        "time": 1540993394000,
+        "Latitude": 33.593,
+        "Longitude": -85.696,
+        "timestr": "[2018-10-31 13:43:14 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 449,
+        "time": 1540993064000,
+        "Latitude": 33.532,
+        "Longitude": -85.645,
+        "timestr": "[2018-10-31 13:37:44 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 448,
+        "time": 1540991750000,
+        "Latitude": 33.286,
+        "Longitude": -85.472,
+        "timestr": "[2018-10-31 13:15:50 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 447,
+        "time": 1540991691000,
+        "Latitude": 33.274,
+        "Longitude": -85.464,
+        "timestr": "[2018-10-31 13:14:51 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 446,
+        "time": 1540991235000,
+        "Latitude": 33.184,
+        "Longitude": -85.401,
+        "timestr": "[2018-10-31 13:07:15 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 445,
+        "time": 1540990501000,
+        "Latitude": 33.058,
+        "Longitude": -85.332,
+        "timestr": "[2018-10-31 12:55:01 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 444,
+        "time": 1540990024000,
+        "Latitude": 32.987,
+        "Longitude": -85.402,
+        "timestr": "[2018-10-31 12:47:04 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 443,
+        "time": 1540989543000,
+        "Latitude": 32.891,
+        "Longitude": -85.401,
+        "timestr": "[2018-10-31 12:39:03 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 442,
+        "time": 1540989325000,
+        "Latitude": 32.89,
+        "Longitude": -85.372,
+        "timestr": "[2018-10-31 12:35:25 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 441,
+        "time": 1540989193000,
+        "Latitude": 32.881,
+        "Longitude": -85.337,
+        "timestr": "[2018-10-31 12:33:13 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 440,
+        "time": 1540988776000,
+        "Latitude": 32.847,
+        "Longitude": -85.233,
+        "timestr": "[2018-10-31 12:26:16 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 439,
+        "time": 1540988400000,
+        "Latitude": 32.867,
+        "Longitude": -85.166,
+        "timestr": "[2018-10-31 12:20:00 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 438,
+        "time": 1540986860000,
+        "Latitude": 32.923,
+        "Longitude": -85.123,
+        "timestr": "[2018-10-31 11:54:20 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 437,
+        "time": 1540986834000,
+        "Latitude": 32.923,
+        "Longitude": -85.123,
+        "timestr": "[2018-10-31 11:53:54 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 436,
+        "time": 1540986114000,
+        "Latitude": 32.923,
+        "Longitude": -85.123,
+        "timestr": "[2018-10-31 11:41:54 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 435,
+        "time": 1540984098000,
+        "Latitude": 32.91,
+        "Longitude": -85.123,
+        "timestr": "[2018-10-31 11:08:18 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 434,
+        "time": 1540982731000,
+        "Latitude": 32.662,
+        "Longitude": -85.34,
+        "timestr": "[2018-10-31 10:45:31 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 433,
+        "time": 1540982645000,
+        "Latitude": 32.639,
+        "Longitude": -85.359,
+        "timestr": "[2018-10-31 10:44:05 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 432,
+        "time": 1540982321000,
+        "Latitude": 32.597,
+        "Longitude": -85.448,
+        "timestr": "[2018-10-31 10:38:41 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 431,
+        "time": 1540981237000,
+        "Latitude": 32.445,
+        "Longitude": -85.813,
+        "timestr": "[2018-10-31 10:20:37 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 430,
+        "time": 1540981099000,
+        "Latitude": 32.445,
+        "Longitude": -85.813,
+        "timestr": "[2018-10-31 10:18:19 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 429,
+        "time": 1540979771000,
+        "Latitude": 32.362,
+        "Longitude": -86.226,
+        "timestr": "[2018-10-31 09:56:11 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 428,
+        "time": 1540979335000,
+        "Latitude": 32.358,
+        "Longitude": -86.321,
+        "timestr": "[2018-10-31 09:48:55 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 427,
+        "time": 1540978608000,
+        "Latitude": 32.291,
+        "Longitude": -86.47,
+        "timestr": "[2018-10-31 09:36:48 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 426,
+        "time": 1540978033000,
+        "Latitude": 32.262,
+        "Longitude": -86.644,
+        "timestr": "[2018-10-31 09:27:13 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 425,
+        "time": 1540977339000,
+        "Latitude": 32.318,
+        "Longitude": -86.895,
+        "timestr": "[2018-10-31 09:15:39 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 424,
+        "time": 1540976315000,
+        "Latitude": 32.431,
+        "Longitude": -87.02,
+        "timestr": "[2018-10-31 08:58:35 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 423,
+        "time": 1540976176000,
+        "Latitude": 32.433,
+        "Longitude": -87.046,
+        "timestr": "[2018-10-31 08:56:16 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 422,
+        "time": 1540976011000,
+        "Latitude": 32.436,
+        "Longitude": -87.086,
+        "timestr": "[2018-10-31 08:53:31 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 421,
+        "time": 1540975767000,
+        "Latitude": 32.445,
+        "Longitude": -87.161,
+        "timestr": "[2018-10-31 08:49:27 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 420,
+        "time": 1540975496000,
+        "Latitude": 32.44,
+        "Longitude": -87.247,
+        "timestr": "[2018-10-31 08:44:56 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 419,
+        "time": 1540974895000,
+        "Latitude": 32.448,
+        "Longitude": -87.438,
+        "timestr": "[2018-10-31 08:34:55 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 418,
+        "time": 1540974809000,
+        "Latitude": 32.45,
+        "Longitude": -87.464,
+        "timestr": "[2018-10-31 08:33:29 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 417,
+        "time": 1540974723000,
+        "Latitude": 32.45,
+        "Longitude": -87.489,
+        "timestr": "[2018-10-31 08:32:03 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 416,
+        "time": 1540974558000,
+        "Latitude": 32.453,
+        "Longitude": -87.523,
+        "timestr": "[2018-10-31 08:29:18 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 415,
+        "time": 1540974247000,
+        "Latitude": 32.469,
+        "Longitude": -87.611,
+        "timestr": "[2018-10-31 08:24:07 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 414,
+        "time": 1540973824000,
+        "Latitude": 32.509,
+        "Longitude": -87.733,
+        "timestr": "[2018-10-31 08:17:04 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 413,
+        "time": 1540972688000,
+        "Latitude": 32.458,
+        "Longitude": -88.032,
+        "timestr": "[2018-10-31 07:58:08 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 412,
+        "time": 1540972410000,
+        "Latitude": 32.461,
+        "Longitude": -88.117,
+        "timestr": "[2018-10-31 07:53:30 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 411,
+        "time": 1540971968000,
+        "Latitude": 32.444,
+        "Longitude": -88.254,
+        "timestr": "[2018-10-31 07:46:08 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 410,
+        "time": 1540971498000,
+        "Latitude": 32.451,
+        "Longitude": -88.386,
+        "timestr": "[2018-10-31 07:38:18 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 409,
+        "time": 1540971010000,
+        "Latitude": 32.413,
+        "Longitude": -88.52,
+        "timestr": "[2018-10-31 07:30:10 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 408,
+        "time": 1540970765000,
+        "Latitude": 32.39,
+        "Longitude": -88.598,
+        "timestr": "[2018-10-31 07:26:05 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 407,
+        "time": 1540970712000,
+        "Latitude": 32.387,
+        "Longitude": -88.615,
+        "timestr": "[2018-10-31 07:25:12 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 406,
+        "time": 1540970626000,
+        "Latitude": 32.382,
+        "Longitude": -88.643,
+        "timestr": "[2018-10-31 07:23:46 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 405,
+        "time": 1540970243000,
+        "Latitude": 32.35,
+        "Longitude": -88.745,
+        "timestr": "[2018-10-31 07:17:23 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 404,
+        "time": 1540969648000,
+        "Latitude": 32.342,
+        "Longitude": -88.936,
+        "timestr": "[2018-10-31 07:07:28 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 403,
+        "time": 1540969563000,
+        "Latitude": 32.343,
+        "Longitude": -88.964,
+        "timestr": "[2018-10-31 07:06:03 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 402,
+        "time": 1540969397000,
+        "Latitude": 32.343,
+        "Longitude": -89.019,
+        "timestr": "[2018-10-31 07:03:17 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 401,
+        "time": 1540968664000,
+        "Latitude": 32.34,
+        "Longitude": -89.262,
+        "timestr": "[2018-10-31 06:51:04 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 400,
+        "time": 1540967019000,
+        "Latitude": 32.294,
+        "Longitude": -89.785,
+        "timestr": "[2018-10-31 06:23:39 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 399,
+        "time": 1540966437000,
+        "Latitude": 32.278,
+        "Longitude": -89.969,
+        "timestr": "[2018-10-31 06:13:57 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 398,
+        "time": 1540964911000,
+        "Latitude": 32.357,
+        "Longitude": -90.42,
+        "timestr": "[2018-10-31 05:48:31 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 397,
+        "time": 1540964112000,
+        "Latitude": 32.362,
+        "Longitude": -90.676,
+        "timestr": "[2018-10-31 05:35:12 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 396,
+        "time": 1540964026000,
+        "Latitude": 32.361,
+        "Longitude": -90.704,
+        "timestr": "[2018-10-31 05:33:46 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 395,
+        "time": 1540963827000,
+        "Latitude": 32.353,
+        "Longitude": -90.769,
+        "timestr": "[2018-10-31 05:30:27 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 394,
+        "time": 1540963563000,
+        "Latitude": 32.34,
+        "Longitude": -90.848,
+        "timestr": "[2018-10-31 05:26:03 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 393,
+        "time": 1540962275000,
+        "Latitude": 32.389,
+        "Longitude": -91.198,
+        "timestr": "[2018-10-31 05:04:35 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 392,
+        "time": 1540961904000,
+        "Latitude": 32.388,
+        "Longitude": -91.197,
+        "timestr": "[2018-10-31 04:58:24 +0000]",
+        "unit_number": 464
+    },
+    {
+        "SeqNo": 391,
+        "time": 1540961409000,
+        "Latitude": 32.388,
+        "Longitude": -91.197,
+        "timestr": "[2018-10-31 04:50:09 +0000]",
+        "unit_number": 464
+    }
+
+]

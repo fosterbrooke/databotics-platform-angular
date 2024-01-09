@@ -1,0 +1,196 @@
+<app-header></app-header>
+<div class="bg" style="background-size: cover">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2" style="padding-top: 23px;">
+        <div class="circle-text">
+          Add<br>
+          User
+        </div>
+      </div>
+      <div class="col-md-9" style="padding-top:23px">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="validateFirstName">First Name</label>
+              <input type="text" class="form-control transparent-input" id="validateFirstName" placeholder="First Name"
+                formControlName="firstName">
+
+              <!-- <div *ngIf="( userForm.get('firstName').hasError('minlength') || userForm.get('firstName').hasError('required') ) && userForm.get('firstName').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('firstName').hasError('required') && userForm.get('firstName').touched">
+                First Name is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('firstName').hasError('minlength') && userForm.get('firstName').touched">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+
+            </div>
+          
+
+            <div class="form-group col-md-6">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+
+              <!-- <div *ngIf="( userForm.get('lastName').hasError('minlength') || userForm.get('lastName').hasError('required') ) && userForm.get('lastName').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('lastName').hasError('required') && userForm.get('lastName').touched">
+                Last Name is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('lastName').hasError('minlength') && userForm.get('lastName').touched">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6" style="background: none">
+              <label for="emailId">Email</label>
+              <input type="email" class="form-control" formControlName="emailId" placeholder="Email Id">
+
+              <!-- <div *ngIf="( userForm.get('emailId').hasError('minlength') || userForm.get('emailId').hasError('required') ) && userForm.get('emailId').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('emailId').hasError('required') && userForm.get('emailId').touched">
+                Email Id is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('emailId').hasError('pattern') && userForm.get('emailId').touched">
+                Please check the email entered
+              </span>
+              <!-- </div> -->
+            </div>
+            <div class="form-group col-md-6">
+              <label for="alternateEmailId">Alternative Email</label>
+              <input type="email" class="form-control" formControlName="alternateEmailId" placeholder="Alternate EmailId">
+
+              <!-- <div *ngIf="( userForm.get('alternateEmailId').hasError('minlength') || userForm.get('alternateEmailId').hasError('required') ) && userForm.get('alternateEmailId').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('alternateEmailId').hasError('required') && userForm.get('alternateEmailId').touched">
+                Alternate Email is required
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="userName">User Name</label>
+              <input type="text" class="form-control" formControlName="userName" placeholder="User Name">
+
+              <!-- <div *ngIf="( userForm.get('userName').hasError('minlength') || userForm.get('userName').hasError('required') ) && userForm.get('userName').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('userName').hasError('required') && userForm.get('userName').touched">
+                User Name is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('userName').hasError('minlength') && userForm.get('userName').touched">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+            <div class="form-group col-md-6">
+              <label for="password"> Password</label>
+              <input type="password" class="form-control" formControlName="password" placeholder="Password">
+
+              <!-- <div *ngIf="( userForm.get('password').hasError('minlength') || userForm.get('password').hasError('required') ) && userForm.get('password').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('password').hasError('required') && userForm.get('password').touched">
+                Password is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('password').hasError('minlength') && userForm.get('password').touched">
+                Minimum of 8 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="designation">Desigation</label>
+              <input type="text" class="form-control" formControlName="designation" placeholder="Designation">
+              <!-- <div *ngIf="( userForm.get('designation').hasError('minlength') || userForm.get('designation').hasError('required') ) && userForm.get('designation').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('designation').hasError('required') && userForm.get('designation').touched">
+                Designation is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('designation').hasError('minlength') && userForm.get('designation').touched">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+
+            </div>
+            <div class="form-group col-md-6">
+              <label for="location">Location</label>
+              <input type="text" class="form-control" formControlName="location" placeholder="Location">
+
+              <!-- <div *ngIf="( userForm.get('location').hasError('minlength') || userForm.get('location').hasError('required') ) && userForm.get('location').touched"> -->
+
+              <span class="error"
+                *ngIf="userForm.get('location').hasError('required') && userForm.get('location').touched">
+                Location is required
+              </span>
+              <span class="error"
+                *ngIf="userForm.get('location').hasError('minlength') && userForm.get('location').touched">
+                Minimum of 4 characters
+              </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+
+
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="contactNumber">Contact Number</label>
+                <input type="number" class="form-control" formControlName="contactNumber" placeholder="Contact Number">
+                <!-- <div *ngIf="( userForm.get('contactNumber').hasError('minlength') || userForm.get('contactNumber').hasError('required') ) && userForm.get('contactNumber').touched"> -->
+
+                <span class="error"
+                  *ngIf="userForm.get('contactNumber').hasError('required') && userForm.get('contactNumber').touched">
+                  Contact Number is required
+                </span>
+                <span class="error"
+                  *ngIf="userForm.get('contactNumber').hasError('minlength') && userForm.get('contactNumber').touched">
+                  Minimum of 4 characters
+                </span>
+                <!-- </div> -->
+
+              </div>
+            </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12" style="text-align: center">
+              <!-- <button type="button" class="btn btn-primary btn-block">Button 1</button> -->
+              <button type="submit" class="btn btn-primary"
+                style="width: 15%; height: 49px;background-color: #5D474A;  border: none" [disabled]="!userForm.valid">Submit</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+      <div class="col-md-1">
+
+      </div>
+
+
+    </div>
+
+  </div>
+</div>

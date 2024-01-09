@@ -1,0 +1,73 @@
+[
+    {
+      "Name": "Alys Hobson",
+      "Joinning Date": "20-Nov-18",
+      "Department": "Accounting",
+      "Role": "Analyst",
+      "Onboarding Status": 84
+    },
+    {
+      "Name": "Thorn Lafford",
+      "Joinning Date": "14-Sep-18",
+      "Department": "Accounting",
+      "Role": "Analyst",
+      "Onboarding Status": 80
+    },
+    {
+      "Name": "Consalve Adcock",
+      "Joinning Date": "8-Apr-18",
+      "Department": "IT",
+      "Role": "Developer",
+      "Onboarding Status": 52
+    },
+    {
+      "Name": "Cristine Flacknell",
+      "Joinning Date": "17-Jun-18",
+      "Department": "Legal",
+      "Role": "Law Intern",
+      "Onboarding Status": 65
+    },
+    {
+      "Name": "Pedro Meighan",
+      "Joinning Date": "6-Mar-18",
+      "Department": "Admin",
+      "Role": "Front Desk",
+      "Onboarding Status": 47
+    },
+    {
+      "Name": "Gan Dunhill",
+      "Joinning Date": "30-Nov-18",
+      "Department": "Admin",
+      "Role": "Front Desk",
+      "Onboarding Status": 55
+    },
+    {
+      "Name": "Adoree Seiler",
+      "Joinning Date": "2-Jan-19",
+      "Department": "Accounting",
+      "Role": "Analyst",
+      "Onboarding Status": 78
+    },
+    {
+      "Name": "Brnaba Aubri",
+      "Joinning Date": "27-Mar-18",
+      "Department": "Admin",
+      "Role": "Sr Analyst",
+      "Onboarding Status": 88
+    },
+    {
+      "Name": "Livvyy Colvill",
+      "Joinning Date": "29-May-18",
+      "Department": "IT",
+      "Role": "UI Designer",
+      "Onboarding Status": 79
+    },
+    {
+      "Name": "Waldon Hinstridge",
+      "Joinning Date": "18-Jan-19",
+      "Department": "Accounting",
+      "Role": "Finance Lead",
+      "Onboarding Status": 54
+    }
+  ]
+  

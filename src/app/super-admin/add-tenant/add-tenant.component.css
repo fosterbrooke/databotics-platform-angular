@@ -1,0 +1,40 @@
+
+.bg{
+  background-image: url('../../../assets/images/form-bg-image.png')
+ 
+ 
+   }
+ .form-control {
+     border-radius: 0px;
+     padding: 20px 12px;
+     box-shadow: none;
+ 
+    }
+ 
+    .circle-text {
+     display: table-cell;
+     height: 200px;
+  /*change this and the width for the size of your initial circle*/
+     width: 200px;
+     text-align: center;
+     vertical-align: middle;
+     border-radius: 50%;
+   /*make it pretty*/
+     background:#5D474A;
+     color: #fff;
+     font: 28px "josefin sans", arial;
+   /*change this for font-size and font-family*/
+ }
+ input {
+     background:none;
+ }
+ label {
+ 
+     font-weight: 100;
+ }
+ 
+ .error {
+   color: red;
+   text-align: left;
+ }
+ 

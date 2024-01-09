@@ -1,0 +1,1527 @@
+{
+  "CATEGORIES": [
+    {
+      "Category_name": "D Category"
+    },
+    {
+      "Category_name": "C Category"
+    },
+    {
+      "Category_name": "M Category"
+    },
+    {
+      "Category_name": "0-9 Category"
+    }
+  ],
+  "VEHICLE": [
+    {
+      "vehicle_name": "Caterpillar D4"
+    },
+    {
+      "vehicle_name": "Caterpillar D5"
+    },
+    {
+      "vehicle_name": "Caterpillar D6"
+    },
+    {
+      "vehicle_name": "Caterpillar D7"
+    },
+    {
+      "vehicle_name": "Caterpillar CS-533E"
+    },
+    {
+      "vehicle_name": "Caterpillar 797"
+    },
+    {
+      "vehicle_name": "Caterpillar 797F"
+    },
+    {
+      "vehicle_name": "Caterpillar Twenty-Two"
+    },
+    {
+      "vehicle_name": "M520 Goer"
+    },
+    {
+      "vehicle_name": "M559"
+    },
+    {
+      "vehicle_name": "M877"
+    },
+    {
+      "vehicle_name": "Caterpillar 345C L"
+    },
+    {
+      "vehicle_name": "Caterpillar 924G"
+    },
+    {
+      "vehicle_name": "Caterpillar 930G"
+    }
+  ],
+  "SPARENAME": [
+    {
+      "spare_name": "Battery"
+    },
+    {
+      "spare_name": "Fan Belt"
+    },
+    {
+      "spare_name": "Camshaft"
+    }
+  ],
+  "INVENTORY_DATA": [
+    {
+      "main_value": "D Category",
+      "stock_value": "222624",
+      "transit_value": "172346",
+      "delivered_value": "85491",
+      "daystosell": "327",
+      "inventory_accuracy": "90.75",
+      "perfect_order_rate": "89.91",
+      "Warehouse_occupancy": "80",
+      "stockaging": [
+        12,
+        8,
+        6,
+        1
+      ],
+      "stock_value_chart": [
+        33394,
+        40072,
+        48977,
+        35620,
+        11131,
+        17810,
+        35620,
+        222624
+      ],
+      "stock_volume_chart": [
+        41339,
+        49606,
+        60630,
+        44095,
+        13780,
+        22047,
+        44095
+      ],
+      "total_delevery_chart": [
+        12824,
+        15388,
+        18808,
+        13679,
+        4275,
+        6839,
+        13679,
+        85491
+      ],
+      "Locations":[
+        {
+          "latitude": "29.357346",
+          "longtitude": "-98.829081",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"1 Hrs"
+        },
+        {
+          "latitude": "32.935325",
+          "longtitude": "-97.469588",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"2 Hrs"
+        },
+        {
+          "latitude": "31.383018",
+          "longtitude": "-100.467474",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"3 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "C Category",
+      "stock_value": "824520",
+      "transit_value": "382199",
+      "delivered_value": "322563",
+      "daystosell": "448",
+      "inventory_accuracy": "93.91",
+      "perfect_order_rate": "94.75",
+      "Warehouse_occupancy": "89",
+      "stockaging": [
+        13,
+        4,
+        5,
+        3
+      ],
+      "stock_value_chart": [
+        123678,
+        148414,
+        181394,
+        131923,
+        41226,
+        65962,
+        131923,
+        824520
+      ],
+      "stock_volume_chart": [
+        50313,
+        60375,
+        73792,
+        53667,
+        16771,
+        26833,
+        53667
+      ],
+      "total_delevery_chart": [
+        93384,
+        112061,
+        136964,
+        99610,
+        31128,
+        49805,
+        99610,
+        322563
+      ],
+      "Locations":[
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"5 Hrs"
+        },
+        {
+          "latitude": "31.217480",
+          "longtitude": "-99.860481",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"6 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"7 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "M Category",
+      "stock_value": "347710",
+      "transit_value": "230563",
+      "delivered_value": "255447",
+      "daystosell": "320",
+      "inventory_accuracy": "91.22",
+      "perfect_order_rate": "90.11",
+      "Warehouse_occupancy": "81",
+      "stockaging": [
+        7,
+        5,
+        6,
+        4
+      ],
+      "stock_value_chart": [
+        52157,
+        62588,
+        76496,
+        55634,
+        17386,
+        27817,
+        55634,
+        347710
+      ],
+      "stock_volume_chart": [
+        27217,
+        32660,
+        39918,
+        29031,
+        9072,
+        14516,
+        29031
+      ],
+      "total_delevery_chart": [
+        34584,
+        41501,
+        50724,
+        36890,
+        11528,
+        18445,
+        36890,
+        255447
+      ],
+      "Locations":[
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"3 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"4 Hrs"
+        },
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"5 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "0-9 Category",
+      "stock_value": "458649",
+      "transit_value": "225329",
+      "delivered_value": "409499",
+      "daystosell": "225",
+      "inventory_accuracy": "92.77",
+      "perfect_order_rate": "91.44",
+      "Warehouse_occupancy": "83",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        68797,
+        82557,
+        100903,
+        73384,
+        22932,
+        36692,
+        73384,
+        458649
+      ],
+      "stock_volume_chart": [
+        32461,
+        38953,
+        47609,
+        34625,
+        10820,
+        17312,
+        34625
+      ],
+      "total_delevery_chart": [
+        61425,
+        73710,
+        90090,
+        65520,
+        20475,
+        32760,
+        65520,
+        409499
+      ],
+      "Locations":[
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"13 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"14 Hrs"
+        },
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"15 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar D4",
+      "stock_value": "67713",
+      "transit_value": "48011",
+      "delivered_value": "36074",
+      "daystosell": "116",
+      "inventory_accuracy": "93.33",
+      "perfect_order_rate": "90",
+      "Warehouse_occupancy": "81",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        10157,
+        12188,
+        14897,
+        10834,
+        3386,
+        5417,
+        10834,
+        67713
+      ],
+      "stock_volume_chart": [
+        14250,
+        17100,
+        20900,
+        15200,
+        4750,
+        7600,
+        15200
+      ],
+      "total_delevery_chart": [
+        5411,
+        6493,
+        7936,
+        5772,
+        1804,
+        2886,
+        5772,
+        36074
+      ],
+      "Locations":[
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"20 Hrs"
+        },
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"23 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"24 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar D5",
+      "stock_value": "44335",
+      "transit_value": "21095",
+      "delivered_value": "16721",
+      "daystosell": "74",
+      "inventory_accuracy": "92",
+      "perfect_order_rate": "92.33",
+      "Warehouse_occupancy": "85",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        6650,
+        7980,
+        9754,
+        7094,
+        2217,
+        3547,
+        7094,
+        44335
+      ],
+      "stock_volume_chart": [
+        9022,
+        10827,
+        13233,
+        9624,
+        3007,
+        4812,
+        9624
+      ],
+      "total_delevery_chart": [
+        2508,
+        3010,
+        3679,
+        2675,
+        836,
+        1338,
+        2675,
+        16721
+      ],
+      "Locations":[
+        {
+          "latitude": "31.129709",
+          "longtitude": "-99.357130",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"11 Hrs"
+        },
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"12 Hrs"
+        },
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"31 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar D6",
+      "stock_value": "60644",
+      "transit_value": "40639",
+      "delivered_value": "11672",
+      "daystosell": "78",
+      "inventory_accuracy": "89.66",
+      "perfect_order_rate": "90",
+      "Warehouse_occupancy": "81",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        9097,
+        10916,
+        13342,
+        9703,
+        3032,
+        4852,
+        9703,
+        60644
+      ],
+      "stock_volume_chart": [
+        10875,
+        13051,
+        15951,
+        11600,
+        3625,
+        5800,
+        11600
+      ],
+      "total_delevery_chart": [
+        1751,
+        2101,
+        2568,
+        1868,
+        584,
+        934,
+        1868,
+        11672
+      ],
+      "Locations":[
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"2 Hrs"
+        },
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"5 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"7 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar D7",
+      "stock_value": "49912",
+      "transit_value": "62601",
+      "delivered_value": "21024",
+      "daystosell": "59",
+      "inventory_accuracy": "88",
+      "perfect_order_rate": "87.33",
+      "Warehouse_occupancy": "76",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        7487,
+        8984,
+        10981,
+        7986,
+        2496,
+        3993,
+        7986,
+        49912
+      ],
+      "stock_volume_chart": [
+        7191,
+        8629,
+        10547,
+        7671,
+        2397,
+        3835,
+        7671
+      ],
+      "total_delevery_chart": [
+        3154,
+        3784,
+        4625,
+        3364,
+        1051,
+        1682,
+        3364,
+        21024
+      ],
+      "Locations":[
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"15 Hrs"
+        },
+        {
+          "latitude": "32.935325",
+          "longtitude": "-97.469588",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"19 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"17 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar CS-533E",
+      "stock_value": "212040",
+      "transit_value": "97413",
+      "delivered_value": "127262",
+      "daystosell": "123",
+      "inventory_accuracy": "92.33",
+      "perfect_order_rate": "95.66",
+      "Warehouse_occupancy": "91",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        31806,
+        38167,
+        46649,
+        33926,
+        10602,
+        16963,
+        33926,
+        212040
+      ],
+      "stock_volume_chart": [
+        7087,
+        8505,
+        10395,
+        7560,
+        2362,
+        3780,
+        7560
+      ],
+      "total_delevery_chart": [
+        19089,
+        22907,
+        27998,
+        20362,
+        6363,
+        10181,
+        20362,
+        127262
+      ],
+      "Locations":[
+        {
+          "latitude": "31.217480",
+          "longtitude": "-99.860481",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"6 Hrs"
+        },
+        {
+          "latitude": "31.383018",
+          "longtitude": "-100.467474",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"10 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"17 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar 797",
+      "stock_value": "251450",
+      "transit_value": "84206",
+      "delivered_value": "148471",
+      "daystosell": "124",
+      "inventory_accuracy": "95.66",
+      "perfect_order_rate": "92.33",
+      "Warehouse_occupancy": "85",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        37718,
+        45261,
+        55319,
+        40232,
+        12573,
+        20116,
+        40232,
+        251450
+      ],
+      "stock_volume_chart": [
+        11785,
+        14142,
+        17284,
+        12570,
+        3928,
+        6285,
+        12570
+      ],
+      "total_delevery_chart": [
+        22271,
+        26725,
+        32664,
+        23755,
+        7424,
+        11878,
+        23755,
+        148471
+      ],
+      "Locations":[
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"3 Hrs"
+        },
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"5 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"17 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar 797F",
+      "stock_value": "168895",
+      "transit_value": "108790",
+      "delivered_value": "18330",
+      "daystosell": "100",
+      "inventory_accuracy": "94.33",
+      "perfect_order_rate": "94.6",
+      "Warehouse_occupancy": "89",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        25334,
+        30401,
+        37157,
+        27023,
+        8445,
+        13512,
+        27023,
+        168895
+      ],
+      "stock_volume_chart": [
+        11007,
+        13208,
+        16143,
+        11741,
+        3669,
+        5870,
+        11741
+      ],
+      "total_delevery_chart": [
+        27470,
+        32963,
+        40289,
+        29301,
+        9157,
+        14650,
+        29301,
+        18330
+      ],
+      "Locations":[
+        {
+          "latitude": "31.129709",
+          "longtitude": "-99.357130",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"10 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"14 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"17 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar Twenty-Two",
+      "stock_value": "170825",
+      "transit_value": "91790",
+      "delivered_value": "163700",
+      "daystosell": "101",
+      "inventory_accuracy": "93.33",
+      "perfect_order_rate": "96.33",
+      "Warehouse_occupancy": "92",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        25624,
+        30749,
+        37582,
+        27332,
+        8541,
+        13666,
+        27332,
+        170825
+      ],
+      "stock_volume_chart": [
+        16384,
+        19661,
+        24030,
+        17476,
+        5461,
+        8738,
+        17476
+      ],
+      "total_delevery_chart": [
+        24555,
+        29466,
+        36014,
+        26192,
+        8185,
+        13096,
+        26192,
+        163700
+      ],
+      "Locations":[
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"22 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"14 Hrs"
+        },
+        {
+          "latitude": "32.935325",
+          "longtitude": "-97.469588",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"19 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "M520 Goer",
+      "stock_value": "109612",
+      "transit_value": "74757",
+      "delivered_value": "101521",
+      "daystosell": "114",
+      "inventory_accuracy": "88",
+      "perfect_order_rate": "91",
+      "Warehouse_occupancy": "83",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        16442,
+        19730,
+        24115,
+        17538,
+        5481,
+        8769,
+        17538,
+        109612
+      ],
+      "stock_volume_chart": [
+        8481,
+        10178,
+        12439,
+        9047,
+        2827,
+        4523,
+        9047
+      ],
+      "total_delevery_chart": [
+        15228,
+        18274,
+        22335,
+        16243,
+        5076,
+        8122,
+        16243,
+        101521
+      ],
+      "Locations":[
+        {
+          "latitude": "31.217480",
+          "longtitude": "-99.860481",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"6 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"7 Hrs"
+        },
+        {
+          "latitude": "29.357346",
+          "longtitude": "-98.829081",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"8 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "M559",
+      "stock_value": "107832",
+      "transit_value": "79768",
+      "delivered_value": "96195",
+      "daystosell": "100",
+      "inventory_accuracy": "91.66",
+      "perfect_order_rate": "86.33",
+      "Warehouse_occupancy": "75",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        16175,
+        19410,
+        23723,
+        17253,
+        5392,
+        8627,
+        17253,
+        107832
+      ],
+      "stock_volume_chart": [
+        11410,
+        13692,
+        16735,
+        12171,
+        3803,
+        6085,
+        12171
+      ],
+      "total_delevery_chart": [
+        14429,
+        17315,
+        21163,
+        15391,
+        4810,
+        7696,
+        15391,
+        96195
+      ],
+      "Locations":[
+        {
+          "latitude": "29.357346",
+          "longtitude": "-98.829081",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"18 Hrs"
+        },
+        {
+          "latitude": "32.935325",
+          "longtitude": "-97.469588",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"19 Hrs"
+        },
+        {
+          "latitude": "31.383018",
+          "longtitude": "-100.467474",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"10 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "M877",
+      "stock_value": "130266",
+      "transit_value": "76038",
+      "delivered_value": "57731",
+      "daystosell": "106",
+      "inventory_accuracy": "94",
+      "perfect_order_rate": "93",
+      "Warehouse_occupancy": "86",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        19540,
+        23448,
+        28659,
+        20843,
+        6513,
+        10421,
+        20843,
+        130266
+      ],
+      "stock_volume_chart": [
+        7325,
+        8790,
+        10744,
+        7814,
+        2442,
+        3907,
+        7814
+      ],
+      "total_delevery_chart": [
+        7670,
+        9204,
+        11249,
+        8181,
+        2557,
+        4090,
+        8181,
+        57731
+      ],
+      "Locations":[
+        {
+          "latitude": "31.217480",
+          "longtitude": "-99.860481",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"6 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"7 Hrs"
+        },
+        {
+          "latitude": "29.357346",
+          "longtitude": "-98.829081",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"8 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar 345C L",
+      "stock_value": "147560",
+      "transit_value": "68635",
+      "delivered_value": "117852",
+      "daystosell": "57",
+      "inventory_accuracy": "93.33",
+      "perfect_order_rate": "89",
+      "Warehouse_occupancy": "79",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        22134,
+        26561,
+        32463,
+        23610,
+        7378,
+        11805,
+        23610,
+        147560
+      ],
+      "stock_volume_chart": [
+        7846,
+        9415,
+        11507,
+        8369,
+        2615,
+        4184,
+        8369
+      ],
+      "total_delevery_chart": [
+        17678,
+        21213,
+        25927,
+        18856,
+        5893,
+        9428,
+        18856,
+        117852
+      ],
+      "Locations":[
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"5 Hrs"
+        },
+        {
+          "latitude": "31.217480",
+          "longtitude": "-99.860481",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"6 Hrs"
+        },
+        {
+          "latitude": "31.850564",
+          "longtitude": "-99.109442",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"7 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar 924G",
+      "stock_value": "192202",
+      "transit_value": "82360",
+      "delivered_value": "166081",
+      "daystosell": "94",
+      "inventory_accuracy": "92.33",
+      "perfect_order_rate": "94.33",
+      "Warehouse_occupancy": "88",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        28830,
+        34596,
+        42284,
+        30752,
+        9610,
+        15376,
+        30752,
+        192202
+      ],
+      "stock_volume_chart": [
+        14404,
+        17285,
+        21126,
+        15364,
+        4801,
+        7682,
+        15364
+      ],
+      "total_delevery_chart": [
+        24912,
+        29895,
+        36538,
+        26573,
+        8304,
+        13286,
+        26573,
+        166081
+      ],
+      "Locations":[
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"4 Hrs"
+        },
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"5 Hrs"
+        },
+        {
+          "latitude": "31.217480",
+          "longtitude": "-99.860481",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"6 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Caterpillar 930G",
+      "stock_value": "118887",
+      "transit_value": "74334",
+      "delivered_value": "125566",
+      "daystosell": "75",
+      "inventory_accuracy": "92.66",
+      "perfect_order_rate": "91",
+      "Warehouse_occupancy": "83",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        17833,
+        21400,
+        26155,
+        19022,
+        5944,
+        9511,
+        19022,
+        118887
+      ],
+      "stock_volume_chart": [
+        10211,
+        12253,
+        14976,
+        10891,
+        3404,
+        5446,
+        10891
+      ],
+      "total_delevery_chart": [
+        18835,
+        22602,
+        27625,
+        20091,
+        6278,
+        10045,
+        20091,
+        125566
+      ],
+      "Locations":[
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"3 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"4 Hrs"
+        },
+        {
+          "latitude": "32.458089",
+          "longtitude": "-99.902814",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"5 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Battery",
+      "stock_value": "645352",
+      "transit_value": "355906",
+      "delivered_value": "539267",
+      "daystosell": "410",
+      "inventory_accuracy": "91.5",
+      "perfect_order_rate": "91",
+      "Warehouse_occupancy": "88",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        33394,
+        40072,
+        48977,
+        35620,
+        11131,
+        17810,
+        35620,
+        645352
+      ],
+      "stock_volume_chart": [
+        41339,
+        49606,
+        60630,
+        44095,
+        13780,
+        22047,
+        44095
+      ],
+      "total_delevery_chart": [
+        12824,
+        15388,
+        18808,
+        13679,
+        4275,
+        6839,
+        13679,
+        539267
+      ],
+      "Locations":[
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"2 Hrs"
+        },
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"3 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"4 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Fan Belt",
+      "stock_value": "538336",
+      "transit_value": "319980",
+      "delivered_value": "380963",
+      "daystosell": "435",
+      "inventory_accuracy": "93.07",
+      "perfect_order_rate": "92.07",
+      "Warehouse_occupancy": "90",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        33394,
+        40072,
+        48977,
+        35620,
+        11131,
+        17810,
+        35620,
+        538336
+      ],
+      "stock_volume_chart": [
+        41339,
+        49606,
+        60630,
+        44095,
+        13780,
+        22047,
+        44095
+      ],
+      "total_delevery_chart": [
+        12824,
+        15388,
+        18808,
+        13679,
+        4275,
+        6839,
+        13679,
+        380963
+      ],
+      "Locations":[
+        {
+          "latitude": "31.129709",
+          "longtitude": "-99.357130",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"1 Hrs"
+        },
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"2 Hrs"
+        },
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"3 Hrs"
+        }
+      ]
+    },
+    {
+      "main_value": "Camshaft",
+      "stock_value": "648505",
+      "transit_value": "334551",
+      "delivered_value": "452770",
+      "daystosell": "466",
+      "inventory_accuracy": "92",
+      "perfect_order_rate": "91.85",
+      "Warehouse_occupancy": "92",
+      "stockaging": [
+        15,
+        7,
+        4,
+        2
+      ],
+      "stock_value_chart": [
+        33394,
+        40072,
+        48977,
+        35620,
+        11131,
+        17810,
+        35620,
+        648505
+      ],
+      "stock_volume_chart": [
+        41339,
+        49606,
+        60630,
+        44095,
+        13780,
+        22047,
+        44095
+      ],
+      "total_delevery_chart": [
+        12824,
+        15388,
+        18808,
+        13679,
+        4275,
+        6839,
+        13679,
+        452770
+      ],
+      "Locations":[
+        {
+          "latitude": "29.666788",
+          "longtitude": "-95.976606",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 1",
+          "est":"2 Hrs"
+        },
+        {
+          "latitude": "29.886222",
+          "longtitude": "-95.425279",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 2",
+          "est":"3 Hrs"
+        },
+        {
+          "latitude": "32.003704",
+          "longtitude": "-102.057051",
+          "phone_number": "9891601952",
+          "warehouse": "Ware House 3",
+          "est":"4 Hrs"
+        }
+      ]
+    }
+  ],
+  "ALERTS": [
+    {
+      "name": "Alert1",
+      "Date": "18-08-2018",
+      "Type": "DSI Reaching Threshold",
+      "Button_text": "Action1"
+    },
+    {
+      "name": "Alert2",
+      "Date": "20-09-2018",
+      "Type": "DSI Reaching Threshold",
+      "Button_text": "Action2"
+    },
+    {
+      "name": "Alert3",
+      "Date": "15-12-2018",
+      "Type": "DSI Reaching Threshold",
+      "Button_text": "Action3"
+    },
+    {
+      "name": "Alert4",
+      "Date": "17-11-2018",
+      "Type": "DSI Reaching Threshold",
+      "Button_text": "Action4"
+    }
+  ]
+}

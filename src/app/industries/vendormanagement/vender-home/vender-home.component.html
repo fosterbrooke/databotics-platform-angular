@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="fixed_header">
+        <app-header></app-header>
+    <div class="row" style="background-color: #4A587D;height: 33px;margin: 0px;">
+    <div class="col-md-12" style="display: flex;">
+        <p class="p-10 txt-c family" [ngClass]="{activeclass: isActive(1)}" (click)="showDashboard(1)">OVERVIEW</p>
+        <p class="p-10 txt-c family" [ngClass]="{activeclass: isActive(2)}" (click)="showDashboard(2)">SUPPLIER PROFILE</p>
+        <p class="p-10 txt-c family" [ngClass]="{activeclass: isActive(3)}" (click)="showDashboard(3)">CATEGORY PROFILE</p>
+        <p class="p-10 txt-c family" [ngClass]="{activeclass: isActive(4)}" (click)="showDashboard(4)">DEPT/BU PROFILE</p>
+        <!-- <p *ngIf="showVMO" class="p-10 txt-c family" [ngClass]="{activeclass: isActive(5)}" (click)="showDashboard(5)">EXECUTIVE SAVINGS OVERVIEW
+        </p>
+        <p *ngIf="showTimeStamp" class="p-10 txt-c family" [ngClass]="{activeclass: isActive(6)}" (click)="showDashboard(6)">QUALITY</p> -->
+    </div>
+</div>
+    </div>
+<div class="row m-0 m-t-127">
+    <app-caterpillar-overview *ngIf="showView(1)" (numberGenerated)="onNumberGenerated($event, item)"></app-caterpillar-overview>
+    <app-suppliers *ngIf="showView(2)" [supplierParam]="endtype"></app-suppliers>
+    <app-category *ngIf="showView(3)" [categoryParam]="endtype"></app-category>
+    <app-dept *ngIf="showView(4)" [deptParam]="endtype"></app-dept>
+    <!-- <app-vmo *ngIf="showView(5)" ></app-vmo>
+    <app-time *ngIf="showView(6)" ></app-time> -->
+</div>
+
+</div>
+
+

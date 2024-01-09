@@ -1,0 +1,142 @@
+.panel_wrapper{
+  margin-top: 5px;
+  border: 0px;
+  margin-bottom: -8px;
+  /* background-color: #d4d4d4 */
+
+}
+.panel-body {
+  padding: 5px;
+}
+
+.panel-body .form-control {
+padding: 2px;
+border-radius: 0px;
+box-shadow:none
+}
+.dropdown_wrapper{
+  width: 80%;
+height: 25px;
+padding: 0px 30px;
+border: 0px;
+border-bottom: 1px solid grey;
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* .card{
+  cursor: pointer;
+  width: 340px;
+  height: 380px;
+ 
+} */
+.front,.back{
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 2px solid palevioletred;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  background: #fff;
+  transition: transform .6s linear;
+  box-shadow: 2px 3px 3px 3px;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+
+}
+.back{
+  background: #fff;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: #2c3e50;
+  color: white;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+.padding_left{
+
+  padding-left: 50px
+}
+
+/*Button*/
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  background: #ff8181;
+  color: #FFF;
+  width: 180px;
+  height: 180px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #bd6565;
+  transition: .4s;
+}
+
+.btn:active{
+  -ms-transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+.btn-position{
+  position: absolute;
+  left: 32%;
+  top: 37%;
+  padding-top: 27px;
+}
+
+.watch-number-wrapper{
+  position: absolute;
+    top: 56%;
+    left: 37%;
+    /* color: white; */
+    font-size: 48px;
+   
+}
+
+.watch-text-wrapper{
+position: absolute;
+top:39%;left:32%;
+font-size: 15px;
+text-align: center;
+}
+.image-width{
+  width:71%
+}

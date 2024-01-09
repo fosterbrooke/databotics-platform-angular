@@ -1,0 +1,156 @@
+/*Padding*/
+
+.pt-4{
+    padding-top: 4px
+}
+.pt-0{
+    padding: 0px;
+}
+
+.ptrbl-0{
+    padding: 0px
+}
+
+.plr-2{
+    padding-left: 2px;
+    padding-right: 1px
+}
+
+
+/* .plr-2{
+    padding-left: 2px;
+    padding-right: 0px
+} */
+
+/*Padding*/
+
+/*Margin*/
+
+.mt-7{
+    margin-top: 7px
+}
+
+.mt-6{
+    margin-top: 6px
+}
+
+
+/*Margin*/
+
+/*Font-size*/
+
+
+/*Font-size*/
+
+/*Font-size*/
+
+/**/
+
+.panle-one-wrapper{
+    background-color: #0E4B68;
+    margin-top: 2px;
+    height: 27px;
+    font-size: 16px;
+    color: white;
+    padding-left: 8px;
+}
+
+.category-txt{
+    background-color: #E22F2F;
+    text-align: center;
+    
+    border-radius: 5px;
+    color: white;
+    line-height:32px;
+    font-size: large;
+}
+
+.dropdown-wrapper{
+    width:70%;
+    height: 32px;
+    background-color: #E22F2F;
+    color: white;
+}
+.panle-parameters-wrapper{
+    background-color: #8A8A8A;
+    margin-top: 9px;
+    height: 27px;
+    font-size: 16px;
+    color: white;
+    padding-left: 8px;
+}
+
+.card-header-wrapper{
+    height: 30px;
+    background-color: #F5C8C9;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.card-height-wrapper{
+    height: 200px;
+    background-color: #F5F5F5
+}
+.progress {
+    height: 29px;
+    margin-bottom: 16px;
+    margin-top: 29px;
+   
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.comfort-win-header-wrapper{
+    background-color: #22CE5C;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+}
+
+.progress-wrapper{
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+
+
+
+.li-group-item-height{
+    height: 51px
+}
+
+ .card-body-wrapper{
+    background-color: #F6F6F6
+
+}
+
+.progress-bar {
+ 
+    background-color: #344183;
+   
+}
+
+.state-analysis{
+    border-bottom: 1px solid #F1F1F1;
+    margin-top: 3px;
+    padding-bottom: 4px; 
+    background-color: #F6F6F6;
+}
+.content {
+    display:none;
+    }
+.pop:hover .content{
+    display:block;
+    position:absolute;
+    padding:10px;
+    background-color:#344183;
+    color:#fff !important;
+    box-shadow: 0 0 10px #fff;
+    z-index:999999999 !important;
+    }
+
+
+
+   

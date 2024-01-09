@@ -1,0 +1,154 @@
+[{
+    "sales":"13-Charlesto...",
+    "totalSales":0.64,
+    "month":"Jan",
+    "fiscal":-5,
+    "category":"010-Womans",
+    "cat1":95,
+    "cat2":95,
+    "cat3":13.8,
+    "manager":"All"
+},{
+    "sales":"28-Huntingt...",
+    "totalSales":0.63,
+    "month":"Feb",
+    "fiscal":-3,
+    "category":"020-Mens",
+    "cat1":86.5,
+    "cat2":102.9,
+    "cat3":14.7,
+    "manager":"Andrew Ma"
+},
+{
+    "sales":"14-Harrisbur...",
+    "totalSales":0.62,
+    "month":"Mar",
+    "fiscal":4,
+    "category":"030-Kids",
+    "cat1":80.8,
+    "cat2":91.5,
+    "cat3":15.8,
+    "manager":"Annelie Zubar"
+},
+{
+    "sales":"24-North Ca...",
+    "totalSales":0.61,
+    "month":"Apr",
+    "fiscal":-7,
+    "category":"040-Juniors",
+    "cat1":80.4,
+    "cat2":102.5,
+    "cat3":12,
+    "manager":"Bard Sutton"
+},
+{
+    "sales":"19-Bel Air Fa...",
+    "totalSales":0.60,
+    "month":"May",
+    "fiscal":2,
+    "category":"050-Shoes",
+    "cat1":80.3,
+    "cat2":86.1,
+    "cat3":11.8,
+    "manager":"Carlos Grilo"
+},{
+    "sales":"39-Morgant...",
+    "totalSales":0.59,
+    "month":"Jun",
+    "fiscal":6,
+    "category":"060-Intimate",
+    "cat1":78.4,
+    "cat2":70.1,
+    "cat3":16.6,
+    "manager":"Chris Gray"
+},{
+    "sales":"27-Boardma...",
+    "totalSales":0.58,
+    "month":"Jul",
+    "fiscal":-9,
+    "category":"070-Hosiery",
+    "cat1":74.2,
+    "cat2":68.5,
+    "cat3":14.5,
+    "manager":"Chris McGurk"
+},
+{
+    "sales":"16-winchest..",
+    "totalSales":0.57,
+    "month":"Aug",
+    "fiscal":-3,
+    "category":"080-Access0ries",
+    "cat1":73.5,
+    "cat2":83.1,
+    "cat3":10,
+    "manager":"Tina Lassila"
+},
+{
+    "sales":"11-century ll...",
+    "totalSales":0.56,
+    "category":"090-Home",
+    "cat1":69.2,
+    "cat2":57.6,
+    "cat3":10.4,
+    "manager":"Valery Ushakov"
+},
+{
+    "sales":"23-Erie Fashi...",
+    "totalSales":0.55,
+    "category":"100-Groceries",
+    "cat1":65.4,
+    "cat2":50.8,
+    "cat3":28.5,
+    "manager":"Valery Ushakov"
+},{
+    "sales":"21-Zanesville...",
+    "totalSales":0.54,
+    "manager":"Chris McGurk"
+},{
+    "sales":"6-Parkersbur",
+    "totalSales":0.53,
+    "manager":"Allan Guinot"
+},
+{
+    "sales":"18-Washingt",
+    "totalSales":0.52,
+    "manager":"Valery Ushakov"
+},
+{
+    "sales":"26-Akron Fas",
+    "totalSales":0.51,
+    "manager":"Valery Ushakov"
+},
+{
+    "sales":"5-Uniontown",
+    "totalSales":0.50,
+    "manager":"Allan Guinot"
+},{
+    "sales":"20-Greensbur",
+    "totalSales":0.49,
+    "manager":"Chris McGurk"
+},{
+    "sales":"8-Cumberian",
+    "totalSales":0.48,
+    "manager":"Chris McGurk"
+},
+{
+    "sales":"37-North Hill",
+    "totalSales":0.47,
+    "manager":"Bard Sutton"
+},
+{
+    "sales":"9-Clarksburg",
+    "totalSales":0.46,
+    "manager":"Bard Sutton"
+},
+{
+    "sales":"10-St.Clairsy",
+    "totalSales":0.45,
+    "manager":"Allan Guinot"
+},{
+    "sales":"33-Alto ona f",
+    "totalSales":0.44,
+    "manager":"Allan Guinot"
+}
+]

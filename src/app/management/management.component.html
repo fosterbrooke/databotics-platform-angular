@@ -1,0 +1,65 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 col-xl-6 padding0">
+            <p class="fs-20">Evaluation of Energy Consumption</p>
+            <i class="fa fa-info-circle i-s" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-6 col-xl-6">
+            <i class="fa fa-ellipsis-h i-s-2" aria-hidden="true"></i>
+            <i class="fa fa-expand i-s-2" aria-hidden="true"></i>
+            <i class="fa fa-user-secret i-s-2" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-xl-6 padding0">
+            <div class="col-md-4 col-xl-4">
+                <div class="mar-bottom">
+                    <label><b>Source</b></label>
+                    <select placeholder="select State" class="form-control dropdown_wrapper"
+                        (change)="selectedSource($event)">
+                        <option value="ALL">ALL</option>
+                        <option *ngFor="let obj of source" value="{{obj.source}}">{{obj.source}}</option>
+                    </select>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <p class="fs-21">Energy Consumption</p>
+                    </div>
+                    <div class="card-body m-l-2">
+                        <p>{{enegryConsumption}}K Wh</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <p class="fs-21">Production Cost</p>
+                    </div>
+                    <div class="card-body m-l-2">
+                        <p>${{productionCost}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-xl-8 margin-2 pd-right">
+                <p class="background_head">Average Energy Consumption by Sector<i class="fa fa-info-circle i-s-3"
+                        aria-hidden="true"></i></p>
+                <div [chart]="piechart" class="height border"></div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xl-6">
+            <p class="background_head">Production Quantity<i class="fa fa-info-circle i-s-3" aria-hidden="true"></i></p>
+            <div [chart]="columnchart" class="height border"></div>
+        </div>
+    </div>
+    <div class="row m-t-10">
+        <div class="col-md-6 col-xl-6 pd-right margin ">
+            <p class="background_head">Monthly Energy Consumption and Production Cost<i class="fa fa-info-circle i-s-3"
+                    aria-hidden="true"></i></p>
+            <div [chart]="linechart" class="hei border"></div>
+        </div>
+        <div class="col-md-6 col-xl-6  margin">
+            <p class="background_head">Monthly Production Costs (per Wh)<i class="fa fa-info-circle i-s-3"
+                    aria-hidden="true"></i></p>
+            <div [chart]="barchart" class="hei border"></div>
+        </div>
+    </div>
+</div>

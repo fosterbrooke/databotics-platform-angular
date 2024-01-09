@@ -1,0 +1,117 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<div class="container-fluid">
+  <div class="row bg-color">
+    <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+      <h3>Construction</h3>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart wd-50">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Permits Issued</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Permits)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="permitchart" class="height"></div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart marg-l">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+              <p>Inspection Performed</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Inspection)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-down" src="../../assets/govicon/Down_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="inspectionchart" class="height"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart wd-50">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+              <p>Historic Preservation Funding</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Historic)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-down" src="../../assets/govicon/Down_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="historicchart" class="height"></div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart marg-l">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7">
+              <p>Permit Revenue</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>${{df(Permit)}}M</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="permitrevenuechart" class="height"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+      <h3>Public Work</h3>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart wd-50">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Projects Within Budget</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>${{df(Projects)}}M</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="projectwithinchart" class="height"></div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart marg-l">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Average Customer Complaints</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Avgcostomer)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-down" src="../../assets/govicon/Down_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="averagecustomerchart" class="height"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-chart">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Average Customer Complaints</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Avgcomp)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="averagewithinchart" class="height"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

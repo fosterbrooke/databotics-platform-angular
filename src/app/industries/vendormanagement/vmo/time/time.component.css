@@ -1,0 +1,43 @@
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+}
+.odd{
+background: #f2f2f2;
+}
+.even{
+    background: rgb(247, 247, 239);
+}
+input{
+    width: 30%;
+}
+.a-r-1 {
+    color: #f7f7ef;
+    background: #218fdc;
+}
+.bg{
+    background: black;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.bg_temp{
+    background: black;
+    border: 0px;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.bg-table{
+   background-color:#1a84cf; 
+}
+.pd-10{
+    padding: 10px;
+}

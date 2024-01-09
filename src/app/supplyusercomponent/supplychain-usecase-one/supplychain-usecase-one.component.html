@@ -1,0 +1,122 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+          <div class="chart_header"><b>Sales by Date</b></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+          <div [chart]="salechart" class="chart" id="hei"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+          <div class="chart_header"><b>Target Sales by Date</b></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+          <div [chart]="salesChart" class="chart"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+          <div class="chart_header"><b>Shipping Cost By Trend</b></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-right">
+          <div [chart]="shoppingchart" class="chart"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="row">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-left pd-right">
+          <label>Segment</label>
+          <select placeholder="select Id" class="form-control dropdown_wrapper" (change)="selectedIds($event)">
+            <option value="ALL">ALL</option>
+            <option *ngFor="let obj of Segment" value="{{obj.segment}}">{{obj?.segment}}</option>
+          </select>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-right pd-left">
+          <label>Category</label>
+          <select placeholder="select stock" class="form-control dropdown_wrapper" (change)="selectedStock($event)">
+            <option value="ALL">ALL</option>
+            <option *ngFor="let obj of Categort" value="{{obj.Category}}">{{obj?.Category}}</option>
+          </select>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-left pd-right">
+          <label>Months</label>
+          <select placeholder="select Segment" class="form-control dropdown_wrapper" (change)="selectedSales($event)">
+            <option value="ALL">ALL</option>
+            <option *ngFor="let obj of Products" value="{{obj.product}}">{{obj?.product}}</option>
+          </select>
+        </div>
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 pd-left">
+          <label>Years</label>
+          <select placeholder="select Year" class="form-control dropdown_wrapper" (change)="selectedState($event)">
+            <option value="ALL">ALL</option>
+            <option *ngFor="let obj of Year" value="{{obj.year}}">{{obj?.year}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 pd-left">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd-right">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span>{{df(misseddeliveries)}}K</span>
+                </div>
+                <div class="card-body">
+                  <span>Delayed Deliveries</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd-right pd-left">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span>{{df(delivered)}}K</span>
+                </div>
+                <div class="card-body">
+                  <span>Delivered</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd-right">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span>{{df(percentage)}}K</span>
+                </div>
+                <div class="card-body">
+                  <span>Monthly Deliveries</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd-right pd-left">
+              <div class="card card-m">
+                <div class="card-head">
+                  <span>${{(percentage2)}}M</span>
+                </div>
+                <div class="card-body">
+                  <span>Profit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-left">
+          <div class="cardratio">
+            <i class="fa fa-percent icon-per" aria-hidden="true"></i>
+            <div class="card-head card-padding">
+              <span>{{(percentage3)}}%</span>
+            </div>
+            <div class="card-body">
+              <span>Profit Ratio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-left">
+          <div class="header">Sales by City</div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 pd-left">
+          <div id="Newdata" class="map" style="width: 100%; height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>

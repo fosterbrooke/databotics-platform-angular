@@ -1,0 +1,14 @@
+
+	<div class="m-t" *ngIf='!openDateSold; else dateEdit2'>
+		{{ item.dateSold | date:'MM/dd/yyyy, hh:mm a'}}
+		<br>
+		<span class="icon-button" type="button" (click)='showDateSold()'>
+              <i class="fa fa-comment" style="font-size:15px"></i>
+    </span>
+	</div>
+	<ng-template #dateEdit2>
+		<input id="text" style="width: 65px;" [(ngModel)]="comment" (keyup.enter)="sendComment()">
+		<span type="button" (click)='showDateSold()'>
+              <i class="fa fa-comment"></i>
+    </span>
+	</ng-template>

@@ -1,0 +1,9 @@
+.activeclass{
+    background-color: #f9f9f9!important;
+    border-bottom: 3px solid palevioletred;
+    cursor:pointer;
+  }
+  .nav-tabs>li>a:hover{
+    cursor:pointer;
+  }
+

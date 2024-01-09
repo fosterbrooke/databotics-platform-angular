@@ -1,0 +1,50 @@
+.header-section{
+    height: 56px;
+    line-height: 52px;
+    color: beige;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 2px;
+    margin-top: 2px;
+    text-align: center;
+    /* background-color: #1C2377; */
+    color: black;
+    font-weight: bold;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.card{
+  background-color: white;
+  box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  color:black;
+  margin: 20px;
+  padding: 10px;
+}
+
+.uploadList{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cursor{
+  cursor: pointer;
+}
+.m-l-10{
+  margin-left: 10px;
+}
+.pd-12 {
+  padding: 12px;
+}
+.li{
+  list-style: none;
+}
+.active {
+  color: #FFFFFF;
+  font-weight: bolder;
+  background: #666666;
+}

@@ -1,0 +1,761 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="col-md-12 panle-one-wrapper">
+    <span>
+      Andhra Pradesh Legislative Assembly.2014
+    </span>
+  </div>
+
+  <div class="col-md-12 pt-4">
+    <div class="col-md-2 pt-0 category-txt">
+      <span>Select category</span>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <select id="demographic" name="demographic" class="form-control dropdown-wrapper" ([ngModel]) ="demographicnames"
+      (change)="ChaneDemographic($event)">
+      <option>Demographic</option>
+          <option>Gender</option>
+           <option>Income Group</option>
+          <option>Age Group</option>
+          <option>Major Concern</option>
+          
+          </select>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 panle-parameters-wrapper">
+    <span>Parameters</span>
+
+  </div>
+
+  <!--Gender-->
+  <div class="col-md-12 ptrbl-0" *ngIf="showgender">
+    <div class="col-md-7 plr-2">
+    <div class="col-md-4 ptrbl-0 plr-2">
+        <div class="card text-white card-height-wrapper">
+          <div class="card-header card-header-wrapper">{{demographiconeparam}}</div>
+          <div class="card-body">
+            <div class="col-md-12">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  style="width:70%">
+                 70
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+               <ng5-slider [(value)]="valueparamone" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider> 
+              
+            
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 plr-2">
+        <div class="card text-white card-height-wrapper">
+          <div class="card-header card-header-wrapper" style="background-color: #FBE9B3">{{demographictwoparam}}</div>
+          <div class="card-body">
+            <div class="col-md-12">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                  style="width:70%">
+                  70
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <ng5-slider [(value)]="valueparamtwo" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+ 
+    </div>
+
+  
+  </div>
+
+    <!--Gender-->
+
+
+    <!--Demographic-->
+    <div class="col-md-12 ptrbl-0" *ngIf="showdemographi">
+        <div class="col-md-7 plr-2">
+        <div class="col-md-4 ptrbl-0 plr-2">
+            <div class="card text-white card-height-wrapper">
+              <div class="card-header card-header-wrapper">{{demographiconeparam}}</div>
+              <div class="card-body">
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                      style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-md-12">
+                  <ng5-slider [(value)]="valueparamone" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-md-4 plr-2">
+            <div class="card text-white card-height-wrapper">
+              <div class="card-header card-header-wrapper" style="background-color: #FBE9B3">{{demographictwoparam}}</div>
+              <div class="card-body">
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                      style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <ng5-slider [(value)]="valueparamtwo" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+    
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="col-md-4 plr-2">
+            <div class="card text-white card-height-wrapper">
+              <div class="card-header card-header-wrapper" style="background-color: #F5f8AE">{{demographicthreeparam}}</div>
+              <div class="card-body">
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                      style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <ng5-slider [(value)]="valueparamthree" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+    
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-5 pt-0">
+    
+          <div class="col-md-6 plr-2">
+            <div class="card text-white card-height-wrapper">
+              <div class="card-header card-header-wrapper" style="background-color: #DCFA9A">{{demographicfourparam}}</div>
+              <div class="card-body">
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                      style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-md-12 plr-2">
+                  <ng5-slider [(value)]="valueparamfour" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+
+    
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          <div class="col-md-6 plr-2">
+            <div class="card text-white card-height-wrapper">
+              <div class="card-header card-header-wrapper" style="background-color: #D0FFF1">{{demographicfiveparam}}</div>
+              <div class="card-body">
+                <div class="col-md-12">
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                      style="width:70%">
+                      70%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <ng5-slider [(value)]="valueparamfive" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+    
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+    
+    
+        </div>
+      </div>
+
+     <!--Demographic-->
+      <!--Income Group-->
+      <div class="col-md-12 ptrbl-0" *ngIf="showincomegroup">
+          <div class="col-md-7 plr-2">
+          <div class="col-md-4 ptrbl-0 plr-2">
+              <div class="card text-white card-height-wrapper">
+                <div class="card-header card-header-wrapper">{{demographiconeparam}}</div>
+                <div class="card-body">
+                  <div class="col-md-12">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                        style="width:70%">
+                        70%
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-12">
+                    <ng5-slider [(value)]="valueparamone" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+      
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-md-4 plr-2">
+              <div class="card text-white card-height-wrapper">
+                <div class="card-header card-header-wrapper" style="background-color: #FBE9B3">{{demographictwoparam}}</div>
+                <div class="card-body">
+                  <div class="col-md-12">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                        style="width:70%">
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <ng5-slider [(value)]="valueparamtwo" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+      
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+      
+            <div class="col-md-4 plr-2">
+              <div class="card text-white card-height-wrapper">
+                <div class="card-header card-header-wrapper" style="background-color: #F5f8AE">{{demographicthreeparam}}</div>
+                <div class="card-body">
+                  <div class="col-md-12">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                        style="width:70%">
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <ng5-slider [(value)]="valueparamthree" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+      
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-5 pt-0">
+      
+            <div class="col-md-6 plr-2">
+              <div class="card text-white card-height-wrapper">
+                <div class="card-header card-header-wrapper" style="background-color: #DCFA9A">{{demographicfourparam}}</div>
+                <div class="card-body">
+                  <div class="col-md-12">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                        style="width:70%">
+                        70%
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-md-12 plr-2">
+                    <ng5-slider [(value)]="valueparamfour" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+      
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+            <div class="col-md-6 plr-2">
+              <div class="card text-white card-height-wrapper">
+                <div class="card-header card-header-wrapper" style="background-color: #D0FFF1">{{demographicfiveparam}}</div>
+                <div class="card-body">
+                  <div class="col-md-12">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                        style="width:70%">
+                        70%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <ng5-slider [(value)]="valueparamfive" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+      
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+      
+      
+          </div>
+        </div>
+
+
+      <!--Income Group-->
+         <!--Age Group-->
+         <div class="col-md-12 ptrbl-0" *ngIf="agegroup">
+            <div class="col-md-7 plr-2">
+            <div class="col-md-4 ptrbl-0 plr-2">
+                <div class="card text-white card-height-wrapper">
+                  <div class="card-header card-header-wrapper">{{demographiconeparam}}</div>
+                  <div class="card-body">
+                    <div class="col-md-12">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                          style="width:70%">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-md-12">
+                      <ng5-slider [(value)]="valueparamone" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+
+        
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="col-md-4 plr-2">
+                <div class="card text-white card-height-wrapper">
+                  <div class="card-header card-header-wrapper" style="background-color: #FBE9B3">{{demographictwoparam}}</div>
+                  <div class="card-body">
+                    <div class="col-md-12">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                          style="width:70%">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                    <ng5-slider [(value)]="valueparamtwo" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+        
+                    </div>
+        
+                  </div>
+                </div>
+        
+              </div>
+        
+              <div class="col-md-4 plr-2">
+                <div class="card text-white card-height-wrapper">
+                  <div class="card-header card-header-wrapper" style="background-color: #F5f8AE">{{demographicthreeparam}}</div>
+                  <div class="card-body">
+                    <div class="col-md-12">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                          style="width:70%">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <ng5-slider [(value)]="valueparamthree" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+        
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-md-5 pt-0">
+        
+              <div class="col-md-6 plr-2">
+                <div class="card text-white card-height-wrapper">
+                  <div class="card-header card-header-wrapper" style="background-color: #DCFA9A">{{demographicfourparam}}</div>
+                  <div class="card-body">
+                    <div class="col-md-12">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                          style="width:70%">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-md-12 plr-2">
+                      <ng5-slider [(value)]="valueparamfour" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+        
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="col-md-6 plr-2">
+                <div class="card text-white card-height-wrapper">
+                  <div class="card-header card-header-wrapper" style="background-color: #D0FFF1">{{demographicfiveparam}}</div>
+                  <div class="card-body">
+                    <div class="col-md-12">
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                          style="width:70%">
+                          70%
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <ng5-slider [(value)]="valueparamfive" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+        
+                    </div>
+        
+                  </div>
+                </div>
+        
+              </div>
+        
+        
+            </div>
+          </div>
+  
+  
+        <!--Age Group-->
+          <!--Law Order-->
+          <div class="col-md-12 ptrbl-0" *ngIf="laworder">
+              <div class="col-md-7 plr-2">
+              <div class="col-md-4 ptrbl-0 plr-2">
+                  <div class="card text-white card-height-wrapper">
+                    <div class="card-header card-header-wrapper">{{demographiconeparam}}</div>
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width:70%">
+                            70%
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-md-12">
+                        <ng5-slider [(value)]="valueparamone" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+
+          
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+                <div class="col-md-4 plr-2">
+                  <div class="card text-white card-height-wrapper">
+                    <div class="card-header card-header-wrapper" style="background-color: #FBE9B3">{{demographictwoparam}}</div>
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width:70%">
+                            70%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <ng5-slider [(value)]="valueparamtwo" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+          
+                      </div>
+          
+                    </div>
+                  </div>
+          
+                </div>
+          
+                <div class="col-md-4 plr-2">
+                  <div class="card text-white card-height-wrapper">
+                    <div class="card-header card-header-wrapper" style="background-color: #F5f8AE">{{demographicthreeparam}}</div>
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width:70%">
+                            70%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <ng5-slider [(value)]="valueparamthree" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+          
+                      </div>
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-5 pt-0">
+          
+                <div class="col-md-6 plr-2">
+                  <div class="card text-white card-height-wrapper">
+                    <div class="card-header card-header-wrapper" style="background-color: #DCFA9A">{{demographicfourparam}}</div>
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width:70%">
+                            70%
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-md-12 plr-2">
+                        <ng5-slider [(value)]="valueparamfour" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+          
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+                <div class="col-md-6 plr-2">
+                  <div class="card text-white card-height-wrapper">
+                    <div class="card-header card-header-wrapper" style="background-color: #D0FFF1">{{demographicfiveparam}}</div>
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                            style="width:70%">
+                            70%
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <ng5-slider [(value)]="valueparamfive" [options]="options" (valueChange)="onUserChangeStart($event)"></ng5-slider>
+          
+                      </div>
+          
+                    </div>
+                  </div>
+          
+                </div>
+          
+          
+              </div>
+            </div>
+           
+
+           <!--Law Order-->
+
+
+
+
+
+
+  <!--Election State List-->
+
+  <div class="col-md-12 ptrbl-0 mt-7">
+    <div class="col-md-3 plr-2">
+      <div class="card text-white">
+        <div class="card-header comfort-win-header-wrapper">Comfortable Win</div>
+        <div class="card-body">
+          <div style="height:300px;overflow: overlay;">
+          <div class="col-md-12 state-analysis" *ngFor="let comfortablewins of comfortablewin"> 
+             <div class="col-md-6 ptrbl-0 mt-6">
+              <span>{{comfortablewins.ConstituencyName}}</span>
+            </div>
+
+            <div class="col-md-6 ptrbl-0">
+              
+              <div class="progress progress-wrapper">
+               <div class="progress-bar pop" role="progressbar" [style.width.%]="comfortablewins.TDP"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">{{comfortablewins.TDP}} 
+                <div class="content">
+                    TDP: {{comfortablewins.TDP}}
+                </div>
+                </div>
+
+                <div class="progress-bar pop bg-success" role="progressbar" style="background-color: #20AC4F" [style.width.%]="comfortablewins.YSR"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">{{comfortablewins.YSR}}
+              
+                  <div class="content" style="background-color: #20AC4F">
+                      YSR: {{comfortablewins.YSR}}
+                  </div>
+                </div>
+
+                <div class="progress-bar pop bg-info" role="progressbar" style="background-color: #EF8700" [style.width.%]="comfortablewins.OTHR"
+                  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{comfortablewins.OTHR}}
+                
+                  <div class="content" style="background-color: #EF8700">
+                      OTHR: {{comfortablewins.OTHR}}
+                  </div>
+
+                </div>
+               
+              </div>
+            </div>
+
+          </div>
+     </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-3 plr-2">
+      <div class="card text-white">
+        <div class="card-header comfort-win-header-wrapper" style="background-color: #9AC7FE">Moderate Fight</div>
+        <div style="height:300px;overflow: overlay;">
+        <div class="card-body">
+          <div class="col-md-12 state-analysis" *ngFor="let moderatefights of moderatefight">
+            <div class="col-md-6 ptrbl-0 mt-6">
+              <span>{{moderatefights.ConstituencyName}}</span>
+            </div>
+
+            <div class="col-md-6 ptrbl-0">
+              <div class="progress progress-wrapper">
+                <div class="progress-bar pop" role="progressbar" [style.width.%]="moderatefights.TDP"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">{{moderatefights.TDP}}
+                  <div class="content">
+                      TDP: {{moderatefights.TDP}}
+                  </div>
+
+                </div>
+                <div class="progress-bar pop bg-success" role="progressbar" style="background-color: #20AC4F" [style.width.%]="moderatefights.YSR"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">{{moderatefights.YSR}}
+                  <div class="content" style="background-color: #20AC4F">
+                      YSR: {{moderatefights.YSR}}
+                  </div>
+                
+                </div>
+                <div class="progress-bar pop bg-info" role="progressbar" style="background-color: #EF8700" [style.width.%]="moderatefights.OTHR"
+                  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{moderatefights.OTHR}}
+
+                  <div class="content" style="background-color: #EF8700">
+                      OTHR: {{moderatefights.OTHR}}
+                  </div>
+
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+       </div>
+      </div>
+
+      </div>
+
+    </div>
+    <div class="col-md-3 plr-2">
+      <div class="card text-white">
+        <div class="card-header comfort-win-header-wrapper" style="background-color: #F3DF2F">Narrow Fight</div>
+
+        <div style="height:300px;overflow: overlay;">
+        <div class="card-body card-body-wrapper">
+          <div class="col-md-12 state-analysis" *ngFor="let narrowfights of narrowfight">
+            <div class="col-md-6 ptrbl-0 mt-6">
+              <span>{{narrowfights.ConstituencyName}}</span>
+            </div>
+
+            <div class="col-md-6 ptrbl-0">
+              <div class="progress  progress-wrapper">
+                <div class="progress-bar pop" role="progressbar" [style.width.%]="narrowfights.TDP"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">{{narrowfights.TDP}}
+                  <div class="content">
+                      TDP: {{narrowfights.TDP}}
+                  </div>
+
+                </div>
+                <div class="progress-bar pop bg-success" role="progressbar" style="background-color: #20AC4F" [style.width.%]="narrowfights.YSR"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">{{narrowfights.YSR}}
+                  <div class="content" style="background-color: #20AC4F">
+                      YSR: {{narrowfights.YSR}}
+                  </div>
+                </div>
+                <div class="progress-bar pop bg-info" role="progressbar" style="background-color: #EF8700" [style.width.%]="narrowfights.OTHR"
+                  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{narrowfights.OTHR}}
+                
+                  <div class="content" style="background-color: #EF8700">
+                      OTHR: {{narrowfights.OTHR}}
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+    
+     </div>
+    </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-3 plr-2">
+      <div class="card text-white">
+        <div class="card-header comfort-win-header-wrapper"  style="background-color: #f54141">Tough Fight</div>
+        <div style="height:300px;overflow: overlay;">
+        <div class="card-body card-body-wrapper">
+          <div class="col-md-12 state-analysis" *ngFor="let toughfights of toughfight">
+            <div class="col-md-6 ptrbl-0 mt-6">
+              <span>{{toughfights.ConstituencyName}}</span>
+            </div>
+
+            <div class="col-md-6 ptrbl-0">
+              <div class="progress progress-wrapper">
+                <div class="progress-bar pop" role="progressbar" [style.width.%]="toughfights.TDP"
+                  aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">{{toughfights.TDP}}
+                  <div class="content">
+                      TDP: {{toughfights.TDP}}
+                  </div>
+                </div>
+                <div class="progress-bar pop bg-success" role="progressbar" style="background-color: #20AC4F" [style.width.%]="toughfights.YSR"
+                  aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">{{toughfights.YSR}}
+
+                  <div class="content" style="background-color: #20AC4F">
+                      YSR: {{toughfights.YSR}}
+                  </div>
+
+                </div>
+                <div class="progress-bar pop bg-info" role="progressbar" style="background-color: #EF8700" [style.width.%]="toughfights.OTHR"
+                  aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">{{toughfights.OTHR}}
+                
+                  <div class="content" style="background-color: #EF8700">
+                      OTHR: {{toughfights.OTHR}}
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+
+      </div>
+
+    </div>
+
+    <!--Election State List-->
+
+  </div>
+</div>

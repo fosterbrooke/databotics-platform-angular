@@ -1,0 +1,284 @@
+h3{
+    font-size:18px !important;
+    margin-top: 10px !important;
+}
+.textborder{
+    border-bottom: 2px solid #9A9B9B
+}
+.p-l-40{
+    padding-left:42px;
+    padding-right: 0px;
+}
+.card_wrapper{
+    /* width: 18rem; */
+    height: 11rem;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #5871b2
+}
+.p-2{
+    padding:2px !important;
+}
+.card_wrapper-chart{
+    /* width: 18rem; */
+    height: 10rem;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #50c4bb;
+}
+
+.card_wrapper-drivers{
+    /* width: 18rem; */
+    height: 11rem;
+    background-color: #FFFFFF;
+    /* border-top: 2px solid #50c4bb; */
+    padding-left: 24px;
+}
+.fs-29{
+    font-size: 29px
+}
+
+.fs-15{
+    font-size: 11px
+}
+
+.fs-23{
+    font-size: 23px;
+}
+
+.fs-25{
+    font-size: 18px;
+    line-height: 36px;
+}
+.fs-19{
+    font-size: 19px
+}
+
+.padding-top-12{
+    padding-top:6px
+}
+
+.padding-0{
+    padding: 0px
+}
+
+.padding-right-0{
+    padding-right: 0px;
+
+}
+
+.pt-0
+{
+    padding-top: 0px
+}
+
+.padding-left-10{
+padding-left: 10px
+}
+
+.padding-left-8{
+    padding-left: 8px
+    }
+.attendance-icon{
+    width :50px;
+    height:50px;
+    margin-top:5px;
+    
+}
+
+.fleet-icon{
+    width :50px;
+    height:50px;
+    margin-top:5px;
+    margin-left: 5px
+}
+
+.pt-12{
+    padding-top: 6px
+}
+.pt-45{
+    padding-top: 45px
+}
+
+.pr-0{
+    padding-right: 0px
+}
+
+.fs-40{
+    font-size: 40px;
+    color: #939292
+    
+}
+.fs-17{
+    font-size: 17px;
+    color: #939292
+}
+.fs-26{
+    font-size: 18px;
+}
+
+.mt-14{
+    margin-top: -4px
+}
+.chart-height{
+    height:200px !important
+}
+.m-t-0{
+    margin-top:0px !important;
+    text-align:center;
+}
+.txt-wrapper{
+   
+        background-color: #559290;
+        height: 4rem;
+        font-size: 16px;
+        padding-top: 8px;
+        padding-left: 12px;
+        color: aliceblue;
+ 
+}
+
+.icon-color{
+    color:#ff7675
+}
+
+.cardheader-wrapper{
+    background-color: #538F8D;
+    /* height: 20px; */
+    height: 37px;
+    font-size: 17px;
+    color: white;
+    padding-top: 9px;
+    padding-left: 9px;
+    padding-bottom: 11px;
+}
+
+.ulleftdiv-wrapper{
+   position: absolute;
+    top: 41%; 
+    padding-left: 23px;
+    list-style-type: none"
+    p
+}
+
+.ulrighttdiv-wrapper{
+    position: absolute;
+    left: 49%;
+    top: 41%; list-style-type: none"
+ }
+
+
+.lirghtdiv-wrapper{
+  color: white;
+  font-size: 17px;
+}
+.btn-primary {
+    
+    border-color: none;
+}
+
+.image-wrapper{
+    width:"100%";
+    opacity: 0.2;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } 
+
+
+  .speeding-icon-wrapper{
+      
+    width: 15%;
+    float: right;
+    padding-top: -9px;
+    margin-top: -4px;
+    /* margin-left: 10px; */
+    margin-right: 16px;
+  }
+
+  .rashbreaking-icon-wrapper{
+      
+    width: 11%;
+    float: right;
+    padding-top: -9px;
+    margin-top: -4px;
+    /* margin-left: 10px; */
+    margin-right: 16px;
+  }
+  
+  .idletime-icon-wrapper{
+      
+    width: 11%;
+    float: right;
+    padding-top: -9px;
+    margin-top: -4px;
+    /* margin-left: 10px; */
+    margin-right: 16px;
+  }
+  .btnpanel{
+    /* float: right; */
+    background-color: #fe2626;
+    width: 40%;
+    border-radius: 7px;
+    margin-top: -1px;
+  }
+
+  .background-image{
+    width:100%;
+    height: 174px;
+  }
+  .chart-height{
+      height: 300px;
+  }
+
+  .driver-performace-div{
+   padding-top: 8px;
+   height:300px; 
+   padding-top: 7px
+  }
+ .secrightdiv{
+ padding-top: 10px;
+ padding-left: 0px;
+ padding-right:3px;
+  }
+
+.event-button{
+ color:white;
+ background-color:#753ead;
+ position: absolute;
+ left:49%;top:22%;
+ border-color:none;width:46%;
+ border: none;
+  }
+.rightsectionbox{
+    padding: 0px;padding-top: 2px;
+}
+.bg-color{
+   background-color: #753ead
+}
+.iconback-color{
+    color:#ccc
+}
+
+.back-ground-header{
+    background-color: #753ead;
+}
+
+.today-text{
+    font-size: 21px;
+    position: absolute;
+    top: 22%;
+    left: 16%;
+    color: white;
+}
+
+
+#map {
+    height:220px;
+    width: 100%
+  }

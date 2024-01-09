@@ -1,0 +1,156 @@
+
+/*padding*/
+.padding-0{
+    padding: 0px
+}
+
+.pt-35{
+    padding-top: 35px
+}
+
+/*Margin*/
+.mt-2{
+    margin-top: 2px
+}
+.mt-4{
+    margin-top: 4px
+}
+
+.ml-37{
+       margin-left: -37px;
+}
+
+/*Margin*/
+
+
+/*padding*/
+
+.panel-first-bg-color{
+    background-color:#104B6B;
+    font-size: 20px; 
+    color:white;
+    margin-top: 2px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+/*dropdown*/
+.dropdown-wrapper{
+    width:99%;
+    
+}
+.dropdown-bg-color{
+    background-color: #E23030
+}
+
+.v{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: sideways;
+    text-align:right;
+    text-orientation: sideways;
+    margin: 1rem;
+    color: white;
+  }
+  
+  /* p{
+    font-family: sans-serif;
+    font-size:2rem;
+  } */
+
+  p {
+    margin: 0px 0 6px;
+}
+  .txt-gender{
+    background-color:#0F4B6B;
+    color:#0F4B6B;
+    padding-bottom: 18px;
+  }
+  .p-txt-align{
+      text-align: center;
+      border-bottom: 1px solid #F6F6F6;
+
+  }
+
+  .txt-wrapper-border{
+   border:1px solid #FCFDFE;
+  }
+  .table-th-wrapper{
+    text-align: center
+  }
+  
+  .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 1px;
+    
+}
+
+.green-color-wrapper{
+    background-color: #44909E
+}
+
+.yellow-color-wrapper{
+    background-color: #EEC2EF
+}
+.light-color-wrapper{
+    background-color: #419293
+}
+
+.gray-color-wrapper{
+    background-color: #F5F5F5
+}
+.td{
+    text-align: center;
+}
+
+.table-scroll {
+	position:relative;
+	/* max-width:1000px; */
+	margin:auto;
+	overflow:hidden;
+	border:1px solid #000;
+}
+.table-wrap {
+	width:100%;
+	overflow:auto;
+}
+.table-scroll table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:2px;
+}
+.table-scroll th, .table-scroll td {
+	padding:5px 10px;
+	border:1px solid #000;
+	background:#fff;
+	white-space:nowrap;
+	vertical-align:top;
+}
+.table-scroll thead, .table-scroll tfoot {
+	background:#f9f9f9;
+}
+.clone {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.clone th, .clone td {
+	visibility:hidden
+}
+.clone td, .clone th {
+	border-color:transparent
+}
+.clone tbody th {
+	visibility:visible;
+	color:red;
+}
+.clone .fixed-side {
+	border:1px solid #000;
+	background:#eee;
+	visibility:visible;
+}
+
+
+.clone thead, .clone tfoot{background:transparent;}

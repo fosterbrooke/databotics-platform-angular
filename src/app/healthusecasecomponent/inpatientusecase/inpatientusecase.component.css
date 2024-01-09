@@ -1,0 +1,145 @@
+.pd-10{
+    margin-top: 10px;
+      padding-left: 10px;
+  }
+  .text-center{
+    text-align: center;
+    padding-top: 12px;
+    margin-right: -15px;
+  }
+  .text{
+    text-align: center;
+    padding-top: 15px;
+  }
+  .st-text{
+    text-align: center;
+    padding-top: 10px;
+  }
+  .rounded-circle{
+    height: 48px;
+    width:48px;
+    border-radius: 25px;
+  }
+  p{
+    font-size: 12px;
+  }
+  span{
+    font-size: 20px;
+  }
+  .st-card{
+    color: #3f414d;
+    border-radius: 10px;
+    height: 80px;
+    margin-right: -5px;
+  }
+  .card{
+    position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      text-align: center;
+      font-weight: bold;
+      border: 0px;
+  }
+  .color{
+    background-color: white;
+  }
+  .padding0{
+    padding: 0px;
+  }
+  .background{
+    background: #20283d !important;
+    color: white;
+    padding: 6px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .bg-color{
+    background-color: #e6e7ec;
+  }
+  h3{
+    padding-left: 20px;
+    font-weight: bold;
+  }
+  .table-scroll-style{
+    overflow-y: scroll;
+    height: 450px;
+  }
+  .nav-tabs>li>a:hover{
+    cursor:pointer;
+  }
+  .bg-table{
+    margin-top: 10px;
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: 0px solid #ddd;
+  }
+  .bg-tab1{
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .bg-tab2{
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .pd-r{
+    padding-right: 15px;
+  }
+  /* The actual timeline (the vertical ruler) */
+/* .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* The actual timeline (the vertical ruler) */
+/* .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:#ceebee;
+  top: 0;
+  bottom: 0;
+  left: 10%;
+} */
+
+ /* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 70%;
+  margin-left: 65px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: aquamarine;
+  top: 14px;
+  border-radius: 50%;
+} 
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left:0px;
+}
+a{
+  float: right;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+.fa{
+  font-size: 25px;
+}
+.sort-icon{
+  font-size: 15px;
+  margin-left: 5px;
+}

@@ -1,0 +1,396 @@
+.panel_wrapper{
+  margin-top: 5px;
+  border: 0px;
+  margin-bottom: -8px;
+  /* background-color: #d4d4d4 */
+
+}
+.panel-body {
+  padding: 5px;
+}
+
+.panel-body .form-control {
+padding: 2px;
+border-radius: 0px;
+box-shadow:none
+}
+
+.panel {
+
+background:none
+
+
+}
+
+
+
+.stock_wrapper{
+  border-top: 2px solid #50c4bb;
+    background-color: lightgray;
+    padding: 20px;
+    background-color: white;
+    padding: 23px 0px 40px 0px;
+}
+
+.stock_wrapper_font_icon{
+
+  position: absolute;
+  margin-top: 6px;
+  color:red;
+  font-size:20px;
+}
+.stock_wrapper_font_icongreen{
+
+  position: absolute;
+  margin-top: 15px;
+  color:green;
+
+  font-size:20px;
+}
+
+  .stock_wrapper_col_padding{
+    padding-left: 10px;
+    padding-right: 5px
+
+  }
+
+  .paddinginventory{
+
+    padding-top: 0px;
+    padding-bottom: 12px;
+
+  }
+
+.margin_left_text{
+    margin-left: -34px;
+  }
+
+.menuHorizontal {
+  float: right;
+  color: #ccc;
+  margin-right: 8px;
+  font-size: 12px;
+}
+.inventory_cards_wrapper{
+  width: 100%;
+
+    padding: 9px;
+    background-color: white;
+
+}
+.newborder{
+  background:#fff;border-top: 2px solid #50c4bb;
+}
+
+.fs-30{
+  font-size:28px;
+}
+
+.fs-20{
+  font-size:20px;
+}
+.fs-25{
+  font-size:25px;
+}
+
+
+
+.dropdown_wrapper{
+  width: 80%;
+height: 25px;
+padding: 0px 30px;
+border: 0px;
+border-bottom: 1px solid grey;
+}
+
+.btnpanel{
+  float: right;
+  background-color: #fe2626;
+  width: 40%;
+  border-radius: 7px;
+  margin-top: -1px;
+}
+
+.txtcolor{
+color: white
+
+}
+
+.inventorttextalign{
+  text-align: center;
+}
+
+.imgicon{
+  width: 17%;
+  margin-top: -11px;
+}
+.padding10{
+
+  padding-left: 10px;
+
+}
+.padding0{
+  padding: 0px;
+}
+.padding11{
+  padding-top: 11px;
+
+}
+.padding8{
+  padding-top: 8px;
+}
+
+.inventory_stock_wrapper{
+  text-align: center;
+}
+
+.inventoryiconwidth{
+  width: 50%;
+}
+.inventory_text_wrapper{
+  padding-left: 25px;
+      font-size: 24px;
+      /* margin-bottom: 28px; */
+      margin-top: -33px;
+      margin-top: 26px;
+      position: absolute;
+
+}
+
+
+.width_sell_inventory{
+width :29%
+}
+
+
+.cardactiveclass ,.historicactiveclass{
+  background-color: #f9f9f9!important;
+  border-bottom: 1px solid palevioletred;
+
+}
+
+
+
+/*Charts*/
+.live_charts_wrapper{
+  margin-top: 7px;
+  }
+  .stock_charts_wrapper{
+    margin-top: 7px;
+    }
+
+
+
+  .activeclass{
+    background-color: #f9f9f9!important;
+    border-bottom: 3px solid palevioletred;
+
+  }
+
+  .backgroundcolor{
+      color: white
+  }
+
+
+  .historical_chart_value{
+    background-color: #EAEAEA;
+    }
+
+  .live_chart_border{
+    border-top: 2px solid palevioletred
+  }
+.stock_aging_chart_border{
+border-top: 2px solid yellow
+}
+
+.chart_height{
+
+height: 300px;
+}
+.chart_back_color{
+
+background-color: white
+}
+.stock_categories_chart_border{
+border-top: 2px solid #50c4bb;
+
+}
+
+.padding_right5{
+padding-right: 5px;
+
+}
+
+.padding_left_right{
+ padding-left: 5px;
+ padding-right: 5px
+}
+
+.nav_border_bottom{
+
+  border-bottom: 0px solid #ddd;
+
+}
+
+.tab1_padding{
+padding: 0px;
+padding-left: 15px;
+border-right: 1px solid #ccc;
+}
+.tab2_padding{
+padding: 0px;
+border-right: 1px solid #ccc;
+}
+.tab3_padding{
+padding: 0px;
+padding-right: 14px;
+}
+
+.padding_bottom{
+padding-bottom: 15px
+}
+
+.txt_align_centre{
+text-align: center
+}
+.padding_left{
+padding-left: 35px
+}
+
+
+/* .backdrop{ 
+
+
+  background-color:rgba(0,0,0,0.6);
+  
+  
+  position:fixed;
+  
+  
+  top:0;
+  
+  
+  left:0;
+  
+  
+  width:100%;
+  
+  
+  height:100vh;
+  
+  
+  }
+  
+   */
+   
+
+.modal-dialog {
+
+  width: 360px;
+
+}
+
+.modal-header {
+
+background-color:#FE2626;
+
+padding:16px 16px;
+
+color:#FFF;
+
+border-bottom:2px dashed #FE2626;
+
+}
+
+.modal-dialog {
+
+  width: 400px;
+  /* padding-right:100px */
+  float: right;
+  margin-top: 60px;
+  /* overflow-x: initial !important */
+
+}
+
+.modal-header {
+
+background-color:#155F57;
+
+padding:2px 2px;
+
+color:#FFF;
+ border-bottom:2px dashed #155F57;
+}
+.modal-body {
+  position: relative;
+  padding: 2px;
+  /* overflow-y: auto; */
+}   
+
+.alert_button{
+ color: #fff;
+background:none;
+background-color:red
+
+}
+
+
+
+
+
+
+
+
+
+/*Media Query*/
+
+@media only screen and (max-width :1920px) {
+.width_sell_inventory{
+  width :23%
+}
+
+}
+@media only screen and (max-width :1680px) {
+.width_sell_inventory{
+  width :27%
+}
+}
+@media only screen and (max-width :1600px) {
+  .width_sell_inventory{
+    width :18%
+  }
+  .paddinginventory {
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+
+}
+@media only screen and (max-width :1440px) {
+  .paddinginventory {
+    padding-top: 0px;
+    padding-bottom: 14px;
+}
+.fs-30 {
+  font-size: 27px;
+}
+
+  }
+  @media only screen and (max-width :1366px) {
+    .fs-30 {
+      font-size: 22px;
+  }
+  .paddinginventory{
+    padding-top: 0px;
+    padding-bottom: 23px;
+}
+.stock_wrapper {
+  border-top: 2px solid #50c4bb;
+  background-color: lightgray;
+  padding: 20px;
+  background-color: white;
+  padding: 32px 0px 40px 0px;
+}
+
+    }
+
+

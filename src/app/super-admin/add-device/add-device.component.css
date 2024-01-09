@@ -1,0 +1,24 @@
+input {
+    background:none;
+}
+label {
+   
+    font-weight: 100;
+}
+.form-control {
+    border-radius: 0px;
+    padding: 20px 12px;
+    box-shadow: none;
+    /* width: 30% */
+   }
+ 
+   .center {
+    margin: auto;
+    width: 40%;
+  
+  }
+  .bg{
+    background-image: url('../../../assets/images/form-bg-image.png')
+   
+   
+     }

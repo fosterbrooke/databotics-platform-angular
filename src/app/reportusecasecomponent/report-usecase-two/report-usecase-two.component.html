@@ -1,0 +1,109 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      <label><b>Region</b></label>
+      <select placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedRegion($event)">
+        <option value="ALL">ALL</option>
+        <option *ngFor = "let obj of Region" value="{{obj.Region}}">{{obj.Region}}</option>
+      </select>
+    </div>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      <label><b>Market</b></label>
+      <select placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedMarket($event)">
+        <option value="ALL">ALL</option>
+        <option *ngFor = "let obj of Market" value="{{obj.Market}}">{{obj.Market}}</option>
+      </select>
+    </div>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      <label><b>Category</b></label>
+      <select placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedCategory($event)">
+        <option value="ALL">ALL</option>
+        <option *ngFor = "let obj of category" value="{{obj.Category}}">{{obj.Category}}</option>
+      </select>
+    </div>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+      <label><b>Year</b></label>
+      <select placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedMonth($event)">
+        <option value="ALL">ALL</option>
+        <option *ngFor = "let obj of year" value="{{obj.year}}">{{obj.year}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="row margin-l pd-0">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 table-height pd-10">
+      <table class="table border">
+        <thead>
+          <tr>
+            <th class="text-center">City</th>
+            <th colspan="2" class="text-center">Aachen</th>
+            <th colspan="2" class="text-center">Aba</th>
+            <th colspan="2" class="text-center">Abadan</th>
+            <th colspan="2" class="text-center">Abha</th>
+            <th colspan="2" class="text-center">Abidjan</th>
+            <th colspan="2" class="text-center">Acarigua</th>
+            <th colspan="2" class="text-center">Acayucan</th>
+            <th colspan="2" class="text-center">Accra</th>
+            <th colspan="2" class="text-center">Acuna</th>
+            <th colspan="2" class="text-center">Adana</th>
+          </tr>
+          <tr>
+            <th class="font"> Sub-Category</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+            <th class="font"> Sales</th>
+            <th class="font">Target Sales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let obj of FinanceData">
+            <td>{{obj.Category}}</td>
+            <td style="text-align: center;">{{obj.Aachensales}}</td>
+            <td style="text-align: center;">{{obj.Aachentargetsales}}</td>
+            <td style="text-align: center;">{{obj.Abasales}}</td>
+            <td style="text-align: center;">{{obj.Abatargetsales}}</td>
+            <td style="text-align: center;">{{obj.Abadansales}}</td>
+            <td style="text-align: center;">{{obj.Abadantargetsales}}</td>
+            <td style="text-align: center;">{{obj.Abhasales}}</td>
+            <td style="text-align: center;">{{obj.Abhatargetsales}}</td>
+            <td style="text-align: center;">{{obj.Abidjansales}}</td>
+            <td style="text-align: center;">{{obj.Abidjantargetsales}}</td>
+            <td style="text-align: center;">{{obj.Acariguasales}}</td>
+            <td style="text-align: center;">{{obj.Acariguatargetsales}}</td>
+            <td style="text-align: center;">{{obj.Acayucansales}}</td>
+            <td style="text-align: center;">{{obj.Acayucantargetsales}}</td>
+            <td style="text-align: center;">{{obj.Accrasales}}</td>
+            <td style="text-align: center;">{{obj.Accratargetsales}}</td>
+            <td style="text-align: center;">{{obj.Acunasales}}</td>
+            <td style="text-align: center;">{{obj.Acunatargetsales}}</td>
+            <td style="text-align: center;">{{obj.Adanasales}}</td>
+            <td style="text-align: center;">{{obj.Adanatargetsales}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row margin-r background_head">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 heding">
+      <p class="pd-0">Total Sale, Target Sales, Sales w/o decimal and Shipping Cost by Week Number</p>
+    </div>
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div [chart]="column" class=""></div>
+    </div>
+  </div>
+</div>

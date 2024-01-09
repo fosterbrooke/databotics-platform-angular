@@ -1,0 +1,745 @@
+<div class="container-fluid" style="padding: 0px;">
+
+  <div *ngIf='UseCaseType==1'>
+    <div class="col-md-12">
+      <div class="col-md-2 padding-top">
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(1)" *ngIf='!showfleetManagment'>
+          <div class="talkbubble Telematics">
+            <img src="../../assets/images/telematic_gray.png" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify;margin:auto">
+              <p style="text-align: center;margin-top: 10px">Telematics</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Measure driver behavior, driver performance,
+                      ensure route optimazation, service verification,
+                      gather customer feedback with custom KPI's
+                      and self serving prescriptive.
+                    </div>
+
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 imgmargin" *ngIf='showfleetManagment'>
+          <div class="talkbubble1 Telematics">
+            <img src="../../assets/images/telematic_gray.png" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; font-weight:bold;margin-top: 10px">Telematics</p>
+              <span class="txtcolor" style="font-weight:bold;margin-top: 10px">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Measure driver behavior, driver performance,
+                      ensure route optimazation, service verification,
+                      gather customer feedback with custom KPI's
+                      and self serving prescriptive.
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(9)" *ngIf='!showmatics'>
+          <div class="talkbubble FleetMatics">
+            <img src="../../assets/images/fleetaGray.png" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify;margin:auto">
+              <p style="text-align: center;margin-top: 10px">Fleetmatics</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Measure asset(s) condition for preventative maintenance, asset(s) location, performance and user
+                      feedback
+                      with comprehensive, user defined predictive analytics and useful insights
+                    </div>
+
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='showmatics'>
+          <div class="talkbubble1">
+            <img src="../../assets/images/telematic.png" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;;font-weight:bold;margin-top: 10px">Fleetmatics</p>
+              <span class="txtcolor" style="text-align: center; color:#1E428A;;font-weight:bold;margin-top: 10px">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Measure asset(s) condition for preventative maintenance, asset(s) location, performance and user
+                      feedback
+                      with comprehensive, user defined predictive analytics and useful insights
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-4 imgmargin pointer-class" (click)="redirect(9)" *ngIf='!showmatics'>
+            <div class="talkbubble Fleetmat blur-wrapper">
+              <img src="../../assets/images/fleetaGray.png" class="img-center img-responsive">
+              <div class="col-md-12" style="text-align: justify">
+                <p style="text-align: center;margin-top: 10px">Fleetmatics</p>
+                <span class="txtcolor">
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <div class="width-content">
+                        Measure asset(s) condition for preventative maintenance, asset(s) location, performance and user feedback
+                        with comprehensive, user defined predictive analytics and useful insights
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </span>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 imgmargin pointer-class" *ngIf="showmatics">
+            <div class="talkbubble1">
+              <img src="../../assets/images/fleetaGray.png" class="img-center img-responsive">
+              <div class="col-md-12" style="text-align: justify">
+                <p style="text-align: center; color:#1E428A;;font-weight:bold;margin-top: 10px">Fleetmati</p>
+                <span class="txtcolor" style="text-align: center; color:#1E428A;;font-weight:bold;margin-top: 10px">
+                  <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                      <div class="width-content">
+                        Measure asset(s) condition for preventative maintenance, asset(s) location, performance and user feedback
+                        with comprehensive, user defined predictive analytics and useful insights
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </span>
+
+              </div>
+
+            </div>
+          </div> -->
+
+        <!-- <div class="col-md-4 imgmargin blur-wrapper">
+              <div class="talkbubble">
+              <img src="../../assets/images/fleet.png" class="img-center img-responsive">
+              <div class="col-md-9" style="text-align: justify">
+              <p style="text-align: center;color:#1E428A;font-weight:bold;margin-top: 10px;">Fleetmatics</p>
+                </div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf='UseCaseType==2'>
+    <div class="col-md-12">
+      <div class="col-md-2 padding-top">
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(2)" *ngIf='!fleetMaintaince'>
+          <div class="talkbubble reporting">
+            <img src="../../assets/images/Reporting_gray.png" id="aks9" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;margin-top: 10px;">Reporting</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      View clear, concise reports that takes data and turns it into comprehensive, actionable, useful
+                      information made available to those that need it in real time on any platform including
+                      mobile
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='fleetMaintaince'>
+          <div class="talkbubble1">
+            <img src="../../assets/images/Reporting.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">Reporting</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      View clear, concise reports that takes data and turns it into comprehensive, actionable, useful
+                      information that is made available to those that need it in real time on any platform including
+                      mobile
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="col-md-4 imgmargin blur-wrapper">
+                  <div class="talkbubble">
+                  <img src="../../assets/images/fleet.png" class="img-center img-responsive">
+                  <div class="col-md-9" style="text-align: justify">
+                  <p style="text-align: center;color:#1E428A ;font-weight:bold;margin-top: 10px;">Forecasting</p>
+                    </div>
+                </div>
+
+                </div> -->
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(12)"  *ngIf='!forecasting'>
+          <div class="talkbubble forecast">
+            <img src="../../assets/images/forecastinga.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;margin-top: 10px">Retail Analytics</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Centralize data in a single, voice activated visual metric that will allow any leader within an
+                      organization to predict or estimate budget and spending trends based on real time data
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='forecasting'>
+          <div class="talkbubble1 ">
+            <img src="../../assets/images/Reporting.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">Reporting</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      View clear, concise reports that takes data and turns it into comprehensive, actionable, useful
+                      information that is made available to those that need it in real time on any platform including
+                      mobile
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div *ngIf='UseCaseType==3'>
+    <div class="col-md-12">
+      <div class="col-md-2 padding-top">
+
+      </div>
+      <div class="row">
+
+        <!--Production-->
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(8)" *ngIf='!showProduction'>
+          <div class="talkbubble supplyChain">
+            <img src="../../assets/images/supply_chain.png" id="aks6" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify;margin:auto">
+              <p style="text-align: center;margin-top: 10px">Supply Chain</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Optimize the delivery process and
+                      save time and money with real time access to
+                      inventory levels, logistics data and market performance
+                      for a for more efficient supply chain operation
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='showProduction'>
+
+          <div class="talkbubble1">
+            <img src="../../assets/images/supply.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify;margin:auto">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px">Supply Chain</p>
+              <span class="txtcolor" style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Optimize the delivery process and
+                      save time and money with real time access to
+                      inventory levels, logistics data and market performance
+                      for a for more efficient supply chain operation
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!--Production-->
+
+        <!--Inventory-->
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(3)" *ngIf='!showmanufacturing'>
+          <div class="talkbubble producTion">
+            <img src="../../assets/images/production_gray.png" id="aks7" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; margin-top: 10px">Production</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Optimize production with real time insight on cost, quality, performance
+                      and project timelines to reduce levels of production lag and/or manufacturing and
+                      production waste
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='showmanufacturing'>
+
+          <div class="talkbubble1">
+            <img src="../../assets/images/production.png" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px">Production</p>
+              <span class="txtcolor" style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Optimize production with real time insight on cost, quality, performance
+                      and project timelines to reduce levels of lag and/or waste.
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!--Inventory-->
+    <!--Performance-->
+
+  </div>
+
+  <!-- <div *ngIf='UseCaseType==4'>
+      <div class="col-md-12">
+          <div class="col-md-2 padding-top">
+
+            </div>
+           <div class="row">
+
+              <div class="col-md-4 imgmargin pointer-class" (click)="redirect(4)" *ngIf='!showHrms'>
+                  <div class="talkbubble humanCapital">
+                      <img src="../../assets/images/human_capital.png" id="aks9" class="img-center img-responsive">
+                      <div class="col-md-12" style="text-align: justify">
+                       <p style="text-align: center;margin-top: 10px;">Human Capital</p>
+                       <span class="txtcolor">
+                          <div class="row">
+                            <div class="col-md-1"></div>
+            <div class="col-md-10" style="text-align:justify">
+                Measure staffing levels, requirements and trends in compensation, work history and status. Review work performance, rates of attrition and employee, management and leadership satisfaction feedback
+
+            </div>
+                            <div class="col-md-1"></div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-md-4 imgmargin pointer-class" *ngIf='showHrms'>
+                    <div class="talkbubble1">
+                        <img src="../../assets/images/human-capital.png" class="img-center img-responsive">
+                        <div class="col-md-12" style="text-align: justify">
+                        <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">Human Capital</p>
+                        <span class="txtcolor">
+                            <div class="row">
+                              <div class="col-md-1"></div>
+              <div class="col-md-10" style="text-align:justify">
+                  Measure staffing levels, requirements and trends in compensation, work history and status. Review work performance, rates of attrition and employee, management and leadership satisfaction feedback
+
+              </div>
+                              <div class="col-md-1"></div>
+                              </div>
+                            </span>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4 imgmargin">
+                    <div class="talkbubble vendor blur-wrapper">
+                    <img src="../../assets/images/humanresource-vendormanager-gray.png" class="img-center img-responsive">
+                    <div class="col-md-12" style="text-align: justify">
+                    <p style="text-align: center;color:#969699 ;font-weight:bold;margin-top: 10px;">Vendor Manager</p>
+                    <span class="txtcolor">
+                        <div class="row">
+                          <div class="col-md-1"></div>
+          <div class="col-md-10" style="text-align:justify">
+              Measure vendor levels, overlapping service providers, contract management, contract status, vendor certification status, performance levels vendor cost(s), value and competitive analysis
+
+          </div>
+                          <div class="col-md-1"></div>
+                          </div>
+                        </span>
+                      </div>
+                  </div>
+
+                  </div>
+
+
+
+            </div>
+      </div>
+  </div> -->
+
+  <div *ngIf='UseCaseType==4'>
+    <div class="col-md-12">
+      <div class="col-md-2 padding-top">
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(4)" *ngIf='!showHrms'>
+          <div class="talkbubble humanCapital">
+            <img src="../../assets/images/humanresource-vendormanager-gray.png" id="aks9"
+              class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;margin-top: 10px;">Human Capital</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Measure staffing levels, requirements and trends in compensation, work history and status. Review
+                      work performance, rates of attrition and employee, management and leadership satisfaction feedback
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='showHrms'>
+          <div class="talkbubble1">
+            <img src="../../assets/images/human-capital.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">Human Capital</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Measure staffing levels, requirements and trends in compensation, work history and status. Review
+                      work performance, rates of attrition and employee, management and leadership satisfaction feedback
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(10)" *ngIf='vender'>
+          <div class="talkbubble vendor">
+            <img src="../../assets/images/human_capital.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;color:#1E428A ;font-weight:bold;margin-top: 10px;" class="txtcolor">Vendor Management</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Measure vendor levels, overlapping service providers, contract management, contract status, vendor
+                      certification status, performance levels vendor cost(s), value and competitive analysis
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(10)" *ngIf='!vender'>
+          <div class="talkbubble vendor">
+            <img src="../../assets/images/human_capital.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center ;font-weight:bold;margin-top: 10px;">Vendor Management</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Measure vendor levels, overlapping service providers, contract management, contract status, vendor
+                      certification status, performance levels vendor cost(s), value and competitive analysis
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Health Care Analytics -->
+
+  <div *ngIf='UseCaseType == 5'>
+    <div class="col-md-12">
+      <div class="col-md-2 padding-top">
+      </div>
+      <div class="row">
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(5)" *ngIf='!showHealthAnalysis'>
+          <div class="talkbubble healthCare">
+            <img src="../../assets/images/healthcare_analytics.png" id="aks9" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;margin-top: 10px;">In-Patient Summary</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Monitor adminissions and readmission levels: patient status, supply levels. physician group(s)'
+                      activity levels and any client defined custom KPI's made available in a secure. visually rich
+                      format
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='showHealthAnalysis'>
+          <div class="talkbubble1">
+            <img src="../../assets/images/healthcareAna.png" id="aks9" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">In-Patient Summary</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(11)" *ngIf='!showHelthcareBilding'>
+          <div class="talkbubble covid">
+            <img src="../../assets/images/healthcare_billingb.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;;margin-top: 10px;">COVID-19 Analysis</p>
+              <span class="txtcolor" >
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify">
+                    <div class="width-content">
+                      Monitor and track Covid 19 based on custom factors, trends and historical data viewable in real time based on custom KPI from any region on the globe by nation, state, city, county or region
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-4 imgmargin pointer-class" *ngIf='showHelthcareBilding'>
+          <div class="talkbubble1">
+            <img src="../../assets/images/healthcare_billingb.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">COVID-19 Analysis</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Assembly-->
+  <div *ngIf='UseCaseType==6'>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-2 imgmargin pointer-class" (click)="redirect(6)" *ngIf='!showAssembly'>
+          <div class="talkbubble">
+            <img src="../../assets/5.png" class="img-center img-responsive">
+
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">Assembly</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-2 imgmargin pointer-class" *ngIf='showAssembly'>
+      <div class="talkbubble1">
+        <img src="../../assets/5.png" class="img-center img-responsive">
+        <div class="col-md-12" style="text-align: justify">
+          <p style="text-align: center; color:#1E428A;font-weight:bold;margin-top: 10px;">Assembly</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--Energy-->
+  <div *ngIf='UseCaseType==7'>
+    <div class="col-md-12">
+      <div class="col-md-2">
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(7)">
+          <div class="talkbubble consumption ">
+            <img src="../../assets/images/government_operationsa.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;font-weight:bold;margin-top: 10px;">Operations</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10">
+                    <div class="width-content">
+                      Catalog all aspects of municipal operations based off of customized client required KPI's that can given
+                      instant access to data points for predictive analysis in budgets, voting patterns, etc.
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 imgmargin pointer-class" (click)="redirect(13)">
+          <div class="talkbubble mamagement">
+            <img src="../../assets/images/government_performancea.png" class="img-center img-responsive">
+            <div class="col-md-12" style="text-align: justify">
+              <p style="text-align: center;font-weight:bold;margin-top: 10px;">Performance</p>
+              <span class="txtcolor">
+                <div class="row">
+                  <div class="col-md-1"></div>
+                  <div class="col-md-10" style="text-align:justify;">
+                    <div class="width-content">
+                      Monitor the performance of every department based on real time data and stats providing direct insight into data such as revenue collection, crime reports, officer accountability, etc.
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-md-2 imgmargin" *ngIf='showEng'>
+      <div class="talkbubble1">
+        <img src="../../assets/5.png" class="img-center img-responsive">
+        <p style="text-align: center; color:#fff;font-weight:bold;">Management</p>
+      </div>
+    </div> -->
+
+  </div>
+
+
+
+
+  <!--Energy-->
+
+
+</div>
+<!--Assembly-->
+
+
+<app-reports [ReportUseCaseType]="reportUseCaseTypeValue" (open)="onOpen($event)" *ngIf="reportusecase"></app-reports>
+<router-outlet></router-outlet>
+<!-- <app-reports></app-reports> -->
+<!-- <app-vehicledata *ngIf="showVechile"></app-vehicledata> -->

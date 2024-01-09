@@ -1,0 +1,96 @@
+<div class="container-fluid bg-color">
+  <div class="row">
+    <div class="col-md-2 bg-st1">
+      <div class="row">
+        <img src="../../../assets/inpatient-summary/inpatient three.png">
+      </div>
+      <div class="row marg">
+        <div class="card">
+          <div class="card-head">
+            <span>{{cf(Patient)}}</span>
+          </div>
+          <div class="card-body">
+            <p>Total Patients</p>
+          </div>
+        </div>
+      </div>
+      <div class="row marg">
+        <div class="card">
+          <div class="card-head">
+            <span>{{cf(Staff)}}</span>
+          </div>
+          <div class="card-body">
+            <p>Total Staff</p>
+          </div>
+        </div>
+      </div>
+      <div class="row marg">
+        <div class="card">
+          <div class="card-head">
+            <span>{{cf(Admitted)}}</span>
+          </div>
+          <div class="card-body">
+            <p>Total Patients Admitted</p>
+          </div>
+        </div>
+      </div>
+      <div class="row marg">
+        <div class="card">
+          <div class="card-head">
+            <span>{{cf(Waiting)}}</span>
+          </div>
+          <div class="card-body">
+            <p>Average Waiting Time in mins</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 bg-st2">
+      <div class="row marg">
+        <div class="col-md-6">
+          <form>
+           <label>From :</label> &nbsp;&nbsp; <input type="date" id="datemax" name="datemax" max="2020-12-31"> &nbsp;&nbsp;
+           <label>To :</label> &nbsp;&nbsp; <input type="date" id="datemin" name="datemin" min="2000-01-02">
+          </form>
+        </div>
+        <div class="col-md-6" style="text-align: end;">
+          <button class="btn btn-success">Length of Stay</button>
+          <button class="btn btn-primary">Number of Patients</button>
+        </div>
+      </div>
+      <div class="row marg-t">
+        <div class="col-md-6">
+          <div class="row bg-st">
+            <div class="head">
+              <p>Average Waiting Time by Division</p>
+            </div>
+            <div [chart]="averagechart" class="height"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row bg-st" style="margin-right: 1px;">
+            <div [chart]="barchart" class="heig"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row marg-t">
+        <div class="col-md-6">
+          <div class="row bg-st">
+            <div class="head">
+              <p>Stays By Payer</p>
+            </div>
+            <div [chart]="stayschart" class="height"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row bg-st" style="margin-right: 1px;">
+            <div class="head">
+              <p>Total Staff by Division</p>
+            </div>
+            <div [chart]="staffchart" class="height"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

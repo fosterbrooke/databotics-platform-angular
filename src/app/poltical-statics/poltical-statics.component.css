@@ -1,0 +1,118 @@
+/*Padding*/
+
+.pt-4{
+    padding-top: 4px
+}
+.pt-0{
+    padding: 0px;
+}
+
+.ptrbl-0{
+    padding: 0px
+}
+
+.plr-2{
+    padding-left: 2px;
+    padding-right: 2px
+}
+
+.plr-2{
+    padding-left: 2px;
+    padding-right: 0px
+}
+
+/*Padding*/
+
+/*Margin*/
+
+.mt-3{
+    margin-top: 3px
+}
+
+.mt-6{
+    margin-top: 6px
+}
+
+
+/*Margin*/
+
+/*Font-size*/
+
+
+/*Font-size*/
+
+/*Font-size*/
+
+/**/
+
+.panle-one-wrapper{
+    background-color: #0E4B68;
+    margin-top: 2px;
+    height: 27px;
+    font-size: 16px;
+    color: white;
+    padding-left: 8px;
+}
+
+.category-txt{
+    background-color: red;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.dropdown-wrapper{
+    width:70%;
+    height: 26px;
+    background-color: red;
+}
+.panle-parameters-wrapper{
+    background-color: #8A8A8A;
+    margin-top: 9px;
+    height: 27px;
+    font-size: 16px;
+    color: white;
+    padding-left: 8px;
+}
+
+.card-header-wrapper{
+    height: 30px;
+    background-color: #F5C8C9;
+    text-align: center;
+}
+
+.card-height-wrapper{
+    height: 200px;
+    background-color: #f5f5ff
+}
+.progress {
+    height: 29px;
+    margin-bottom: 16px;
+    margin-top: 29px;
+   
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.comfort-win-header-wrapper{
+    background-color: #22CE5C;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+}
+
+.progress-wrapper{
+    margin-bottom: 2px;
+    margin-top: 0px;
+}
+
+.li-group-item-height{
+    height: 51px
+}
+
+.card-body-wrapper{
+    background-color: #F6F6F6
+
+}

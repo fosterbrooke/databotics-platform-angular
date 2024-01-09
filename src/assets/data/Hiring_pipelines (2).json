@@ -1,0 +1,202 @@
+[
+  {
+    "Department": "Marketing",
+    "Position": "B1 - Trainee",
+    "date": "23-Jul-18",
+    "avg days to hire": 7,
+    "cost of hiring": 307,
+    "Turnout Ratio": 80,
+    "Market Availability": "Low",
+    "Best Hiring Channel": "Website Posting"
+  },
+  {
+    "Department": "Legal",
+    "Position": "B2 - Law Grad",
+    "date": "10-Apr-18",
+    "avg days to hire": 13,
+    "cost of hiring": 495,
+    "Turnout Ratio": 85,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Social Media"
+  },
+  {
+    "Department": "Admin",
+    "Position": "B3-Front Desk Operator",
+    "date": "7-Aug-18",
+    "avg days to hire": 15,
+    "cost of hiring": 389,
+    "Turnout Ratio": 83,
+    "Market Availability": "Low",
+    "Best Hiring Channel": "Social Media"
+  },
+  {
+    "Department": "Sales",
+    "Position": "B3 - Area Sales",
+    "date": "16-Dec-18",
+    "avg days to hire": 13,
+    "cost of hiring": 247,
+    "Turnout Ratio": 80,
+    "Market Availability": "Medium",
+    "Best Hiring Channel": "Indeed"
+  },
+  {
+    "Department": "Admin",
+    "Position": "B2 - Operation",
+    "date": "29-Dec-18",
+    "avg days to hire": 9,
+    "cost of hiring": 272,
+    "Turnout Ratio": 88,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Indeed"
+  },
+  {
+    "Department": "Admin",
+    "Position": "B2 - Operation",
+    "date": "18-Apr-18",
+    "avg days to hire": 9,
+    "cost of hiring": 283,
+    "Turnout Ratio": 81,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Dice"
+  },
+  {
+    "Department": "Accounting",
+    "Position": "B3 - Accounts Payable",
+    "date": "29-Apr-19",
+    "avg days to hire": 12,
+    "cost of hiring": 483,
+    "Turnout Ratio": 87,
+    "Market Availability": "Low",
+    "Best Hiring Channel": "Website Posting"
+  },
+  {
+    "Department": "Sales",
+    "Position": "B1 - Trainee",
+    "date": "25-Oct-18",
+    "avg days to hire": 10,
+    "cost of hiring": 319,
+    "Turnout Ratio": 84,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Indeed"
+  },
+  {
+    "Department": "Legal",
+    "Position": "B1 - Law Trainee",
+    "date": "12-Mar-18",
+    "avg days to hire": 14,
+    "cost of hiring": 337,
+    "Turnout Ratio": 83,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Indeed"
+  },
+  {
+    "Department": "Admin",
+    "Position": "B3 - Shift Manager",
+    "date": "1-May-18",
+    "avg days to hire": 8,
+    "cost of hiring": 206,
+    "Turnout Ratio": 81,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Dice"
+  },
+  {
+    "Department": "Marketing",
+    "Position": "B2 - Sales Executive",
+    "date": "27-Mar-18",
+    "avg days to hire": 10,
+    "cost of hiring": 417,
+    "Turnout Ratio": 88,
+    "Market Availability": "Medium",
+    "Best Hiring Channel": "Social Media"
+  },
+  {
+    "Department": "Marketing",
+    "Position": "B4 - Sales Manager",
+    "date": "17-Apr-19",
+    "avg days to hire": 14,
+    "cost of hiring": 171,
+    "Turnout Ratio": 88,
+    "Market Availability": "Medium",
+    "Best Hiring Channel": "Employee referral"
+  },
+  {
+    "Department": "Accounting",
+    "Position": "B2 - Accounts Receivables",
+    "date": "2-Dec-18",
+    "avg days to hire": 8,
+    "cost of hiring": 498,
+    "Turnout Ratio": 89,
+    "Market Availability": "Medium",
+    "Best Hiring Channel": "Dice"
+  },
+  {
+    "Department": "Admin",
+    "Position": "B4 - Floor Manager",
+    "date": "23-Dec-18",
+    "avg days to hire": 15,
+    "cost of hiring": 123,
+    "Turnout Ratio": 92,
+    "Market Availability": "Medium",
+    "Best Hiring Channel": "Social Media"
+  },
+  {
+    "Department": "IT",
+    "Position": "B4 - SAP Hana Developer",
+    "date": "22-Apr-19",
+    "avg days to hire": 15,
+    "cost of hiring": 381,
+    "Turnout Ratio": 89,
+    "Market Availability": "Low",
+    "Best Hiring Channel": "Employee referral"
+  },
+  {
+    "Department": "Accounting",
+    "Position": "B3 - Functional Consultant",
+    "date": "19-Apr-19",
+    "avg days to hire": 9,
+    "cost of hiring": 494,
+    "Turnout Ratio": 95,
+    "Market Availability": "Low",
+    "Best Hiring Channel": "Dice"
+  },
+  {
+    "Department": "Marketing",
+    "Position": "B3 - Ad Developer",
+    "date": "30-Apr-18",
+    "avg days to hire": 11,
+    "cost of hiring": 406,
+    "Turnout Ratio": 84,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Employee referral"
+  },
+  {
+    "Department": "IT",
+    "Position": "B4 - SQL - Sr. Developer",
+    "date": "22-Oct-18",
+    "avg days to hire": 7,
+    "cost of hiring": 188,
+    "Turnout Ratio": 89,
+    "Market Availability": "Low",
+    "Best Hiring Channel": "Dice"
+  },
+  {
+    "Department": "IT",
+    "Position": "B2 - Trainee",
+    "date": "22-Mar-18",
+    "avg days to hire": 12,
+    "cost of hiring": 120,
+    "Turnout Ratio": 93,
+    "Market Availability": "Medium",
+    "Best Hiring Channel": "Dice"
+  },
+  {
+    "Department": "IT",
+    "Position": "B3 - Java Developer",
+    "date": "29-Aug-18",
+    "avg days to hire": 11,
+    "cost of hiring": 422,
+    "Turnout Ratio": 93,
+    "Market Availability": "High",
+    "Best Hiring Channel": "Website Posting"
+  }
+]

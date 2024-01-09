@@ -1,0 +1,479 @@
+<div class="clearfix"></div>
+<!-- <app-header></app-header> -->
+<div class="clearfix"></div>
+<div class="container-fluid" style="padding:0 !important;">
+    <div class="">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h3 class="padding-left-20">{{title}}</h3>
+        </div>
+    </div>
+    
+  <div class="col-md-12" style="margin-top:7px;">
+    <div class="clearfix"></div>
+    <div class="col-md-4 " style="padding:3px !important;">
+      <div class="bg col-md-12" style="padding-top:10px;">
+        <span class="mrgn">Total employees</span>
+        <br> <br>
+        <div class="clearfix"></div>
+        <div class="col-md-6">
+          <div class="col-md-6">
+            <img src="../../../assets/iconss/1_new.png" style="height:45px !important;"
+              class="img-center img-responsive">
+            <p style="margin:0px;">Employees</p>
+          </div>
+          <div class="col-md-6">
+            <span class="font">{{employeecount}}</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="col-md-6">
+            <img src="../../../assets/iconss/2_new.png" style="height:45px !important;"
+              class="img-center img-responsive">
+            <p style="margin:0px;">Permanent</p>
+          </div>
+          <div class="col-md-6 padding0">
+            <span class="font">{{fulltimeemployeeCount}}<img src="../../../assets/iconss/red.png"></span>
+          </div>
+          <div class="clearfix"></div>
+          <div>
+            <span style="color:#7282a7"><span style="color:red;">-4% </span> vs
+              Previous year</span>
+          </div>
+        </div>
+        <div class="col-md-6" style="margin-top:41px;">
+          <div class="col-md-6">
+            <img src="../../../assets/iconss/3_new.png" style="height:41px !important;"
+              class="img-center img-responsive">
+            <p style="margin:0px;">Contract</p>
+          </div>
+          <div class="col-md-6 padding0">
+            <span class="font">{{contractemployeeCount}}<img src="../../../assets/iconss/green.png"></span>
+          </div>
+          <div class="clearfix"></div>
+          <div>
+            <span style="color:#7282a7"><span style="color:#3fd767;">+4% </span> vs
+              Previous year</span>
+          </div>
+        </div>
+        <div class="col-md-6" style="margin-top:41px;margin-bottom:6px;">
+          <div class="col-md-6">
+            <img src="../../../assets/iconss/4_new.png" style="height:41px !important;"
+              class="img-center img-responsive">
+            <p style="margin:0px;">Trainees</p>
+          </div>
+          <div class="col-md-6 padding0">
+            <span class="font">{{traineeemployeeCount}}<img src="../../../assets/iconss/green.png"></span>
+          </div>
+          <div class="clearfix"></div>
+          <div>
+            <span style="color:#7282a7"><span style="color:#3fd767;">+4% </span> vs
+              Previous year</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--First col-md-4 open-->
+    <div class="col-md-4" style="padding:3px !important;">
+      <div class="bg col-md-12" style="padding-top:10px;">
+        <!-- <div class="mrgn" style="padding:0px;margin-bottom:26px;">Gender</div> -->
+        <!--Gender-->
+        <div class="col-md-12" style="margin-bottom: 30px;">
+          <div class="col-md-4">
+            <img src="../../../assets/iconss/5_new.png" style="width:24px;" class="img-center img-responsive">
+          </div>
+          <div class="col-md-4 text-center">
+            <!-- <span>Head Count</span><br>
+                                        <span class="font">{{employeecount}}</span> -->
+            <span>Gender</span>
+          </div>
+          <div class="col-md-4">
+            <img src="../../../assets/iconss/6_new.png" style="width:24px;float: right;;"
+              class="img-center img-responsive">
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="progress" style="margin-top: 2px;">
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':malepercent,'background-color':'#3D7BAA'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getMaleEmployeeAvg();" [ngClass]="">{{maleemployeeCount}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':femaleperecent,'background-color':'#EA1652'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getFemaleEmployeeAvg();">{{femaleemployeeCount}}</div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+        <!--Age-->
+        <div class="col-md-12" style="margin-bottom: 11px;">
+          <div class="col-md-5">
+
+
+          </div>
+          <div class="col-md-2">
+            <span style="margin-left: 6px;">Age</span>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-3">
+          </div>
+          <div class="clearfix"></div>
+          <div class="progress" style="margin-top: 2px;">
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':eighteenTwentyPercent,'background-color':'#3D7BAA'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAgeAverage(18,25,eighteentwentyfive)">{{eighteentwentyfive}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':twentysixthirtyPercent,'background-color':'#F7C13B'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAgeAverage(26,30,twentyfivethirty)"> {{twentyfivethirty}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':thirtyonefivePercent,'background-color':'#E932FF'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAgeAverage(31,35,thirtyonetothirtyfive)"> {{thirtyonetothirtyfive}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':thirtySixfortyPercent,'background-color':'#EA1652'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAgeAverage(36,40,thirtysixtofourty)"> {{thirtysixtofourty}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':greaterFortyPercent,'background-color':'#3D7BAA'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAgeAverageForty(40,greaterfoutry)">{{greaterfoutry}}</div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12" style="text-align: center;">
+            <div style="display:inline-block;">
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background:#3D7BAA"></span> 18-25
+
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background: #F7C13B"></span> 26-30
+
+              </div>
+
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background:#E932FF"></span> 31-35
+
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background:#EA1652"></span> 36-40
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background:#3D7BAA"></span> >40
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--AgeClose-->
+
+        <div class="col-md-12">
+          <!--Ethnicity-->
+          <div class="clearfix"></div>
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4 text-center">
+            <span>Ethnicity</span>
+
+          </div>
+          <div class="col-md-4">
+
+          </div>
+
+
+          <div class="clearfix"></div>
+          <div class="progress" style="margin-top: 2px;">
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':whiteEthinPercent,'background-color':'#3D7BAA'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getAvgForEthinicity('White', whiteEthnicity)">{{whiteEthnicity}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':africanAmericanPercent,'background-color':'#42505d'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAvgForEthinicity('African American', africanamericanEthnicity)">
+              {{africanamericanEthnicity}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':latinAmericanPercent,'background-color':'#2CB065'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getAvgForEthinicity('Latin American', latinAmericanEthnicity)">
+              {{latinAmericanEthnicity}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':asianPercent,'background-color':'#EA1652'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getAvgForEthinicity('Asian', asianEthnicity)">{{asianEthnicity}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':otherPercent,'background-color':'#E932FF'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getAvgForEthinicity('Others', otherEthnicity)">{{otherEthnicity}}</div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12" style="text-align: center;">
+            <div style="display:inline-block;">
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:10px;">
+                <span class="age-lables" style="background:#3D7BAA"></span>&nbsp;<span class="fs-11">Whites</span>
+
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:10px;">
+                <span class="age-lables" style="background: #42505D"></span>&nbsp;<span class="fs-11">African
+                  Americans</span>
+
+              </div>
+
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:10px;">
+                <span class="age-lables" style="background:#2cb065"></span>&nbsp;<span class="fs-11">Latin
+                  Americans</span>
+
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:10px;">
+                <span class="age-lables" style="background:#EA1652"></span>&nbsp;<span class="fs-11">Asians</span>
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:10px;">
+                <span class="age-lables" style="background:#E932FF"></span>&nbsp;<span class="fs-11">Others</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--First col-md-4  close-->
+    <!--Chart-->
+    <div class="col-md-4" style="padding:3px !important;">
+      <div class="bg col-md-12">
+        <span class="mrgn">Education</span>
+        <div class="col-md-12 padding-top" style="margin-bottom: 15px">
+          <div class="progress" style="margin-top: 2px;">
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':gradPercent,'background-color':'#3D7BAA'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getEduAverage('Graduate',grad)">{{grad}}
+            </div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':postGraduatePercent,'background-color':'#F7C13B'}" aria-valuemin="0"
+              aria-valuemax="100" (click)="getEduAverage('Post Graduate',grad)">{{postgra}}</div>
+            <div class="progress-bar pointer-class" role="progressbar"
+              [ngStyle]="{'width':undergradPercent,'background-color':'#EA1651'}" aria-valuemin="0" aria-valuemax="100"
+              (click)="getEduAverage('Under Graduate',grad)">{{undergrad}}</div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12" style="text-align: center;">
+            <div style="display:inline-block;">
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background:#3D7BAA"></span>&nbsp;<span class="fs-11">Graduate</span>
+
+              </div>
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background: #F7C13B"></span>&nbsp;<span class="fs-11">Post
+                  Graduate</span>
+
+              </div>
+
+              <div class="pull-left txt-align" style="margin-top:2px;margin-right:18px;">
+                <span class="age-lables" style="background:#EA1651"></span>&nbsp;<span class="fs-11">Under
+                  Graduate</span>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12 padding-top">
+          <div>
+            <span>Bands</span>
+          </div>
+
+          <div class="col-md-3">
+            <span class="band-circle">B1</span>
+            <div class="circle pointer-class fs-12" style="background-color:#3D7BAA"
+              (click)="getBandAvgData(1,bandOneCount)">
+              {{bandOneCount}}</div>
+          </div>
+          <div class="col-md-3">
+            <span class="band-circle">B2</span>
+            <div class="circle pointer-class fs-12" style="background-color: #42506d"
+              (click)="getBandAvgData(2,bandOneCount)">
+              {{bandTwoCount}}</div>
+          </div>
+
+          <div class="col-md-3">
+            <span class="band-circle">B3</span>
+            <div class="circle pointer-class fs-12" style="background-color:#F7C13B"
+              (click)="getBandAvgData(3,bandOneCount)">
+              {{bandThreeCount}}</div>
+          </div>
+          <div class="col-md-3">
+            <span class="band-circle pointer-class">B4</span>
+            <div class="circle pointer-class fs-12" style="background-color:#EA1651"
+              (click)="getBandAvgData(4,bandOneCount)">
+              {{bandFourCount}}</div>
+          </div>
+
+        </div>
+        <div class="col-md-12" style="margin-top: 5px;">
+          <div class="col-md-3">
+            <span class="band-circle">B5</span>
+            <div class="circle pointer-class fs-12" style="background-color:#E932FF"
+              (click)="getBandAvgData(5,bandOneCount)">
+              {{bandFiveCount}}</div>
+          </div>
+          <div class="col-md-3">
+            <span class="band-circle">B6</span>
+            <div class="circle pointer-class fs-12" style="background-color:#2CAFC4"
+              (click)="getBandAvgData(6,bandOneCount)">
+              {{bandSixCount}}</div>
+          </div>
+
+          <div class="col-md-3">
+            <span class="band-circle">B7</span>
+            <div class="circle pointer-class fs-12" style="background-color:#EA1651"
+              (click)="getBandAvgData(7,bandOneCount)">
+              {{bandSevenCount}}</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!--Chart claose-->
+  </div>
+  <!--First col-md-12 close-->
+
+  <div>
+    <div class="col-md-12">
+      <div class="col-md-8" style="padding:3px !important;">
+
+        <div class="col-md-12" style="background: #fff;">
+          <span class="mrgn">Departments</span>
+          <div>
+            <div [chart]="stockchartcategories">
+            </div>
+            <div class="row">
+              <div class="col-md-4 padding0">
+                <div class="card employee_chart pointer-class" style="padding-bottom: 2px;"
+                  [ngClass]="{cardactiveclass: isCardActive(1)}" (click)="setDepatmentActive(1)">
+                  <div class="card-body" style="text-align: center;padding: 7px 0px;">
+                    <span>Department</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 padding0">
+                <div class="card employee_chart pointer-class" style="padding-bottom: 2px;"
+                  [ngClass]="{cardactiveclass: isCardActive(2)}" (click)="setDemographicActive(2)">
+                  <div class="card-body" style="text-align: center;padding: 7px 0px;">
+                    <span>Ethnicity</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 padding0">
+                <div class="card employee_chart pointer-class" style="padding-bottom: 2px;"
+                  [ngClass]="{cardactiveclass: isCardActive(3)}" (click)="setAgeActive(3)">
+                  <div class="card-body" style="text-align: center;padding: 7px 0px;">
+                    <span>Age</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-12" style="background:#fff;padding:20px 0px;margin-top:10px;">
+          <div *ngIf="category">
+            <span class="mrgn average">{{category}}</span>
+          </div>
+          <div *ngIf="default">
+              <span class="mrgn average">Total Average</span>
+            </div>
+
+          <div class="col-md-3 text-center mt5">
+            <img src="../../../assets/iconss/8_new.png" style="width:45px !important;margin:auto;height:45px;"
+              class="img-center img-responsive">
+            <span>Avg Salary</span>
+            <br>
+            <span class="font1">${{averageSalary | number : '1.2-2'}}k <img
+                src="../../../assets/iconss/green.png"></span>
+            <br>
+            <span style="color:#7282a7"><span style="color:#3fd767;">+4% </span> vs
+              Market Avg</span>
+          </div>
+          <div class="col-md-3 text-center mt5">
+            <img src="../../../assets/iconss/9_new.png" style="width:45px !important;margin:auto;height:45px;"
+              class="img-center img-responsive">
+            <span>Avg Experience</span>
+            <br>
+            <span class="font1">{{averageExperience | number : '1.2-2'}} Yrs <img
+                src="../../../assets/iconss/red.png"></span>
+            <br>
+            <span style="color:#7282a7"><span style="color:#3fd767;">+4% </span> vs
+              Market Avg</span>
+          </div>
+          <div class="col-md-3 text-center mt5 pointer-class" (click)="openAttritionTable();">
+            <img src="../../../assets/iconss/10_new.png" style="width:45px !important;margin:auto;height:45px;"
+              class="img-center img-responsive">
+            <span>Attrition Rate</span>
+            <br>
+            <span class="font1">{{averageattritionRate | number : '1.2-2'}}% <img
+                src="../../../assets/iconss/green.png"></span>
+            <br>
+            <span style="color:#7282a7"><span style="color:#3fd767;">+4% </span> vs
+              Market Avg</span>
+          </div>
+          <div class="col-md-3 text-center mt5">
+            <img src="../../../assets/iconss/11_new.png" style="width:45px !important;margin:auto;height:45px;"
+              class="img-center img-responsive">
+            <span>Satisfaction</span>
+            <br>
+            <span class="font1">{{averageSatisfaction |number : '1.2-2'}} <img
+                src="../../../assets/iconss/red.png"></span>
+            <br>
+            <span style="color:#7282a7"><span style="color:#3fd767;">+4% </span> vs
+              Market Avg</span>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="col-md-4" style="padding:0px 4px !important;">
+        <div class="bg" style="padding-bottom: 48px;">
+          <span class="mrgn">Hired vs Left for this Qtr</span>
+          <!-- <span class="float-right" style="float:right;"
+                                                (click)="goToHrmsUsecase2()">click</span> -->
+          <img src="../../../assets/hrmsimg/right-d-png.png" (click)="goToHrmsUsecase2()" class="pointer-class"
+            style="width:12%;float: right">
+          <div [chart]="negativStack">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Attrition Rate</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row card">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" *ngFor="let header of tableAttritionHeaders">
+                  {{header}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of attritionData">
+                <td *ngFor="let col of tableAttritionHeaders">
+                  {{row[col]}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

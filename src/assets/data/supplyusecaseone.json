@@ -1,0 +1,168 @@
+[
+    {
+        "annualstock": 150,
+        "delivered": 0.78,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Sep 2018",
+        "profit":2,
+        "profitRate":6,
+        "year":"2018",
+        "Category":"Furniture",
+        "segment":"Consumer"
+    }, {
+        "annualstock": 112,
+        "delivered": 0.78,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Sep 2019",
+        "profit":2,
+        "profitRate":6,
+        "year":"2019",
+        "Category":"Office Supplies",
+        "segment":"Corporate"
+    }, {
+        "annualstock": 156,
+        "delivered": 0.43,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Sep 2020",
+        "profit":2,
+        "profitRate":1,
+        "year":"2020",
+        "Category":"Technology",
+        "segment":"Home Office"
+    }, {
+        "annualstock": 122,
+        "delivered": 0.12,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Oct 2018",
+        "profit":2,
+        "profitRate":6,
+        "year":"2018",
+        "Category":"Furniture",
+        "segment":"Consumer"
+    }, {
+        "annualstock": 159,
+        "delivered": 0.56,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Oct 2019",
+        "profit":2,
+        "profitRate":7,
+        "year":"2019",
+        "Category":"Office Supplies",
+        "segment":"Corporate"
+    }, {
+        "annualstock": 200,
+        "delivered": 0.97,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Oct 2020",
+        "profit":2,
+        "profitRate":8,
+        "year":"2020",
+        "Category":"Technology",
+        "segment":"Home Office"
+    }, {
+        "annualstock": 221,
+        "delivered": 0.89,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Nov 2018",
+        "profit":2,
+        "profitRate":6,
+        "year":"2018",
+        "Category":"Furniture",
+        "segment":"Consumer"
+    }, {
+        "annualstock": 100,
+        "delivered": 0.37,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Nov 2019",
+        "profit":2,
+        "profitRate":4,
+        "year":"2019",
+        "Category":"Office Supplies",
+        "segment":"Corporate"
+    }, {
+        "annualstock": 187,
+        "delivered": 0.45,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Nov 2020",
+        "profit":2,
+        "profitRate":6,
+        "year":"2020",
+        "Category":"Technology",
+        "segment":"Home Office"
+    }, {
+        "annualstock": 135,
+        "delivered": 0.12,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Dec 2018",
+        "profit":2,
+        "profitRate":5,
+        "year":"2018",
+        "Category":"Furniture",
+        "segment":"Consumer"
+    }, {
+        "annualstock": 117,
+        "delivered": 0.15,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Dec 2019",
+        "profit":2,
+        "profitRate":4,
+        "year":"2019",
+        "Category":"Office Supplies",
+        "segment":"Corporate"
+    } ,{
+        "annualstock": 188,
+        "delivered": 0.45,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Dec 2020",
+        "profit":2,
+        "profitRate":3,
+        "year":"2020",
+        "Category":"Technology",
+        "segment":"Home Office"
+    }, {
+        "annualstock": 288,
+        "delivered": 0.23,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Jan 2018",
+        "profit":2,
+        "profitRate":9,
+        "year":"2018",
+        "Category":"Furniture",
+        "segment":"Consumer"
+    }, {
+        "annualstock": 450,
+        "delivered": 0.05,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Jan 2019",
+        "profit":2,
+        "profitRate":7,
+        "year":"2019",
+        "Category":"Office Supplies",
+        "segment":"Corporate"
+    }, {
+        "annualstock": 120,
+        "delivered": 0.13,
+        "misseddeliveries": 0.27,
+        "percentage": 0.12,
+        "product": "Jan 2020",
+        "profit":2,
+        "profitRate":5,
+        "year":"2020",
+        "Category":"Technology",
+        "segment":"Home Office"
+    }
+]

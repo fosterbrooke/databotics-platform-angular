@@ -1,0 +1,1223 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+  <div class="col-md-12 panel-first-bg-color">
+    <span style="font-size:13px;">Andhra Pradesh Legislative Assembly election,2014</span>
+  </div>
+  <!--Drop Down-->
+  <!--Drop Down-->
+  <div class="col-md-12 mt-2">
+    <div class="col-md-3 padding-0">
+      <div class="form-group">
+        <select class="dropdown-wrapper-ap">
+          <option>Ap</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4 padding-0">
+      <div class="form-group dropdown-wrapper">
+        <select id="districtname" class="dropdown-bg-color" name="districtname" [(ngModel)]="distdefaultname"
+          placeholder="DistrictName" class="form-control dropdown-wrapper" (change)="changeDistrict($event)">
+          <option> District Name</option>
+          <!-- <option *ngFor="let dist of district" [selected]="distdefaultname == dist">{{dist}}</option> -->
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4 padding-0">
+      <div class="form-group dropdown-wrapper">
+        <select id="assemblyname" class="dropdown-bg-color" name="assemblyname" [(ngModel)]="asseblydefaultname"
+          placeholder="Booth Incharge Name" class="form-control dropdown-wrapper" (change)="changeAssembly($event)">
+          <option></option>
+          <!-- <option *ngFor="let assemblys of assemblynew" [selected]="asseblydefaultname == assemblys">{{assemblys}}
+          </option> -->
+        </select>
+      </div>
+
+
+    </div>
+    <!-- <div class="col-md-3 padding-0">
+            <div class="form-group dropdown-wrapper">
+                <select id="boothinchargename" class="dropdown-bg-color" name="boothinchargename" [(ngModel)]="bootdefaultname" placeholder="Booth Incharge Name"   class="form-control dropdown-wrapper"
+                (change)="onChangeNumber($event)" >
+                     <option *ngFor="let bootnumber of boothNumbers" [selected]="bootdefaultname == bootnumber">{{bootnumber}}</option>
+                   </select>
+                 </div>
+    
+        </div> -->
+
+  </div>
+
+
+  <!--Drop Down close-->
+  <div class="col-md-12">
+    <div id="table-scroll" class="table-scroll">
+      <div class="table-wrap">
+        <table class="main-table">
+          <thead>
+            <tr>
+
+              <th class="fixed-side" colspan="2" scope="col">&nbsp;</th>
+              <th scope="col" *ngFor="let obj of assembly">{{obj}}</th>
+
+              <!-- <div *ngIf="isBoot==true"> <th scope="col"  *ngFor="let obj of boothNumbers">{{obj}}</th></div> -->
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="fixed-side bg" rowspan="3"> <span class="transform">Gender</span></th>
+              <th class="fixed-side">Male</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.partyname=='TDP' , 'blue': obj.partyname=='YSRCP','other': obj.partyname=='Others' } "
+                *ngFor="let obj of male_latest;let i=index"> <span>{{obj.male}} </span>
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non"> <span *ngFor="let obj of assemblyobj;let j=index">
+                          <span class="pading" *ngIf="i==j">{{obj.Male[0]}} </span></span>
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non"> <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Male[1]}} </span></span>
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Male[2]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+
+                  </table>
+
+                </div>
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Female</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.partyname=='TDP' , 'blue': obj.partyname=='YSRCP','other': obj.partyname=='Others' } "
+                *ngFor="let obj of female_latest; let i=index">{{obj.female}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Female[0]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Female[1]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Female[2]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+
+                  </table>
+
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Other</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of other_latest;let i=index;">{{obj.other}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Other[0]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Other[1]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Other[2]}}
+                          </span></span>
+
+                      </td>
+
+                    </tr>
+
+                  </table>
+
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+            </tr>
+            <tr style="height:4px;"></tr>
+            <!--Gender-->
+            <tr>
+              <th class="fixed-side bg" rowspan="3"><span class="transform">Religion</span></th>
+              <th class="fixed-side">Hindu</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of hindu_latest,let i=index">{{obj.hindu}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Hindu[0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Hindu[1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Hindu[2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Muslim</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of muslim_latest;let i=index">{{obj.muslim}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Muslim[0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Muslim[1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Muslim[2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Christian</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of Christian_latest,let i=index;">{{obj.christian}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Christian[0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Christian[1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Christian[2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+
+            </tr>
+            <!--Religion-->
+            <tr style="height:4px;"></tr>
+            <tr>
+              <th class="fixed-side bg" rowspan="5"> <span class="transform">Income Group</span></th>
+              <th class="fixed-side">More than 1,00,000</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of  greatelacks_latest; let i=index">{{obj['greatevalue']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>100000'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>100000'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>100000'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 99,999 & 50,0000</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of max_5000_latest;let i=index">{{obj['>50000']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>50000'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>50000'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>50000'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 49,999 & 25,000</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of max_25000_latest;let i=index">{{obj['>25000']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>25000'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of assemblyobj; let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>25000'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>25000'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 24,999 & 10,000</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of max_10000_latest,let i=index">{{obj['>10000']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>10000'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>10000'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['>10000'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Less then 10,000</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of less_10000_latest;let i=index">{{obj['lesten']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['10000'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['10000'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['10000'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+            </tr>
+            <!--Income Group-->
+            <tr style="height:4px;"></tr>
+            <tr>
+              <th class="fixed-side bg" rowspan="5"><span class="transform">Age Group</span></th>
+              <th class="fixed-side">Above 60</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of ageabove_60;let i=index">{{obj['Above 60']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['Above 60'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['Above 60'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['Above 60'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 45-60</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of abeabove_45;let i=index">{{obj['46-60']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['46-60'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['46-60'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['46-60'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 30-45</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of ageabove_30;let i=index">{{obj['31-45']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['31-45'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['31-45'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['31-45'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 20-30</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of ageabove_20; let i=index">{{obj['21-30']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['21-30'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['21-30'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['21-30'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Between 18-20</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of ageabove_18;let i=index">{{obj['18-20']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['21-30'][0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['21-30'][1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj['21-30'][2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <!--Age Group-->
+            <tr style="height:4px;"></tr>
+
+
+
+
+            <!--Income Group-->
+            <tr style="height:4px;"></tr>
+            <tr>
+              <th class="fixed-side bg" rowspan="5"><span class="transform">Incomebency</span></th>
+              <th class="fixed-side">Agriculture</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of agriculture_latest;let i=index">{{obj.Agriculture}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Agriculture[0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Agriculture[1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Agriculture[2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Jobs</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of jobs_latest;let i=index">{{obj.Jobs}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Jobs[0]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Jobs[1]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading"
+                            *ngIf="i==j">{{obj.Jobs[2]}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Infrastructure</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of infrastructure_latest;let i=index">{{obj.Infrastructure}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  assemblyobj;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Law & Order</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of law_latest;let i=index">{{obj['Law & Order']}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  tdpLO;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  ysrLO;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  otherLO;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+
+
+            </tr>
+            <tr>
+              <th class="fixed-side">Governmance</th>
+              <td class="pop"
+                [ngClass]="{'yellow': obj.Party=='TDP' , 'blue': obj.Party=='YSRCP','other': obj.Party=='Others' } "
+                *ngFor="let obj of governance_latest;let i =index">{{obj.governance}}
+                <!--hover code-->
+                <div class="content">
+                  <table class="small">
+                    <tr>
+                      <th>Party</th>
+                      <th>Votes%</th>
+
+                    </tr>
+                    <tr>
+                      <td> <span class="yellow1">TDP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  tdpGovt;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> <span class="blue1">YSRCP</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  ysrGovt;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="other">Others</span></td>
+                      <td class="non">
+                        <span *ngFor="let obj of  otherGovt;let j=index"><span class="pading" *ngIf="i==j">{{obj}}
+                          </span></span>
+
+                      </td>
+                    </tr>
+
+                  </table>
+
+                </div>
+                <!--hover code end-->
+              </td>
+
+
+
+
+
+            </tr>
+          </tbody>
+
+
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+</div>

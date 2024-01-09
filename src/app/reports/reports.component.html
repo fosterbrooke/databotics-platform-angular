@@ -1,0 +1,198 @@
+<div class="container-fluid" style="padding: 0px">
+  <!-- <div class="panel panel-default">
+    <div class="panel-body" style="text-align: right;background-color:#5871b2;margin-top: 20px;"><strong
+        style="color:white;">Reports</strong></div>
+  </div> -->
+
+  <div class="col-md-12 padding:0px" *ngIf='ReportUseCaseType==1'>
+    <div class="row">
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectDashboard()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Fleet_overview.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Fleet Overview</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectdriveroverview()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Driver_performance.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center;color:#267872 ">Driver Profile</p>
+        </div>
+
+      </div>
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectvehicleMetrics()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Vehcile_live_metrics.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center;color:#267872">Vehicle Live Metrics</p>
+        </div>
+      </div>
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="customerFeedbackAnalysis()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Customer_feedback_analysis.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center;color:#267872">Customer Feedback Analysis</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-12 padding:0px">
+    <div class="row">
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectFinanceExpense()" *ngIf='ReportUseCaseType==2'>
+        <div class="talkbubble">
+          <img src="../../assets/images/expenseanalytics.png" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Expenses Analytics</p>
+        </div>
+      </div>
+
+
+      <!-- <div class="col-md-2" id="fleet_hover" style="margin-top: 13px;">
+        <div class="talkbubble">
+          <img src="../../assets/hero_Image.jpg" class="img-center img-responsive img-Radius">
+          <p style="text-align: center;color:#267872 ">Vehicle Data</p>
+        </div>
+
+      </div> -->
+      <!-- <div class="col-md-2" id="fleet_hover" style="margin-top: 13px;">
+        <div class="talkbubble">
+          <img src="../../assets/hero_Image.jpg" class="img-center img-responsive img-Radius">
+          <p style="text-align: center;color:#267872">Tire Data</p>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+
+  <div class="col-md-12 padding:0px" *ngIf='ReportUseCaseType==3'>
+    <div class="row">
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectInventory()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Inventory_management.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Inventory Management</p>
+        </div>
+      </div>
+
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectInventortMap()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Stock_availability.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Stock Availability</p>
+        </div>
+      </div>
+
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectstocktracking()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/Track_order.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Track Order</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="col-md-12 padding:0px" *ngIf='ReportUseCaseType==8'(click)="redirectProductManagment()">
+      <div class="row">
+        <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;">
+          <div class="talkbubble">
+            <img src="../../assets/images/Project_Management.png" class="img-center img-responsive img-Radius">
+            <p style="text-align: center; color:#267872">Project Management</p>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+  <!--Human Resource-->
+
+  <div class="col-md-12 padding:0px" *ngIf='ReportUseCaseType==4'>
+    <div class="row">
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectHrmsUseCaseOne()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/HR_Overview.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">HR Overview</p>
+        </div>
+      </div>
+
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectHrmsUseCaseTwo()">
+        <div class="talkbubble">
+          <img src="../../assets/thumbnails/HR_Hiring_module.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">HR Hiring Module</p>
+        </div>
+      </div>
+
+      <!-- <div class="col-md-2" id="fleet_hover" style="margin-top: 13px;" (click)="redirectHrmsUseCaseThree()">
+        <div class="talkbubble">
+          <img src="../../assets/hero_Image.jpg" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">HRMS=usecase-3</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+       <!--Health Care-->
+     <div class="col-md-12 padding:0px">
+        <div class="row">
+       <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectHealthAnalytics()" *ngIf='ReportUseCaseType==5'>
+         <div class="talkbubble">
+           <img src="../../assets/images/healthcareanalyticsreport.png" class="img-center img-responsive img-Radius">
+           <p style="text-align: center; color:#267872">Health Care Analytics</p>
+         </div>
+       </div>
+
+       </div>
+       </div>
+     <!--Health Care-->
+
+
+
+  <!--Human Resource-->
+
+
+  <!--Assembly-->
+  <div class="col-md-12 padding:0px" *ngIf='ReportUseCaseType==6'>
+    <div class="row">
+        <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectStateOverview()">
+            <div class="talkbubble">
+              <img src="../../assets/images/state-overview.bmp" class="img-center img-responsive img-Radius">
+              <p style="text-align: center; color:#267872">State Overview</p>
+            </div>
+          </div>
+          <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectForcastAnalysis()">
+              <div class="talkbubble">
+                <img src="../../assets/images/forecastanalysis.bmp" class="img-center img-responsive img-Radius">
+                <p style="text-align: center; color:#267872">Trend Analysis</p>
+              </div>
+            </div>
+
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectPolticalStatics()">
+        <div class="talkbubble">
+          <img src="../../assets/images/What if Analysis.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Predective Analysis</p>
+        </div>
+      </div>
+
+      <div class="col-md-2 pointer-class" id="fleet_hover" style="margin-top: 13px;" (click)="redirectBoothIncharge()">
+        <div class="talkbubble">
+          <img src="../../assets/images/Booth-Incharge.bmp" class="img-center img-responsive img-Radius">
+          <p style="text-align: center; color:#267872">Demographic Survey</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!---->
+
+  <!---->
+
+  <!-- Example: {{ childExample }} -->
+</div>

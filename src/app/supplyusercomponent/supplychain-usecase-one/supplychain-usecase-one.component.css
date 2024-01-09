@@ -1,0 +1,46 @@
+.chart{
+  height: 230px;
+}
+.chart_header{
+  background-color: white;
+  margin-top: 10px;
+  padding: 6px;
+}
+.card{
+  background-color: #20283d;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  height: 150px;
+  padding: 44px 0px;
+  font-weight: bold;
+}
+.cardratio{
+  background-color: #20283d;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  height: 310px;
+  padding: 110px 0px;
+  font-weight: bold;
+}
+.dropdown_wrapper{
+  background-color: #20283d;
+  color: white;
+}
+.header{
+  background-color: #20283d;
+  color: white;
+  margin-top: 10px;
+  padding: 6px;
+}
+.pd-right{
+  padding-right: 5px;
+}
+.pd-left{
+  padding-left: 5px;
+}

@@ -1,0 +1,23 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+
+<div class="container-fluid">
+    <div class="row">
+      <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="sethrOverview(1);" style="color: #788786;"> HR Overview </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="sethrHire(2);" style="color: #788786"> HR Hiring Module </a>
+          </li>
+      </ul>
+      <div>
+        <div id="home">
+            <app-hrms-usecase1 *ngIf="hrOverview"></app-hrms-usecase1>
+        </div>
+        <div id="profile">
+            <app-hrms-usecase2 *ngIf="hrHire"></app-hrms-usecase2>
+        </div>
+
+      </div>
+    </div>
+</div>

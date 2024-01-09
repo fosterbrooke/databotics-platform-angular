@@ -1,0 +1,335 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid">
+
+
+  <div style="background-color: white;border-radius:6px">
+    <h3 style="margin-top: 1px;padding: 12px;">HR Hiring</h3>
+    <button type="button" class="btn btn-primary" style="float: right;margin-top:-50px;margin-right: 31px;"(click)=hrmsOverview()>HR Overview</button>
+  </div>
+  <div class="col-md-8" style="padding:0px 5px;">
+    <div class="colmd-12">
+      <div class="col-md-3" style="background-color: white;margin-right:10px;width: 24%;padding:0px;">
+        <span>
+          <span><img src="../../../assets/hrmsimg/hrmsjoinericon.png" style="padding: 20px;"></span>
+          <span style="display: inline-table;">
+            <span style="font-size:24px;">156</span><br>
+
+            <span>Joined</span>
+          </span>
+          <hr style="background-color:#47b6dc; height:2px; border: 0;margin-bottom:0px;">
+        </span>
+      </div>
+      <div class="col-md-3" style="background-color: white;margin-right:12px;width: 24%;padding:0px;">
+        <span>
+          <span><img src="../../../assets/hrmsimg/hrmsleavers.png" style="padding: 20px;"></span>
+          <span style="display: inline-table;">
+              <span style="font-size:24px;">52</span><br>
+            <span> Left</span>
+          </span>
+          <hr style="background-color:#fb6550; height:2px; border: 0;margin-bottom:0px;">
+        </span>
+      </div>
+      <div class="col-md-3" style="background-color: white;margin-right:12px;width: 24%;padding:0px;">
+        <span>
+          <span><img src="../../../assets/hrmsimg/hrmsmovers.png" style="padding: 20px;"></span>
+          <span style="display: inline-table;">
+              <span style="font-size:24px;">14</span><br>
+            <span> Moved
+            </span>
+
+          </span>
+          <hr style="background-color:#47b6dc; height:2px; border: 0;margin-bottom:0px;">
+        </span>
+      </div>
+      <div class="col-md-3" style="background-color: white;margin-right:0px;width: 24%;padding:0px;">
+        <span>
+          <span><img src="../../../assets/hrmsimg/hrmstotalopeningicon.png" style="padding: 20px;"></span>
+          <span style="display: inline-table;">
+              <span style="font-size:24px;">20</span><br>
+          <span>Total Openings
+          </span>
+         </span>
+          <hr style="background-color:#47b6dc; height:2px; border: 0;margin-bottom:0px;">
+        </span>
+      </div>
+    </div>
+
+
+    <!--start second card-->
+    <div class="clearfix"></div>
+    <div class="col-md-12 padding0" style="margin-top: 10px;">
+      <div class="col-md-7 padding0" style="background: #fff;">
+        <div class="col-md-12 " style="background-color:#d43e29;text-align: center">
+          <span>
+            <img class="mx-auto d-block" src="../../../assets/hrmsimg/interviewicon.png">
+
+          </span><span
+            style="color:white;font-weight: 900;font-size: large;position: relative;bottom: -4px;padding: 12px;">Interviewing</span>
+        </div>
+
+        <div class="col-md-12 padding0 card-deck">
+
+          <div class="col-md-4">
+            <div class="card" style="border-bottom: 2px solid #d43e29;">
+
+              <div class="card-body" style="text-align:center">
+                <h5 class="card-title" style="font-size: -webkit-xxx-large;"> 15</h5>
+                <p class="card-text">
+
+                  Open Positions</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4">
+            <div class="card" style="border-bottom: 2px solid #d43e29;">
+
+              <div class="card-body" style="text-align:center">
+                <h5 class="card-title" style="font-size: -webkit-xxx-large;">5 </h5>
+                <p class="card-text">
+                  Interviews Scheduled</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" style="border-bottom: 2px solid #d43e29;">
+            <div class="card">
+
+              <div class="card-body" style="text-align:center">
+                <h5 class="card-title" style="font-size: -webkit-xxx-large;">92</h5>
+                <p class="card-text">
+                  Selected Candidates</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="col-md-5 padding0" style="background: #fff;">
+        <div class="col-md-12" style="background-color:#52ae59;text-align: center">
+          <span>
+            <img class="mx-auto d-block" src="../../../assets/hrmsimg/onboardicon.png">
+
+          </span><span
+            style="color:white;font-weight: 900;font-size: large;position: relative;bottom: -4px;padding: 12px;">Onboarding</span>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="border-bottom: 2px solid #52ae59;">
+
+            <div class="card-body" style="text-align:center">
+              <h5 class="card-title" style="font-size: -webkit-xxx-large;"> 7 </h5>
+              <p class="card-text">
+                Open Offers</p>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card" style="border-bottom: 2px solid #52ae59;">
+
+            <div class="card-body" style="text-align:center">
+              <h5 class="card-title" style="font-size: -webkit-xxx-large;">13</h5>
+              <p class="card-text">
+                  Current Onboardings</p>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--end second card-->
+    <!--secondtablerow-->
+
+    <div class="clearfix"></div>
+    <div class="col-md-12 hrmspt padding0" style="margin-top:10px;">
+      <div class="col-md-8 padding0" style="overflow-x:auto;overflow-y:auto;
+          height:461px;">
+
+        <p style="background-color:#596fa7;font-weight: 900;margin: 0px;padding:5px;color:white">Recruitment Pipeline</p>
+
+        <table class="table" style="width: 100%;">
+
+          <thead class="thead-light hrmsth">
+
+            <tr>
+              <th scope="col">Department
+
+              </th>
+              <th scope="col">Postion</th>
+              <th scope="col">Date</th>
+
+            </tr>
+
+          </thead>
+          <tbody style="height:200px;overflow-y:auto;width: 100%;">
+
+            <tr *ngFor="let obj of hiringPlan;let i=index" class="pointer-class" (click)="onClickHiring(i,obj)" [ngStyle]="{'background-color': selectedItem == i ? 'grey' : ''}">
+              <th scope="row">
+                {{obj.Department}}
+              </th>
+              <td>{{obj.Position}}</td>
+              <td>{{obj.date}}</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="col-md-4 padding0"  *ngIf="isClicked==true">
+
+        <!--click
+          Best Hiring Channel: "Website Posting"
+Department: "Marketing"
+Market Availability: "Low"
+Position: "B1 - Trainee"
+Turnout Ratio: 80
+avg days to hire: 7
+cost of hiring: 307
+date: "23-Jul-18"
+           event come-->
+          <div style="background-color:white;padding: 0px 0px 40px 0px;">
+        <div class="col-md-12">
+          <h4>Forecast</h4>
+        </div>
+        <div class="col-md-12" style="padding: 4px;margin-bottom:10px;margin-top:15px;">
+          <div class="col-md-4">
+            <p><img class="cardimage1" src="../../../assets/hrmsimg/avgtimeicon.png" alt="Smiley face" align="left">
+          </div>
+          <div class="col-md-8" style="padding-left:10px;padding-right:2px;margin-left: -24px;">
+            <h5 style="margin-top:0px;margin-bottom:0px;font-size: 15px;">Avg Time to hire</h5>
+            <h1 style="margin-top:8px;margin-bottom:0px;font-size: 26px;">{{hiringPlanObjData['avg days to hire']}} Days</h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12" style="padding: 4px;margin-bottom:10px;">
+          <div class="col-md-4">
+            <p><img class="cardimage2" src="../../../assets/hrmsimg/avgcosticon.png" alt="Smiley face" align="left">
+          </div>
+          <div class="col-md-8" style="padding-left:10px;padding-right:2px;margin-left: -24px;">
+            <h5 style="margin-top:0px;margin-bottom:0px;font-size: 15px;">Avg Cost of Hiring</h5>
+            <h1 style="margin-top:10px;margin-bottom:0px;font-size: 26px;">$ {{hiringPlanObjData['cost of hiring']}}</h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="col-md-12" style="padding: 4px;margin-bottom:10px;">
+          <div class="col-md-4">
+            <p><img class="cardimage3" src="../../../assets/hrmsimg/turnouticon.png" alt="Smiley face" align="left">
+          </div>
+          <div class="col-md-8" style="padding-left:10px;padding-right:2px;margin-left: -24px;">
+            <h5 style="margin-top:0px;margin-bottom:0px;font-size: 15px;">Turnout Ratio</h5>
+            <h1 style="margin-top:8px;margin-bottom:0px;font-size: 26px;">{{hiringPlanObjData['Turnout Ratio']}} %</h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12" style="padding: 4px;margin-bottom:10px;">
+          <div class="col-md-4">
+            <p><img class="cardimage4" src="../../../assets/hrmsimg/marketicon.png" alt="Smiley face" align="left">
+          </div>
+          <div class="col-md-8" style="padding-left:10px;padding-right:2px;margin-left: -24px;">
+            <h5 style="margin-top:0px;margin-bottom:0px;font-size: 15px;">Market Availability</h5>
+            <h1 style="margin-top:8px;margin-bottom:0px;font-size: 26px;">{{hiringPlanObjData['Market Availability']}}
+            </h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12" style="padding: 4px;margin-bottom:10px;">
+          <div class="col-md-4">
+            <p><img class="cardimage5" src="../../../assets/hrmsimg/besthiringicon.png" alt="Smiley face" align="left">
+          </div>
+          <div class="col-md-8" style="padding-left:10px;padding-right:2px;margin-left: -24px;">
+            <h5 style="margin-top:0px;margin-bottom:0px;font-size: 15px;">Best Hiring Channel
+            </h5>
+            <h1 style="margin-top:8px;margin-bottom:0px; font-size: 26px;"> {{hiringPlanObjData['Best Hiring Channel']}}
+            </h1>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <!--click end event -->
+
+      </div>
+      </div>
+
+    </div>
+
+    <!--second row end-->
+
+  </div>
+  <div class="col-md-4 padding0">
+
+    <div class="col-md-12 padding0" style="overflow-x:auto;overflow-y:auto;background: #fff;
+    height:283px;">
+      <p style="background-color:#596fa7;padding:5px;margin:0px;color:white"> Onboarding Details</p>
+      <table class="table" style="
+                border: 1px solid #ddd;
+
+              ">
+        <!---->
+        <thead class="thead-light">
+
+          <tr>
+
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Joining Date</th>
+            <th scope="col">Role</th>
+            <th scope="col">Onboarding Status</th>
+          </tr>
+
+        </thead>
+        <tbody>
+
+
+          <tr *ngFor="let object of onboardingDetaols;index as id">
+
+            <td>{{object.Name}}</td>
+            <td>{{object.Department}}</td>
+            <td>{{object['Joinning Date']}}</td>
+            <td>{{object['Role']}}</td>
+            <th scope="row">
+
+              <div class="progress">
+                <div class="progress-bar" [style.width.px]="[object['Onboarding Status']]"></div>
+              </div>
+            </th>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="col-md-12" style="margin-top:10px;padding:0px;background: #fff;">
+      <div style="padding:7px 15px;">
+        Spend by hiring channels
+      </div>
+      <div [chart]="costofHiringChart">
+      </div>
+
+    </div>
+    <div class="col-md-12" style="margin-top:10px;padding:0px;background: #fff;">
+      <div style="padding:7px 15px;">
+        Candidate yield ratio
+      </div>
+      <div [chart]="yieldratioChart">
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+</div>

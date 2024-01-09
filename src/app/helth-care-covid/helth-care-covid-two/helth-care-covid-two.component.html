@@ -1,0 +1,98 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 fsize" style="font-size:25px;text-align:center;">
+      <p><b>Prince George's County Covid-19 Expenditures</b></p>
+      <!-- <p><b>$1,698,923.11</b></p> -->
+    </div>
+    <div class="col-md-4 padding-right">
+      <div class="row">
+        <div class="col-md-12">
+        <p><b>Agencey Name</b></p>
+        <select placeholder="Select Agencey Name" class="form-control dropdown_wrapper" (change)="selectedAgency($event)">
+          <option  value="ALL">ALL</option>
+          <option *ngFor="let a of Agency" value="{{a.agency}}">{{a.agency}}</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 padding-right">
+      <div class="row">
+        <div class="col-md-12">
+        <p><b>Functional Area Description</b></p>
+        <select placeholder="Select Functional Areas" class="form-control dropdown_wrapper" (change)="selectedArea($event)">
+          <option  value="ALL">ALL</option>
+          <option *ngFor="let b of Area" value="{{b.functionalArea}}">{{b.functionalArea}}</option>
+        </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 padding-right">
+      <div class="row">
+        <div class="col-md-12">
+          <p><b>From Date :</b></p>
+          <input type="date" id="from date" name="trip-end" style="padding-right: 10px;" value="date" (change)="fromdate($event)" class="form-control dropdown_wrapper">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="row">
+        <div class="col-md-12">
+          <p><b>To Date :</b></p>
+          <input type="date" id="to date" name="trip-start" (change)="endDate($event)" class="form-control dropdown_wrapper">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-md-2 text-right">
+      <img src="../../../assets/images/logo2.png" style="width: 54%;">
+    </div> -->
+    </div>
+    <div class="row m-t-10">
+      <div class="col-md-4 padding-right">
+        <p class="background">Amount Spent by Expense Type</p>
+        <div [chart]="ExpenseType" class="border"></div>
+      </div>
+      <div class='col-md-4 padding-right'>
+        <p class="background">Amount Spent by Expense Description</p>
+        <div [chart]='ExpenseDescription' class="border"></div>
+      </div>
+    
+      <div class="col-md-4">
+        <p class="background">Amount Spent Area Description And Cost Center</p>
+        <div [chart]="expence" class="border"></div>
+      </div>
+    </div>
+    <div class="row m-t-10">
+      <div class="col-md-12 table_height">
+        <table class="table table-borderd ">
+          <thead>
+            <tr>
+              <th>ExpenseType</th>
+              <th>AgencyName</th>
+              <th>CostCenter</th>
+              <th>FiscalYear</th>
+              <th>FundDescription</th>
+              <th>Grant</th>
+              <th>Order</th>
+              <th>Posting</th>
+              <th>ExpenseDescription</th>
+              <th>AmountSpent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let obj of mainData">
+              <td>{{obj.expenseType}}</td>
+              <td>{{obj.agency}}</td>
+              <td>{{obj.costCenter}}</td>
+              <td>{{obj.functionalArea}}</td>
+              <td>{{obj.fundDescription}}</td>
+              <td>null</td>
+              <td>{{obj.order}}</td>
+              <td>{{obj.postingDate}}</td>
+              <td>{{obj.expenseDescription}}</td>
+              <td>{{obj.amountSpent}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>

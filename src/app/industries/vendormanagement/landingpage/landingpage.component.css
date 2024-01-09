@@ -1,0 +1,10 @@
+.text-white{
+color: white;
+}
+.p-10{
+    padding: 6px;
+}
+.p-t-10{
+    padding-top: 6px;
+    margin-left: 10px;
+}

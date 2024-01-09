@@ -1,0 +1,117 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<div class="container-fluid">
+  <div class="row bg-color">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <h3>Finance</h3>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-chart wd-98">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Budget Ratio</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>${{df(Budget)}}M</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="budgetchart" class="height"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bg-chart wd-98">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Total Revenue Generated</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>${{df(Revenue)}}M</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-down" src="../../assets/govicon/Down_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="revenuechart" class="height"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+      <h3>Safety</h3>
+      <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-chart wd-31">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Count-fires per 10k Residents</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Count)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="countfirechart" class="height"></div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-chart marg-l">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Community Initiatives</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Community)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="countcommunitychart" class="height"></div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 bg-chart marg-l">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Hours Spent By Police</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Hours)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="housespentchart" class="height"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart wd-50">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Violent vs Non Violent Crimes</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Violent)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="violentchart" class="height"></div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 bg-chart marg-l">
+          <div class="head_text row">
+            <div class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7 pd-0">
+              <p>Count - Emergency Response Calls</p>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 pd-0">
+              <span>{{df(Emergency)}}</span>
+            </div>
+            <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 pd-0">
+              <img class="img-up" src="../../assets/govicon/Up_Arrow.png">
+            </div>
+          </div>
+          <div [chart]="countemergencychart" class="height"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

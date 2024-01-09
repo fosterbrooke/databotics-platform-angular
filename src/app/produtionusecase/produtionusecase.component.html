@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <div class="row">
+      <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setActiveInventory(1);" style="color: #788786;"> Inventory Management </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setactiveStock(2);" style="color: #788786"> Stock Availability </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(3)}" (click)="settrackOrder(3);" style="color: #788786"> Track Order </a>
+            </li>
+      </ul>
+      <div>
+        <div id="home">
+            <app-inventory-report *ngIf="inventoryReport"></app-inventory-report>
+        </div>
+        <div id="profile">
+            <app-inventory-map *ngIf="inventoryMap"></app-inventory-map>
+        </div>
+        <div id="contact">
+            <app-stock-tracking  *ngIf="trackOrder"></app-stock-tracking>
+        </div>
+
+      </div>
+    </div>
+</div>

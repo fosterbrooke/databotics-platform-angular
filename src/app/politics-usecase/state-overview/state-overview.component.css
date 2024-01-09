@@ -1,0 +1,171 @@
+
+.panel-footer {
+  padding: 0px 15px;
+  background-color:#104b6b;
+
+}
+.panel-body {
+  padding: 8px;
+  background-color:#12374a
+}
+
+.panel {
+  margin-bottom: 0px;
+   border: none;
+
+}
+body{
+  background-color: #fff !important;
+}
+.left {
+  float: left;
+  shape-outside: polygon(0 0, 0 300px, 200px 300px);
+  clip-path: polygon(0 0, 0 300px, 200px 300px);
+  background: linear-gradient(to top right, #67D7F5, #86F7CC);
+  height: 300px;
+  width: 300px;
+}
+
+.right {
+  float: right;
+  shape-outside: polygon(200px 300px, 300px 300px, 300px 0, 0 0);
+  clip-path: polygon(200px 300px, 300px 300px, 300px 0, 0 0);
+  background: linear-gradient(to bottom left, #67D7F5, #86F7CC);
+  height: 300px;
+  width: 300px;
+}
+.full_bg{
+  background:#fff;
+  border-radius:5px;
+  border-radius: 11px;
+  box-shadow: 0 0 7px #ccc;
+
+}
+.red{
+  background-image: url("../../../assets/images/bg.png");
+  background-size:100% 100%;
+  min-height: 111px;
+
+
+}
+.bg_new {
+  background:#e23030;
+  color:#fff;
+  margin:0 !important;
+}
+.bg_blue {
+  background:#104b6b;
+  color:#fff;
+  margin:0 !important;
+}
+.p-15{
+  font-size:11px;
+  font-weight:bold;
+}
+.orange{
+  color:#f7862c;
+}
+.blue {
+  color:#4a5387;
+}
+.white{
+  color:#fff !important;
+  padding-left: 8px;
+  font-size:12px;
+}
+.panel-footer {
+ border-top:none;
+
+}
+
+.panel-footer-wrapper{
+  color: white;
+  font-size: 18px;
+  padding-left: 36px;
+}
+
+.category-wrapper{
+  padding: 0px;
+  font-size: 17px;
+}
+
+
+.ptrbl{
+ padding: 0px;
+}
+
+.pt-25{
+  padding-top: 25px
+}
+.pt-22{
+  padding-top: 22px;
+}
+
+.pt-9{
+  padding-top: 9px
+}
+.pl-16{
+  padding-left: 16px
+}
+.pt-7{
+  padding-top: 7px
+}
+
+/**/
+.mt-3{
+  margin-top: 3px
+}
+
+/**/
+
+
+/**/
+
+/*Font-Size*/
+
+.fs-18{
+  font-size: 18px
+
+}
+
+.border-bottom-wrapper{
+  border-bottom: 2px solid #6A9DB7;
+
+}
+
+.card-header-wrapper{
+  text-align: center;
+  font-size: 22px;
+  background-color: #E23030;
+  color: white;
+  padding-bottom: 4px;
+}
+.top-parties-wrapper{
+  background-color: #E23030;
+  margin-top: 2px;
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.txt-align{
+  text-align: center
+}
+.fs-18{
+  font-size: 18px
+}
+
+.tdp-block{
+  width: 41px;
+  height: 31px;
+  background-color: yellow;
+  border-radius: 1px;
+  display: inline-block;
+}
+.age-lables{
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  border-radius: 6px;
+}

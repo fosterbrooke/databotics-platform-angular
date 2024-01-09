@@ -1,0 +1,52 @@
+
+.h1c{
+  color:white;
+}
+.progress {
+  height: 10px;
+  background-color: #c3c4c7;
+}
+.card-text{
+  font-size: 11px;
+}
+.hrmspt{padding-top:11px}
+.hrmsth{
+  background-color: rgb(223, 219, 219);
+}
+.padding0{
+  padding:0px;
+}
+.cardimage1{
+  background-color:#59ac5e;
+  padding: 10px;
+}
+img.cardimage1,img.cardimage2 ,img.cardimage3 ,img.cardimage4,img.cardimage5{
+  width: 55px;
+}
+
+.cardimage2{
+  background-color:#f98e2c;
+  padding: 10px;
+}
+.cardimage3{
+  background-color:#ec4243;
+  padding: 10px;
+}
+.cardimage4{
+  background-color:#29bacd;
+  padding: 10px;
+}
+.cardimage5{
+  background-color:#4ca978;
+  padding: 10px;
+}
+.avgtext{position: relative;
+  top: -11px;
+  padding: 9px;}
+.phrmsfont{
+  position: relative;
+  }
+
+  .pointer-class{
+    cursor: pointer;
+  }

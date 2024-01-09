@@ -1,0 +1,271 @@
+<div class="container-fluid">
+  <div class="row m-0">
+    <div>
+      <div id="home">
+        <div class="row">
+          <div class="col-md-4 padding0 border">
+            <div class="backg">
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <td><b>Countries</b></td>
+                    <th class="conformed">Confirmed Cases</th>
+                    <th class="deaths">Total Deaths</th>
+                    <th class="light1">Total Recovered</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="f-bold">world</td>
+                    <td class="f-bold conformed td-color">{{cf(totConfirmed)}}</td>
+                    <td class="f-bold deaths td-color">{{cf(totDeaths)}}</td>
+                    <td class="f-bold light1 td-color">{{cf(totRecovered)}}</td>
+                  </tr>
+                  <tr *ngFor="let obj of totalData" (click)="openWorldMap(obj);" style="cursor:pointer"
+                    [ngClass]="{'highlight' : selectedCountry == (obj.geoId).toLowerCase()}">
+                    <td class="f-bold">{{obj.countries}}</td>
+                    <td class="f-bold conformed td-color"> <span>{{cf(obj.t_cases)}}</span></td>
+                    <td class="f-bold deaths td-color">{{cf(obj.t_deaths)}}</td>
+                    <td class="f-bold light1 td-color">{{cf(obj.t_recoveries/3)}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-8 padding0">
+            <div class="row m-0" *ngIf="countryMap">
+              <div class="col-md-8">
+                <div class="col-md-12">
+                  <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+                    <li class="nav-item">
+                      <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setactiveProject(1);"
+                        style="color: #788786;"> Confirmed Cases</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setactiveProjectDepths(2);"
+                        style="color: #788786;"> Total Deaths </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-12 border padding0" *ngIf="casesData">
+                  <div [chart]="mapchart" class="mapheight" style="width: 100%;"></div>
+                </div>
+                <div class="col-md-12 border padding0" *ngIf="DeathsData">
+                  <div [chart]="mapchart" class="mapheight" style="width: 100%;"></div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="row heading-style">
+                    <p>COVID-19 Total Cases</p>
+                  </div>
+                  <div class="row total-border overall-padding mtop-15">
+                    <div class="col-md-4">
+                        <div class="text-center fs-20 confirm-color">
+                          <p>{{cf(totalConfirmed)}}</p>
+                        </div>
+                        <div class="text-center head-style">
+                          <p>Confirmed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center fs-20 death-color">
+                          <p>{{cf(totalDeaths)}}</p>
+                        </div>
+                        <div class="text-center head-style">
+                          <p>Deaths</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center fs-20 recovered-color">
+                          <p>{{cf(totalRecovered)}}</p>
+                        </div>
+                        <div class="text-center head-style">
+                          <p>Recovered</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row mtop-15">
+                    <div class="col-md-6 padding2 text-center">
+                      <div class="total-border progress-padding">
+                        <circle-progress
+                        [percent]="fatalityRate"
+                        [radius]="60"
+                        [space]="-10"
+                        [title]="pf(fatalityRate)"
+                        [subtitle]="'OF TOTAL CASES'"
+                        [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#b90302'"
+                        [innerStrokeColor]="'#e7e8ea'"
+                        [animation]="true"
+                        [clockwise]="true"
+                        [animationDuration]="300"
+                        ></circle-progress>
+                        <div class="progress-text">
+                          <p>Fatality Rate</p>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-6 padding2 text-center">
+                      <div class="total-border progress-padding">
+                        <circle-progress
+                        [percent]="recoverdRate"
+                        [radius]="60"
+                        [space]="-10"
+                        [title]="pf(recoverdRate)"
+                        [subtitle]="'OF TOTAL CASES'"
+                        [outerStrokeWidth]="10"
+                        [innerStrokeWidth]="10"
+                        [outerStrokeColor]="'#81bc06'"
+                        [innerStrokeColor]="'#e7e8ea'"
+                        [animation]="true"
+                        [clockwise]="true"
+                        [animationDuration]="300"
+                      ></circle-progress>
+                      <div class="progress-text">
+                        <p>Recovery Rate</p>
+                      </div>
+                      </div>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row m-0" *ngIf="!countryMap">
+              <div class="col-md-8">
+                <div class="col-md-12">
+                  <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+                    <li class="nav-item">
+                      <a class="nav-link" [ngClass]="{activeclass: isWorldActive(1)}"
+                        (click)="setCasesWorld(1, 'Confirm')" style="color: #788786;"> Confirmed Cases</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" [ngClass]="{activeclass: isWorldActive(2)}" (click)="setCasesWorld(2, 'Death')"
+                        style="color: #788786;"> Total Deaths </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-12 border padding0">
+                  <div [chart]="worldmap" class="height" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="row heading-style">
+                  <p>COVID-19 Total Cases</p>
+                </div>
+                <div class="row total-border overall-padding mtop-15">
+                  <div class="col-md-4">
+                      <div class="text-center fs-20 confirm-color">
+                        <p>{{cf(totalConfirmed)}}</p>
+                      </div>
+                      <div class="text-center head-style">
+                        <p>Confirmed</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="text-center fs-20 death-color">
+                        <p>{{cf(totalDeaths)}}</p>
+                      </div>
+                      <div class="text-center head-style">
+                        <p>Deaths</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="text-center fs-20 recovered-color">
+                        <p>{{cf(totalRecovered)}}</p>
+                      </div>
+                      <div class="text-center head-style">
+                        <p>Recovered</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="row mtop-15">
+                  <div class="col-md-6 padding2 text-center">
+                    <div class="total-border progress-padding">
+                      <circle-progress
+                      [percent]="fatalityRate"
+                      [radius]="60"
+                      [space]="-10"
+                      [title]="pf(fatalityRate)"
+                      [subtitle]="'OF TOTAL CASES'"
+                      [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="10"
+                      [outerStrokeColor]="'#f35325'"
+                      [innerStrokeColor]="'#e7e8ea'"
+                      [animation]="true"
+                      [clockwise]="true"
+                      [animationDuration]="300"
+                      ></circle-progress>
+                      <div class="progress-text">
+                        <p>Fatality Rate</p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6 padding2 text-center">
+                    <div class="total-border progress-padding">
+                      <circle-progress
+                      [percent]="recoverdRate"
+                      [radius]="60"
+                      [space]="-10"
+                      [title]="pf(recoverdRate)"
+                      [subtitle]="'OF TOTAL CASES'"
+                      [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="10"
+                      [outerStrokeColor]="'#81bc06'"
+                      [innerStrokeColor]="'#e7e8ea'"
+                      [animation]="true"
+                      [clockwise]="true"
+                      [animationDuration]="300"
+                    ></circle-progress>
+                    <div class="progress-text">
+                      <p>Recovery Rate</p>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row whitebg m-9 ">
+
+              <div class="col-md-12 p-6 border">
+                <div class="row background">
+                  <div class="col-md-6">
+                    <span>
+                      <p>COVID-19 US Cases</p>
+                    </span>
+                  </div>
+                  <div class="col-md-6">
+                    <span class="icon-style" (click)="goBackToChart();" *ngIf="showBack"><i
+                        class="fa fa-arrow-left"></i></span>
+                  </div>
+                </div>
+                <div *ngIf="!showBack">
+                  <div [chart]="EpChart" class="hei"></div>
+                </div>
+                <div *ngIf="showBack">
+                  <div [chart]="EpChartDeaths" class="hei"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="home border">
+        <!-- <app-health-care-analytics *ngIf="healthAnalysisDeaths"></app-health-care-analytics> -->
+        <div class="row" *ngIf="healthAnalysisDeaths">
+          <div>Data Deaths</div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

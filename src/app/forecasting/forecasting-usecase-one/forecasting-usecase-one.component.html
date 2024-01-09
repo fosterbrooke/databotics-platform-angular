@@ -1,0 +1,99 @@
+<div class="container-fluid">
+  <div class="row pd-left">
+          <div class="col-md-2 ">
+           <div class="row">
+              <div class="col-md-12 padding0">
+              <select  placeholder="select State" class="form-control dropdown_wrapper"
+              (change)="selectedCategory($event)">
+              <option  value="ALL MONTHS">ALL CATEGORY</option>
+              <option *ngFor="let obj of CategoryArray" value="{{obj.Category}}">{{obj?.Category}}</option>
+            </select>
+            </div>
+           </div>
+          </div>
+      <!-- <div class="col-md-4">
+          <h4>Category</h4>
+          <div *ngFor="let obj of CategoryArray">
+              <input type="checkbox" name="Womens">&nbsp;<label>{{obj?.Category}}</label><br>
+          </div>
+      </div> -->
+          <div class="col-md-2">
+              <div class="row">
+                <div class="col-md-12 padding0">
+                  <select  placeholder="select State" class="form-control dropdown_wrapper"
+                  (change)="selectedMonth($event)">
+                  <option  value="ALL MONTHS">ALL MONTHS</option>
+                  <option *ngFor="let obj of Months" value="{{obj.Month}}">{{obj?.Month}}</option>
+                </select>
+                </div>
+              </div>
+            </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4  pd-left">
+          <p class="fs-20 text-center" >Expenses Analytics</p>
+          <div class="row ">
+              <div class="col-md-6 pd-5">
+                <div class="card">
+                  <div class="card-head card-he">
+                    <span><b>{{df(cityArray)}}M</b></span>
+                  </div>
+                  <div class="card-body">
+                    <span><b>Car Rental</b></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pd-5">
+                <div class="card">
+                  <div class="card-head card-he">
+                    <span><b>{{df(chainArray)}}M</b></span>
+                  </div>
+                  <div class="card-body">
+                    <span><b>Hotel</b></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pd-5">
+                <div class="card">
+                  <div class="card-head card-he">
+                    <span><b>{{df(buyerArray)}}M</b></span>
+                  </div>
+                  <div class="card-body">
+                    <span><b>Air Fare</b></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 pd-5">
+                <div class="card">
+                  <div class="card-head card-he">
+                    <span><b>{{df(QuarterArray)}}M</b></span>
+                  </div>
+                  <div class="card-body">
+                    <span><b>Expenses</b></span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-8 pd-right">
+              <div class="col-md-12 padding0 border">
+                  <p class="background_head">Amount by Expense Type</p>
+                  <div [chart]="categorychart" class=" height"></div>
+                </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-8 pd-left">
+          <div class="col-md-12 padding0 border">
+          <p class="background_head">Amount by Buyer</p>
+          <div [chart]="treemap" class="bottom_chart"></div>
+      </div>
+      </div>
+      <div class="col-md-4 pd-right">
+          <div class="col-md-12 padding0 border">
+          <p class="background_head">Amount by Chain</p>
+          <div [chart]="buychart" class="bottom_chart"></div>
+      </div>
+      </div>
+  </div>
+</div>

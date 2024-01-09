@@ -1,0 +1,476 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid con">
+  <div class="row m-0 family" id="content">
+    <div class="col-md-6  padding0">
+
+      <div class="row m-0">
+        <div class="col-md-12 padding0">
+          <div class="a-r-2 border_box">
+            <div class="row pd-5">
+              <div class="col-md-12 padding0">
+                <span class="fs-20 fw  family">SPEND OVERVIEW</span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 padding0">
+                <div class="col-md-4 padding0 pd-5 cursor text-center bg" [ngClass]="{overviewtabs: overviewTabs(1)}"
+                  (click)="showsupplier(1)">
+                  <span class="pd-5">Supplier</span> <span *ngIf="overviewtabs==1"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-4 padding0 pd-5 cursor text-center bg" [ngClass]="{overviewtabs: overviewTabs(2)}"
+                  (click)="showcategory(2)">
+                  <span class="pd-5">Category</span><span *ngIf="overviewtabs==2"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-4 padding0 pd-5 cursor text-center bg" [ngClass]="{overviewtabs: overviewTabs(3)}"
+                  (click)="showdeptbu(3)">
+                  <span class="pd-5">Dept/BU</span><span *ngIf="overviewtabs==3"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 padding0" *ngIf="suppliershow">
+                <div class="row m-t-10">
+                  <div class="col-md-4 padding0 cursor fb m-l-10" (click)="suppTable()">
+                    Top 10 Supplier
+                  </div>
+                  <div class="col-md-8 padding0 m-0 w-current">
+                    <div class="col-md-6 boeder_left  padding0 pd-5 cursor text-center "
+                      [ngClass]="{activeclass1: isActiveOverview(1)}"
+                      (click)="overview('CurrentAmount_2019', 'Current',1)">
+                      <span class="pd-5">Current Year</span><span *ngIf="selectedOverview==1"><i class="fa fa-check"
+                          aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-6 boeder_right  padding0 pd-5 cursor text-center "
+                      [ngClass]="{activeclass1: isActiveOverview(2)}"
+                      (click)="overview('CommittedAmount_2019', 'Committed',2)">
+                      <span class="pd-5">Committed</span><span *ngIf="selectedOverview==2"><i class="fa fa-check"
+                          aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row padding0 m-0">
+                  <div class="col-md-12 padding0 chtOverview" [chart]="ssChart">
+
+                  </div>
+                </div>
+                <!-- <div class="col-md-1 padding0 pd-9 fb">
+                  </div> -->
+              </div>
+              <div class="col-md-12 padding0" *ngIf="categoryshow">
+                <div class="row m-t-10">
+                  <div class="col-md-4 padding0 cursor fb m-l-10" (click)="catTable()">
+                    Top 10 Category
+                  </div>
+                  <div class="col-md-8 padding0 m-0 w-current">
+                    <div class="col-md-6 boeder_left padding0 pd-5 cursor text-center "
+                      [ngClass]="{activeclass1: isActiveOverview(1)}"
+                      (click)="overview('CurrentAmount_2019', 'Current',1)">
+                      <span class="pd-5">Current Year</span><span *ngIf="selectedOverview==1"><i class="fa fa-check"
+                          aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-6 boeder_right  padding0 pd-5 cursor text-center "
+                      [ngClass]="{activeclass1: isActiveOverview(2)}"
+                      (click)="overview('CommittedAmount_2019', 'Committed',2)">
+                      <span class="pd-5">Committed</span><span *ngIf="selectedOverview==2"><i class="fa fa-check"
+                          aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row padding0 m-0">
+                  <div class="col-md-12 padding0 chtOverview" [chart]="scChart">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 padding0" *ngIf="deptbushow">
+                <div class="row m-t-10">
+                  <div class="col-md-4 padding0 cursor fb m-l-10" (click)="deptTable()">
+                    Top 10 Dept/BU
+                  </div>
+                  <div class="col-md-8 padding0 m-0 w-current">
+                    <div class="col-md-6 boeder_left padding0 pd-5 cursor text-center "
+                      [ngClass]="{activeclass1: isActiveOverview(1)}"
+                      (click)="overview('CurrentAmount_2019', 'Current',1)">
+                      <span class="pd-5">Current Year</span><span *ngIf="selectedOverview==1"><i class="fa fa-check"
+                          aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col-md-6 boeder_right  padding0 pd-5 cursor text-center "
+                      [ngClass]="{activeclass1: isActiveOverview(2)}"
+                      (click)="overview('CommittedAmount_2019', 'Committed',2)">
+                      <span class="pd-5">Committed</span><span *ngIf="selectedOverview==2"><i class="fa fa-check"
+                          aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-0 padding0">
+                  <div class="col-md-12 padding0 chtOverview" [chart]="sdChart">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----row end---->
+
+      <!----row end---->
+
+      <div class="row m-0 m-t">
+        <div class="a-r border_box">
+          <div class="col-md-6 padding0 pd-5 cursor text-center bg" [ngClass]="{sscv: sscv(1)}" (click)="changesscv(1)" (click)="showSS('CommittedAmount_2019', 'Current',1)">
+            <span class="pd-5">TOP 10 SUPPLIERS BY SAVINGS</span><span *ngIf="ssCV==1"><i class="fa fa-check"
+                aria-hidden="true"></i></span>
+          </div>
+          <div class="col-md-6 padding0 pd-5 cursor text-center bg" [ngClass]="{sscv: sscv(2)}" (click)="changesscv(2)" (click)="showCV('CurrentAmount_2019', 'Annualized',2)">
+            <span class="pd-5">TOP 10 CONTRACTS BY VALUE</span><span *ngIf="ssCV==2"><i class="fa fa-check"
+                aria-hidden="true"></i></span>
+          </div>
+        </div>
+
+      </div>
+
+      <!----row end-->
+
+      <div class="row m-0" *ngIf="show10SS">
+        <div class="col-md-12  padding0">
+          <div class="a-r border_box">
+            <div class="row m-t-10">
+              <div class="col-md-4 pd-5 m-0">
+                <span class="fs-20 fw family m-l-10">TOP 10 SUPPLIERS BY SAVINGS</span>
+              </div>
+              <div class="col-md-8 padding0 m-0 w-current">
+                <div class="col-md-6 padding0 boeder_left pd-5 cursor text-center "
+                  [ngClass]="{activeclass1: isActiveSS(1)}" (click)="showSS('CommittedAmount_2019', 'Current',1)">
+                  <span class="pd-5">Current Year</span><span *ngIf="selectedSS==1"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-6 padding0 pd-5 boeder_right cursor text-center "
+                  [ngClass]="{activeclass1: isActiveSS(2)}" (click)="showSS('CurrentAmount_2018', 'Annualized',2)">
+                  <span class="pd-4">Annualized</span><span *ngIf="selectedSS==2"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0">
+              <div class="col-md-12 chtpie padding0" [chart]="treechart" (click)="showSS('CommittedAmount_2019', 'Current',1)">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----row end---->
+      <!--row-->
+      <div class="row m-0" *ngIf="show10CV">
+        <div class="col-md-12 ta-c padding0">
+          <div class="a-r border_box">
+            <div class="row m-t-10">
+              <div class="col-md-4 pd-5 m-0">
+                <span class="fs-20 fw family " >TOP 10 CONTRACTS BY VALUE</span>
+              </div>
+              <div class="col-md-8 padding0 m-0 w-current">
+                <div class="col-md-6 padding0 pd-5 cursor boeder_left text-center"
+                  [ngClass]="{activeclass1: isActiveCV(2)}" (click)="showCV('CommittedAmount_2019', 'Current',2)">
+                  <span class="pd-5">Current Year</span><span *ngIf="selectedCV==2"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-6 padding0 pd-5 cursor boeder_right text-center "
+                  [ngClass]="{activeclass1: isActiveCV(1)}" (click)="showCV('CurrentAmount_2019', 'Annualized',1)">
+                  <span class="pd-4">Annualized</span><span *ngIf="selectedCV==1"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="row m-0">
+              <div class="col-md-12 chtpie padding0" [chart]="contracttreechart" (click)="showCV('CommittedAmount_2019', 'Current',2)">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---row end-->
+
+
+      <!----row---->
+
+    </div>
+
+    <div class="col-md-6 padding0">
+
+      <!---row--->
+      <div class="row m-0 border_box">
+        <div class="col-md-12 padding0">
+          <div class="a-r-1 ">
+            <div class="row m-0">
+              <div class="col-md-12 inline pd-5">
+                <span class="m-l-10 fs-20">{{title}}</span>
+                <span class="fl"><i class="fa fa-file-excel-o" (click)="exportCSVFile()" title="Click To Download"
+                    aria-hidden="true"></i><span class="fr m-l-10" (click)="seeAllInfo()"
+                    title="Click To See All Suppliers">All</span></span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 padding0 " style="height:480px; background: #f7f7f7;">
+          <table class="tb padding0 w-100 ">
+            <tr class="bg-table text-white">
+              <th class="pd-5  cursor" (click)="sort('name')">{{category}} &nbsp;<i class="fa" [ngClass]="{'fa-sort': column != 'name', 
+                                        'fa-sort-asc': (column == 'name' && !isDesc), 
+                                        'fa-sort-desc': (column == 'name' && isDesc) }" aria-hidden="true"> </i>
+              </th>
+              <!-- <th class="pd-10">Annualised</th> -->
+              <th class="pd-5  cursor" (click)="sort('y')">{{tablecolumn}}&nbsp;<i class="fa" [ngClass]="{'fa-sort': column != 'y', 
+                                        'fa-sort-asc': (column == 'y' && !isDesc), 
+                                        'fa-sort-desc': (column == 'y' && isDesc) }" aria-hidden="true"> </i>
+              </th>
+              <th class="pd-5  cursor" (click)="sort('commitedrating')">CR&nbsp;<i class="fa" [ngClass]="{'fa-sort': column != 'name', 
+                                      'fa-sort-asc': (column == 'commitedrating' && !isDesc), 
+                                      'fa-sort-desc': (column == 'commitedrating' && isDesc) }" aria-hidden="true">
+                </i>
+              </th>
+              <th class="pd-5 ">Rating</th>
+              <th class="pd-5 ">Comment</th>
+            </tr>
+            <tbody class="bg-tr">
+              <tr
+                *ngFor="let item of tabledata | orderBy: {property: column, direction: direction}; let i = index; let odd = odd"
+                class="bg-tr w-100 cursor" [ngClass]="{ odd: odd}" [ngStyle]="{'background':item.tablecolor}">
+                <td class="ts" style="font-family: Arial;"><span style="font-family: Arial !important;"
+                    title="popTemplate()" (click)="redirect(item.name)">{{item.name}}</span></td>
+                <td class="" (click)="redirect(item.name)">{{item.y | million: 2}} &nbsp;
+                  <span *ngIf="item.y > item.previous || item.y == 0" class="fs-10">
+                    <i class="fa fa-arrow-up green" aria-hidden="true"></i>
+                    </span>
+                  &nbsp;
+                  <span *ngIf="item.y < item.previous" class="fs-10">
+                    <i class="fa fa-arrow-down red" aria-hidden="true"></i></span>&nbsp;
+                  <span>{{item.previous | million: 2}}</span></td>
+                <td class="pd-6" (click)="redirect(item.name)">
+                  <!-- {{item.crs}} -->23</td>
+                <td class="w-115">
+                  <app-rating *ngIf="ratingtype == 'Committed'" [rating]='item.commitedrating' [itemId]='item.name'
+                    (ratingClick)='ratingComponentClick($event)'></app-rating>
+                  <app-rating *ngIf="ratingtype == 'Current'" [rating]='item.currentrating' [itemId]='item.name'
+                    (ratingClick)='ratingComponentClick($event)'></app-rating>
+                </td>
+                <td class="pd-6">
+                  <!-- <input type="text" placeholder="Enter Comment" > -->
+                  <!-- <i title="Click to enter comment" class="fa fa-comment" aria-hidden="true"></i> -->
+                  <app-showinput [item]="item" [comment]="item.comment" (commentsend)="getCommentandSend($event)">
+                  </app-showinput>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!------row----->
+
+
+      <!---row-->
+      <div class="row m-0 m-t">
+        <div class="col-md-12  padding0">
+          <div class="a-r-2 border_box">
+            <div class="row pd-5">
+              <!-- <img class="ds" src="../../assets/digitalsavings.png"> &nbsp; -->
+              <div class="col-md-4">
+                <span class="fs-20 fw family ">DIGITAL SAVINGS &nbsp;<span class="fs-10">(USD)</span></span>
+              </div>
+              <div class="col-md-8 padding0 m-0 w-current">
+                <div class="col-md-6 padding0 pd-5 cursor boeder_left text-center"
+                  [ngClass]="{activeclass2: isActiveDS(1)}" (click)="digitalsavings('CommittedAmount_2019', 'Committed',1)">
+                  <span class="pd-5">Current Year</span><span *ngIf="selectedDS==1"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+                <div class="col-md-6 padding0 pd-5 cursor boeder_right text-center "
+                  [ngClass]="{activeclass2: isActiveDS(2)}" (click)="digitalsavings('CurrentAmount_2019', 'Current',2)">
+                  <span class="pd-4">Annualized</span><span *ngIf="selectedDS==2"><i class="fa fa-check"
+                      aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 cht padding0" [chart]="digitalChart" (click)="digitalsavings('CurrentAmount_2019', 'Current',3)">
+
+              </div>
+            </div>
+            <div class="row m-0">
+              <div class="col-md-3 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActive(1)}"
+                (click)="digitalsavings('CommittedAmount_2019', 'Committed',1)">
+                <span class="pd-5">Weekly</span><span *ngIf="selected==1"><i class="fa fa-check"
+                    aria-hidden="true"></i></span>
+              </div>
+              <div class="col-md-3 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActive(2)}"
+                (click)="digitalsavings('CurrentAmount_2019', 'Current',2)">
+                <span class="pd-5">Monthly</span><span *ngIf="selected==2"><i class="fa fa-check"
+                    aria-hidden="true"></i></span>
+              </div>
+              <div class="col-md-3 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActive(3)}"
+                (click)="digitalsavings('CurrentAmount_2019', 'Current',3)">
+                <span class="pd-5">Quaterly</span><span *ngIf="selected==3"><i class="fa fa-check"
+                    aria-hidden="true"></i></span>
+              </div>
+              <div class="col-md-3 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActive(4)}"
+                (click)="digitalsavings('CurrentAmount_2019', 'Current',4)">
+                <span class="pd-5">Yearly</span><span *ngIf="selected==4"><i class="fa fa-check"
+                    aria-hidden="true"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!----row end---->
+      <div class="row m-0 m-t">
+        <div class="col-md-6 padding0">
+          <div class="a-r pd-5 border_box">
+            <div class="row pd-5">
+              <span class="fs-20 fw family">TOTAL VENDORS</span>&nbsp;&nbsp;
+            </div>
+            <div class="row ta-c">
+              <div class="col-md-6 pd-26 border1px">
+                <span>
+                  <div class="col-md-6  ta-r">
+                    <img class="w-6" src="../../assets/vendors-o.png">
+                  </div>
+                </span>
+                <span>
+                  <div class="col-md-6 padding0 ta-l m-t-10">
+                    &nbsp;<span
+                      class="fs-25 spn-c ff">{{this.metadata.vendors ? this.metadata.vendors : '- -'}}</span>&nbsp;
+                    <span>
+                      <i *ngIf="this.metadata.vendors > 9" class="fa fa-arrow-up fs-15 spn-c"
+                        aria-hidden="true"></i>&nbsp;
+                      <i *ngIf="this.metadata.vendors < 9" class="fa fa-arrow-down fs-15 spn-c2"
+                        aria-hidden="true"></i>&nbsp;
+                    </span>
+                    <span class="fs-20 fff">9</span>
+                  </div>
+                </span>
+              </div>
+              <div class="col-md-6 pd-26">
+                <span>
+                  <div class="col-md-6  ta-r">
+                    <img class="w-6" src="../../assets/vendors-o.png">
+                  </div>
+                </span>
+                <span>
+                  <div class="col-md-6 padding0 ta-l m-t-10">
+                    &nbsp;<span
+                      class="fs-25 spn-c ff">{{this.metadata.vendors ? this.metadata.vendors : '- -'}}</span>&nbsp;
+                    <span>
+                      <i *ngIf="this.metadata.vendors > 9" class="fa fa-arrow-up fs-15 spn-c"
+                        aria-hidden="true"></i>&nbsp;
+                      <i *ngIf="this.metadata.vendors < 9" class="fa fa-arrow-down fs-15 spn-c2"
+                        aria-hidden="true"></i>&nbsp;
+                    </span>
+                    <span class="fs-20 fff">9</span>
+                  </div>
+                </span>
+              </div>
+              <div class="col-md-12 padding0">
+                <div class="col-md-6 padding0 ">
+                  <span class="pd-5 fontf">Commited</span>
+                </div>
+                <div class="col-md-6 padding0 ">
+                  <span class="pd-5 fontf">Current</span>
+                </div>
+              </div>
+              <div class="col-md-12 pd-4">
+                <span class="fs-10 fontf">Curr Year/ Prev Year</span>
+              </div>
+            </div>
+            <!-- <div class="row m-0">
+              <div class="col-md-6 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActiveVendor(1)}" (click)="showVendors('CommittedAmount_2019', 'Committed',1)">
+                <span class="pd-5">Committed</span>
+            </div>
+            <div class="col-md-6 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActiveVendor(2)}" (click)="showVendors('CurrentAmount_2019', 'Current',2)">
+                <span class="pd-5">Current</span>
+            </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-md-6   padding0">
+          <div class="a-r w-99 pd-5 border_box">
+            <div class="row pd-5">
+              <span class="fs-20 fw family">TOTAL CONTRACTS</span>&nbsp;&nbsp;
+            </div>
+            <div class="row ta-c">
+              <div class="col-md-6 pd-26 border1px">
+                <span>
+                  <div class="col-md-6  ta-r">
+                    <img class="w-6" src="../../assets/contracts.png">
+                  </div>
+                </span>
+                <span>
+                  <div class="col-md-6 padding0 ta-l m-t-10">
+                    &nbsp;<span
+                      class="fs-25 spn-c2 ff">{{this.metadata.contracts ? this.metadata.contracts : '- -'}}</span>
+                    <span>
+                      <i *ngIf="this.metadata.contracts > 100" class="fa fa-arrow-up fs-15 spn-c"
+                        aria-hidden="true"></i>
+                      <i *ngIf="this.metadata.contracts < 100" class="fa fa-arrow-down fs-15 spn-c2"
+                        aria-hidden="true"></i>
+                    </span>
+                    <span class="fs-20 fff">100</span>
+                  </div>
+                </span>
+              </div>
+              <div class="col-md-6 pd-26 ">
+                <span>
+                  <div class="col-md-6  ta-r">
+                    <img class="w-6" src="../../assets/contracts.png">
+                  </div>
+                </span>
+                <span>
+                  <div class="col-md-6 padding0 ta-l m-t-10">
+                    &nbsp;<span
+                      class="fs-25 spn-c2 ff">{{this.metadata.contracts ? this.metadata.contracts : '- -'}}</span>
+                    <span>
+                      <i *ngIf="this.metadata.contracts > 100" class="fa fa-arrow-up fs-15 spn-c"
+                        aria-hidden="true"></i>
+                      <i *ngIf="this.metadata.contracts < 100" class="fa fa-arrow-down fs-15 spn-c2"
+                        aria-hidden="true"></i>
+                    </span>
+                    <span class="fs-20 fff">100</span>
+                  </div>
+                </span>
+              </div>
+              <div class="col-md-12 padding0">
+                <div class="col-md-6 padding0 ">
+                  <span class="pd-5 fontf">Commited</span>
+                </div>
+                <div class="col-md-6 padding0 ">
+                  <span class="pd-5 fontf">Current</span>
+                </div>
+              </div>
+              <div class="col-md-12 pd-4">
+                <span class="fs-10 fontf">Curr Year/ Prev Year</span>
+              </div>
+            </div>
+            <!-- <div class="row m-0">
+              <div class="col-md-6 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActiveContract(1)}" (click)="showContracts('CommittedAmount_2019', 'Committed',1)">
+                <span class="pd-5">Committed</span>
+            </div>
+            <div class="col-md-6 padding0 pd-5 cursor text-center bg" [ngClass]="{activeclass: isActiveContract(2)}" (click)="showContracts('CurrentAmount_2019', 'Current',2)">
+                <span class="pd-5">Current</span>
+            </div>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-----row---->
+    </div>
+  </div>
+
+
+
+</div>

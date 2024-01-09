@@ -1,0 +1,15 @@
+.activeclass{
+  background-color: #f9f9f9!important;
+  border-bottom: 3px solid palevioletred;
+  cursor:pointer;
+}
+.table-scroll-style{
+  overflow-y: scroll;
+  height: 400px;
+}
+.nav-tabs>li>a:hover{
+  cursor:pointer;
+}
+.b-g{
+  background-color: #f5f6fa;
+}

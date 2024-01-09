@@ -1,0 +1,36 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+
+<div class="container-fluid">
+    <div class="row">
+      <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setfleetOverview(1);" style="color: #788786;">Driver Behavior </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setDriver(2);" style="color: #788786"> Driver Performance </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(3)}" (click)="setvehicleMetric(3);" style="color: #788786"> Route Optimization </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{activeclass: isActive(4)}" (click)="setcustomerFeed(4);" style="color: #788786"> Customer Feedback  </a>
+          </li>
+      </ul>
+      <div>
+        <div>
+            <!-- <dashboard *ngIf="fleetOverview"> </dashboard> -->
+            <app-dashboard *ngIf="fleetOverview"> </app-dashboard>
+        </div>
+        <div>
+            <app-driver-overview *ngIf="driverProfile"></app-driver-overview>
+        </div>
+        <div>
+            <app-vehiclelive-metric  *ngIf="trackOrder"></app-vehiclelive-metric>
+        </div>
+        <div>
+            <app-customer-feedback-analysis  *ngIf="custFeed"></app-customer-feedback-analysis>
+        </div>
+
+      </div>
+    </div>
+</div>

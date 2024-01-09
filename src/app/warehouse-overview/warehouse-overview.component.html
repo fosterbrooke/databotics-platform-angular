@@ -1,0 +1,107 @@
+<app-header></app-header>
+<div class="container-fluid">
+
+  <div class="panel panel-default panel_wrapper">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="form-group">
+
+            <select id="region" name="region" placeholder="Region" [(ngModel)]="regionname" class="form-control dropdown_wrapper"
+              (change)="changeRegion($event)">
+              <option>Select Region</option>
+              <option *ngFor="let region of regions" [selected]="regionname == region">{{region}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <select id="state" name="state" [(ngModel)]="statename" class="form-control dropdown_wrapper"
+              (change)="changeState($event)">
+              <option>Select State</option>
+              <option *ngFor="let state of states" [selected]="statename == state">{{state}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-2">
+
+          <div class="form-group">
+            <select id="warehouse" name="warehouse" [(ngModel)]="warehousename" class="form-control dropdown_wrapper"
+              (change)="changeWarehouse($event)">
+              <option>Select Warehouse</option>
+              <option *ngFor="let warehouse of warehouses" [selected]="warehousename == warehouse">{{warehouse}}</option>
+            </select>
+          </div>
+        </div>
+
+         </div>
+    </div>
+  </div>
+
+  <!--Times-->
+  <div class="row" style="margin-top:11px;">
+    <div class="col-md-3">
+    <div class="card padding_left">
+      <img src ="../../assets/images//watch-image.png" class="image-width">
+      <!-- <a href="#" class="btn btn-position">Days</a> -->
+        <span>
+          <h4 class="watch-text-wrapper">Cash to Cash<br> Cycle time</h4>
+        </span>
+     
+        <span>
+          <h4 class="watch-number-wrapper">{{cashtocashtime}}</h4></span>
+   
+     
+   </div>
+  </div>
+
+  <div class="col-md-3">
+      <div class="card padding_left">
+          <img src ="../../assets/images//watch-image.png" class="image-width">
+          <!-- <a href="#" class="btn btn-position">Days</a> -->
+            <span>
+              <h4 class="watch-text-wrapper">Customer Order<br> Cycle time</h4>
+            </span>
+         
+            <span>
+              <h4 class="watch-number-wrapper">{{customerordertime}}</h4></span>
+     </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card padding_left">
+            <img src ="../../assets/images//watch-image.png" class="image-width">
+            <!-- <a href="#" class="btn btn-position">Days</a> -->
+              <span>
+                <h4 class="watch-text-wrapper">Supply Chain<br> Cycle time</h4>
+              </span>
+           
+              <span>
+                <h4 class="watch-number-wrapper">{{supplychaintime}}</h4></span>
+       </div>
+      </div>
+
+      <div class="col-md-3">
+          <div class="card padding_left">
+              <img src ="../../assets/images//watch-image.png" class="image-width">
+              <!-- <a href="#" class="btn btn-position">Days</a> -->
+                <span>
+                  <h4 class="watch-text-wrapper">Inventory Days<br>of Supply</h4>
+                </span>
+             
+                <span>
+                  <h4 class="watch-number-wrapper">{{inventorydays}}</h4></span>
+         </div>
+        </div>
+  </div>
+
+  <!--Vlaue of cycle time-->
+  <div class="row">
+      <!-- <h4>{{cashtocashtime}}</h4>
+      <h4>{{customerordertime}}</h4>
+      <h4>{{supplychaintime}}</h4>
+      <h4>{{inventorydays}}</h4> -->
+      <img src ="../../assets/images/supply-chain-management.gif" style="width:100%;">
+   
+  </div>
+</div>

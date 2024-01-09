@@ -1,0 +1,119 @@
+<!-- <app-header></app-header> -->
+<div class="container-fluid con" *ngIf="prescreen">
+  <div class="row m-0 family">
+    <div class="col-md-6  padding0">
+
+      <div class="row m-0">
+        <div class="col-md-12 a-r-2 border_box" *ngIf="CurrentYearSavings">
+          <div class="col-md-4">
+            <label>Annualized Level 1 Savings: <b>$23.04M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Annualized Level 3 Savings: <b>$8.2M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Since Nov. 13 Report: <b>$1.4M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Accenture: <b>$1.4M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Infosys: <b>$1.4M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>SHI: <b>$1.4M</b></label>
+          </div>
+        </div>
+        <div class="col-md-12 a-r-2 border_box" *ngIf="AnnualizedYearSavings">
+          <div class="col-md-4">
+            <label>2019 Level 1 Savings: <b>$17.4M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>2019 Level 3 Savings: <b>$7.1M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Since Nov. 13 Report: <b>$.2M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>HD Insights Level 2 Support: <b>$.09M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Infosys: <b>$.04M</b></label>
+          </div>
+          <div class="col-md-4">
+            <label>Telematic Development : <b>$.03M</b></label>
+          </div>
+        </div>
+        <div class="col-md-12 a-r-2 border_box" *ngIf="Savings">
+          <div class="col-md-6">
+            <label>Annualized Level 1 Savings: <b>$1.6M</b></label>
+          </div>
+          <div class="col-md-6">
+            <label>Since Nov. 13 Report: <b>$1.6M</b></label>
+          </div>
+          <div class="col-md-6">
+            <label>Annualized Savings For Indirect : <b>$45.6M</b></label>
+          </div>
+          <div class="col-md-6">
+            <label>10% Run Rate Reduction Target: <b>$31.1M</b></label>
+          </div>
+        </div>
+        <div class="col-md-12 padding0">
+          <div class="a-r-2 border_box">
+            <div class="row pd-5">
+              <!-- <div class="col-md-12 padding0">
+                  <span class="fs-20 fw  family">SPEND OVERVIEW</span>
+                </div> -->
+            </div>
+            <div class="row">
+              <div class="col-md-12 padding0" *ngIf="suppliershow">
+                <div class="row m-t-10">
+                  <div class="col-md-8 padding0 cursor fb m-l-10" (click)="suppTable()">
+                    Current Year Savings Tracker
+                  </div>
+                  <!-- <div class="col-md-4 padding0 m-0 w-current pd-5">
+                      <div class="col-md-12 boeder_left padding0 pd-5 cursor text-center " [ngClass]="{activeclass1: isActiveOverview(1)}" (click)="overview('CommittedAmount_2019', 'Committed',1)">
+                          <span class="pd-5">Annualized</span><span *ngIf="selectedOverview==1"><i class="fa fa-check" aria-hidden="true"></i></span>
+                      </div>
+                    </div> -->
+                </div>
+                <div class="row padding0 m-0">
+                  <div class="col-md-12 padding0 chtOverview1" [chart]="ssChart" (click)="CurrentYearSavingsChart()">
+                  </div>
+                </div>
+                <!-- <div class="col-md-1 padding0 pd-9 fb">
+                  </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6 padding0">
+      <div class="row  a-r-2 border_box">
+        <div class="col-md-8 padding0 cursor fb m-l-10" (click)="suppTable()">
+          Annualized Savings Tracker
+        </div>
+        <!-- <div class="col-md-4 padding0 m-0 w-current pd-5">
+          <div class="col-md-12 boeder_left padding0 pd-5 cursor text-center " [ngClass]="{activeclass1: isActiveOverview(1)}" (click)="overview('CommittedAmount_2019', 'Committed',1)">
+              <span class="pd-5">2019</span><span *ngIf="selectedOverview==1"><i class="fa fa-check" aria-hidden="true"></i></span>
+          </div>
+        </div> -->
+
+        <div class="row">
+          <div class="col-md-12 padding0 chtOverview" [chart]="svChart" (click)="AnnualizedYearSavingsChart()"></div>
+        </div>
+      </div>
+      <div class="col-md-12 padding0 m-t-4 a-r-2 border_box">
+        <div class="col-md-8 padding0 cursor fb m-l-10" (click)="suppTable()">
+          Savings Tracker
+        </div>
+        <div class="row padding0 m-0">
+          <div class="col-md-12 padding0 chtOverview" [chart]="scChart" (click)="SavingsChart()">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

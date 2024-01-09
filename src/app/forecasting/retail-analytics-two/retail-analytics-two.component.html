@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 pd_right">
+      <div class="card-head padding">
+        <span><b>Category</b></span>
+      </div>
+      <div class="card-body padding" style="height: 210px !important;overflow-y: auto;">
+        <div *ngFor ="let obj of manager" (change)= "selectCategory(obj.manager)">
+        <input type="checkbox" name="Africa">&nbsp;<label>{{obj.manager}}</label><br>
+        </div>
+      </div>
+      <div class="card icon">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd_right">
+      <div class="pd-0 heading">Current Year Sales by Store</div>
+      <div [chart]="categorychart" class="height"></div>
+    </div>
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+      <div class="pd-0 heading">Total Sales Varience % by Fiscal Month</div>
+      <div [chart]="columnchart" class="height"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 pd_right">
+      <div class="pd-0 heading">Last Year Sales Vs Current Year Sales</div>
+      <div [chart]="areachart" class="height"></div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="pd-0 heading">Current Year Sales Variance %, Vs Avg $/Unit</div>
+      <div [chart]="bobblechart" class="height"></div>
+    </div>
+  </div>
+</div>

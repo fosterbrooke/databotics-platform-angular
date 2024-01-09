@@ -1,0 +1,146 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+  <div class="row header-section">
+      <span>Data Ingestion Platform</span>
+  </div>
+
+  <div class="row">
+      
+      <div class="col-md-12">
+          <div class="row card">
+              <div class="col-sm-10">
+                  <h4>Source</h4>
+                  <div id="fileSelector">
+                      <!-- <input type="file" name="fileUplaod" id="fileUpload" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+                      multiple ng2FileSelect [uploader]="uploader"> -->
+                      <input type="file" name="fileUplaod" id="fileUpload" (change)="csv2Array($event)" accept=".csv">
+                      <!-- <input type="file" accept=".csv" (change)="handleFileSelect($event)"> -->
+                  </div>
+                  <div>
+                      <div class="row uploadList" *ngFor="let item of uploader.queue">
+                          <div class="col-sm-4">{{item.file.name}}</div>
+                          <div class="col-sm-4">
+                              <div class="progress">
+                                  <div class="progress-bar bg-success"
+                                  [ngStyle]="{'width':item.progress+'%'}"></div>
+                              </div>
+                          </div>
+                          <div class="col-sm-4">
+                                  <button type="button" class="btn btn-dark" (click)="item.upload()">Upload</button>
+                                  <button type="button" class="btn btn-danger" (click)="item.remove()">Cancel</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row" *ngIf="uploader?.queue?.length > 0">
+                          <button type="button" class="btn btn-primary" (click)="uploader.uploadAll()">Upload All</button>
+                  </div>
+              </div>
+              <div class="col-md-2">
+                <div class="form-group" style="margin-top: 30px;">
+                  <h4>Target</h4>
+                  <select id="region" name="region" placeholder="Region" class="form-control dropdown-wrapper" (change)="changeValue($event)">
+                    <option>Select Api</option>
+                    <option *ngFor="let item of collections">{{item}}</option>
+                  </select>
+                </div>
+              </div>
+          </div>
+
+          <div class="row card">
+            <!-- <h4>Data</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" *ngFor="let header of csvkeys">{{header}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let row of tableData | paginate: { itemsPerPage: 10, currentPage: p }">
+                  <td *ngFor="let col of tableHeaders">{{row[col]}}</td>
+                </tr>
+              </tbody>
+              <pagination-controls (pageChange)="p = $event" *ngIf="tableHeaders.length>0"></pagination-controls>
+            </table> -->
+
+             <!-- <select class="dropdownWidth m-l-10" name="keys" (change)="keyChange($event)">
+          <option style="font: bold" selected disabled value="-1">Select Key</option>
+          <option *ngFor="let key of csvkeys" value="{{key}}">{{key}}</option>
+      </select> -->
+      <div class="col-md-2">
+          <h4>Source</h4>
+          <li class="cursor li" *ngFor="let key of csvkeys;let i=index" [ngClass]="{active: isActive(i)}" (click)="keyChange(key,i)"> {{key}} </li>
+        </div>
+        <div class="col-md-2">
+            <h4>Target</h4>
+          <li class="cursor li" *ngFor="let key of newkeys;let i=index" [ngClass]="{active: isActivee(i)}" (click)="newChange(key,i)"> {{key}} </li>
+        </div>
+        <div class="col-md-2">
+          <i class="fa fa-plus cursor" aria-hidden="true" (click)="Add()"></i>
+        </div>
+        <div class="col-md-4">
+          <table>
+            <tbody>
+              <tr *ngFor="let item of tablekeys">
+                <td class="m-l-10 pd-12"> {{item.csvkey}} </td><td class="m-l-10 pd-12"> {{item.newkey}} </td><td class="cursor m-l-10 pd-12" (click)="delete(item)">delete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-2">
+          <button class="m-l-10" (click)="submit()">Upload</button><br>
+        </div>
+        <!-- <div class="row card">
+          <button class="m-l-10" (click)="submit()">submit</button><br>
+        </div> -->
+        
+  
+        <!-- <select class="dropdownWidth m-l-10" name="keys" (change)="newChange($event)">
+          <option style="font: bold" selected disabled value="-1">Select New Key</option>
+          <option *ngFor="let key of newkeys" value="{{key}}">{{key}}</option>
+      </select> -->
+          </div>
+      </div>
+      <!--Drop Down-->
+     
+      <!--Drop Down-->
+      <div class="row card">
+        <!-- <select class="dropdownWidth m-l-10" name="keys" (change)="keyChange($event)">
+          <option style="font: bold" selected disabled value="-1">Select Key</option>
+          <option *ngFor="let key of csvkeys" value="{{key}}">{{key}}</option>
+      </select> -->
+
+
+      <!-- <div class="col-md-2">
+        <h4>Source</h4>
+        <li class="cursor li" *ngFor="let key of csvkeys;let i=index" [ngClass]="{active: isActive(i)}" (click)="keyChange(key,i)"> {{key}} </li>
+      </div>
+      <div class="col-md-2">
+          <h4>Target</h4>
+        <li class="cursor li" *ngFor="let key of newkeys;let i=index" [ngClass]="{active: isActivee(i)}" (click)="newChange(key,i)"> {{key}} </li>
+      </div>
+      <div class="col-md-2">
+        <i class="fa fa-plus cursor" aria-hidden="true" (click)="Add()"></i>
+      </div>
+      <div class="col-md-4">
+        <table>
+          <tbody>
+            <tr *ngFor="let item of tablekeys">
+              <td class="m-l-10 pd-12"> {{item.csvkey}} </td><td class="m-l-10 pd-12"> {{item.newkey}} </td><td class="cursor m-l-10 pd-12" (click)="delete(item)">delete</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-2">
+        <button class="m-l-10" (click)="submit()">Upload</button><br>
+      </div> -->
+      
+
+      <!-- <select class="dropdownWidth m-l-10" name="keys" (change)="newChange($event)">
+        <option style="font: bold" selected disabled value="-1">Select New Key</option>
+        <option *ngFor="let key of newkeys" value="{{key}}">{{key}}</option>
+    </select> -->
+      </div>
+      
+  </div>
+</div>

@@ -1,0 +1,1379 @@
+[
+  {
+    "Region": "Midwest",
+    "State": "Illinois",
+    "WareHouse": "Warehouse 100130",
+    "Cash to Cash Cycle Time": 57,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "Midwest",
+    "State": "Indiana",
+    "WareHouse": "Warehouse 100131",
+    "Cash to Cash Cycle Time": 25,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "Midwest",
+    "State": "Michigan",
+    "WareHouse": "Warehouse 100132",
+    "Cash to Cash Cycle Time": 67,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "Midwest",
+    "State": "Ohio",
+    "WareHouse": "Warehouse 100133",
+    "Cash to Cash Cycle Time": 74,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "Midwest",
+    "State": "Wisconsin",
+    "WareHouse": "Warehouse 100134",
+    "Cash to Cash Cycle Time": 79,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "Midwest",
+    "State": "Iowa",
+    "WareHouse": "Warehouse 100135",
+    "Cash to Cash Cycle Time": 59,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "Midwest",
+    "State": "Kansas",
+    "WareHouse": "Warehouse 100136",
+    "Cash to Cash Cycle Time": 71,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Midwest",
+    "State": "Minnesota",
+    "WareHouse": "Warehouse 100137",
+    "Cash to Cash Cycle Time": 69,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 23,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "Midwest",
+    "State": "Missouri",
+    "WareHouse": "Warehouse 100138",
+    "Cash to Cash Cycle Time": 74,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "Midwest",
+    "State": "Nebraska",
+    "WareHouse": "Warehouse 100139",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "Midwest",
+    "State": "North Dakota",
+    "WareHouse": "Warehouse 100140",
+    "Cash to Cash Cycle Time": 31,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "Midwest",
+    "State": "South Dakota",
+    "WareHouse": "Warehouse 100141",
+    "Cash to Cash Cycle Time": 22,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "Midwest",
+    "State": "Illinois",
+    "WareHouse": "Warehouse 100181",
+    "Cash to Cash Cycle Time": 76,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "Midwest",
+    "State": "Indiana",
+    "WareHouse": "Warehouse 100182",
+    "Cash to Cash Cycle Time": 79,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "Midwest",
+    "State": "Michigan",
+    "WareHouse": "Warehouse 100183",
+    "Cash to Cash Cycle Time": 37,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Midwest",
+    "State": "Ohio",
+    "WareHouse": "Warehouse 100184",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "Midwest",
+    "State": "Wisconsin",
+    "WareHouse": "Warehouse 100185",
+    "Cash to Cash Cycle Time": 34,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "Midwest",
+    "State": "Iowa",
+    "WareHouse": "Warehouse 100186",
+    "Cash to Cash Cycle Time": 25,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "Midwest",
+    "State": "Kansas",
+    "WareHouse": "Warehouse 100187",
+    "Cash to Cash Cycle Time": 70,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "Midwest",
+    "State": "Minnesota",
+    "WareHouse": "Warehouse 100188",
+    "Cash to Cash Cycle Time": 32,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "Midwest",
+    "State": "Missouri",
+    "WareHouse": "Warehouse 100189",
+    "Cash to Cash Cycle Time": 67,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Midwest",
+    "State": "Nebraska",
+    "WareHouse": "Warehouse 100190",
+    "Cash to Cash Cycle Time": 41,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "Midwest",
+    "State": "North Dakota",
+    "WareHouse": "Warehouse 100191",
+    "Cash to Cash Cycle Time": 21,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "Midwest",
+    "State": "South Dakota",
+    "WareHouse": "Warehouse 100192",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "Midwest",
+    "State": "Illinois",
+    "WareHouse": "Warehouse 100232",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Midwest",
+    "State": "Indiana",
+    "WareHouse": "Warehouse 100233",
+    "Cash to Cash Cycle Time": 75,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "Midwest",
+    "State": "Michigan",
+    "WareHouse": "Warehouse 100234",
+    "Cash to Cash Cycle Time": 23,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "Midwest",
+    "State": "Ohio",
+    "WareHouse": "Warehouse 100235",
+    "Cash to Cash Cycle Time": 23,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Midwest",
+    "State": "Wisconsin",
+    "WareHouse": "Warehouse 100236",
+    "Cash to Cash Cycle Time": 69,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "Midwest",
+    "State": "Iowa",
+    "WareHouse": "Warehouse 100237",
+    "Cash to Cash Cycle Time": 79,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "Midwest",
+    "State": "Kansas",
+    "WareHouse": "Warehouse 100238",
+    "Cash to Cash Cycle Time": 30,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "Midwest",
+    "State": "Minnesota",
+    "WareHouse": "Warehouse 100239",
+    "Cash to Cash Cycle Time": 29,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "Midwest",
+    "State": "Missouri",
+    "WareHouse": "Warehouse 100240",
+    "Cash to Cash Cycle Time": 63,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "Midwest",
+    "State": "Nebraska",
+    "WareHouse": "Warehouse 100241",
+    "Cash to Cash Cycle Time": 39,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "Midwest",
+    "State": "North Dakota",
+    "WareHouse": "Warehouse 100242",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "Midwest",
+    "State": "South Dakota",
+    "WareHouse": "Warehouse 100243",
+    "Cash to Cash Cycle Time": 41,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "Northeast",
+    "State": "Connecticut",
+    "WareHouse": "Warehouse 100121",
+    "Cash to Cash Cycle Time": 61,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "Northeast",
+    "State": "Maine",
+    "WareHouse": "Warehouse 100122",
+    "Cash to Cash Cycle Time": 32,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "Northeast",
+    "State": "Massachusetts",
+    "WareHouse": "Warehouse 100123",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "Northeast",
+    "State": "New Hampshire",
+    "WareHouse": "Warehouse 100124",
+    "Cash to Cash Cycle Time": 35,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "Northeast",
+    "State": "Rhode Island",
+    "WareHouse": "Warehouse 100125",
+    "Cash to Cash Cycle Time": 69,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Northeast",
+    "State": "Vermont",
+    "WareHouse": "Warehouse 100126",
+    "Cash to Cash Cycle Time": 23,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "Northeast",
+    "State": "New Jersey",
+    "WareHouse": "Warehouse 100127",
+    "Cash to Cash Cycle Time": 27,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "Northeast",
+    "State": "New York",
+    "WareHouse": "Warehouse 100128",
+    "Cash to Cash Cycle Time": 43,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "Northeast",
+    "State": "Pennsylvania",
+    "WareHouse": "Warehouse 100129",
+    "Cash to Cash Cycle Time": 54,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "Northeast",
+    "State": "Connecticut",
+    "WareHouse": "Warehouse 100172",
+    "Cash to Cash Cycle Time": 20,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "Northeast",
+    "State": "Maine",
+    "WareHouse": "Warehouse 100173",
+    "Cash to Cash Cycle Time": 64,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "Northeast",
+    "State": "Massachusetts",
+    "WareHouse": "Warehouse 100174",
+    "Cash to Cash Cycle Time": 53,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 19,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "Northeast",
+    "State": "New Hampshire",
+    "WareHouse": "Warehouse 100175",
+    "Cash to Cash Cycle Time": 49,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "Northeast",
+    "State": "Rhode Island",
+    "WareHouse": "Warehouse 100176",
+    "Cash to Cash Cycle Time": 53,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "Northeast",
+    "State": "Vermont",
+    "WareHouse": "Warehouse 100177",
+    "Cash to Cash Cycle Time": 45,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 23,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "Northeast",
+    "State": "New Jersey",
+    "WareHouse": "Warehouse 100178",
+    "Cash to Cash Cycle Time": 57,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "Northeast",
+    "State": "New York",
+    "WareHouse": "Warehouse 100179",
+    "Cash to Cash Cycle Time": 45,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "Northeast",
+    "State": "Pennsylvania",
+    "WareHouse": "Warehouse 100180",
+    "Cash to Cash Cycle Time": 52,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "Northeast",
+    "State": "Connecticut",
+    "WareHouse": "Warehouse 100223",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "Northeast",
+    "State": "Maine",
+    "WareHouse": "Warehouse 100224",
+    "Cash to Cash Cycle Time": 51,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "Northeast",
+    "State": "Massachusetts",
+    "WareHouse": "Warehouse 100225",
+    "Cash to Cash Cycle Time": 34,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "Northeast",
+    "State": "New Hampshire",
+    "WareHouse": "Warehouse 100226",
+    "Cash to Cash Cycle Time": 57,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "Northeast",
+    "State": "Rhode Island",
+    "WareHouse": "Warehouse 100227",
+    "Cash to Cash Cycle Time": 40,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "Northeast",
+    "State": "Vermont",
+    "WareHouse": "Warehouse 100228",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 23,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "Northeast",
+    "State": "New Jersey",
+    "WareHouse": "Warehouse 100229",
+    "Cash to Cash Cycle Time": 39,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "Northeast",
+    "State": "New York",
+    "WareHouse": "Warehouse 100230",
+    "Cash to Cash Cycle Time": 45,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "Northeast",
+    "State": "Pennsylvania",
+    "WareHouse": "Warehouse 100231",
+    "Cash to Cash Cycle Time": 50,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "South",
+    "State": "Delaware",
+    "WareHouse": "Warehouse 100142",
+    "Cash to Cash Cycle Time": 48,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "South",
+    "State": "Florida",
+    "WareHouse": "Warehouse 100143",
+    "Cash to Cash Cycle Time": 41,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "South",
+    "State": "Georgia",
+    "WareHouse": "Warehouse 100144",
+    "Cash to Cash Cycle Time": 49,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "South",
+    "State": "Maryland",
+    "WareHouse": "Warehouse 100145",
+    "Cash to Cash Cycle Time": 25,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "South",
+    "State": "North Carolina",
+    "WareHouse": "Warehouse 100146",
+    "Cash to Cash Cycle Time": 53,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "South",
+    "State": "South Carolina",
+    "WareHouse": "Warehouse 100147",
+    "Cash to Cash Cycle Time": 45,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "South",
+    "State": "Virginia",
+    "WareHouse": "Warehouse 100148",
+    "Cash to Cash Cycle Time": 75,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "South",
+    "State": "District of Columbia",
+    "WareHouse": "Warehouse 100149",
+    "Cash to Cash Cycle Time": 32,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "South",
+    "State": "West Virginia",
+    "WareHouse": "Warehouse 100150",
+    "Cash to Cash Cycle Time": 31,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 19,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "South",
+    "State": "Alabama",
+    "WareHouse": "Warehouse 100151",
+    "Cash to Cash Cycle Time": 36,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "South",
+    "State": "Kentucky",
+    "WareHouse": "Warehouse 100152",
+    "Cash to Cash Cycle Time": 45,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "Mississippi",
+    "WareHouse": "Warehouse 100153",
+    "Cash to Cash Cycle Time": 79,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "South",
+    "State": "Tennessee",
+    "WareHouse": "Warehouse 100154",
+    "Cash to Cash Cycle Time": 62,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "South",
+    "State": "Arkansas",
+    "WareHouse": "Warehouse 100155",
+    "Cash to Cash Cycle Time": 41,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "South",
+    "State": "Louisiana",
+    "WareHouse": "Warehouse 100156",
+    "Cash to Cash Cycle Time": 50,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "Oklahoma",
+    "WareHouse": "Warehouse 100157",
+    "Cash to Cash Cycle Time": 68,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "South",
+    "State": "Texas",
+    "WareHouse": "Warehouse 100158",
+    "Cash to Cash Cycle Time": 27,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "South",
+    "State": "Delaware",
+    "WareHouse": "Warehouse 100193",
+    "Cash to Cash Cycle Time": 68,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "South",
+    "State": "Florida",
+    "WareHouse": "Warehouse 100194",
+    "Cash to Cash Cycle Time": 61,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 23,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "South",
+    "State": "Georgia",
+    "WareHouse": "Warehouse 100195",
+    "Cash to Cash Cycle Time": 52,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "South",
+    "State": "Maryland",
+    "WareHouse": "Warehouse 100196",
+    "Cash to Cash Cycle Time": 36,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "North Carolina",
+    "WareHouse": "Warehouse 100197",
+    "Cash to Cash Cycle Time": 41,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "South",
+    "State": "South Carolina",
+    "WareHouse": "Warehouse 100198",
+    "Cash to Cash Cycle Time": 51,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "South",
+    "State": "Virginia",
+    "WareHouse": "Warehouse 100199",
+    "Cash to Cash Cycle Time": 64,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "South",
+    "State": "District of Columbia",
+    "WareHouse": "Warehouse 100200",
+    "Cash to Cash Cycle Time": 61,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "South",
+    "State": "West Virginia",
+    "WareHouse": "Warehouse 100201",
+    "Cash to Cash Cycle Time": 67,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 23,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "South",
+    "State": "Alabama",
+    "WareHouse": "Warehouse 100202",
+    "Cash to Cash Cycle Time": 74,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "South",
+    "State": "Kentucky",
+    "WareHouse": "Warehouse 100203",
+    "Cash to Cash Cycle Time": 21,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "South",
+    "State": "Mississippi",
+    "WareHouse": "Warehouse 100204",
+    "Cash to Cash Cycle Time": 60,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "South",
+    "State": "Tennessee",
+    "WareHouse": "Warehouse 100205",
+    "Cash to Cash Cycle Time": 64,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "South",
+    "State": "Arkansas",
+    "WareHouse": "Warehouse 100206",
+    "Cash to Cash Cycle Time": 31,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "South",
+    "State": "Louisiana",
+    "WareHouse": "Warehouse 100207",
+    "Cash to Cash Cycle Time": 52,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "South",
+    "State": "Oklahoma",
+    "WareHouse": "Warehouse 100208",
+    "Cash to Cash Cycle Time": 63,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "South",
+    "State": "Texas",
+    "WareHouse": "Warehouse 100209",
+    "Cash to Cash Cycle Time": 54,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "South",
+    "State": "Delaware",
+    "WareHouse": "Warehouse 100244",
+    "Cash to Cash Cycle Time": 43,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "South",
+    "State": "Florida",
+    "WareHouse": "Warehouse 100245",
+    "Cash to Cash Cycle Time": 40,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "South",
+    "State": "Georgia",
+    "WareHouse": "Warehouse 100246",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "Maryland",
+    "WareHouse": "Warehouse 100247",
+    "Cash to Cash Cycle Time": 69,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "South",
+    "State": "North Carolina",
+    "WareHouse": "Warehouse 100248",
+    "Cash to Cash Cycle Time": 53,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "South",
+    "State": "South Carolina",
+    "WareHouse": "Warehouse 100249",
+    "Cash to Cash Cycle Time": 73,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "South",
+    "State": "Virginia",
+    "WareHouse": "Warehouse 100250",
+    "Cash to Cash Cycle Time": 71,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 23,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "South",
+    "State": "District of Columbia",
+    "WareHouse": "Warehouse 100251",
+    "Cash to Cash Cycle Time": 42,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "South",
+    "State": "West Virginia",
+    "WareHouse": "Warehouse 100252",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "South",
+    "State": "Alabama",
+    "WareHouse": "Warehouse 100253",
+    "Cash to Cash Cycle Time": 53,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 17,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "South",
+    "State": "Kentucky",
+    "WareHouse": "Warehouse 100254",
+    "Cash to Cash Cycle Time": 33,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "South",
+    "State": "Mississippi",
+    "WareHouse": "Warehouse 100255",
+    "Cash to Cash Cycle Time": 76,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "Tennessee",
+    "WareHouse": "Warehouse 100256",
+    "Cash to Cash Cycle Time": 43,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "South",
+    "State": "Arkansas",
+    "WareHouse": "Warehouse 100257",
+    "Cash to Cash Cycle Time": 75,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "Louisiana",
+    "WareHouse": "Warehouse 100258",
+    "Cash to Cash Cycle Time": 34,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "South",
+    "State": "Oklahoma",
+    "WareHouse": "Warehouse 100259",
+    "Cash to Cash Cycle Time": 70,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 21,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "South",
+    "State": "Texas",
+    "WareHouse": "Warehouse 100260",
+    "Cash to Cash Cycle Time": 28,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 19,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "West",
+    "State": "Arizona",
+    "WareHouse": "Warehouse 100159",
+    "Cash to Cash Cycle Time": 64,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "West",
+    "State": "Colorado",
+    "WareHouse": "Warehouse 100160",
+    "Cash to Cash Cycle Time": 37,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "West",
+    "State": "Idaho",
+    "WareHouse": "Warehouse 100161",
+    "Cash to Cash Cycle Time": 63,
+    "Customer Order Cycle Time": 14,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "West",
+    "State": "Montana",
+    "WareHouse": "Warehouse 100162",
+    "Cash to Cash Cycle Time": 52,
+    "Customer Order Cycle Time": 20,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 28
+  },
+  {
+    "Region": "West",
+    "State": "Nevada",
+    "WareHouse": "Warehouse 100163",
+    "Cash to Cash Cycle Time": 46,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "West",
+    "State": "New Mexico",
+    "WareHouse": "Warehouse 100164",
+    "Cash to Cash Cycle Time": 36,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "West",
+    "State": "Utah",
+    "WareHouse": "Warehouse 100165",
+    "Cash to Cash Cycle Time": 48,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "West",
+    "State": "Wyoming",
+    "WareHouse": "Warehouse 100166",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "West",
+    "State": "Alaska",
+    "WareHouse": "Warehouse 100167",
+    "Cash to Cash Cycle Time": 38,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "West",
+    "State": "California",
+    "WareHouse": "Warehouse 100168",
+    "Cash to Cash Cycle Time": 28,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "West",
+    "State": "Hawaii",
+    "WareHouse": "Warehouse 100169",
+    "Cash to Cash Cycle Time": 72,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 19,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "West",
+    "State": "Oregon",
+    "WareHouse": "Warehouse 100170",
+    "Cash to Cash Cycle Time": 67,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 16,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "West",
+    "State": "Washington",
+    "WareHouse": "Warehouse 100171",
+    "Cash to Cash Cycle Time": 40,
+    "Customer Order Cycle Time": 10,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 15
+  },
+  {
+    "Region": "West",
+    "State": "Arizona",
+    "WareHouse": "Warehouse 100210",
+    "Cash to Cash Cycle Time": 55,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 28,
+    "Inventory Days of Supply": 16
+  },
+  {
+    "Region": "West",
+    "State": "Colorado",
+    "WareHouse": "Warehouse 100211",
+    "Cash to Cash Cycle Time": 59,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 19,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "West",
+    "State": "Idaho",
+    "WareHouse": "Warehouse 100212",
+    "Cash to Cash Cycle Time": 53,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 17
+  },
+  {
+    "Region": "West",
+    "State": "Montana",
+    "WareHouse": "Warehouse 100213",
+    "Cash to Cash Cycle Time": 61,
+    "Customer Order Cycle Time": 19,
+    "Supply Chain cycle Time": 25,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "West",
+    "State": "Nevada",
+    "WareHouse": "Warehouse 100214",
+    "Cash to Cash Cycle Time": 75,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "West",
+    "State": "New Mexico",
+    "WareHouse": "Warehouse 100215",
+    "Cash to Cash Cycle Time": 43,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "West",
+    "State": "Utah",
+    "WareHouse": "Warehouse 100216",
+    "Cash to Cash Cycle Time": 46,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "West",
+    "State": "Wyoming",
+    "WareHouse": "Warehouse 100217",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "West",
+    "State": "Alaska",
+    "WareHouse": "Warehouse 100218",
+    "Cash to Cash Cycle Time": 54,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 19,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "West",
+    "State": "California",
+    "WareHouse": "Warehouse 100219",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 18,
+    "Supply Chain cycle Time": 22,
+    "Inventory Days of Supply": 30
+  },
+  {
+    "Region": "West",
+    "State": "Hawaii",
+    "WareHouse": "Warehouse 100220",
+    "Cash to Cash Cycle Time": 69,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "West",
+    "State": "Oregon",
+    "WareHouse": "Warehouse 100221",
+    "Cash to Cash Cycle Time": 52,
+    "Customer Order Cycle Time": 16,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 29
+  },
+  {
+    "Region": "West",
+    "State": "Washington",
+    "WareHouse": "Warehouse 100222",
+    "Cash to Cash Cycle Time": 42,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 24
+  },
+  {
+    "Region": "West",
+    "State": "Arizona",
+    "WareHouse": "Warehouse 100261",
+    "Cash to Cash Cycle Time": 68,
+    "Customer Order Cycle Time": 12,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "West",
+    "State": "Colorado",
+    "WareHouse": "Warehouse 100262",
+    "Cash to Cash Cycle Time": 41,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 15,
+    "Inventory Days of Supply": 19
+  },
+  {
+    "Region": "West",
+    "State": "Idaho",
+    "WareHouse": "Warehouse 100263",
+    "Cash to Cash Cycle Time": 34,
+    "Customer Order Cycle Time": 9,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 23
+  },
+  {
+    "Region": "West",
+    "State": "Montana",
+    "WareHouse": "Warehouse 100264",
+    "Cash to Cash Cycle Time": 36,
+    "Customer Order Cycle Time": 15,
+    "Supply Chain cycle Time": 29,
+    "Inventory Days of Supply": 27
+  },
+  {
+    "Region": "West",
+    "State": "Nevada",
+    "WareHouse": "Warehouse 100265",
+    "Cash to Cash Cycle Time": 23,
+    "Customer Order Cycle Time": 8,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "West",
+    "State": "New Mexico",
+    "WareHouse": "Warehouse 100266",
+    "Cash to Cash Cycle Time": 43,
+    "Customer Order Cycle Time": 7,
+    "Supply Chain cycle Time": 20,
+    "Inventory Days of Supply": 25
+  },
+  {
+    "Region": "West",
+    "State": "Utah",
+    "WareHouse": "Warehouse 100267",
+    "Cash to Cash Cycle Time": 35,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 18,
+    "Inventory Days of Supply": 20
+  },
+  {
+    "Region": "West",
+    "State": "Wyoming",
+    "WareHouse": "Warehouse 100268",
+    "Cash to Cash Cycle Time": 20,
+    "Customer Order Cycle Time": 6,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 21
+  },
+  {
+    "Region": "West",
+    "State": "Alaska",
+    "WareHouse": "Warehouse 100269",
+    "Cash to Cash Cycle Time": 37,
+    "Customer Order Cycle Time": 11,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "West",
+    "State": "California",
+    "WareHouse": "Warehouse 100270",
+    "Cash to Cash Cycle Time": 58,
+    "Customer Order Cycle Time": 13,
+    "Supply Chain cycle Time": 30,
+    "Inventory Days of Supply": 18
+  },
+  {
+    "Region": "West",
+    "State": "Hawaii",
+    "WareHouse": "Warehouse 100271",
+    "Cash to Cash Cycle Time": 24,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 26,
+    "Inventory Days of Supply": 22
+  },
+  {
+    "Region": "West",
+    "State": "Oregon",
+    "WareHouse": "Warehouse 100272",
+    "Cash to Cash Cycle Time": 30,
+    "Customer Order Cycle Time": 5,
+    "Supply Chain cycle Time": 27,
+    "Inventory Days of Supply": 26
+  },
+  {
+    "Region": "West",
+    "State": "Washington",
+    "WareHouse": "Warehouse 100273",
+    "Cash to Cash Cycle Time": 57,
+    "Customer Order Cycle Time": 17,
+    "Supply Chain cycle Time": 24,
+    "Inventory Days of Supply": 21
+  }
+ ]

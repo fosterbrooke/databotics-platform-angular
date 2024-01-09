@@ -1,0 +1,484 @@
+[
+    {
+        "Category": "D Category",
+        "Item": "Caterpillar D4",
+        "Spare": "FanD4",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.357346",
+                "longtitude": "-98.829081",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"1 Hrs",
+                 "availibility" :"50"
+
+              },
+              {
+                "latitude": "32.935325",
+                "longtitude": "-97.469588",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"2 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "31.383018",
+                "longtitude": "-100.467474",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"3 Hrs",
+                "availibility" :"100"
+              }
+        ],
+        "est": "4 hrs"
+    },
+
+    
+
+    {
+        "Category": "D Category",
+        "Item": "Caterpillar D5",
+        "Spare": "FanD5",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"5 Hrs",
+                "availibility" :"60"
+              },
+              {
+                "latitude": "31.217480",
+                "longtitude": "-99.860481",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"6 Hrs",
+                "availibility" :"60"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"7 Hrs",
+                "availibility" :"100"
+              }
+        ],
+        "est": "2 hrs"
+    },
+
+    {
+        "Category": "D Category",
+        "Item": "Caterpillar D6",
+        "Spare": "FanD6",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.886222",
+                "longtitude": "-95.425279",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"3 Hrs",
+                "availibility" :"90"
+              },
+              {
+                "latitude": "32.003704",
+                "longtitude": "-102.057051",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"4 Hrs",
+                "availibility" :"90"
+              },
+              {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"5 Hrs",
+                "availibility" :"20"
+              }
+        ],
+        "est": "2 hrs"
+    },
+    {
+        "Category": "D Category",
+        "Item": "Caterpillar D7",
+        "Spare": "FanD7",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.886222",
+                "longtitude": "-95.425279",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"13 Hrs",
+                "availibility" :"80"
+              },
+              {
+                "latitude": "32.003704",
+                "longtitude": "-102.057051",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"14 Hrs",
+                "availibility" :"70"
+              },
+              {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"15 Hrs",
+                "availibility" :"50"
+              }
+        ],
+        "est": "8 hrs"
+    },
+ 
+    {
+        "Category": "C Category",
+        "Item": "Caterpillar CS-533E",
+        "Spare": "Fan BeltCS-533E",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.666788",
+                "longtitude": "-95.976606",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"20 Hrs",
+                "availibility" :"80"
+              },
+              {
+                "latitude": "29.886222",
+                "longtitude": "-95.425279",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"23 Hrs",
+                "availibility" :"70"
+              },
+              {
+                "latitude": "32.003704",
+                "longtitude": "-102.057051",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"24 Hrs",
+                "availibility" :"50"
+              }
+        ],
+        "est": "8 hrs"
+    },
+    {
+        "Category": "C Category",
+        "Item": "Caterpillar Twenty-Two",
+        "Spare": "Fan Belt Twenty-Two",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "31.129709",
+                "longtitude": "-99.357130",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"10 Hrs",
+                "availibility" :"90"
+              },
+              {
+                "latitude": "32.003704",
+                "longtitude": "-102.057051",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"14 Hrs",
+                "availibility" :"80"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"17 Hrs",
+                "availibility" :"30"
+              }
+        ],
+        "est": "6 hrs"
+    },
+    {
+        "Category": "C Category",
+        "Item": "Caterpillar 345C L",
+        "Spare": "Fan Belt 345C L",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "31.129709",
+                "longtitude": "-99.357130",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"11 Hrs",
+                "availibility" :"90"
+              },
+              {
+                "latitude": "29.666788",
+                "longtitude": "-95.976606",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"12 Hrs",
+                "availibility" :"60"
+              },
+              {
+                "latitude": "29.886222",
+                "longtitude": "-95.425279",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"31 Hrs",
+                "availibility" :"50"
+              }
+        ],
+        "est": "5 hrs"
+    },
+    {
+        "Category": "M Category",
+        "Item": "M520 Goer",
+        "Spare": "Battery-M520",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.357346",
+                "longtitude": "-98.829081",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"18 Hrs",
+                "availibility" :"100"
+              },
+              {
+                "latitude": "32.935325",
+                "longtitude": "-97.469588",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"19 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "31.383018",
+                "longtitude": "-100.467474",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"10 Hrs",
+                "availibility" :"50"
+              }
+        ],
+        "est": "5 hrs"
+    },
+    {
+        "Category": "M Category",
+        "Item": "M559",
+        "Spare": "Battery",
+        "StockID": "1",
+        "Availabilty":"150",
+        "Locations": [
+            {
+                "latitude": "29.666788",
+                "longtitude": "-95.976606",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"2 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"5 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"7 Hrs",
+                "availibility" :"50"
+              }
+        ],
+        "est": "5 hrs"
+    },
+
+  
+    {
+        "Category": "M Category",
+        "Item": "M877",
+        "Spare": "Battery-M877",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.666788",
+                "longtitude": "-95.976606",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"2 Hrs",
+                "availibility" :"100"
+              },
+              {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"5 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"7 Hrs",
+                "availibility" :"50"
+              }
+        ],
+        "est": "5 hrs"
+    },
+  
+
+    {
+        "Category": "0-9 Category",
+        "Item": "Caterpillar 797",
+        "Spare": "CamShaft-797",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"15 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "32.935325",
+                "longtitude": "-97.469588",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"19 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"17 Hrs",
+                "availibility" :"100"
+              }
+        ],
+        "est": "16 hrs"
+    },
+    {
+        "Category": "0-9 Category",
+        "Item": "Caterpillar 797F",
+        "Spare": "CamShaft-797F",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+          {
+                "latitude": "31.217480",
+                "longtitude": "-99.860481",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"6 Hrs"
+              },
+              {
+                "latitude": "31.383018",
+                "longtitude": "-100.467474",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"10 Hrs"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"17 Hrs"
+              }
+        ],
+        "est": "5 hrs"
+    },
+   
+    {
+        "Category": "0-9 Category",
+        "Item": "Caterpillar 924G",
+        "Spare": "CamShaft-924G",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "31.217480",
+                "longtitude": "-99.860481",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"6 Hrs"
+              },
+              {
+                "latitude": "31.383018",
+                "longtitude": "-100.467474",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"10 Hrs"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"17 Hrs"
+              }
+        ],
+        "est": "5 hrs"
+    },
+    {
+        "Category": "0-9 Category",
+        "Item": "Caterpillar 930G",
+        "Spare": "CamShaft-930G",
+        "StockID": "1",
+        "Availabilty":"200",
+        "Locations": [
+            {
+                "latitude": "29.886222",
+                "longtitude": "-95.425279",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 1",
+                "est":"3 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "32.458089",
+                "longtitude": "-99.902814",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 2",
+                "est":"5 Hrs",
+                "availibility" :"50"
+              },
+              {
+                "latitude": "31.850564",
+                "longtitude": "-99.109442",
+                "phone_number": "9891601952",
+                "warehouse": "Ware House 3",
+                "est":"17 Hrs",
+                "availibility" :"100"
+              }
+        ],
+        "est": "5 hrs"
+    }
+
+]

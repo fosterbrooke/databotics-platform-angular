@@ -1,0 +1,28 @@
+<app-header (sidenavChange)='sidenavChanged()'></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <ul class="nav nav-tabs card-header-tabs nav_border_bottom">
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="{activeclass: isActive(1)}" (click)="setactiveProject1(1);" style="color: #788786;"> Covid Tracker </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="{activeclass: isActive(2)}" (click)="setactiveProject2(2);" style="color: #788786;"> Covid Sample Data One </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [ngClass]="{activeclass: isActive(3)}" (click)="setactiveProject3(3);" style="color: #788786;"> Covid Sample Data Two </a>
+        </li>
+    </ul>
+    <div>
+      <div id="home">
+          <app-health-covid *ngIf="covidusecaseone"></app-health-covid>
+      </div>
+      <div id="home">
+        <app-helth-care-covid-two *ngIf="covidusecasetwo"></app-helth-care-covid-two>
+    </div>
+    <div id="home">
+      <app-helth-care-covid-three *ngIf="covidusecasethree"></app-helth-care-covid-three>
+  </div>
+    </div>
+  </div>
+</div>
+

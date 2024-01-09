@@ -1,0 +1,121 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 pd-right">
+      <div class="">
+        <label><b>City</b></label>
+        <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedCity($event)">
+          <option  value="ALL">ALL</option>
+          <option *ngFor="let obj of city" value="{{obj.City}}">{{obj.City}}</option>
+        </select>
+      </div>
+      <div class="card">
+        <div class="card-head carhe">
+          <span><b>{{df(categoryArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Total Revenue</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(yearArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Total Budget</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(cityArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Labor Costs</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(chainArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Previous Year Revenue</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(buyerArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Shipping Cost</b></span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head card-he">
+          <span><b>{{df(monthArray)}}</b></span>
+        </div>
+        <div class="card-body">
+          <span><b>Total Profit</b></span>
+        </div>
+      </div>
+    <div class="card">
+      <div class="card-head card-he">
+          <span><b>{{df(QuarterArray)}}</b></span>
+      </div>
+      <div class="card-body">
+          <span><b>Satisfactory</b></span>
+      </div>
+    </div>
+    </div>
+<div class="col-md-10">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-4 pd-left pd-right">
+        <label><b>Chain</b></label>
+        <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedChain($event)">
+          <option  value="ALL">ALL</option>
+          <option *ngFor="let obj of chain" value="{{obj.Chain}}">{{obj.Chain}}</option>
+        </select>
+      </div>
+      <div class="col-md-4 pd-right">
+        <label><b>Category</b></label>
+        <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedCategory($event)">
+      <option  value="ALL">ALL</option>
+      <option *ngFor="let obj of category" value="{{obj.Category}}">{{obj.Category}}</option>
+    </select>
+      </div>
+      <div class="col-md-4 pd-right">
+        <label><b>Year</b></label>
+        <select  placeholder="select State" class="form-control dropdown_wrapper" (change)="selectedYear($event)">
+      <option  value="ALL">ALL</option>
+      <option *ngFor="let obj of Year" value="{{obj.Month}}">{{obj.Month}}</option>
+    </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-xl-12 padding0 border ">
+        <div [chart]="pievalue" class="height"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 pd-right">
+    <div class="row">
+      <div class="col-md-12 col-xl-12 " style="margin-top: 28px;">
+        <p class="background_head">Total Sale and Target Sales by Sub-Category</p>
+            <div [chart]="bar1" class="hei border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-xl-12 m-t-10">
+        <p class="background_head">Total Revenue by BU</p>
+           <div [chart]="pi" class="cat border"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 m-t-10">
+      <p class="background_head">Target Sales and Total Sale by Week Numbar</p>
+          <div  [chart] = "colum" class="lenght border"></div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
